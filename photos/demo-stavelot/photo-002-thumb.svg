@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-labelledby="title desc">
+  <title id="title">Miniature fictive de chemin boisé</title>
+  <desc id="desc">Illustration simple d'un chemin entre des arbres.</desc>
+  <rect width="320" height="200" fill="#e8f2dc"/>
+  <rect x="0" y="132" width="320" height="68" fill="#8fb56f"/>
+  <path d="M138 200 L174 200 L190 132 L126 132 Z" fill="#d7b26d"/>
+  <path d="M142 200 L160 132 L178 200 Z" fill="#c7984e" opacity="0.55"/>
+  <g fill="#3f7d4f">
+    <circle cx="56" cy="74" r="34"/>
+    <circle cx="90" cy="66" r="28"/>
+    <circle cx="238" cy="72" r="36"/>
+    <circle cx="276" cy="82" r="30"/>
+  </g>
+  <g fill="#6b4f32">
+    <rect x="52" y="92" width="10" height="62"/>
+    <rect x="86" y="88" width="9" height="62"/>
+    <rect x="234" y="94" width="11" height="62"/>
+    <rect x="272" y="102" width="9" height="54"/>
+  </g>
+  <path d="M0 150 C54 132 96 148 132 138 C186 122 234 148 320 126 L320 200 L0 200 Z" fill="#5a9a5e" opacity="0.65"/>
+</svg>

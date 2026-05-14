@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>running-map</title>
+    <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Liste des courses">
+        <header class="sidebar-header">
+          <h1>running-map</h1>
+          <p>Parcours de démonstration</p>
+        </header>
+        <section id="runs-list" class="runs-list" aria-live="polite"></section>
+      </aside>
+
+      <section class="map-panel" aria-label="Carte des parcours">
+        <div id="map"></div>
+      </section>
+    </main>
+
+    <script src="./vendor/leaflet/leaflet.js"></script>
+    <script src="./tracks/demo-stavelot.geojson.js"></script>
+    <script src="./tracks/demo-liege.geojson.js"></script>
+    <script src="./data/runs.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
