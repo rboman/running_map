@@ -197,3 +197,24 @@ bruitées.
 Cette V1 cible un usage pédagogique et un démarrage par double-clic. Certains navigateurs limitent les chargements de fichiers locaux avec `fetch()` depuis `file:///`. Les modules JavaScript peuvent aussi introduire des contraintes de chargement selon le contexte local.
 
 Le projet utilise donc uniquement des scripts classiques qui définissent des variables globales sur `window`. Cela rend l'ordre de chargement explicite, facile à comprendre, et compatible avec un simple fichier `index.html` ouvert localement.
+
+
+
+---
+
+# Notes diverses manuelles
+
+## commandes exécutées 
+...pour convertir les fichiers Dropbox
+
+```
+python -B scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --force
+```
+output:
+```
+Tolérance simplification : 5 m
+Courses importées : 62
+Points source : 500488
+Points exportés : 16143
+generated-tracks.js : ~428 Ko
+```
