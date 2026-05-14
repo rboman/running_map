@@ -27,7 +27,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -62,9 +63,75 @@ input {
   font-size: 14px;
 }
 
+.sidebar-controls {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-controls label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.sidebar-controls input,
+.sidebar-controls select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 9px 10px;
+  background: #fff;
+  color: var(--text);
+}
+
+.sidebar-controls input:focus,
+.sidebar-controls select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.map-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.map-actions button {
+  width: 100%;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 9px 10px;
+  background: var(--button-bg);
+  color: #124f54;
+  cursor: pointer;
+}
+
+.map-actions button:hover,
+.map-actions button:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.runs-count {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .runs-list {
   display: grid;
   gap: 14px;
+}
+
+.empty-list {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fafafa;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .run-card {

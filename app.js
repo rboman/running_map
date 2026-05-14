@@ -3,6 +3,8 @@
   var allRuns = [];
   var runLayers = {};
   var photoLayers = {};
+  var sidebarSearchText = "";
+  var sidebarYearFilter = "";
   var defaultView = {
     center: [50.53, 5.75],
     zoom: 10
@@ -22,6 +24,7 @@
 
     initMap();
     createRunLayers();
+    initSidebarControls();
     renderSidebar();
     fitMapToVisibleRuns();
   }
@@ -83,11 +86,153 @@
 
   function renderSidebar() {
     var list = document.getElementById("runs-list");
+    var filteredRuns = getFilteredRuns();
+
     list.innerHTML = "";
 
-    allRuns.forEach(function (run) {
+    filteredRuns.forEach(function (run) {
       list.appendChild(createRunCard(run));
     });
+
+    if (filteredRuns.length === 0) {
+      var emptyMessage = document.createElement("p");
+      emptyMessage.className = "empty-list";
+      emptyMessage.textContent = "Aucune course ne correspond aux filtres.";
+      list.appendChild(emptyMessage);
+    }
+
+    updateRunsCount(filteredRuns.length);
+  }
+
+  function initSidebarControls() {
+    var searchInput = document.getElementById("run-search");
+    var yearSelect = document.getElementById("year-filter");
+    var showAllButton = document.getElementById("show-all-runs");
+    var hideAllButton = document.getElementById("hide-all-runs");
+
+    renderYearFilter();
+
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        sidebarSearchText = searchInput.value;
+        renderSidebar();
+      });
+    }
+
+    if (yearSelect) {
+      yearSelect.addEventListener("change", function () {
+        sidebarYearFilter = yearSelect.value;
+        renderSidebar();
+      });
+    }
+
+    if (showAllButton) {
+      showAllButton.addEventListener("click", function () {
+        setAllRunsVisibleOnMap(true);
+      });
+    }
+
+    if (hideAllButton) {
+      hideAllButton.addEventListener("click", function () {
+        setAllRunsVisibleOnMap(false);
+      });
+    }
+  }
+
+  function renderYearFilter() {
+    var yearSelect = document.getElementById("year-filter");
+    var years;
+
+    if (!yearSelect) {
+      return;
+    }
+
+    years = getAvailableYears();
+    yearSelect.innerHTML = "";
+    yearSelect.appendChild(createYearOption("", "Toutes les ann\u00e9es"));
+
+    years.forEach(function (year) {
+      yearSelect.appendChild(createYearOption(year, year));
+    });
+  }
+
+  function createYearOption(value, label) {
+    var option = document.createElement("option");
+    option.value = value;
+    option.textContent = label;
+    return option;
+  }
+
+  function getAvailableYears() {
+    var yearsByName = {};
+
+    allRuns.forEach(function (run) {
+      var year = getRunYear(run);
+      if (year) {
+        yearsByName[year] = true;
+      }
+    });
+
+    return Object.keys(yearsByName).sort(function (a, b) {
+      return b.localeCompare(a);
+    });
+  }
+
+  function getFilteredRuns() {
+    return allRuns.filter(function (run) {
+      return runMatchesFilters(run);
+    });
+  }
+
+  function runMatchesFilters(run) {
+    var search = normalizeText(sidebarSearchText);
+    var year = getRunYear(run);
+    var searchableText;
+
+    if (sidebarYearFilter && year !== sidebarYearFilter) {
+      return false;
+    }
+
+    if (!search) {
+      return true;
+    }
+
+    searchableText = normalizeText([
+      run.title,
+      run.date,
+      run.id,
+      formatDate(run.date)
+    ].join(" "));
+
+    return searchableText.indexOf(search) !== -1;
+  }
+
+  function getRunYear(run) {
+    if (!run.date) {
+      return "";
+    }
+
+    return String(run.date).slice(0, 4);
+  }
+
+  function normalizeText(value) {
+    var text = String(value || "").toLowerCase();
+
+    if (text.normalize) {
+      text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    return text;
+  }
+
+  function updateRunsCount(visibleCount) {
+    var count = document.getElementById("runs-count");
+
+    if (!count) {
+      return;
+    }
+
+    count.textContent = visibleCount + " / " + allRuns.length + " courses affich\u00e9es";
   }
 
   function createRunCard(run) {
@@ -101,6 +246,7 @@
     var checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.checked = Boolean(run.visible);
+    checkbox.setAttribute("data-run-id", run.id);
     checkbox.setAttribute("aria-label", "Afficher ou masquer " + run.title);
     checkbox.addEventListener("change", function () {
       toggleRunVisibility(run.id, checkbox.checked);
@@ -177,6 +323,45 @@
     fitMapToVisibleRuns();
   }
 
+  function setAllRunsVisibleOnMap(visible) {
+    allRuns.forEach(function (run) {
+      var trackLayer = runLayers[run.id];
+      var photosLayer = photoLayers[run.id];
+
+      run.visible = visible;
+
+      if (trackLayer) {
+        if (visible) {
+          trackLayer.addTo(map);
+        } else {
+          trackLayer.removeFrom(map);
+        }
+      }
+
+      if (photosLayer) {
+        if (visible) {
+          photosLayer.addTo(map);
+        } else {
+          photosLayer.removeFrom(map);
+        }
+      }
+    });
+
+    updateVisibleSidebarCheckboxes();
+    fitMapToVisibleRuns();
+  }
+
+  function updateVisibleSidebarCheckboxes() {
+    var checkboxes = document.querySelectorAll('#runs-list input[type="checkbox"]');
+
+    Array.prototype.forEach.call(checkboxes, function (checkbox) {
+      var run = findRunById(checkbox.getAttribute("data-run-id"));
+      if (run) {
+        checkbox.checked = Boolean(run.visible);
+      }
+    });
+  }
+
   function centerOnRun(runId) {
     var layer = runLayers[runId];
 
@@ -218,6 +403,18 @@
         run.visible = visible;
       }
     });
+  }
+
+  function findRunById(runId) {
+    var foundRun = null;
+
+    allRuns.forEach(function (run) {
+      if (run.id === runId) {
+        foundRun = run;
+      }
+    });
+
+    return foundRun;
   }
 
   function createRunPopup(run) {
@@ -274,6 +471,7 @@
   window.runningMap = {
     centerOnRun: centerOnRun,
     fitMapToVisibleRuns: fitMapToVisibleRuns,
+    setAllRunsVisibleOnMap: setAllRunsVisibleOnMap,
     toggleRunVisibility: toggleRunVisibility
   };
 })();

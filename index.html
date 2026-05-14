@@ -14,6 +14,20 @@
           <h1>running-map</h1>
           <p>Parcours de démonstration</p>
         </header>
+        <section class="sidebar-controls" aria-label="Filtres et actions sur les parcours">
+          <div class="map-actions">
+            <button id="show-all-runs" type="button">Tout afficher sur la carte</button>
+            <button id="hide-all-runs" type="button">Tout masquer sur la carte</button>
+          </div>
+
+          <label for="run-search">Recherche</label>
+          <input id="run-search" type="search" placeholder="Spa, 2026, Aywaille">
+
+          <label for="year-filter">Ann&eacute;e</label>
+          <select id="year-filter"></select>
+
+          <p id="runs-count" class="runs-count"></p>
+        </section>
         <section id="runs-list" class="runs-list" aria-live="polite"></section>
       </aside>
 
