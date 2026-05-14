@@ -40,5 +40,16 @@ window.RUNS = [
         caption: "Passage fictif près de la Meuse"
       }
     ]
-  }
+  },
+  {
+  id: "adeps-spa",
+  title: "Adeps Spa",
+  date: "2026-05-10",
+  distanceKm: 20.93,
+  elevationGainM: 633,
+  color: "#e66100",
+  visible: true,
+  track: window.TRACK_ADEPS_SPA,
+  photos: []
+}
 ];
