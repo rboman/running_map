@@ -120,6 +120,78 @@ Le script crée un fichier `tracks/*.geojson.js` qui définit une variable globa
 
 Par défaut, le dénivelé positif ignore les hausses de moins de 3 m pour limiter le bruit GPS. Vous pouvez ajuster ce seuil avec `--elevation-threshold-m`. Si le fichier de sortie existe déjà, ajoutez `--force` pour l'écraser.
 
+## Import massif depuis le dossier ADEPS
+
+Le script `scripts/import_adeps_folder.py` scanne récursivement un dossier source
+ADEPS et détecte les dossiers nommés avec la convention :
+
+```text
+YYYY-MM-DD - Lieu
+```
+
+Exemples :
+
+```text
+2026-05-10 - Spa
+2026-03-08 - Oneux (Comblain au pont)
+2025\2025-01-19 - Aywaille
+```
+
+Commande Windows depuis `cmd.exe` :
+
+```cmd
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --force
+```
+
+Le script ne modifie jamais le dossier source : il lit les GPX et génère seulement
+ces fichiers dans le projet :
+
+```text
+tracks\generated-tracks.js
+data\generated-runs.js
+```
+
+Les démos pédagogiques restent dans `data\runs.js`. Les courses importées sont
+ajoutées séparément via `window.GENERATED_RUNS`, et leurs traces via
+`window.GENERATED_TRACKS`.
+
+Choix du GPX dans chaque dossier de course :
+
+1. `track.gpx` s'il existe ;
+2. sinon l'unique fichier `.gpx` du dossier ;
+3. sinon le dossier est ignoré avec un avertissement clair.
+
+La distance et le dénivelé positif approximatif sont calculés sur la trace GPX
+complète. Ensuite seulement, la géométrie exportée est simplifiée pour réduire
+la taille de `generated-tracks.js`.
+
+Options utiles :
+
+```cmd
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --dry-run
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --year 2026 --force
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --simplify-tolerance-m 10 --force
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --default-visible true --force
+```
+
+Options disponibles :
+
+```text
+source_dir
+--output
+--force
+--dry-run
+--year
+--elevation-threshold-m
+--simplify-tolerance-m
+--default-visible true|false
+```
+
+Par défaut, `--default-visible` vaut `false` pour éviter d'afficher trop de
+traces importées d'un coup. La tolérance de simplification vaut `5.0` mètres.
+Le dénivelé positif reste approximatif, car les altitudes GPS peuvent être
+bruitées.
+
 ## Pourquoi pas `fetch()`, modules, npm ou serveur local ?
 
 Cette V1 cible un usage pédagogique et un démarrage par double-clic. Certains navigateurs limitent les chargements de fichiers locaux avec `fetch()` depuis `file:///`. Les modules JavaScript peuvent aussi introduire des contraintes de chargement selon le contexte local.

@@ -1,5 +1,6 @@
 (function () {
   var map;
+  var allRuns = [];
   var runLayers = {};
   var photoLayers = {};
   var defaultView = {
@@ -10,10 +11,14 @@
   window.addEventListener("load", startApp);
 
   function startApp() {
-    if (!window.L || !window.RUNS) {
+    if (!window.L) {
       showStartupError();
       return;
     }
+
+    allRuns = []
+      .concat(window.RUNS || [])
+      .concat(window.GENERATED_RUNS || []);
 
     initMap();
     createRunLayers();
@@ -31,7 +36,7 @@
   }
 
   function createRunLayers() {
-    window.RUNS.forEach(function (run) {
+    allRuns.forEach(function (run) {
       var trackLayer = L.geoJSON(run.track, {
         style: {
           color: run.color,
@@ -80,7 +85,7 @@
     var list = document.getElementById("runs-list");
     list.innerHTML = "";
 
-    window.RUNS.forEach(function (run) {
+    allRuns.forEach(function (run) {
       list.appendChild(createRunCard(run));
     });
   }
@@ -189,7 +194,7 @@
     var bounds = L.latLngBounds();
     var hasVisibleRun = false;
 
-    window.RUNS.forEach(function (run) {
+    allRuns.forEach(function (run) {
       var layer = runLayers[run.id];
       if (run.visible && layer) {
         var layerBounds = layer.getBounds();
@@ -208,7 +213,7 @@
   }
 
   function setRunVisible(runId, visible) {
-    window.RUNS.forEach(function (run) {
+    allRuns.forEach(function (run) {
       if (run.id === runId) {
         run.visible = visible;
       }

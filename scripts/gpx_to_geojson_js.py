@@ -3,15 +3,17 @@
 
 import argparse
 import json
-import math
-import re
 import sys
-import xml.etree.ElementTree as ET
 from pathlib import Path
 
-
-EARTH_RADIUS_KM = 6371.0088
-JS_IDENTIFIER_RE = re.compile(r"^[A-Za-z_$][A-Za-z0-9_$]*$")
+from gpx_utils import (
+    JS_IDENTIFIER_RE,
+    elevation_gain_m,
+    fail,
+    feature_from_points,
+    read_track_points,
+    total_distance_km,
+)
 
 
 def parse_args():
@@ -41,119 +43,6 @@ def parse_args():
         help="Overwrite the output file if it already exists.",
     )
     return parser.parse_args()
-
-
-def fail(message):
-    raise RuntimeError(message)
-
-
-def local_name(tag):
-    if "}" in tag:
-        return tag.rsplit("}", 1)[1]
-    return tag
-
-
-def child_text(element, name):
-    for child in element:
-        if local_name(child.tag) == name:
-            return child.text
-    return None
-
-
-def parse_float(value, field_name):
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        fail("Invalid GPX point: {} is not a number.".format(field_name))
-
-
-def read_track_points(gpx_path):
-    if not gpx_path.exists():
-        fail("GPX file does not exist: {}".format(gpx_path))
-
-    try:
-        tree = ET.parse(gpx_path)
-    except ET.ParseError as exc:
-        fail("Invalid GPX XML: {}".format(exc))
-    except OSError as exc:
-        fail("Could not read GPX file: {}".format(exc))
-
-    points = []
-    root = tree.getroot()
-
-    for element in root.iter():
-        if local_name(element.tag) != "trkpt":
-            continue
-
-        lat = parse_float(element.get("lat"), "latitude")
-        lon = parse_float(element.get("lon"), "longitude")
-
-        ele_text = child_text(element, "ele")
-        elevation = None
-        if ele_text is not None and ele_text.strip():
-            elevation = parse_float(ele_text.strip(), "elevation")
-
-        points.append((lon, lat, elevation))
-
-    if not points:
-        fail("No GPX track points found.")
-    if len(points) < 2:
-        fail("At least two GPX track points are required.")
-
-    return points
-
-
-def haversine_km(point_a, point_b):
-    lon1, lat1, _ = point_a
-    lon2, lat2, _ = point_b
-    lat1_rad = math.radians(lat1)
-    lat2_rad = math.radians(lat2)
-    delta_lat = math.radians(lat2 - lat1)
-    delta_lon = math.radians(lon2 - lon1)
-
-    a = (
-        math.sin(delta_lat / 2) ** 2
-        + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(delta_lon / 2) ** 2
-    )
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    return EARTH_RADIUS_KM * c
-
-
-def total_distance_km(points):
-    return sum(haversine_km(points[index - 1], points[index]) for index in range(1, len(points)))
-
-
-def elevation_gain_m(points, threshold_m):
-    if threshold_m < 0:
-        fail("--elevation-threshold-m must be zero or greater.")
-
-    gain = 0.0
-    previous_elevation = None
-
-    for _, _, elevation in points:
-        if elevation is None:
-            continue
-
-        if previous_elevation is not None:
-            delta = elevation - previous_elevation
-            # GPS elevation is noisy, so this D+ is only approximate. A future
-            # version can use better filtering or Strava metadata instead.
-            if delta >= threshold_m:
-                gain += delta
-
-        previous_elevation = elevation
-
-    return gain
-
-
-def coordinates_for_geojson(points):
-    coordinates = []
-    for lon, lat, elevation in points:
-        coordinate = [lon, lat]
-        if elevation is not None:
-            coordinate.append(elevation)
-        coordinates.append(coordinate)
-    return coordinates
 
 
 def write_geojson_js(output_path, var_name, feature, force):
@@ -208,14 +97,7 @@ def main():
     points = read_track_points(gpx_path)
     distance_km = total_distance_km(points)
     gain_m = elevation_gain_m(points, args.elevation_threshold_m)
-    feature = {
-        "type": "Feature",
-        "geometry": {
-            "type": "LineString",
-            "coordinates": coordinates_for_geojson(points),
-        },
-        "properties": {},
-    }
+    feature = feature_from_points(points)
 
     write_geojson_js(output_path, args.var_name, feature, args.force)
     print_summary(args, len(points), distance_km, gain_m)
