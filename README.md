@@ -103,6 +103,23 @@ window.TRACK_DEMO_NAMUR = {
 
 5. Ajoutez éventuellement des miniatures SVG dans `photos/demo-namur/`, puis référencez-les avec un chemin relatif comme `./photos/demo-namur/photo-001-thumb.svg`.
 
+## Convertir un GPX manuellement
+
+Un script Python peut convertir une trace GPX en fichier JavaScript compatible avec le site :
+
+```bash
+python scripts/gpx_to_geojson_js.py input.gpx \
+  --id sortie-test \
+  --title "Sortie test" \
+  --date 2026-05-14 \
+  --var-name TRACK_SORTIE_TEST \
+  --output tracks/sortie-test.geojson.js
+```
+
+Le script crée un fichier `tracks/*.geojson.js` qui définit une variable globale `window.*`, puis affiche un résumé et un snippet à copier manuellement dans `data/runs.js`.
+
+Par défaut, le dénivelé positif ignore les hausses de moins de 3 m pour limiter le bruit GPS. Vous pouvez ajuster ce seuil avec `--elevation-threshold-m`. Si le fichier de sortie existe déjà, ajoutez `--force` pour l'écraser.
+
 ## Pourquoi pas `fetch()`, modules, npm ou serveur local ?
 
 Cette V1 cible un usage pédagogique et un démarrage par double-clic. Certains navigateurs limitent les chargements de fichiers locaux avec `fetch()` depuis `file:///`. Les modules JavaScript peuvent aussi introduire des contraintes de chargement selon le contexte local.

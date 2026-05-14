@@ -1,0 +1,4 @@
+# No external dependency for the GPX importer yet.
+# Future candidates:
+# Pillow
+# gpxpy
