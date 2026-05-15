@@ -1,14 +1,58 @@
 (function () {
+  var DEFAULT_CONFIG = {
+    siteTitle: "running-map",
+    map: {
+      initialCenter: [50.53, 5.75],
+      initialZoom: 10,
+      tileLayer: "osm",
+      defaultFitPadding: [36, 36]
+    },
+    tracks: {
+      defaultOpacity: 0.9,
+      defaultWeight: 5
+    },
+    sidebar: {
+      showDemoRuns: true,
+      showGeneratedRuns: true
+    },
+    photos: {
+      showPhotoMarkers: true,
+      maxPhotosPerRun: null
+    },
+    selection: {
+      selectedColor: "#ffcc00",
+      selectedWeight: 8,
+      selectedOpacity: 1.0,
+      dimOtherRuns: true,
+      dimmedOpacity: 0.25
+    }
+  };
+
+  var TILE_LAYERS = {
+    osm: {
+      url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      options: {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }
+    },
+    opentopomap: {
+      url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+      options: {
+        maxZoom: 17,
+        attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, SRTM | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a>'
+      }
+    }
+  };
+
+  var config = mergeConfig(DEFAULT_CONFIG, window.RUNNING_MAP_CONFIG || {});
   var map;
   var allRuns = [];
   var runLayers = {};
   var photoLayers = {};
   var sidebarSearchText = "";
   var sidebarYearFilter = "";
-  var defaultView = {
-    center: [50.53, 5.75],
-    zoom: 10
-  };
+  var selectedRunId = null;
 
   window.addEventListener("load", startApp);
 
@@ -18,36 +62,35 @@
       return;
     }
 
-    allRuns = []
-      .concat(window.RUNS || [])
-      .concat(window.GENERATED_RUNS || []);
+    applySiteTitle();
+
+    allRuns = getConfiguredRuns();
 
     initMap();
     createRunLayers();
     initSidebarControls();
     renderSidebar();
+    renderSelectedRunPanel();
     fitMapToVisibleRuns();
   }
 
   function initMap() {
-    map = L.map("map").setView(defaultView.center, defaultView.zoom);
+    var tileLayer = getConfiguredTileLayer();
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    map = L.map("map").setView(config.map.initialCenter, config.map.initialZoom);
+
+    L.tileLayer(tileLayer.url, tileLayer.options).addTo(map);
   }
 
   function createRunLayers() {
     allRuns.forEach(function (run) {
       var trackLayer = L.geoJSON(run.track, {
-        style: {
-          color: run.color,
-          weight: 5,
-          opacity: 0.9
-        },
+        style: getTrackStyle(run),
         onEachFeature: function (feature, layer) {
           layer.bindPopup(createRunPopup(run));
+          layer.on("click", function () {
+            selectRun(run.id);
+          });
         }
       });
 
@@ -66,6 +109,15 @@
   function createPhotoLayer(run) {
     var group = L.layerGroup();
     var photos = run.photos || [];
+    var maxPhotos = getMaxPhotosPerRun();
+
+    if (!config.photos.showPhotoMarkers) {
+      return group;
+    }
+
+    if (maxPhotos !== null) {
+      photos = photos.slice(0, maxPhotos);
+    }
 
     photos.forEach(function (photo) {
       var marker = L.marker([photo.lat, photo.lon], {
@@ -101,7 +153,7 @@
       list.appendChild(emptyMessage);
     }
 
-    updateRunsCount(filteredRuns.length);
+    updateRunsCount();
   }
 
   function initSidebarControls() {
@@ -134,6 +186,7 @@
 
     if (hideAllButton) {
       hideAllButton.addEventListener("click", function () {
+        clearSelection();
         setAllRunsVisibleOnMap(false);
       });
     }
@@ -225,19 +278,36 @@
     return text;
   }
 
-  function updateRunsCount(visibleCount) {
+  function updateRunsCount() {
     var count = document.getElementById("runs-count");
+    var visibleCount;
 
     if (!count) {
       return;
     }
 
-    count.textContent = visibleCount + " / " + allRuns.length + " courses affich\u00e9es";
+    visibleCount = getVisibleRunsCount();
+    count.textContent = visibleCount + " / " + allRuns.length + " courses visibles sur la carte";
+  }
+
+  function getVisibleRunsCount() {
+    var visibleCount = 0;
+
+    allRuns.forEach(function (run) {
+      if (run.visible) {
+        visibleCount += 1;
+      }
+    });
+
+    return visibleCount;
   }
 
   function createRunCard(run) {
     var card = document.createElement("article");
     card.className = "run-card";
+    if (run.id === selectedRunId) {
+      card.className += " is-selected";
+    }
     card.style.setProperty("--run-color", run.color);
 
     var header = document.createElement("div");
@@ -253,8 +323,16 @@
     });
 
     var titleBlock = document.createElement("div");
+    titleBlock.className = "run-title-block";
 
-    var title = document.createElement("h2");
+    var titleButton = document.createElement("button");
+    titleButton.type = "button";
+    titleButton.className = "run-title-button";
+    titleButton.addEventListener("click", function () {
+      selectRun(run.id);
+    });
+
+    var title = document.createElement("span");
     title.className = "run-title";
     title.textContent = run.title;
 
@@ -262,7 +340,8 @@
     date.className = "run-date";
     date.textContent = formatDate(run.date);
 
-    titleBlock.appendChild(title);
+    titleButton.appendChild(title);
+    titleBlock.appendChild(titleButton);
     titleBlock.appendChild(date);
     header.appendChild(checkbox);
     header.appendChild(titleBlock);
@@ -277,7 +356,7 @@
     button.className = "center-button";
     button.textContent = "Centrer";
     button.addEventListener("click", function () {
-      centerOnRun(run.id);
+      selectAndCenterRun(run.id);
     });
 
     card.appendChild(header);
@@ -315,39 +394,29 @@
       trackLayer.addTo(map);
       photosLayer.addTo(map);
     } else {
+      if (selectedRunId === runId) {
+        clearSelection();
+      }
       trackLayer.removeFrom(map);
       photosLayer.removeFrom(map);
     }
 
     setRunVisible(runId, visible);
+    updateRunsCount();
+    updateVisibleSidebarCheckboxes();
+    applySelectionStyles();
     fitMapToVisibleRuns();
   }
 
   function setAllRunsVisibleOnMap(visible) {
     allRuns.forEach(function (run) {
-      var trackLayer = runLayers[run.id];
-      var photosLayer = photoLayers[run.id];
-
       run.visible = visible;
-
-      if (trackLayer) {
-        if (visible) {
-          trackLayer.addTo(map);
-        } else {
-          trackLayer.removeFrom(map);
-        }
-      }
-
-      if (photosLayer) {
-        if (visible) {
-          photosLayer.addTo(map);
-        } else {
-          photosLayer.removeFrom(map);
-        }
-      }
+      setRunVisibilityOnMap(run.id, visible);
     });
 
     updateVisibleSidebarCheckboxes();
+    updateRunsCount();
+    applySelectionStyles();
     fitMapToVisibleRuns();
   }
 
@@ -371,8 +440,215 @@
 
     var bounds = layer.getBounds();
     if (bounds.isValid()) {
-      map.fitBounds(bounds, { padding: [36, 36], maxZoom: 15 });
+      map.fitBounds(bounds, { padding: config.map.defaultFitPadding, maxZoom: 15 });
     }
+  }
+
+  function selectAndCenterRun(runId) {
+    selectRun(runId);
+    centerOnRun(runId);
+  }
+
+  function selectRun(runId) {
+    var run = findRunById(runId);
+
+    if (!run) {
+      return;
+    }
+
+    selectedRunId = runId;
+
+    if (!run.visible) {
+      setRunVisibilityOnMap(runId, true);
+      setRunVisible(runId, true);
+      updateVisibleSidebarCheckboxes();
+      updateRunsCount();
+    }
+
+    applySelectionStyles();
+    renderSidebar();
+    renderSelectedRunPanel();
+  }
+
+  function clearSelection() {
+    selectedRunId = null;
+    applySelectionStyles();
+    renderSidebar();
+    renderSelectedRunPanel();
+  }
+
+  function applySelectionStyles() {
+    allRuns.forEach(function (run) {
+      var layer = runLayers[run.id];
+
+      if (!layer) {
+        return;
+      }
+
+      layer.setStyle(getTrackStyle(run));
+
+      if (run.id === selectedRunId) {
+        bringLayerToFront(layer);
+      }
+    });
+  }
+
+  function getTrackStyle(run) {
+    var isSelected = run.id === selectedRunId;
+    var shouldDim = Boolean(selectedRunId) && !isSelected && config.selection.dimOtherRuns;
+
+    if (isSelected) {
+      return {
+        color: config.selection.selectedColor === null ? run.color : config.selection.selectedColor,
+        weight: config.selection.selectedWeight,
+        opacity: config.selection.selectedOpacity
+      };
+    }
+
+    return {
+      color: run.color,
+      weight: config.tracks.defaultWeight,
+      opacity: shouldDim ? config.selection.dimmedOpacity : config.tracks.defaultOpacity
+    };
+  }
+
+  function bringLayerToFront(layer) {
+    if (typeof layer.bringToFront === "function") {
+      layer.bringToFront();
+      return;
+    }
+
+    if (typeof layer.eachLayer === "function") {
+      layer.eachLayer(function (childLayer) {
+        if (typeof childLayer.bringToFront === "function") {
+          childLayer.bringToFront();
+        }
+      });
+    }
+  }
+
+  function setRunVisibilityOnMap(runId, visible) {
+    var trackLayer = runLayers[runId];
+    var photosLayer = photoLayers[runId];
+
+    if (trackLayer) {
+      if (visible) {
+        trackLayer.addTo(map);
+      } else {
+        trackLayer.removeFrom(map);
+      }
+    }
+
+    if (photosLayer) {
+      if (visible) {
+        photosLayer.addTo(map);
+      } else {
+        photosLayer.removeFrom(map);
+      }
+    }
+  }
+
+  function renderSelectedRunPanel() {
+    var panel = document.getElementById("selected-run-panel");
+    var run = findRunById(selectedRunId);
+
+    if (!panel) {
+      return;
+    }
+
+    panel.innerHTML = "";
+
+    if (!run) {
+      var emptyMessage = document.createElement("p");
+      emptyMessage.className = "selection-empty";
+      emptyMessage.textContent = "Aucune course s\u00e9lectionn\u00e9e.";
+      panel.appendChild(emptyMessage);
+      return;
+    }
+
+    panel.appendChild(createSelectedRunContent(run));
+  }
+
+  function createSelectedRunContent(run) {
+    var content = document.createElement("div");
+    var heading = document.createElement("h2");
+    var meta = document.createElement("dl");
+    var actions = document.createElement("div");
+    var centerButton = document.createElement("button");
+    var hideButton = document.createElement("button");
+    var clearButton = document.createElement("button");
+
+    content.className = "selected-run-content";
+
+    heading.textContent = "Course s\u00e9lectionn\u00e9e";
+    content.appendChild(heading);
+    content.appendChild(createSelectedRunTitle(run));
+
+    meta.className = "selected-run-meta";
+    appendMeta(meta, "Date", formatDate(run.date));
+    appendMeta(meta, "Distance", formatDistance(run.distanceKm));
+    appendMeta(meta, "D\u00e9nivel\u00e9 +", formatElevation(run.elevationGainM));
+    appendMeta(meta, "ID", run.id);
+    appendMeta(meta, "Photos", formatPhotoCount(run));
+    content.appendChild(meta);
+
+    actions.className = "selection-actions";
+
+    centerButton.type = "button";
+    centerButton.textContent = "Centrer";
+    centerButton.addEventListener("click", function () {
+      selectAndCenterRun(run.id);
+    });
+
+    hideButton.type = "button";
+    hideButton.textContent = "Masquer";
+    hideButton.addEventListener("click", function () {
+      toggleRunVisibility(run.id, false);
+    });
+
+    clearButton.type = "button";
+    clearButton.textContent = "Effacer s\u00e9lection";
+    clearButton.addEventListener("click", clearSelection);
+
+    actions.appendChild(centerButton);
+    actions.appendChild(hideButton);
+    actions.appendChild(clearButton);
+    content.appendChild(actions);
+
+    return content;
+  }
+
+  function createSelectedRunTitle(run) {
+    var title = document.createElement("p");
+    title.className = "selected-run-title";
+    title.textContent = run.title;
+    title.style.setProperty("--run-color", run.color);
+    return title;
+  }
+
+  function appendMeta(list, label, value) {
+    var term = document.createElement("dt");
+    var detail = document.createElement("dd");
+
+    term.textContent = label;
+    detail.textContent = value;
+
+    list.appendChild(term);
+    list.appendChild(detail);
+  }
+
+  function formatPhotoCount(run) {
+    var count = (run.photos || []).length;
+
+    if (count === 0) {
+      return "0";
+    }
+
+    if (count === 1) {
+      return "1 photo";
+    }
+
+    return count + " photos";
   }
 
   function fitMapToVisibleRuns() {
@@ -391,9 +667,9 @@
     });
 
     if (hasVisibleRun) {
-      map.fitBounds(bounds, { padding: [36, 36] });
+      map.fitBounds(bounds, { padding: config.map.defaultFitPadding });
     } else {
-      map.setView(defaultView.center, defaultView.zoom);
+      map.setView(config.map.initialCenter, config.map.initialZoom);
     }
   }
 
@@ -468,9 +744,84 @@
     list.innerHTML = '<div class="app-error">Impossible de démarrer la carte. Vérifiez que Leaflet, les traces et data/runs.js sont chargés avant app.js.</div>';
   }
 
+  function mergeConfig(defaults, overrides) {
+    var merged = {};
+
+    Object.keys(defaults).forEach(function (key) {
+      var defaultValue = defaults[key];
+      var overrideValue = overrides[key];
+
+      if (isPlainObject(defaultValue)) {
+        merged[key] = mergeConfig(defaultValue, isPlainObject(overrideValue) ? overrideValue : {});
+      } else if (overrideValue !== undefined) {
+        merged[key] = overrideValue;
+      } else {
+        merged[key] = copyConfigValue(defaultValue);
+      }
+    });
+
+    return merged;
+  }
+
+  function isPlainObject(value) {
+    return Boolean(value) && Object.prototype.toString.call(value) === "[object Object]";
+  }
+
+  function copyConfigValue(value) {
+    if (Array.isArray(value)) {
+      return value.slice();
+    }
+
+    return value;
+  }
+
+  function applySiteTitle() {
+    var heading = document.querySelector(".sidebar-header h1");
+
+    document.title = config.siteTitle;
+
+    if (heading) {
+      heading.textContent = config.siteTitle;
+    }
+  }
+
+  function getConfiguredRuns() {
+    var demoRuns = config.sidebar.showDemoRuns ? window.RUNS || [] : [];
+    var generatedRuns = config.sidebar.showGeneratedRuns ? window.GENERATED_RUNS || [] : [];
+
+    return [].concat(demoRuns).concat(generatedRuns);
+  }
+
+  function getConfiguredTileLayer() {
+    var tileLayerName = config.map.tileLayer;
+
+    if (TILE_LAYERS[tileLayerName]) {
+      return TILE_LAYERS[tileLayerName];
+    }
+
+    if (window.console && console.warn) {
+      console.warn("Fond de carte inconnu: " + tileLayerName + ". Utilisation de osm.");
+    }
+
+    return TILE_LAYERS.osm;
+  }
+
+  function getMaxPhotosPerRun() {
+    var value = config.photos.maxPhotosPerRun;
+
+    if (typeof value === "number" && isFinite(value) && value > 0) {
+      return Math.floor(value);
+    }
+
+    return null;
+  }
+
   window.runningMap = {
     centerOnRun: centerOnRun,
+    clearSelection: clearSelection,
     fitMapToVisibleRuns: fitMapToVisibleRuns,
+    selectAndCenterRun: selectAndCenterRun,
+    selectRun: selectRun,
     setAllRunsVisibleOnMap: setAllRunsVisibleOnMap,
     toggleRunVisibility: toggleRunVisibility
   };

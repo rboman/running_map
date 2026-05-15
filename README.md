@@ -16,6 +16,54 @@ file:///.../running-map/index.html
 
 La carte utilise Leaflet en local depuis `vendor/leaflet/`. Le fond de carte OpenStreetMap vient d'Internet : sans connexion, l'interface et les traces restent chargées, mais les tuiles de fond peuvent ne pas apparaître.
 
+## Configuration statique
+
+Les reglages simples du site peuvent etre ajustes dans :
+
+```text
+config/site-config.js
+```
+
+Ce fichier est charge par une balise `<script>` classique avant `app.js`, ce qui
+garde le fonctionnement par double-clic sur `index.html`. Il ne s'agit pas d'un
+fichier JSON : aucun `fetch()` n'est necessaire.
+
+Configuration minimale pour garder les valeurs par defaut :
+
+```js
+window.RUNNING_MAP_CONFIG = {};
+```
+
+Exemple de configuration :
+
+```js
+window.RUNNING_MAP_CONFIG = {
+  siteTitle: "Mes parcours",
+  map: {
+    initialCenter: [50.53, 5.75],
+    initialZoom: 10,
+    tileLayer: "osm",
+    defaultFitPadding: [36, 36]
+  },
+  tracks: {
+    defaultOpacity: 0.9,
+    defaultWeight: 5
+  },
+  sidebar: {
+    showDemoRuns: true,
+    showGeneratedRuns: true
+  },
+  photos: {
+    showPhotoMarkers: true,
+    maxPhotosPerRun: null
+  }
+};
+```
+
+`map.tileLayer` accepte actuellement `osm` et `opentopomap`. Une valeur inconnue
+retombe sur `osm`. Pour `photos.maxPhotosPerRun`, `null` signifie aucune limite ;
+un nombre positif limite le nombre de photos affichees par course.
+
 ## Fichiers Leaflet vendored
 
 Les fichiers Leaflet 1.9.4 sont placés dans :
