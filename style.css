@@ -1,5 +1,6 @@
 :root {
-  --sidebar-width: 340px;
+  --left-panel-width: 320px;
+  --right-panel-width: 380px;
   --page-bg: #f6f4ef;
   --panel-bg: #ffffff;
   --text: #202124;
@@ -33,18 +34,25 @@ select {
 }
 
 .app-shell {
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--left-panel-width) minmax(0, 1fr) var(--right-panel-width);
   min-height: 100vh;
 }
 
-.sidebar {
-  width: var(--sidebar-width);
-  max-width: 100%;
+.left-panel,
+.right-panel {
   height: 100vh;
   overflow-y: auto;
-  border-right: 1px solid var(--border);
   background: var(--panel-bg);
   padding: 20px;
+}
+
+.left-panel {
+  border-right: 1px solid var(--border);
+}
+
+.right-panel {
+  border-left: 1px solid var(--border);
 }
 
 .sidebar-header {
@@ -125,9 +133,7 @@ select {
 }
 
 .selection-panel {
-  margin-bottom: 18px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--border);
+  min-height: 100%;
 }
 
 .selection-empty {
@@ -362,8 +368,8 @@ select {
 }
 
 .map-panel {
-  flex: 1;
   min-width: 0;
+  height: 100vh;
 }
 
 #map {
@@ -408,20 +414,34 @@ select {
   color: #8a1f1f;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .app-shell {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(360px, 58vh) auto;
   }
 
-  .sidebar {
-    width: 100%;
+  .left-panel,
+  .right-panel {
     height: auto;
-    max-height: 42vh;
+    max-height: none;
+  }
+
+  .left-panel {
     border-right: 0;
     border-bottom: 1px solid var(--border);
   }
 
-  #map {
+  .map-panel {
     height: 58vh;
+    min-height: 360px;
+  }
+
+  #map {
+    height: 100%;
+  }
+
+  .right-panel {
+    border-left: 0;
+    border-top: 1px solid var(--border);
   }
 }

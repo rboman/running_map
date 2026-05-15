@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <main class="app-shell">
-      <aside class="sidebar" aria-label="Liste des courses">
+    <div class="app-shell">
+      <aside class="left-panel" aria-label="Liste des courses">
         <header class="sidebar-header">
           <h1>running-map</h1>
           <p>Parcours de démonstration</p>
@@ -28,14 +28,17 @@
 
           <p id="runs-count" class="runs-count"></p>
         </section>
-        <section id="selected-run-panel" class="selection-panel" aria-live="polite"></section>
         <section id="runs-list" class="runs-list" aria-live="polite"></section>
       </aside>
 
-      <section class="map-panel" aria-label="Carte des parcours">
+      <main class="map-panel" aria-label="Carte des parcours">
         <div id="map"></div>
-      </section>
-    </main>
+      </main>
+
+      <aside class="right-panel" aria-label="D&eacute;tails de la course s&eacute;lectionn&eacute;e">
+        <section id="selected-run-panel" class="selection-panel" aria-live="polite"></section>
+      </aside>
+    </div>
 
     <script src="./vendor/leaflet/leaflet.js"></script>
     <script src="./tracks/demo-stavelot.geojson.js"></script>
