@@ -1,5 +1,5 @@
 window.RUNS = [
-  {
+/*   {
     id: "demo-stavelot",
     title: "Démo Stavelot",
     date: "2026-05-09",
@@ -40,5 +40,5 @@ window.RUNS = [
         caption: "Passage fictif près de la Meuse"
       }
     ]
-  }
+  } */
 ];

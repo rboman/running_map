@@ -1,4 +1,6 @@
 window.RUNNING_MAP_CONFIG = {
+  siteTitle: "🏃🏻‍➡️running-map",
+  siteSubtitle: "Mes marches ADEPS",
   tracks: {
     defaultOpacity: 0.85,
     defaultWeight: 5

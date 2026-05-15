@@ -1,6 +1,7 @@
 (function () {
   var DEFAULT_CONFIG = {
     siteTitle: "running-map",
+    siteSubtitle: "Parcours de d\u00e9monstration",
     map: {
       initialCenter: [50.53, 5.75],
       initialZoom: 10,
@@ -74,7 +75,7 @@
       return;
     }
 
-    applySiteTitle();
+    applySiteHeader();
 
     allRuns = getConfiguredRuns();
     showAllRunsByDefault();
@@ -1304,13 +1305,18 @@
     return value;
   }
 
-  function applySiteTitle() {
+  function applySiteHeader() {
     var heading = document.querySelector(".sidebar-header h1");
+    var subtitle = document.querySelector(".sidebar-header p");
 
     document.title = config.siteTitle;
 
     if (heading) {
       heading.textContent = config.siteTitle;
+    }
+
+    if (subtitle) {
+      subtitle.textContent = config.siteSubtitle;
     }
   }
 

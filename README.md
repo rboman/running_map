@@ -39,6 +39,7 @@ Exemple de configuration :
 ```js
 window.RUNNING_MAP_CONFIG = {
   siteTitle: "Mes parcours",
+  siteSubtitle: "Courses, randos et traces GPX",
   map: {
     initialCenter: [50.53, 5.75],
     initialZoom: 10,
