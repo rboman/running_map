@@ -470,12 +470,28 @@ select {
 }
 
 .photo-lightbox__caption {
-  grid-column: 1 / -1;
   margin: 0;
   color: var(--muted);
   font-size: 13px;
   line-height: 1.35;
   text-align: center;
+}
+
+.photo-lightbox__footer {
+  position: fixed;
+  left: 50%;
+  bottom: 4vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  gap: 10px;
+  align-items: center;
+  width: min(640px, 88vw);
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  transform: translateX(-50%);
 }
 
 .photo-lightbox__button {
@@ -499,21 +515,10 @@ select {
 
 .photo-lightbox__button--prev,
 .photo-lightbox__button--next {
-  position: absolute;
-  top: 50%;
   width: 36px;
-  height: 48px;
+  height: 36px;
   font-size: 30px;
   line-height: 1;
-  transform: translateY(-50%);
-}
-
-.photo-lightbox__button--prev {
-  left: 8px;
-}
-
-.photo-lightbox__button--next {
-  right: 8px;
 }
 
 .photo-lightbox__button--close {
