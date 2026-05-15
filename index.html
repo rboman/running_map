@@ -41,6 +41,17 @@
       </aside>
     </div>
 
+    <div id="photo-lightbox" class="photo-lightbox" aria-hidden="true">
+      <div class="photo-lightbox__backdrop" data-lightbox-close></div>
+      <div class="photo-lightbox__content" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+        <button class="photo-lightbox__button photo-lightbox__button--close" type="button" aria-label="Fermer la photo">&times;</button>
+        <button class="photo-lightbox__button photo-lightbox__button--prev" type="button" aria-label="Photo pr&eacute;c&eacute;dente">&lsaquo;</button>
+        <img class="photo-lightbox__image" alt="">
+        <button class="photo-lightbox__button photo-lightbox__button--next" type="button" aria-label="Photo suivante">&rsaquo;</button>
+        <p class="photo-lightbox__caption"></p>
+      </div>
+    </div>
+
     <script src="./vendor/leaflet/leaflet.js"></script>
 <!--     <script src="./tracks/demo-stavelot.geojson.js"></script>
     <script src="./tracks/demo-liege.geojson.js"></script> -->
