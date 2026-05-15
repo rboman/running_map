@@ -1,5 +1,5 @@
 window.RUNNING_MAP_CONFIG = {
-  PHOTO_BASE_URL: "https://pub-3f924d453f9647d78e861450e9ee52bf.r2.dev",
+  PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev",
   siteTitle: "🏃🏻‍➡️running-map",
   siteSubtitle: "Mes marches ADEPS",
   tracks: {
