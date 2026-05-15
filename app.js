@@ -23,7 +23,7 @@
       maxPhotoMarkers: 20
     },
     selection: {
-      selectedColor: "#ffcc00",
+      selectedColor: null,
       selectedWeight: 8,
       selectedOpacity: 1.0,
       dimOtherRuns: true,
@@ -277,7 +277,7 @@
       }
 
       L.marker(points[index], {
-        icon: createDirectionArrowIcon(angle),
+        icon: createDirectionArrowIcon(angle, run.color),
         interactive: false,
         keyboard: false,
         pane: "run-direction-markers",
@@ -342,10 +342,10 @@
     return Math.atan2(deltaY, deltaX) * 180 / Math.PI;
   }
 
-  function createDirectionArrowIcon(angleDeg) {
+  function createDirectionArrowIcon(angleDeg, color) {
     return L.divIcon({
       className: "run-direction-arrow-icon",
-      html: '<span class="run-direction-arrow" style="transform: rotate(' + angleDeg + 'deg);">\u27a4</span>',
+      html: '<span class="run-direction-arrow" style="--run-color: ' + escapeHtml(color) + '; transform: rotate(' + angleDeg + 'deg);">\u27a4</span>',
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     });

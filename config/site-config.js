@@ -11,7 +11,7 @@ window.RUNNING_MAP_CONFIG = {
     maxPhotoMarkers: 20
   },
   selection: {
-    selectedColor: "#ffcc00",
+    selectedColor: null,
     selectedWeight: 8,
     selectedOpacity: 1.0,
     dimOtherRuns: true,

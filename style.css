@@ -519,7 +519,7 @@ select {
   justify-content: center;
   width: 24px;
   height: 24px;
-  color: #ffcc00;
+  color: var(--run-color, #176f75);
   font-size: 18px;
   line-height: 1;
   opacity: 0.72;
