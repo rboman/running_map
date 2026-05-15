@@ -8,7 +8,7 @@
       defaultFitPadding: [36, 36]
     },
     tracks: {
-      defaultOpacity: 0.9,
+      defaultOpacity: 0.85,
       defaultWeight: 5
     },
     sidebar: {
@@ -24,7 +24,7 @@
       selectedWeight: 8,
       selectedOpacity: 1.0,
       dimOtherRuns: true,
-      dimmedOpacity: 0.25
+      dimmedOpacity: 0.45
     }
   };
 

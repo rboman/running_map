@@ -5,7 +5,7 @@ window.GENERATED_RUNS = [
     date: "2025-01-19",
     distanceKm: 19.78,
     elevationGainM: 586,
-    color: "#1f78b4",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-01-19-aywaille"],
     photos: []
@@ -16,7 +16,7 @@ window.GENERATED_RUNS = [
     date: "2025-01-26",
     distanceKm: 20.41,
     elevationGainM: 650,
-    color: "#e66100",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-01-26-beaufays"],
     photos: []
@@ -27,7 +27,7 @@ window.GENERATED_RUNS = [
     date: "2025-02-02",
     distanceKm: 20.67,
     elevationGainM: 429,
-    color: "#33a02c",
+    color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-02-spa"],
     photos: []
@@ -38,7 +38,7 @@ window.GENERATED_RUNS = [
     date: "2025-02-09",
     distanceKm: 20.12,
     elevationGainM: 468,
-    color: "#6a3d9a",
+    color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-09-havelange-harze"],
     photos: []
@@ -49,7 +49,7 @@ window.GENERATED_RUNS = [
     date: "2025-02-16",
     distanceKm: 26.45,
     elevationGainM: 604,
-    color: "#b15928",
+    color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-16-filot"],
     photos: []
@@ -60,7 +60,7 @@ window.GENERATED_RUNS = [
     date: "2025-02-23",
     distanceKm: 21.00,
     elevationGainM: 451,
-    color: "#a6cee3",
+    color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-23-huy"],
     photos: []
@@ -71,7 +71,7 @@ window.GENERATED_RUNS = [
     date: "2025-03-09",
     distanceKm: 20.63,
     elevationGainM: 487,
-    color: "#fb9a99",
+    color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-09-oneux-comblain-au-pont"],
     photos: []
@@ -82,7 +82,7 @@ window.GENERATED_RUNS = [
     date: "2025-03-16",
     distanceKm: 21.03,
     elevationGainM: 496,
-    color: "#fdbf6f",
+    color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-16-bolland-herve"],
     photos: []
@@ -93,7 +93,7 @@ window.GENERATED_RUNS = [
     date: "2025-03-23",
     distanceKm: 20.09,
     elevationGainM: 747,
-    color: "#1f78b4",
+    color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-23-trooz"],
     photos: []
@@ -104,7 +104,7 @@ window.GENERATED_RUNS = [
     date: "2025-03-30",
     distanceKm: 20.44,
     elevationGainM: 463,
-    color: "#e66100",
+    color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-30-sart-lez-spa"],
     photos: []
@@ -115,7 +115,7 @@ window.GENERATED_RUNS = [
     date: "2025-04-20",
     distanceKm: 20.51,
     elevationGainM: 655,
-    color: "#33a02c",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-04-20-chevron"],
     photos: []
@@ -126,7 +126,7 @@ window.GENERATED_RUNS = [
     date: "2025-04-27",
     distanceKm: 20.20,
     elevationGainM: 377,
-    color: "#6a3d9a",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-04-27-charneux"],
     photos: []
@@ -137,7 +137,7 @@ window.GENERATED_RUNS = [
     date: "2025-05-01",
     distanceKm: 23.29,
     elevationGainM: 332,
-    color: "#b15928",
+    color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-01-francorchamps"],
     photos: []
@@ -148,7 +148,7 @@ window.GENERATED_RUNS = [
     date: "2025-05-11",
     distanceKm: 20.30,
     elevationGainM: 462,
-    color: "#a6cee3",
+    color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-11-spa"],
     photos: []
@@ -159,7 +159,7 @@ window.GENERATED_RUNS = [
     date: "2025-05-18",
     distanceKm: 19.84,
     elevationGainM: 503,
-    color: "#fb9a99",
+    color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-18-vien-anthisnes"],
     photos: []
@@ -170,7 +170,7 @@ window.GENERATED_RUNS = [
     date: "2025-05-25",
     distanceKm: 20.90,
     elevationGainM: 186,
-    color: "#fdbf6f",
+    color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-25-pousset"],
     photos: []
@@ -181,7 +181,7 @@ window.GENERATED_RUNS = [
     date: "2025-06-01",
     distanceKm: 26.20,
     elevationGainM: 557,
-    color: "#1f78b4",
+    color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-01-herbiester"],
     photos: []
@@ -192,7 +192,7 @@ window.GENERATED_RUNS = [
     date: "2025-06-08",
     distanceKm: 14.78,
     elevationGainM: 124,
-    color: "#e66100",
+    color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-08-slins-fexhes-juprelle"],
     photos: []
@@ -203,7 +203,7 @@ window.GENERATED_RUNS = [
     date: "2025-06-15",
     distanceKm: 20.33,
     elevationGainM: 515,
-    color: "#33a02c",
+    color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-15-banneux"],
     photos: []
@@ -214,7 +214,7 @@ window.GENERATED_RUNS = [
     date: "2025-06-29",
     distanceKm: 19.09,
     elevationGainM: 436,
-    color: "#6a3d9a",
+    color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-29-cerexhe-heuseux"],
     photos: []
@@ -225,7 +225,7 @@ window.GENERATED_RUNS = [
     date: "2025-07-06",
     distanceKm: 21.13,
     elevationGainM: 560,
-    color: "#b15928",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-06-solwaster"],
     photos: []
@@ -236,7 +236,7 @@ window.GENERATED_RUNS = [
     date: "2025-07-13",
     distanceKm: 19.25,
     elevationGainM: 255,
-    color: "#a6cee3",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-13-saint-georges-sur-meuse"],
     photos: []
@@ -247,7 +247,7 @@ window.GENERATED_RUNS = [
     date: "2025-07-20",
     distanceKm: 19.32,
     elevationGainM: 606,
-    color: "#fb9a99",
+    color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-20-lorce"],
     photos: []
@@ -258,7 +258,7 @@ window.GENERATED_RUNS = [
     date: "2025-07-27",
     distanceKm: 20.65,
     elevationGainM: 591,
-    color: "#fdbf6f",
+    color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-27-rahier"],
     photos: []
@@ -269,7 +269,7 @@ window.GENERATED_RUNS = [
     date: "2025-08-03",
     distanceKm: 20.66,
     elevationGainM: 434,
-    color: "#1f78b4",
+    color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-03-ferrieres"],
     photos: []
@@ -280,7 +280,7 @@ window.GENERATED_RUNS = [
     date: "2025-08-10",
     distanceKm: 20.07,
     elevationGainM: 233,
-    color: "#e66100",
+    color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-10-vaux-et-borset"],
     photos: []
@@ -291,7 +291,7 @@ window.GENERATED_RUNS = [
     date: "2025-08-17",
     distanceKm: 25.11,
     elevationGainM: 355,
-    color: "#33a02c",
+    color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-17-ellemelle"],
     photos: []
@@ -302,7 +302,7 @@ window.GENERATED_RUNS = [
     date: "2025-08-24",
     distanceKm: 24.71,
     elevationGainM: 678,
-    color: "#6a3d9a",
+    color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-24-xhoris"],
     photos: []
@@ -313,7 +313,7 @@ window.GENERATED_RUNS = [
     date: "2025-08-31",
     distanceKm: 25.81,
     elevationGainM: 478,
-    color: "#b15928",
+    color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-31-louveigne"],
     photos: []
@@ -324,7 +324,7 @@ window.GENERATED_RUNS = [
     date: "2025-09-07",
     distanceKm: 19.35,
     elevationGainM: 472,
-    color: "#a6cee3",
+    color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-07-sart-lez-spa"],
     photos: []
@@ -335,7 +335,7 @@ window.GENERATED_RUNS = [
     date: "2025-09-14",
     distanceKm: 29.50,
     elevationGainM: 835,
-    color: "#fb9a99",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-14-harze"],
     photos: []
@@ -346,7 +346,7 @@ window.GENERATED_RUNS = [
     date: "2025-09-21",
     distanceKm: 18.85,
     elevationGainM: 413,
-    color: "#fdbf6f",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-21-stembert"],
     photos: []
@@ -357,7 +357,7 @@ window.GENERATED_RUNS = [
     date: "2025-09-28",
     distanceKm: 30.85,
     elevationGainM: 758,
-    color: "#1f78b4",
+    color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-28-lince"],
     photos: []
@@ -368,7 +368,7 @@ window.GENERATED_RUNS = [
     date: "2025-10-05",
     distanceKm: 20.77,
     elevationGainM: 724,
-    color: "#e66100",
+    color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-05-chaudfontaine"],
     photos: []
@@ -379,7 +379,7 @@ window.GENERATED_RUNS = [
     date: "2025-10-12",
     distanceKm: 19.94,
     elevationGainM: 563,
-    color: "#33a02c",
+    color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-12-esneux"],
     photos: []
@@ -390,7 +390,7 @@ window.GENERATED_RUNS = [
     date: "2025-10-19",
     distanceKm: 19.75,
     elevationGainM: 669,
-    color: "#6a3d9a",
+    color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-19-fraipont"],
     photos: []
@@ -401,7 +401,7 @@ window.GENERATED_RUNS = [
     date: "2025-10-26",
     distanceKm: 19.92,
     elevationGainM: 556,
-    color: "#b15928",
+    color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-26-fraiture-sprimont"],
     photos: []
@@ -412,7 +412,7 @@ window.GENERATED_RUNS = [
     date: "2025-11-02",
     distanceKm: 20.46,
     elevationGainM: 458,
-    color: "#a6cee3",
+    color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-02-awirs-flemalle"],
     photos: []
@@ -423,7 +423,7 @@ window.GENERATED_RUNS = [
     date: "2025-11-09",
     distanceKm: 19.69,
     elevationGainM: 292,
-    color: "#fb9a99",
+    color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-09-huy-la-sarte"],
     photos: []
@@ -434,7 +434,7 @@ window.GENERATED_RUNS = [
     date: "2025-11-16",
     distanceKm: 19.70,
     elevationGainM: 437,
-    color: "#fdbf6f",
+    color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-16-villers-aux-tours"],
     photos: []
@@ -445,7 +445,7 @@ window.GENERATED_RUNS = [
     date: "2025-11-23",
     distanceKm: 20.15,
     elevationGainM: 296,
-    color: "#1f78b4",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-23-amay"],
     photos: []
@@ -456,7 +456,7 @@ window.GENERATED_RUNS = [
     date: "2025-11-30",
     distanceKm: 19.75,
     elevationGainM: 271,
-    color: "#e66100",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-30-saint-georges"],
     photos: []
@@ -467,7 +467,7 @@ window.GENERATED_RUNS = [
     date: "2025-12-07",
     distanceKm: 20.24,
     elevationGainM: 378,
-    color: "#33a02c",
+    color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-12-07-my-ferrieres"],
     photos: []
@@ -478,7 +478,7 @@ window.GENERATED_RUNS = [
     date: "2025-12-14",
     distanceKm: 21.62,
     elevationGainM: 518,
-    color: "#6a3d9a",
+    color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-12-14-vieuxville-domaine-palogne"],
     photos: []
@@ -489,7 +489,7 @@ window.GENERATED_RUNS = [
     date: "2025-12-21",
     distanceKm: 19.53,
     elevationGainM: 432,
-    color: "#b15928",
+    color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-12-21-fize-fontaine"],
     photos: []
@@ -500,7 +500,7 @@ window.GENERATED_RUNS = [
     date: "2026-01-04",
     distanceKm: 20.29,
     elevationGainM: 329,
-    color: "#a6cee3",
+    color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-01-04-fraiture-en-condroz"],
     photos: []
@@ -511,7 +511,7 @@ window.GENERATED_RUNS = [
     date: "2026-01-11",
     distanceKm: 21.18,
     elevationGainM: 354,
-    color: "#fb9a99",
+    color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2026-01-11-wonck"],
     photos: []
@@ -522,7 +522,7 @@ window.GENERATED_RUNS = [
     date: "2026-01-18",
     distanceKm: 21.21,
     elevationGainM: 619,
-    color: "#fdbf6f",
+    color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2026-01-18-aywaille"],
     photos: []
@@ -533,7 +533,7 @@ window.GENERATED_RUNS = [
     date: "2026-02-01",
     distanceKm: 21.64,
     elevationGainM: 669,
-    color: "#1f78b4",
+    color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-01-spa"],
     photos: []
@@ -544,7 +544,7 @@ window.GENERATED_RUNS = [
     date: "2026-02-08",
     distanceKm: 22.86,
     elevationGainM: 768,
-    color: "#e66100",
+    color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-08-harze-havelange"],
     photos: []
@@ -555,7 +555,7 @@ window.GENERATED_RUNS = [
     date: "2026-02-15",
     distanceKm: 19.26,
     elevationGainM: 386,
-    color: "#33a02c",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-15-filot"],
     photos: []
@@ -566,7 +566,7 @@ window.GENERATED_RUNS = [
     date: "2026-02-22",
     distanceKm: 20.43,
     elevationGainM: 180,
-    color: "#6a3d9a",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-22-wasseiges"],
     photos: []
@@ -577,7 +577,7 @@ window.GENERATED_RUNS = [
     date: "2026-03-01",
     distanceKm: 21.96,
     elevationGainM: 508,
-    color: "#b15928",
+    color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-01-theux-la-reid"],
     photos: []
@@ -588,7 +588,7 @@ window.GENERATED_RUNS = [
     date: "2026-03-08",
     distanceKm: 20.43,
     elevationGainM: 506,
-    color: "#a6cee3",
+    color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-08-oneux-comblain-au-pont"],
     photos: []
@@ -599,7 +599,7 @@ window.GENERATED_RUNS = [
     date: "2026-03-15",
     distanceKm: 20.60,
     elevationGainM: 526,
-    color: "#fb9a99",
+    color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-15-bolland"],
     photos: []
@@ -610,7 +610,7 @@ window.GENERATED_RUNS = [
     date: "2026-03-22",
     distanceKm: 19.81,
     elevationGainM: 706,
-    color: "#fdbf6f",
+    color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-22-trooz"],
     photos: []
@@ -621,7 +621,7 @@ window.GENERATED_RUNS = [
     date: "2026-03-29",
     distanceKm: 19.79,
     elevationGainM: 549,
-    color: "#1f78b4",
+    color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-29-sart-lez-spa"],
     photos: []
@@ -632,7 +632,7 @@ window.GENERATED_RUNS = [
     date: "2026-04-04",
     distanceKm: 18.18,
     elevationGainM: 616,
-    color: "#e66100",
+    color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2026-04-04-olne"],
     photos: []
@@ -643,7 +643,7 @@ window.GENERATED_RUNS = [
     date: "2026-04-19",
     distanceKm: 21.84,
     elevationGainM: 323,
-    color: "#33a02c",
+    color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-04-19-lanaye"],
     photos: []
@@ -654,7 +654,7 @@ window.GENERATED_RUNS = [
     date: "2026-04-26",
     distanceKm: 20.25,
     elevationGainM: 458,
-    color: "#6a3d9a",
+    color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2026-04-26-charneux"],
     photos: []
@@ -665,7 +665,7 @@ window.GENERATED_RUNS = [
     date: "2026-05-03",
     distanceKm: 21.88,
     elevationGainM: 565,
-    color: "#b15928",
+    color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2026-05-03-wanne"],
     photos: []
@@ -676,7 +676,7 @@ window.GENERATED_RUNS = [
     date: "2026-05-10",
     distanceKm: 20.93,
     elevationGainM: 574,
-    color: "#a6cee3",
+    color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2026-05-10-spa"],
     photos: []

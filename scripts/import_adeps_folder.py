@@ -19,14 +19,16 @@ from gpx_utils import (
 
 
 COLORS = [
-    "#1f78b4",
-    "#e66100",
-    "#33a02c",
-    "#6a3d9a",
-    "#b15928",
-    "#a6cee3",
-    "#fb9a99",
-    "#fdbf6f",
+    "#D55E00",
+    "#0072B2",
+    "#009E73",
+    "#CC79A7",
+    "#E69F00",
+    "#7F3C8D",
+    "#3969AC",
+    "#E73F74",
+    "#A6761D",
+    "#666666",
 ]
 
 SKIPPED_TREE_NAMES = set(
