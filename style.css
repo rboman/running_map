@@ -428,6 +428,9 @@ select {
 }
 
 .photo-lightbox {
+  --photo-lightbox-edge-gap: 4vh;
+  --photo-lightbox-footer-gap: 14px;
+  --photo-lightbox-footer-height: 52px;
   display: none;
   position: fixed;
   inset: 0;
@@ -437,6 +440,8 @@ select {
 .photo-lightbox.is-open {
   display: grid;
   place-items: center;
+  box-sizing: border-box;
+  padding: var(--photo-lightbox-edge-gap) 4vw calc(var(--photo-lightbox-edge-gap) + var(--photo-lightbox-footer-height) + var(--photo-lightbox-footer-gap));
 }
 
 .photo-lightbox__backdrop {
@@ -454,7 +459,7 @@ select {
   gap: 10px;
   justify-items: center;
   max-width: 92vw;
-  max-height: 92vh;
+  max-height: calc(100vh - var(--photo-lightbox-edge-gap) - var(--photo-lightbox-edge-gap) - var(--photo-lightbox-footer-height) - var(--photo-lightbox-footer-gap));
   padding: 18px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.96);
@@ -464,7 +469,7 @@ select {
 .photo-lightbox__image {
   display: block;
   max-width: 88vw;
-  max-height: 78vh;
+  max-height: calc(100vh - var(--photo-lightbox-edge-gap) - var(--photo-lightbox-edge-gap) - var(--photo-lightbox-footer-height) - var(--photo-lightbox-footer-gap) - 36px);
   object-fit: contain;
   background: #f6f4ef;
 }
@@ -487,6 +492,7 @@ select {
   gap: 10px;
   align-items: center;
   width: min(640px, 88vw);
+  min-height: var(--photo-lightbox-footer-height);
   box-sizing: border-box;
   padding: 8px 10px;
   border-radius: 8px;
