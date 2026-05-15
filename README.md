@@ -1,126 +1,141 @@
 # running-map
 
-Mini-site statique pédagogique pour afficher des parcours de course à pied sur une carte Leaflet.
+Mini-site statique pour afficher des marches et courses sur une carte Leaflet.
 
-Cette V1 est volontairement simple : HTML, CSS et JavaScript classiques, sans backend, sans build system et sans serveur local obligatoire.
+Le projet reste volontairement simple : un fichier `index.html`, du CSS, du JavaScript classique, des données chargées par balises `<script>`, et quelques scripts Python utilitaires pour générer les fichiers statiques à partir de traces GPX.
+
+Il n'y a pas de build, pas de serveur local obligatoire, pas de `fetch()` pour les données locales, pas de framework front-end.
+
+## État actuel
+
+Le site affiche aujourd'hui une carte de marches ADEPS importées depuis des dossiers GPX, avec :
+
+- une carte Leaflet et des tuiles OpenStreetMap ou OpenTopoMap ;
+- une liste latérale avec recherche, filtre par année, compteur et totaux ;
+- un panneau de détails pour la course sélectionnée ;
+- une sélection unique, avec trace mise en évidence, autres traces atténuées, marqueurs de départ/arrivée et flèches de direction ;
+- des photos par parcours, sous forme de galerie, marqueurs GPS sur la carte, popup et lightbox ;
+- une configuration statique dans `config/site-config.js` ;
+- des fichiers générés séparés pour les traces et les métadonnées importées.
+
+Dans ce clone, les fichiers générés actuels contiennent 62 parcours importés :
+
+```text
+data/generated-runs.js
+tracks/generated-tracks.js
+```
+
+Les exemples pédagogiques historiques existent encore dans `data/runs.js` et `tracks/demo-*.geojson.js`, mais ils sont commentés dans `index.html` et `data/runs.js`.
 
 ## Ouvrir le site localement
 
-Depuis un clone local, ouvrez directement `index.html` dans votre navigateur, par exemple par double-clic.
+Ouvrez directement `index.html` dans un navigateur, par exemple par double-clic.
 
-Le site est prévu pour fonctionner avec une URL du type :
+Le site est prévu pour fonctionner avec une URL locale de ce type :
 
 ```text
-file:///.../running-map/index.html
+file:///.../running_map/index.html
 ```
 
-La carte utilise Leaflet en local depuis `vendor/leaflet/`. Le fond de carte OpenStreetMap vient d'Internet : sans connexion, l'interface et les traces restent chargées, mais les tuiles de fond peuvent ne pas apparaître.
+Leaflet est fourni localement dans `vendor/leaflet/`. Les tuiles de fond de carte viennent d'Internet : sans connexion, l'interface, les traces et les données restent chargées, mais le fond cartographique peut être absent.
 
-## Configuration statique
+## Arborescence utile
 
-Les reglages simples du site peuvent etre ajustes dans :
+```text
+index.html                 Page principale, ordre des scripts
+style.css                  Mise en page et styles de l'application
+app.js                     Logique Leaflet et interactions
+config/site-config.js      Configuration statique du site
+data/runs.js               Données manuelles ou démos
+data/generated-runs.js     Courses importées, généré par script
+tracks/*.geojson.js        Traces manuelles ou démos
+tracks/generated-tracks.js Traces importées, généré par script
+photos/                    Photos locales ou générées
+scripts/                   Outils Python GPX/ADEPS/photos
+tools/                     Commandes rclone pour Cloudflare R2
+vendor/leaflet/            Leaflet vendored, sans CDN
+```
+
+Les fichiers `data/generated-runs.js` et `tracks/generated-tracks.js` sont des artefacts générés. Évitez de les modifier à la main : modifiez plutôt les GPX, les dossiers sources ou les scripts, puis régénérez.
+
+## Chargement des données
+
+Le site utilise uniquement des scripts classiques et des variables globales :
+
+```js
+window.RUNS
+window.GENERATED_TRACKS
+window.GENERATED_RUNS
+window.RUNNING_MAP_CONFIG
+```
+
+L'ordre de chargement dans `index.html` est important :
+
+```html
+<script src="./vendor/leaflet/leaflet.js"></script>
+<script src="./data/runs.js"></script>
+<script src="./tracks/generated-tracks.js"></script>
+<script src="./data/generated-runs.js"></script>
+<script src="./config/site-config.js"></script>
+<script src="./app.js"></script>
+```
+
+Si vous réactivez des traces manuelles dans `tracks/*.geojson.js`, chargez-les avant `data/runs.js`, car les entrées de `window.RUNS` référencent directement les variables `window.TRACK_*`.
+
+## Configuration
+
+La configuration du site se trouve dans :
 
 ```text
 config/site-config.js
 ```
 
-Ce fichier est charge par une balise `<script>` classique avant `app.js`, ce qui
-garde le fonctionnement par double-clic sur `index.html`. Il ne s'agit pas d'un
-fichier JSON : aucun `fetch()` n'est necessaire.
+Ce fichier définit `window.RUNNING_MAP_CONFIG`. Il est chargé par une balise `<script>` classique, donc compatible avec `file:///`.
 
-Configuration minimale pour garder les valeurs par defaut :
-
-```js
-window.RUNNING_MAP_CONFIG = {};
-```
-
-Exemple de configuration :
+Configuration actuelle :
 
 ```js
 window.RUNNING_MAP_CONFIG = {
-  siteTitle: "Mes parcours",
-  siteSubtitle: "Courses, randos et traces GPX",
-  map: {
-    initialCenter: [50.53, 5.75],
-    initialZoom: 10,
-    tileLayer: "osm",
-    defaultFitPadding: [36, 36]
-  },
+  PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev",
+  siteTitle: "🏃🏻‍➡️running-map",
+  siteSubtitle: "Mes marches ADEPS",
   tracks: {
-    defaultOpacity: 0.9,
+    defaultOpacity: 0.85,
     defaultWeight: 5
-  },
-  sidebar: {
-    showDemoRuns: true,
-    showGeneratedRuns: true
   },
   photos: {
     enabled: true,
     showPhotoGallery: true,
     showPhotoMarkers: true,
     maxPhotosInPanel: 12
+  },
+  selection: {
+    selectedColor: null,
+    selectedWeight: 8,
+    selectedOpacity: 1.0,
+    dimOtherRuns: true,
+    dimmedOpacity: 0.45
   }
 };
 ```
 
-`map.tileLayer` accepte actuellement `osm` et `opentopomap`. Une valeur inconnue
-retombe sur `osm`. La configuration `photos` concerne uniquement l'affichage
-dans le navigateur. Les tailles et la qualite des images generees se reglent
-avec les options CLI de `scripts/import_adeps_folder.py`.
+Options principales :
 
-## Fichiers Leaflet vendored
+- `PHOTO_BASE_URL` : préfixe public pour les photos. Vide, les chemins `./photos/...` restent locaux.
+- `siteTitle` et `siteSubtitle` : texte de l'en-tête latéral.
+- `map.initialCenter`, `map.initialZoom`, `map.tileLayer` : réglages initiaux de carte.
+- `map.tileLayer` : accepte `osm` ou `opentopomap`.
+- `tracks.defaultOpacity`, `tracks.defaultWeight` : style standard des traces.
+- `sidebar.showDemoRuns`, `sidebar.showGeneratedRuns` : activation des données manuelles ou générées.
+- `photos.enabled`, `photos.showPhotoGallery`, `photos.showPhotoMarkers` : affichage des photos.
+- `photos.maxPhotosInPanel` : nombre de miniatures affichées avant le bouton d'extension.
+- `selection.*` : style de la trace sélectionnée et atténuation des autres traces.
 
-Les fichiers Leaflet 1.9.4 sont placés dans :
+## Ajouter une course manuellement
 
-```text
-vendor/leaflet/leaflet.css
-vendor/leaflet/leaflet.js
-vendor/leaflet/images/marker-icon.png
-vendor/leaflet/images/marker-icon-2x.png
-vendor/leaflet/images/marker-shadow.png
-```
-
-Si vous devez les remplacer plus tard, gardez la même structure. `index.html` ne charge pas Leaflet depuis un CDN.
-
-## Publier sur GitLab Pages
-
-Pour GitLab Pages, publiez le dossier tel quel comme contenu statique. Une configuration minimale peut copier tout le contenu du projet dans le dossier `public/` du job Pages.
-
-Exemple d'idée de déploiement :
-
-```yaml
-pages:
-  stage: deploy
-  script:
-    - mkdir public
-    - cp -r index.html style.css app.js data tracks photos vendor public/
-  artifacts:
-    paths:
-      - public
-  only:
-    - main
-```
-
-## Intégrer dans un site Hugo
-
-Pour intégrer cette carte dans Hugo, copiez le dossier dans :
-
-```text
-static/running-map/
-```
-
-Le site sera alors accessible à l'URL :
-
-```text
-/running-map/index.html
-```
-
-Gardez les chemins relatifs existants. Ils fonctionnent aussi bien depuis `file:///` que depuis un dossier statique publié.
-
-## Ajouter une nouvelle course
+Pour un ajout ponctuel sans passer par l'import ADEPS :
 
 1. Créez un fichier de trace dans `tracks/`, par exemple `tracks/demo-namur.geojson.js`.
-2. Définissez une variable globale :
 
 ```js
 window.TRACK_DEMO_NAMUR = {
@@ -136,8 +151,9 @@ window.TRACK_DEMO_NAMUR = {
 };
 ```
 
-3. Ajoutez ce script dans `index.html` avant `data/runs.js`.
-4. Ajoutez une entrée dans `data/runs.js` :
+2. Chargez ce fichier dans `index.html` avant `data/runs.js`.
+
+3. Ajoutez une entrée dans `data/runs.js`.
 
 ```js
 {
@@ -153,29 +169,48 @@ window.TRACK_DEMO_NAMUR = {
 }
 ```
 
-5. Ajoutez éventuellement des miniatures SVG dans `photos/demo-namur/`, puis référencez-les avec un chemin relatif comme `./photos/demo-namur/photo-001-thumb.svg`.
+4. Ajoutez éventuellement des photos dans `photos/demo-namur/` et référencez-les avec des chemins relatifs.
 
-## Convertir un GPX manuellement
-
-Un script Python peut convertir une trace GPX en fichier JavaScript compatible avec le site :
-
-```bash
-python scripts/gpx_to_geojson_js.py input.gpx \
-  --id sortie-test \
-  --title "Sortie test" \
-  --date 2026-05-14 \
-  --var-name TRACK_SORTIE_TEST \
-  --output tracks/sortie-test.geojson.js
+```js
+photos: [
+  {
+    lat: 50.46,
+    lon: 4.86,
+    thumb: "./photos/demo-namur/photo-001-thumb.jpg",
+    web: "./photos/demo-namur/photo-001-web.jpg",
+    caption: "Départ"
+  }
+]
 ```
 
-Le script crée un fichier `tracks/*.geojson.js` qui définit une variable globale `window.*`, puis affiche un résumé et un snippet à copier manuellement dans `data/runs.js`.
+## Convertir un GPX isolé
 
-Par défaut, le dénivelé positif ignore les hausses de moins de 3 m pour limiter le bruit GPS. Vous pouvez ajuster ce seuil avec `--elevation-threshold-m`. Si le fichier de sortie existe déjà, ajoutez `--force` pour l'écraser.
+Le script `scripts/gpx_to_geojson_js.py` convertit un GPX en fichier JavaScript contenant une variable globale `window.*`.
 
-## Import massif depuis le dossier ADEPS
+```cmd
+python scripts\gpx_to_geojson_js.py input.gpx ^
+  --id sortie-test ^
+  --title "Sortie test" ^
+  --date 2026-05-14 ^
+  --var-name TRACK_SORTIE_TEST ^
+  --output tracks\sortie-test.geojson.js
+```
 
-Le script `scripts/import_adeps_folder.py` scanne récursivement un dossier source
-ADEPS et détecte les dossiers nommés avec la convention :
+Le script affiche ensuite un résumé et un bloc à copier dans `data/runs.js`.
+
+Le dénivelé positif est approximatif : par défaut, les petites hausses de moins de 3 m sont ignorées pour limiter le bruit GPS. Ajustez ce seuil avec `--elevation-threshold-m`.
+
+Ajoutez `--force` si le fichier de sortie existe déjà.
+
+## Import massif ADEPS
+
+Le script principal est :
+
+```text
+scripts/import_adeps_folder.py
+```
+
+Il scanne récursivement un dossier source ADEPS et détecte les dossiers dont le nom suit cette convention :
 
 ```text
 YYYY-MM-DD - Lieu
@@ -189,47 +224,43 @@ Exemples :
 2025\2025-01-19 - Aywaille
 ```
 
-Commande Windows depuis `cmd.exe` :
+Commande de base depuis Windows :
 
 ```cmd
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --force
+```
+
+Avec photos :
+
+```cmd
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --force
 ```
 
-Le script ne modifie jamais le dossier source : il lit les GPX et génère seulement
-ces fichiers dans le projet :
+Le dossier Dropbox source est lu comme entrée. Le script ne le modifie pas, ne déplace rien et ne supprime rien.
+
+Fichiers générés dans le projet :
 
 ```text
 tracks\generated-tracks.js
 data\generated-runs.js
 ```
 
-Avec `--photos`, il lit aussi les dossiers `photos\` presents dans les dossiers
-de course et genere des copies web legeres, nettoyees de leurs metadonnees, dans :
+Avec `--photos`, le script lit les sous-dossiers `photos\` présents dans chaque dossier de course et génère des copies web légères dans :
 
 ```text
 photos\generated\{run_id}\photo-001-thumb.jpg
 photos\generated\{run_id}\photo-001-web.jpg
 ```
 
-Les originaux Dropbox ne sont jamais modifies, deplaces ou supprimes. Aucun
-nettoyage automatique des anciennes photos generees n'est effectue dans cette V1.
-Les images generees servent a la consultation web dans la carte, pas a
-l'archivage haute qualite. Les originaux restent la reference dans Dropbox.
+Les originaux restent la référence dans Dropbox. Les JPEG générés sont destinés à la consultation web et ne conservent pas les EXIF.
 
-Les démos pédagogiques restent dans `data\runs.js`. Les courses importées sont
-ajoutées séparément via `window.GENERATED_RUNS`, et leurs traces via
-`window.GENERATED_TRACKS`.
-
-Choix du GPX dans chaque dossier de course :
+Choix du GPX dans un dossier de course :
 
 1. `track.gpx` s'il existe ;
 2. sinon l'unique fichier `.gpx` du dossier ;
-3. sinon le dossier est ignoré avec un avertissement clair.
+3. sinon le dossier est ignoré avec un avertissement.
 
-La distance et le dénivelé positif approximatif sont calculés sur la trace GPX
-complète. Ensuite seulement, la géométrie exportée est simplifiée pour réduire
-la taille de `generated-tracks.js`.
+La distance et le dénivelé sont calculés sur la trace GPX complète. La géométrie exportée est ensuite simplifiée avec Douglas-Peucker pour garder `generated-tracks.js` raisonnable.
 
 Options utiles :
 
@@ -260,47 +291,125 @@ source_dir
 --force-photos
 ```
 
-Par défaut, `--default-visible` vaut `false` pour éviter d'afficher trop de
-traces importées d'un coup. La tolérance de simplification vaut `5.0` mètres.
-Le dénivelé positif reste approximatif, car les altitudes GPS peuvent être
-bruitées.
+Valeurs par défaut importantes :
 
-L'import photo V1 accepte uniquement `.jpg`, `.jpeg` et `.png`. Les autres
-formats sont ignores avec un avertissement. Les coordonnees GPS EXIF, si elles
-existent, sont copiees dans `data/generated-runs.js`; les fichiers JPEG publies
-ne conservent pas les EXIF. Sans `--force-photos`, les fichiers thumb/web deja
-presents ne sont pas reecrits, mais les metadonnees photo sont tout de meme
-regenerees dans `generated-runs.js`.
+- `--default-visible false` pour éviter d'afficher trop de traces dès l'ouverture ;
+- `--simplify-tolerance-m 5.0` ;
+- `--elevation-threshold-m 3.0` ;
+- miniatures de 180 px de large ;
+- images web limitées à 800 px ;
+- qualité JPEG 75.
 
-Par defaut, les miniatures sont generees en `180x112`, soit la taille affichee
-dans les popups photo de la carte. Les images web font au maximum 800 px, avec
-une qualite JPEG de 75. Ces valeurs privilegient un site leger et beaucoup de
-photos visibles plutot qu'une restitution haute resolution. Elles peuvent etre
-ajustees avec `--photo-thumb-size`, `--photo-web-size` et `--photo-quality`.
+L'import photo accepte `.jpg`, `.jpeg` et `.png`. Les formats non supportés sont ignorés avec avertissement. Si une photo contient des coordonnées GPS EXIF, elles sont copiées dans `data/generated-runs.js` pour placer le marqueur photo sur la carte.
 
-## Pourquoi pas `fetch()`, modules, npm ou serveur local ?
+## Photos et Cloudflare R2
 
-Cette V1 cible un usage pédagogique et un démarrage par double-clic. Certains navigateurs limitent les chargements de fichiers locaux avec `fetch()` depuis `file:///`. Les modules JavaScript peuvent aussi introduire des contraintes de chargement selon le contexte local.
+Les photos générées peuvent fonctionner localement avec les chemins `./photos/...`, mais le site peut aussi utiliser une base publique via :
 
-Le projet utilise donc uniquement des scripts classiques qui définissent des variables globales sur `window`. Cela rend l'ordre de chargement explicite, facile à comprendre, et compatible avec un simple fichier `index.html` ouvert localement.
-
-
-
----
-
-# Notes diverses manuelles
-
-## commandes exécutées 
-...pour convertir les fichiers Dropbox
-
+```js
+PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev"
 ```
-python -B scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --force
+
+Dans ce mode, l'application préfixe les chemins photo relatifs. Par exemple :
+
+```text
+./photos/generated/2025-01-19-aywaille/photo-001-web.jpg
 ```
-output:
+
+devient :
+
+```text
+https://runningmap-photos.rboman.dev/photos/generated/2025-01-19-aywaille/photo-001-web.jpg
 ```
-Tolérance simplification : 5 m
-Courses importées : 62
-Points source : 500488
-Points exportés : 16143
-generated-tracks.js : ~428 Ko
+
+Les commandes rclone sont dans `tools/` :
+
+```cmd
+tools\dry_run_sync_photos_to_r2.cmd
+tools\sync_photos_to_r2.cmd
+tools\upload_photos_to_r2.cmd
 ```
+
+Utilisez toujours le dry-run avant `sync`, car `rclone sync` peut supprimer côté R2 les fichiers absents du dossier local `photos/`.
+
+Les photos générées sont ignorées par Git via `.gitignore` :
+
+```text
+photos/generated/
+```
+
+## Dépendances Python
+
+Les scripts GPX utilisent la bibliothèque standard Python.
+
+Pillow est nécessaire uniquement pour l'option `--photos` :
+
+```cmd
+python -m pip install -r requirements.txt
+```
+
+## Publier le site
+
+Le projet se publie comme un dossier statique. Il suffit de servir les fichiers tels quels, en conservant les chemins relatifs.
+
+Pour GitLab Pages, une idée minimale :
+
+```yaml
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r index.html style.css app.js CNAME config data tracks vendor public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+```
+
+Ajoutez `photos/` seulement si vous voulez publier les photos dans le même site. Si les photos sont servies par R2, gardez plutôt `PHOTO_BASE_URL`.
+
+Pour intégrer dans Hugo, copiez le dossier dans :
+
+```text
+static/running-map/
+```
+
+Le site sera accessible via :
+
+```text
+/running-map/index.html
+```
+
+## Pourquoi cette architecture ?
+
+Le projet est fait pour rester inspectable et lançable par double-clic.
+
+Certaines APIs comme `fetch()` ou les modules JavaScript peuvent devenir pénibles depuis `file:///`, selon le navigateur et le contexte de sécurité. Ici, les données sont donc chargées par scripts classiques, ce qui rend l'ordre explicite et compatible avec :
+
+- `file:///` ;
+- un hébergement statique simple ;
+- GitLab Pages ;
+- une intégration dans un dossier statique Hugo.
+
+## Checklist avant de conclure un changement
+
+- `index.html` s'ouvre toujours directement par double-clic.
+- Aucun `fetch()` n'a été ajouté pour charger les données locales.
+- Aucun module JavaScript, bundler, npm ou serveur obligatoire n'a été ajouté.
+- L'ordre des scripts reste cohérent.
+- Les fichiers générés ne sont pas modifiés à la main sans raison explicite.
+- Les photos Dropbox sources ne sont jamais modifiées automatiquement.
+- Si les scripts Python changent, lancer au minimum une vérification syntaxique.
+- Si le navigateur n'est pas testé automatiquement, faire une vérification manuelle.
+
+## Vérification manuelle rapide
+
+1. Ouvrir `index.html` directement dans le navigateur.
+2. Vérifier que la carte se charge.
+3. Vérifier que la liste affiche les parcours importés.
+4. Chercher un lieu, puis filtrer par année.
+5. Sélectionner un parcours et vérifier le panneau de détails.
+6. Vérifier la mise en évidence de la trace sélectionnée.
+7. Ouvrir une photo depuis la galerie ou un marqueur, puis tester la lightbox.
+8. Vérifier la console du navigateur.
