@@ -1,5 +1,7 @@
 (function () {
   var DEFAULT_CONFIG = {
+    // Empty keeps the existing ./photos/... paths working from file:///.
+    PHOTO_BASE_URL: "",
     siteTitle: "running-map",
     siteSubtitle: "Parcours de d\u00e9monstration",
     map: {
@@ -48,7 +50,8 @@
     }
   };
 
-  var config = mergeConfig(DEFAULT_CONFIG, window.RUNNING_MAP_CONFIG || {});
+  var runtimeConfig = mergeConfig(DEFAULT_CONFIG, window.RUNNINGMAP_CONFIG || {});
+  var config = mergeConfig(runtimeConfig, window.RUNNING_MAP_CONFIG || {});
   var map;
   var allRuns = [];
   var runLayers = {};
@@ -1047,7 +1050,7 @@
     });
     selectedPhotoThumbsById[photoId] = button;
 
-    image.src = photo.thumb;
+    image.src = getPhotoUrl(photo, "thumb");
     image.alt = photo.caption || photo.source || "Photo";
     image.loading = "lazy";
 
@@ -1230,7 +1233,7 @@
     }
 
     photo = lightboxPhotos[index];
-    imagePath = getBestPhotoImagePath(photo);
+    imagePath = getPhotoUrl(photo, "full");
 
     if (!imagePath) {
       return;
@@ -1328,8 +1331,46 @@
     }
   }
 
-  function getBestPhotoImagePath(photo) {
-    return photo.web || photo.full || photo.url || photo.href || photo.src || photo.thumb || "";
+  function getPhotoUrl(photo, variant) {
+    var imagePath = getPhotoImagePath(photo, variant);
+    var baseUrl = getPhotoBaseUrl();
+
+    if (!imagePath || !baseUrl || isAbsolutePhotoUrl(imagePath)) {
+      return imagePath;
+    }
+
+    return joinPhotoUrl(baseUrl, imagePath);
+  }
+
+  function getPhotoBaseUrl() {
+    return String(config.PHOTO_BASE_URL || "").trim();
+  }
+
+  function getPhotoImagePath(photo, variant) {
+    if (!photo) {
+      return "";
+    }
+
+    if (variant === "thumb") {
+      return photo.thumb || photo.web || photo.full || photo.url || photo.href || photo.src || "";
+    }
+
+    if (variant === "full") {
+      return photo.full || photo.web || photo.url || photo.href || photo.src || photo.thumb || "";
+    }
+
+    return photo.web || photo.thumb || photo.full || photo.url || photo.href || photo.src || "";
+  }
+
+  function joinPhotoUrl(baseUrl, imagePath) {
+    var normalizedBase = baseUrl.replace(/\/+$/, "");
+    var normalizedPath = String(imagePath).replace(/^\.?\//, "");
+
+    return normalizedBase + "/" + normalizedPath;
+  }
+
+  function isAbsolutePhotoUrl(imagePath) {
+    return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(imagePath);
   }
 
   function getPhotoCaption(photo) {
@@ -1444,7 +1485,7 @@
 
   function createPhotoPopup(photo, photoId) {
     var caption = photo.caption || photo.source || "Photo";
-    var webPath = photo.web || photo.thumb;
+    var webPath = getPhotoUrl(photo, "display");
     var popupClass = "photo-popup photo-popup--" + getPhotoOrientation(photo);
 
     return [
