@@ -58,8 +58,7 @@ window.RUNNING_MAP_CONFIG = {
     enabled: true,
     showPhotoGallery: true,
     showPhotoMarkers: true,
-    maxPhotosInPanel: 12,
-    maxPhotoMarkers: 20
+    maxPhotosInPanel: 12
   }
 };
 ```

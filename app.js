@@ -20,8 +20,7 @@
       enabled: true,
       showPhotoGallery: true,
       showPhotoMarkers: true,
-      maxPhotosInPanel: 12,
-      maxPhotoMarkers: 20
+      maxPhotosInPanel: 12
     },
     selection: {
       selectedColor: null,
