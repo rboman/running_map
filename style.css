@@ -476,6 +476,34 @@ select {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
 }
 
+.run-endpoint-icon {
+  background: transparent;
+  border: 0;
+}
+
+.run-endpoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.32);
+}
+
+.run-endpoint--start {
+  background: #12823b;
+}
+
+.run-endpoint--end {
+  background: #c62828;
+}
+
 .app-error {
   padding: 16px;
   border: 1px solid #f0b8b8;

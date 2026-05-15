@@ -53,6 +53,7 @@
   var allRuns = [];
   var runLayers = {};
   var selectedPhotoLayer = null;
+  var selectedRunEndpointLayer = null;
   var selectedPhotoMarkersById = {};
   var selectedPhotoThumbsById = {};
   var activePhotoId = null;
@@ -144,6 +145,65 @@
     });
 
     return group;
+  }
+
+  function createRunEndpointLayer(run) {
+    var points = getRunTrackPoints(run);
+    var group = L.layerGroup();
+
+    if (points.length < 2) {
+      return group;
+    }
+
+    L.marker(points[0], {
+      icon: createEndpointIcon("start"),
+      title: "D\u00e9part",
+      zIndexOffset: 900
+    }).bindTooltip("D\u00e9part", {
+      direction: "top",
+      offset: [0, -12]
+    }).addTo(group);
+
+    L.marker(points[points.length - 1], {
+      icon: createEndpointIcon("end"),
+      title: "Arriv\u00e9e",
+      zIndexOffset: 901
+    }).bindTooltip("Arriv\u00e9e", {
+      direction: "top",
+      offset: [0, -12]
+    }).addTo(group);
+
+    return group;
+  }
+
+  function createEndpointIcon(type) {
+    var isStart = type === "start";
+    var label = isStart ? "D" : "A";
+    var className = isStart ? "run-endpoint--start" : "run-endpoint--end";
+
+    return L.divIcon({
+      className: "run-endpoint-icon",
+      html: '<span class="run-endpoint ' + className + '">' + label + "</span>",
+      iconSize: [28, 28],
+      iconAnchor: [14, 14],
+      tooltipAnchor: [0, -16]
+    });
+  }
+
+  function getRunTrackPoints(run) {
+    var coordinates = run && run.track && run.track.geometry && run.track.geometry.coordinates;
+
+    if (!Array.isArray(coordinates)) {
+      return [];
+    }
+
+    return coordinates
+      .filter(function (point) {
+        return Array.isArray(point) && isFiniteNumber(point[0]) && isFiniteNumber(point[1]);
+      })
+      .map(function (point) {
+        return [point[1], point[0]];
+      });
   }
 
   function renderSidebar() {
@@ -499,6 +559,7 @@
     }
 
     clearSelectedPhotoMarkers();
+    clearSelectedRunEndpoints();
     resetSelectedPhotoState();
 
     if (selectedRunId !== runId) {
@@ -517,11 +578,13 @@
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
+    renderSelectedRunEndpoints(run);
     renderSelectedPhotoMarkers(run);
   }
 
   function clearSelection() {
     clearSelectedPhotoMarkers();
+    clearSelectedRunEndpoints();
     resetSelectedPhotoState();
     selectedRunId = null;
     selectedRunPhotosExpanded = false;
@@ -797,6 +860,24 @@
     }
 
     selectedPhotoMarkersById = {};
+  }
+
+  function renderSelectedRunEndpoints(run) {
+    clearSelectedRunEndpoints();
+
+    if (!run) {
+      return;
+    }
+
+    selectedRunEndpointLayer = createRunEndpointLayer(run);
+    selectedRunEndpointLayer.addTo(map);
+  }
+
+  function clearSelectedRunEndpoints() {
+    if (selectedRunEndpointLayer) {
+      selectedRunEndpointLayer.removeFrom(map);
+      selectedRunEndpointLayer = null;
+    }
   }
 
   function resetSelectedPhotoState() {
