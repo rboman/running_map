@@ -389,7 +389,7 @@
     list.innerHTML = "";
 
     filteredRuns.forEach(function (run) {
-      list.appendChild(createRunCard(run));
+      list.appendChild(createRunListItem(run));
     });
 
     if (filteredRuns.length === 0) {
@@ -513,9 +513,20 @@
   }
 
   function getFilteredRuns() {
-    return allRuns.filter(function (run) {
-      return runMatchesFilters(run);
-    });
+    return allRuns
+      .filter(function (run) {
+        return runMatchesFilters(run);
+      })
+      .sort(compareRunsByDateDesc);
+  }
+
+  function compareRunsByDateDesc(a, b) {
+    return getRunDateTime(b) - getRunDateTime(a);
+  }
+
+  function getRunDateTime(run) {
+    var time = Date.parse(String(run.date || "") + "T00:00:00");
+    return isNaN(time) ? 0 : time;
   }
 
   function runMatchesFilters(run) {
@@ -583,84 +594,47 @@
     return visibleCount;
   }
 
-  function createRunCard(run) {
-    var card = document.createElement("article");
-    card.className = "run-card";
+  function createRunListItem(run) {
+    var item = document.createElement("button");
+    item.type = "button";
+    item.className = "run-list-item";
+    item.style.setProperty("--run-color", run.color);
+    item.setAttribute("aria-pressed", String(run.id === selectedRunId));
+    item.setAttribute("data-run-id", run.id);
+
     if (run.id === selectedRunId) {
-      card.className += " is-selected";
+      item.className += " is-selected";
     }
-    card.style.setProperty("--run-color", run.color);
 
-    var header = document.createElement("div");
-    header.className = "run-card-header";
-
-    var checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = Boolean(run.visible);
-    checkbox.setAttribute("data-run-id", run.id);
-    checkbox.setAttribute("aria-label", "Afficher ou masquer " + run.title);
-    checkbox.addEventListener("change", function () {
-      toggleRunVisibility(run.id, checkbox.checked);
-    });
-
-    var titleBlock = document.createElement("div");
-    titleBlock.className = "run-title-block";
-
-    var titleButton = document.createElement("button");
-    titleButton.type = "button";
-    titleButton.className = "run-title-button";
-    titleButton.addEventListener("click", function () {
+    item.addEventListener("click", function () {
       selectRun(run.id);
     });
 
-    var title = document.createElement("span");
-    title.className = "run-title";
-    title.textContent = run.title;
+    var color = document.createElement("span");
+    color.className = "run-list-item__color";
+    color.setAttribute("aria-hidden", "true");
 
-    var date = document.createElement("p");
-    date.className = "run-date";
-    date.textContent = formatDate(run.date);
+    var text = document.createElement("span");
+    text.className = "run-list-item__text";
 
-    titleButton.appendChild(title);
-    titleBlock.appendChild(titleButton);
-    titleBlock.appendChild(date);
-    header.appendChild(checkbox);
-    header.appendChild(titleBlock);
+    var itemTitle = document.createElement("span");
+    itemTitle.className = "run-list-item__title";
+    itemTitle.textContent = run.title;
 
-    var stats = document.createElement("div");
-    stats.className = "run-stats";
-    stats.appendChild(createStat("Distance", formatDistance(run.distanceKm)));
-    stats.appendChild(createStat("Dénivelé +", formatElevation(run.elevationGainM)));
+    var meta = document.createElement("span");
+    meta.className = "run-list-item__meta";
+    meta.textContent = [
+      formatDate(run.date),
+      formatDistance(run.distanceKm),
+      "D+ " + formatElevation(run.elevationGainM)
+    ].join(" \u00b7 ");
 
-    var button = document.createElement("button");
-    button.type = "button";
-    button.className = "center-button";
-    button.textContent = "Centrer";
-    button.addEventListener("click", function () {
-      selectAndCenterRun(run.id);
-    });
+    text.appendChild(itemTitle);
+    text.appendChild(meta);
+    item.appendChild(color);
+    item.appendChild(text);
 
-    card.appendChild(header);
-    card.appendChild(stats);
-    card.appendChild(button);
-
-    return card;
-  }
-
-  function createStat(label, value) {
-    var stat = document.createElement("div");
-    stat.className = "run-stat";
-
-    var labelNode = document.createElement("span");
-    labelNode.textContent = label;
-
-    var valueNode = document.createElement("strong");
-    valueNode.textContent = value;
-
-    stat.appendChild(labelNode);
-    stat.appendChild(valueNode);
-
-    return stat;
+    return item;
   }
 
   function toggleRunVisibility(runId, visible) {
