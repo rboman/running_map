@@ -247,10 +247,22 @@ select {
   object-fit: cover;
 }
 
-.photo-gallery-more {
-  margin: 0;
+.photo-gallery-toggle {
+  justify-self: start;
+  border: 0;
+  padding: 2px 0;
+  background: transparent;
   color: var(--muted);
+  cursor: pointer;
   font-size: 13px;
+  text-align: left;
+}
+
+.photo-gallery-toggle:hover,
+.photo-gallery-toggle:focus {
+  color: var(--accent);
+  outline: none;
+  text-decoration: underline;
 }
 
 .empty-list {

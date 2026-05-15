@@ -56,6 +56,7 @@
   var sidebarSearchText = "";
   var sidebarYearFilter = "";
   var selectedRunId = null;
+  var selectedRunPhotosExpanded = false;
 
   window.addEventListener("load", startApp);
 
@@ -452,6 +453,10 @@
       return;
     }
 
+    if (selectedRunId !== runId) {
+      selectedRunPhotosExpanded = false;
+    }
+
     selectedRunId = runId;
 
     if (!run.visible) {
@@ -469,6 +474,7 @@
 
   function clearSelection() {
     selectedRunId = null;
+    selectedRunPhotosExpanded = false;
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
@@ -615,13 +621,13 @@
     var gallery;
     var heading;
     var list;
-    var more;
+    var toggleButton;
 
     if (!arePhotosEnabled() || !config.photos.showPhotoGallery || photos.length === 0) {
       return;
     }
 
-    visiblePhotos = maxPhotos === null ? photos : photos.slice(0, maxPhotos);
+    visiblePhotos = selectedRunPhotosExpanded || maxPhotos === null ? photos : photos.slice(0, maxPhotos);
 
     gallery = document.createElement("section");
     gallery.className = "selected-photo-gallery";
@@ -639,11 +645,26 @@
 
     gallery.appendChild(list);
 
-    if (visiblePhotos.length < photos.length) {
-      more = document.createElement("p");
-      more.className = "photo-gallery-more";
-      more.textContent = "+" + (photos.length - visiblePhotos.length) + " photos";
-      gallery.appendChild(more);
+    if (maxPhotos !== null && photos.length > maxPhotos) {
+      toggleButton = document.createElement("button");
+      toggleButton.type = "button";
+      toggleButton.className = "photo-gallery-toggle";
+
+      if (selectedRunPhotosExpanded) {
+        toggleButton.textContent = "R\u00e9duire";
+        toggleButton.addEventListener("click", function () {
+          selectedRunPhotosExpanded = false;
+          renderSelectedRunPanel();
+        });
+      } else {
+        toggleButton.textContent = "+" + (photos.length - visiblePhotos.length) + " photos";
+        toggleButton.addEventListener("click", function () {
+          selectedRunPhotosExpanded = true;
+          renderSelectedRunPanel();
+        });
+      }
+
+      gallery.appendChild(toggleButton);
     }
 
     content.appendChild(gallery);
