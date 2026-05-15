@@ -264,21 +264,15 @@
   function createSelectedRunDirectionLayer(run) {
     var points = getRunTrackPoints(run);
     var group = L.layerGroup();
-    var arrowIndexes = getDirectionArrowIndexes(points.length, run);
+    var arrowPlacements = getDirectionArrowPlacements(points, run);
 
-    if (points.length < 8 || arrowIndexes.length === 0) {
+    if (points.length < 8 || arrowPlacements.length === 0) {
       return group;
     }
 
-    arrowIndexes.forEach(function (index) {
-      var angle = getDirectionAngle(points[index - 1], points[index + 1]);
-
-      if (!isFiniteNumber(angle)) {
-        return;
-      }
-
-      L.marker(points[index], {
-        icon: createDirectionArrowIcon(angle, run.color),
+    arrowPlacements.forEach(function (placement) {
+      L.marker(placement.point, {
+        icon: createDirectionArrowIcon(placement.angle, run.color),
         interactive: false,
         keyboard: false,
         pane: "run-direction-markers",
@@ -289,37 +283,76 @@
     return group;
   }
 
-  function getDirectionArrowIndexes(pointCount, run) {
-    var indexes = [];
+  function getDirectionArrowPlacements(points, run) {
+    var placements = [];
+    var pointCount = points.length;
     var arrowCount = getDirectionArrowCount(run, pointCount);
-    var startIndex;
-    var endIndex;
-    var availableCount;
-    var index;
+    var segments = [];
+    var totalDistance = 0;
+    var targetDistance;
+    var segment;
+    var segmentStartDistance = 0;
+    var ratio;
+    var angle;
     var i;
 
     if (pointCount < 8) {
-      return indexes;
+      return placements;
     }
 
-    startIndex = Math.max(1, Math.floor((pointCount - 1) * 0.15));
-    endIndex = Math.min(pointCount - 2, Math.ceil((pointCount - 1) * 0.85));
-    availableCount = endIndex - startIndex + 1;
+    for (i = 1; i < pointCount; i += 1) {
+      segment = {
+        start: points[i - 1],
+        end: points[i],
+        distance: map.distance(points[i - 1], points[i])
+      };
 
-    if (availableCount < 1) {
-      return indexes;
-    }
-
-    arrowCount = Math.min(arrowCount, availableCount);
-
-    for (i = 0; i < arrowCount; i += 1) {
-      index = Math.round(startIndex + (availableCount - 1) * ((i + 0.5) / arrowCount));
-      if (indexes.indexOf(index) === -1) {
-        indexes.push(index);
+      if (segment.distance > 0) {
+        totalDistance += segment.distance;
+        segment.endDistance = totalDistance;
+        segments.push(segment);
       }
     }
 
-    return indexes;
+    if (segments.length === 0 || totalDistance <= 0) {
+      return placements;
+    }
+
+    segment = segments.shift();
+
+    for (i = 0; i < arrowCount; i += 1) {
+      targetDistance = totalDistance * ((i + 1) / (arrowCount + 1));
+
+      while (segment && segment.endDistance < targetDistance) {
+        segmentStartDistance = segment.endDistance;
+        segment = segments.shift();
+      }
+
+      if (!segment) {
+        break;
+      }
+
+      ratio = (targetDistance - segmentStartDistance) / segment.distance;
+      angle = getDirectionAngle(segment.start, segment.end);
+
+      if (isFiniteNumber(angle)) {
+        placements.push({
+          point: interpolateTrackPoint(segment.start, segment.end, ratio),
+          angle: angle
+        });
+      }
+    }
+
+    return placements;
+  }
+
+  function interpolateTrackPoint(startPoint, endPoint, ratio) {
+    var boundedRatio = Math.max(0, Math.min(1, ratio));
+
+    return [
+      startPoint[0] + (endPoint[0] - startPoint[0]) * boundedRatio,
+      startPoint[1] + (endPoint[1] - startPoint[1]) * boundedRatio
+    ];
   }
 
   function getDirectionArrowCount(run, pointCount) {
@@ -442,8 +475,7 @@
         if (yearSelect) {
           yearSelect.value = "";
         }
-        closePhotoLightbox();
-        renderSidebar();
+        clearSelection();
         fitMapToVisibleRuns();
       });
     }
@@ -753,12 +785,19 @@
 
   function clearSelectionState() {
     closePhotoLightbox();
+    closeMapPopup();
     clearSelectedPhotoMarkers();
     clearSelectedRunDirection();
     clearSelectedRunEndpoints();
     resetSelectedPhotoState();
     selectedRunId = null;
     selectedRunPhotosExpanded = false;
+  }
+
+  function closeMapPopup() {
+    if (map) {
+      map.closePopup();
+    }
   }
 
   function clearSelectionIfFilteredOut(filteredRuns) {
@@ -1200,6 +1239,35 @@
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     updateLightboxControls();
+    syncMapToLightboxPhoto(index);
+  }
+
+  function syncMapToLightboxPhoto(index) {
+    var run = findRunById(selectedRunId);
+    var photo;
+    var photoId;
+    var marker;
+
+    if (!run || !Array.isArray(run.photos) || index < 0 || index >= run.photos.length) {
+      closeMapPopup();
+      return;
+    }
+
+    photo = run.photos[index];
+    photoId = getPhotoId(run, index);
+
+    ensurePhotoThumbRendered(photoId);
+    activatePhotoThumb(photoId);
+    scrollPhotoThumbIntoView(photoId);
+
+    marker = selectedPhotoMarkersById[photoId];
+
+    if (!hasPhotoCoordinates(photo) || !marker) {
+      closeMapPopup();
+      return;
+    }
+
+    marker.openPopup();
   }
 
   function showPreviousLightboxPhoto() {
