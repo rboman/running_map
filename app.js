@@ -78,7 +78,6 @@
     applySiteHeader();
 
     allRuns = getConfiguredRuns();
-    showAllRunsByDefault();
 
     initMap();
     createRunLayers();
@@ -121,10 +120,6 @@
       });
 
       runLayers[run.id] = trackLayer;
-
-      if (run.visible) {
-        trackLayer.addTo(map);
-      }
     });
   }
 
@@ -213,15 +208,14 @@
       marker.bindPopup(createRunStartPopup(run));
       allRunStartMarkersByRunId[run.id] = marker;
 
-      if (run.visible) {
-        marker.addTo(allRunStartMarkersLayer);
-      }
     });
 
     updateAllRunStartMarkersStyle();
   }
 
   function updateAllRunStartMarkersStyle() {
+    var visibleRunIds = getFilteredRunIds();
+
     Object.keys(allRunStartMarkersByRunId).forEach(function (runId) {
       var marker = allRunStartMarkersByRunId[runId];
       var run = findRunById(runId);
@@ -230,9 +224,9 @@
         return;
       }
 
-      if (run.visible && !allRunStartMarkersLayer.hasLayer(marker)) {
+      if (visibleRunIds[runId] && !allRunStartMarkersLayer.hasLayer(marker)) {
         marker.addTo(allRunStartMarkersLayer);
-      } else if (!run.visible && allRunStartMarkersLayer.hasLayer(marker)) {
+      } else if (!visibleRunIds[runId] && allRunStartMarkersLayer.hasLayer(marker)) {
         marker.removeFrom(allRunStartMarkersLayer);
       }
 
@@ -386,6 +380,9 @@
     var list = document.getElementById("runs-list");
     var filteredRuns = getFilteredRuns();
 
+    clearSelectionIfFilteredOut(filteredRuns);
+    syncMapToFilteredRuns(filteredRuns);
+
     list.innerHTML = "";
 
     filteredRuns.forEach(function (run) {
@@ -399,14 +396,14 @@
       list.appendChild(emptyMessage);
     }
 
-    updateRunsCount();
+    updateRunsCount(filteredRuns.length);
+    applySelectionStyles();
   }
 
   function initSidebarControls() {
     var searchInput = document.getElementById("run-search");
     var yearSelect = document.getElementById("year-filter");
-    var showAllButton = document.getElementById("show-all-runs");
-    var hideAllButton = document.getElementById("hide-all-runs");
+    var resetFiltersButton = document.getElementById("reset-run-filters");
 
     renderYearFilter();
 
@@ -414,6 +411,7 @@
       searchInput.addEventListener("input", function () {
         sidebarSearchText = searchInput.value;
         renderSidebar();
+        fitMapToVisibleRuns();
       });
     }
 
@@ -421,19 +419,22 @@
       yearSelect.addEventListener("change", function () {
         sidebarYearFilter = yearSelect.value;
         renderSidebar();
+        fitMapToVisibleRuns();
       });
     }
 
-    if (showAllButton) {
-      showAllButton.addEventListener("click", function () {
-        setAllRunsVisibleOnMap(true);
-      });
-    }
-
-    if (hideAllButton) {
-      hideAllButton.addEventListener("click", function () {
-        clearSelection();
-        setAllRunsVisibleOnMap(false);
+    if (resetFiltersButton) {
+      resetFiltersButton.addEventListener("click", function () {
+        sidebarSearchText = "";
+        sidebarYearFilter = "";
+        if (searchInput) {
+          searchInput.value = "";
+        }
+        if (yearSelect) {
+          yearSelect.value = "";
+        }
+        renderSidebar();
+        fitMapToVisibleRuns();
       });
     }
   }
@@ -520,6 +521,16 @@
       .sort(compareRunsByDateDesc);
   }
 
+  function getFilteredRunIds(filteredRuns) {
+    var visibleRunIds = {};
+
+    (filteredRuns || getFilteredRuns()).forEach(function (run) {
+      visibleRunIds[run.id] = true;
+    });
+
+    return visibleRunIds;
+  }
+
   function compareRunsByDateDesc(a, b) {
     return getRunDateTime(b) - getRunDateTime(a);
   }
@@ -570,28 +581,14 @@
     return text;
   }
 
-  function updateRunsCount() {
+  function updateRunsCount(visibleCount) {
     var count = document.getElementById("runs-count");
-    var visibleCount;
 
     if (!count) {
       return;
     }
 
-    visibleCount = getVisibleRunsCount();
     count.textContent = visibleCount + " / " + allRuns.length + " courses visibles sur la carte";
-  }
-
-  function getVisibleRunsCount() {
-    var visibleCount = 0;
-
-    allRuns.forEach(function (run) {
-      if (run.visible) {
-        visibleCount += 1;
-      }
-    });
-
-    return visibleCount;
   }
 
   function createRunListItem(run) {
@@ -637,56 +634,11 @@
     return item;
   }
 
-  function toggleRunVisibility(runId, visible) {
-    var trackLayer = runLayers[runId];
-
-    if (!trackLayer) {
-      return;
-    }
-
-    if (visible) {
-      trackLayer.addTo(map);
-    } else {
-      if (selectedRunId === runId) {
-        clearSelection();
-      }
-      trackLayer.removeFrom(map);
-    }
-
-    setRunVisible(runId, visible);
-    updateRunsCount();
-    updateVisibleSidebarCheckboxes();
-    applySelectionStyles();
-    fitMapToVisibleRuns();
-  }
-
-  function setAllRunsVisibleOnMap(visible) {
-    allRuns.forEach(function (run) {
-      run.visible = visible;
-      setRunVisibilityOnMap(run.id, visible);
-    });
-
-    updateVisibleSidebarCheckboxes();
-    updateRunsCount();
-    applySelectionStyles();
-    fitMapToVisibleRuns();
-  }
-
-  function updateVisibleSidebarCheckboxes() {
-    var checkboxes = document.querySelectorAll('#runs-list input[type="checkbox"]');
-
-    Array.prototype.forEach.call(checkboxes, function (checkbox) {
-      var run = findRunById(checkbox.getAttribute("data-run-id"));
-      if (run) {
-        checkbox.checked = Boolean(run.visible);
-      }
-    });
-  }
-
   function centerOnRun(runId) {
     var layer = runLayers[runId];
+    var run = findRunById(runId);
 
-    if (!layer) {
+    if (!layer || !run || !runMatchesFilters(run)) {
       return;
     }
 
@@ -704,7 +656,7 @@
   function selectRun(runId) {
     var run = findRunById(runId);
 
-    if (!run) {
+    if (!run || !runMatchesFilters(run)) {
       return;
     }
 
@@ -718,13 +670,6 @@
 
     selectedRunId = runId;
 
-    if (!run.visible) {
-      setRunVisibilityOnMap(runId, true);
-      setRunVisible(runId, true);
-      updateVisibleSidebarCheckboxes();
-      updateRunsCount();
-    }
-
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
@@ -734,15 +679,33 @@
   }
 
   function clearSelection() {
+    clearSelectionState();
+    applySelectionStyles();
+    renderSidebar();
+    renderSelectedRunPanel();
+  }
+
+  function clearSelectionState() {
     clearSelectedPhotoMarkers();
     clearSelectedRunDirection();
     clearSelectedRunEndpoints();
     resetSelectedPhotoState();
     selectedRunId = null;
     selectedRunPhotosExpanded = false;
-    applySelectionStyles();
-    renderSidebar();
-    renderSelectedRunPanel();
+  }
+
+  function clearSelectionIfFilteredOut(filteredRuns) {
+    var filteredRunIds;
+
+    if (!selectedRunId) {
+      return;
+    }
+
+    filteredRunIds = getFilteredRunIds(filteredRuns);
+    if (!filteredRunIds[selectedRunId]) {
+      clearSelectionState();
+      renderSelectedRunPanel();
+    }
   }
 
   function applySelectionStyles() {
@@ -797,7 +760,7 @@
     }
   }
 
-  function setRunVisibilityOnMap(runId, visible) {
+  function setRunLayerVisible(runId, visible) {
     var trackLayer = runLayers[runId];
 
     if (trackLayer) {
@@ -807,6 +770,14 @@
         trackLayer.removeFrom(map);
       }
     }
+  }
+
+  function syncMapToFilteredRuns(filteredRuns) {
+    var visibleRunIds = getFilteredRunIds(filteredRuns);
+
+    allRuns.forEach(function (run) {
+      setRunLayerVisible(run.id, Boolean(visibleRunIds[run.id]));
+    });
 
     updateAllRunStartMarkersStyle();
   }
@@ -839,7 +810,6 @@
     var meta = document.createElement("dl");
     var actions = document.createElement("div");
     var centerButton = document.createElement("button");
-    var hideButton = document.createElement("button");
     var clearButton = document.createElement("button");
 
     content.className = "selected-run-content";
@@ -865,18 +835,11 @@
       selectAndCenterRun(run.id);
     });
 
-    hideButton.type = "button";
-    hideButton.textContent = "Masquer";
-    hideButton.addEventListener("click", function () {
-      toggleRunVisibility(run.id, false);
-    });
-
     clearButton.type = "button";
     clearButton.textContent = "Effacer s\u00e9lection";
     clearButton.addEventListener("click", clearSelection);
 
     actions.appendChild(centerButton);
-    actions.appendChild(hideButton);
     actions.appendChild(clearButton);
     content.appendChild(actions);
 
@@ -1143,10 +1106,11 @@
   function fitMapToVisibleRuns() {
     var bounds = L.latLngBounds();
     var hasVisibleRun = false;
+    var visibleRunIds = getFilteredRunIds();
 
     allRuns.forEach(function (run) {
       var layer = runLayers[run.id];
-      if (run.visible && layer) {
+      if (visibleRunIds[run.id] && layer) {
         var layerBounds = layer.getBounds();
         if (layerBounds.isValid()) {
           bounds.extend(layerBounds);
@@ -1160,14 +1124,6 @@
     } else {
       map.setView(config.map.initialCenter, config.map.initialZoom);
     }
-  }
-
-  function setRunVisible(runId, visible) {
-    allRuns.forEach(function (run) {
-      if (run.id === runId) {
-        run.visible = visible;
-      }
-    });
   }
 
   function findRunById(runId) {
@@ -1301,12 +1257,6 @@
     return [].concat(demoRuns).concat(generatedRuns);
   }
 
-  function showAllRunsByDefault() {
-    allRuns.forEach(function (run) {
-      run.visible = true;
-    });
-  }
-
   function getConfiguredTileLayer() {
     var tileLayerName = config.map.tileLayer;
 
@@ -1338,8 +1288,6 @@
     clearSelection: clearSelection,
     fitMapToVisibleRuns: fitMapToVisibleRuns,
     selectAndCenterRun: selectAndCenterRun,
-    selectRun: selectRun,
-    setAllRunsVisibleOnMap: setAllRunsVisibleOnMap,
-    toggleRunVisibility: toggleRunVisibility
+    selectRun: selectRun
   };
 })();
