@@ -225,6 +225,7 @@
     Object.keys(allRunStartMarkersByRunId).forEach(function (runId) {
       var marker = allRunStartMarkersByRunId[runId];
       var run = findRunById(runId);
+      var isSelected = runId === selectedRunId;
 
       if (!marker || !run || !allRunStartMarkersLayer) {
         return;
@@ -236,17 +237,26 @@
         marker.removeFrom(allRunStartMarkersLayer);
       }
 
-      marker.setIcon(createRunStartMarkerIcon(run));
+      marker.setIcon(createRunStartMarkerIcon(run, isSelected));
+      marker.setZIndexOffset(isSelected ? 1000 : -600);
     });
   }
 
-  function createRunStartMarkerIcon(run) {
+  function createRunStartMarkerIcon(run, isSelected) {
+    var className = "run-start-marker-icon";
+    var markerClassName = "run-start-marker";
+
+    if (isSelected) {
+      className += " run-start-marker-icon--selected";
+      markerClassName += " run-start-marker--selected";
+    }
+
     return L.divIcon({
-      className: "run-start-marker-icon",
-      html: '<span class="run-start-marker" style="--run-color: ' + escapeHtml(run.color) + ';"></span>',
-      iconSize: [24, 32],
-      iconAnchor: [12, 31],
-      popupAnchor: [0, -28]
+      className: className,
+      html: '<span class="' + markerClassName + '" style="--run-color: ' + escapeHtml(run.color) + ';"></span>',
+      iconSize: isSelected ? [32, 42] : [24, 32],
+      iconAnchor: isSelected ? [16, 41] : [12, 31],
+      popupAnchor: isSelected ? [0, -38] : [0, -28]
     });
   }
 
