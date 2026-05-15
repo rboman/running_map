@@ -400,13 +400,32 @@ select {
   margin: 4px 0;
 }
 
+.photo-popup {
+  max-width: 280px;
+}
+
 .photo-popup img {
   display: block;
-  width: 180px;
-  height: 112px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 6px;
   margin-bottom: 8px;
+  background: #f6f4ef;
+}
+
+.photo-popup--landscape img {
+  width: 260px;
+  max-width: 70vw;
+  height: 170px;
+}
+
+.photo-popup--portrait {
+  max-width: 220px;
+}
+
+.photo-popup--portrait img {
+  width: 210px;
+  max-width: 65vw;
+  height: 310px;
 }
 
 .photo-marker {

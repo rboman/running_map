@@ -806,16 +806,25 @@
   function createPhotoPopup(photo) {
     var caption = photo.caption || photo.source || "Photo";
     var webPath = photo.web || photo.thumb;
+    var popupClass = "photo-popup photo-popup--" + getPhotoOrientation(photo);
 
     return [
-      '<div class="photo-popup">',
+      '<div class="' + popupClass + '">',
       '<a href="' + escapeHtml(webPath) + '" target="_blank" rel="noopener">',
-      '<img src="' + escapeHtml(photo.thumb) + '" alt="' + escapeHtml(caption) + '">',
+      '<img src="' + escapeHtml(webPath) + '" alt="' + escapeHtml(caption) + '">',
       "</a>",
       "<p>" + escapeHtml(caption) + "</p>",
       '<a href="' + escapeHtml(webPath) + '" target="_blank" rel="noopener">Ouvrir l\u2019image</a>',
       "</div>"
     ].join("");
+  }
+
+  function getPhotoOrientation(photo) {
+    if (isFiniteNumber(photo.webWidth) && isFiniteNumber(photo.webHeight)) {
+      return photo.webHeight > photo.webWidth ? "portrait" : "landscape";
+    }
+
+    return "landscape";
   }
 
   function formatDate(value) {

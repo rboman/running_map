@@ -285,10 +285,12 @@ def build_photo_metadata(source_path, run_id, index, args, output_root, warnings
     try:
         with Image.open(source_path) as image:
             gps = extract_gps_coordinates(image)
+            thumb_size = None
+            web_size = None
             if not args.dry_run:
                 output_dir.mkdir(parents=True, exist_ok=True)
                 if args.force_photos or not thumb_path.exists():
-                    save_thumbnail_jpeg(
+                    thumb_size = save_thumbnail_jpeg(
                         image,
                         thumb_path,
                         args.photo_thumb_size,
@@ -296,21 +298,32 @@ def build_photo_metadata(source_path, run_id, index, args, output_root, warnings
                         Image,
                         ImageOps,
                     )
+                else:
+                    thumb_size = read_image_size(thumb_path, Image)
                 if args.force_photos or not web_path.exists():
-                    save_resized_jpeg(
+                    web_size = save_resized_jpeg(
                         image,
                         web_path,
                         args.photo_web_size,
                         args.photo_quality,
                         ImageOps,
                     )
+                else:
+                    web_size = read_image_size(web_path, Image)
+            else:
+                thumb_size = (args.photo_thumb_size, thumbnail_height(args.photo_thumb_size))
+                web_size = resized_dimensions(image, args.photo_web_size, ImageOps)
     except OSError as exc:
         warnings.append("{}: could not read photo ({})".format(source_path, exc))
         return None
 
     photo = {
         "thumb": "./{}/{}/{}".format(PHOTO_OUTPUT_ROOT, run_id, thumb_name),
+        "thumbWidth": thumb_size[0],
+        "thumbHeight": thumb_size[1],
         "web": "./{}/{}/{}".format(PHOTO_OUTPUT_ROOT, run_id, web_name),
+        "webWidth": web_size[0],
+        "webHeight": web_size[1],
         "caption": source_path.stem,
         "source": source_path.name,
     }
@@ -335,10 +348,11 @@ def save_resized_jpeg(image, output_path, max_size, quality, image_ops):
         optimize=True,
         progressive=True,
     )
+    return resized.size
 
 
 def save_thumbnail_jpeg(image, output_path, width, quality, image_module, image_ops):
-    height = int(round(width * PHOTO_THUMB_ASPECT_RATIO))
+    height = thumbnail_height(width)
     resized = image_ops.exif_transpose(image)
     resized = image_ops.fit(
         resized,
@@ -355,6 +369,24 @@ def save_thumbnail_jpeg(image, output_path, width, quality, image_module, image_
         optimize=True,
         progressive=True,
     )
+    return resized.size
+
+
+def read_image_size(path, image_module):
+    with image_module.open(path) as image:
+        return image.size
+
+
+def thumbnail_height(width):
+    return int(round(width * PHOTO_THUMB_ASPECT_RATIO))
+
+
+def resized_dimensions(image, max_size, image_ops):
+    width, height = image_ops.exif_transpose(image).size
+    if width <= max_size and height <= max_size:
+        return (width, height)
+    scale = min(float(max_size) / float(width), float(max_size) / float(height))
+    return (int(width * scale), int(height * scale))
 
 
 def extract_gps_coordinates(image):
@@ -468,7 +500,11 @@ def format_photos_js(photos):
         suffix = "," if index < len(photos) - 1 else ""
         lines.append("      {")
         lines.append("        thumb: {},".format(js_string(photo["thumb"])))
+        lines.append("        thumbWidth: {},".format(photo["thumbWidth"]))
+        lines.append("        thumbHeight: {},".format(photo["thumbHeight"]))
         lines.append("        web: {},".format(js_string(photo["web"])))
+        lines.append("        webWidth: {},".format(photo["webWidth"]))
+        lines.append("        webHeight: {},".format(photo["webHeight"]))
         if "lat" in photo and "lon" in photo:
             lines.append("        lat: {:.6f},".format(photo["lat"]))
             lines.append("        lon: {:.6f},".format(photo["lon"]))
