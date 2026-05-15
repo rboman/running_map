@@ -52,7 +52,10 @@
   var map;
   var allRuns = [];
   var runLayers = {};
+  var allRunStartMarkersLayer = null;
+  var allRunStartMarkersByRunId = {};
   var selectedPhotoLayer = null;
+  var selectedRunDirectionLayer = null;
   var selectedRunEndpointLayer = null;
   var selectedPhotoMarkersById = {};
   var selectedPhotoThumbsById = {};
@@ -78,6 +81,7 @@
 
     initMap();
     createRunLayers();
+    createAllRunStartMarkersLayer(allRuns);
     initSidebarControls();
     initRightPanelToggle();
     renderSidebar();
@@ -91,6 +95,17 @@
     map = L.map("map").setView(config.map.initialCenter, config.map.initialZoom);
 
     L.tileLayer(tileLayer.url, tileLayer.options).addTo(map);
+    createMapPanes();
+  }
+
+  function createMapPanes() {
+    map.createPane("run-start-markers");
+    map.getPane("run-start-markers").style.zIndex = 430;
+    map.getPane("run-start-markers").style.pointerEvents = "none";
+
+    map.createPane("run-direction-markers");
+    map.getPane("run-direction-markers").style.zIndex = 450;
+    map.getPane("run-direction-markers").style.pointerEvents = "none";
   }
 
   function createRunLayers() {
@@ -174,6 +189,162 @@
     }).addTo(group);
 
     return group;
+  }
+
+  function createAllRunStartMarkersLayer(runs) {
+    allRunStartMarkersLayer = L.layerGroup().addTo(map);
+    allRunStartMarkersByRunId = {};
+
+    runs.forEach(function (run) {
+      var points = getRunTrackPoints(run);
+      var marker;
+
+      if (points.length < 1) {
+        return;
+      }
+
+      marker = L.marker(points[0], {
+        icon: createRunStartStarIcon("normal"),
+        interactive: false,
+        keyboard: false,
+        pane: "run-start-markers",
+        title: "D\u00e9part de " + run.title,
+        zIndexOffset: -600
+      });
+
+      allRunStartMarkersByRunId[run.id] = marker;
+
+      if (run.visible) {
+        marker.addTo(allRunStartMarkersLayer);
+      }
+    });
+
+    updateAllRunStartMarkersStyle();
+  }
+
+  function updateAllRunStartMarkersStyle() {
+    Object.keys(allRunStartMarkersByRunId).forEach(function (runId) {
+      var marker = allRunStartMarkersByRunId[runId];
+      var run = findRunById(runId);
+      var state = "normal";
+
+      if (!marker || !run || !allRunStartMarkersLayer) {
+        return;
+      }
+
+      if (run.visible && !allRunStartMarkersLayer.hasLayer(marker)) {
+        marker.addTo(allRunStartMarkersLayer);
+      } else if (!run.visible && allRunStartMarkersLayer.hasLayer(marker)) {
+        marker.removeFrom(allRunStartMarkersLayer);
+      }
+
+      if (selectedRunId) {
+        state = runId === selectedRunId ? "hidden" : "dimmed";
+      }
+
+      marker.setIcon(createRunStartStarIcon(state));
+    });
+  }
+
+  function createRunStartStarIcon(state) {
+    var modifier = "";
+
+    if (state === "dimmed") {
+      modifier = " run-start-star--dimmed";
+    } else if (state === "hidden") {
+      modifier = " run-start-star--hidden";
+    }
+
+    return L.divIcon({
+      className: "run-start-star-icon",
+      html: '<span class="run-start-star' + modifier + '">\u2605</span>',
+      iconSize: [22, 22],
+      iconAnchor: [11, 11]
+    });
+  }
+
+  function createSelectedRunDirectionLayer(run) {
+    var points = getRunTrackPoints(run);
+    var group = L.layerGroup();
+    var arrowIndexes = getDirectionArrowIndexes(points.length);
+
+    if (points.length < 8 || arrowIndexes.length === 0) {
+      return group;
+    }
+
+    arrowIndexes.forEach(function (index) {
+      var angle = getDirectionAngle(points[index - 1], points[index + 1]);
+
+      if (!isFiniteNumber(angle)) {
+        return;
+      }
+
+      L.marker(points[index], {
+        icon: createDirectionArrowIcon(angle),
+        interactive: false,
+        keyboard: false,
+        pane: "run-direction-markers",
+        zIndexOffset: -300
+      }).addTo(group);
+    });
+
+    return group;
+  }
+
+  function getDirectionArrowIndexes(pointCount) {
+    var indexes = [];
+    var arrowCount;
+    var startIndex;
+    var endIndex;
+    var availableCount;
+    var index;
+    var i;
+
+    if (pointCount < 8) {
+      return indexes;
+    }
+
+    arrowCount = Math.min(8, Math.max(5, Math.floor(pointCount / 60)));
+    startIndex = Math.max(1, Math.floor((pointCount - 1) * 0.15));
+    endIndex = Math.min(pointCount - 2, Math.ceil((pointCount - 1) * 0.85));
+    availableCount = endIndex - startIndex + 1;
+
+    if (availableCount < 1) {
+      return indexes;
+    }
+
+    arrowCount = Math.min(arrowCount, availableCount);
+
+    for (i = 0; i < arrowCount; i += 1) {
+      index = Math.round(startIndex + (availableCount - 1) * ((i + 0.5) / arrowCount));
+      if (indexes.indexOf(index) === -1) {
+        indexes.push(index);
+      }
+    }
+
+    return indexes;
+  }
+
+  function getDirectionAngle(previousPoint, nextPoint) {
+    var previousLayerPoint = map.latLngToLayerPoint(previousPoint);
+    var nextLayerPoint = map.latLngToLayerPoint(nextPoint);
+    var deltaX = nextLayerPoint.x - previousLayerPoint.x;
+    var deltaY = nextLayerPoint.y - previousLayerPoint.y;
+
+    if (deltaX === 0 && deltaY === 0) {
+      return null;
+    }
+
+    return Math.atan2(deltaY, deltaX) * 180 / Math.PI;
+  }
+
+  function createDirectionArrowIcon(angleDeg) {
+    return L.divIcon({
+      className: "run-direction-arrow-icon",
+      html: '<span class="run-direction-arrow" style="transform: rotate(' + angleDeg + 'deg);">\u27a4</span>',
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
   }
 
   function createEndpointIcon(type) {
@@ -578,12 +749,14 @@
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
+    renderSelectedRunDirection(run);
     renderSelectedRunEndpoints(run);
     renderSelectedPhotoMarkers(run);
   }
 
   function clearSelection() {
     clearSelectedPhotoMarkers();
+    clearSelectedRunDirection();
     clearSelectedRunEndpoints();
     resetSelectedPhotoState();
     selectedRunId = null;
@@ -607,6 +780,8 @@
         bringLayerToFront(layer);
       }
     });
+
+    updateAllRunStartMarkersStyle();
   }
 
   function getTrackStyle(run) {
@@ -653,6 +828,8 @@
         trackLayer.removeFrom(map);
       }
     }
+
+    updateAllRunStartMarkersStyle();
   }
 
   function renderSelectedRunPanel() {
@@ -877,6 +1054,24 @@
     if (selectedRunEndpointLayer) {
       selectedRunEndpointLayer.removeFrom(map);
       selectedRunEndpointLayer = null;
+    }
+  }
+
+  function renderSelectedRunDirection(run) {
+    clearSelectedRunDirection();
+
+    if (!run) {
+      return;
+    }
+
+    selectedRunDirectionLayer = createSelectedRunDirectionLayer(run);
+    selectedRunDirectionLayer.addTo(map);
+  }
+
+  function clearSelectedRunDirection() {
+    if (selectedRunDirectionLayer) {
+      selectedRunDirectionLayer.removeFrom(map);
+      selectedRunDirectionLayer = null;
     }
   }
 
