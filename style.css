@@ -39,6 +39,10 @@ select {
   min-height: 100vh;
 }
 
+.app-shell.right-panel-collapsed {
+  grid-template-columns: var(--left-panel-width) minmax(0, 1fr);
+}
+
 .left-panel,
 .right-panel {
   height: 100vh;
@@ -53,6 +57,10 @@ select {
 
 .right-panel {
   border-left: 1px solid var(--border);
+}
+
+.app-shell.right-panel-collapsed .right-panel {
+  display: none;
 }
 
 .sidebar-header {
@@ -240,6 +248,11 @@ select {
   outline: none;
 }
 
+.photo-thumb-button.is-active {
+  border-color: #b99b00;
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.35);
+}
+
 .photo-thumb-button img {
   display: block;
   width: 100%;
@@ -380,8 +393,29 @@ select {
 }
 
 .map-panel {
+  position: relative;
   min-width: 0;
   height: 100vh;
+}
+
+.right-panel-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 900;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: var(--panel-bg);
+  color: #124f54;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.right-panel-toggle:hover,
+.right-panel-toggle:focus {
+  border-color: var(--accent);
+  outline: none;
 }
 
 #map {
@@ -449,6 +483,11 @@ select {
   .app-shell {
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(360px, 58vh) auto;
+  }
+
+  .app-shell.right-panel-collapsed {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(360px, 58vh);
   }
 
   .left-panel,

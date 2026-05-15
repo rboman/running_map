@@ -53,10 +53,14 @@
   var allRuns = [];
   var runLayers = {};
   var selectedPhotoLayer = null;
+  var selectedPhotoMarkersById = {};
+  var selectedPhotoThumbsById = {};
+  var activePhotoId = null;
   var sidebarSearchText = "";
   var sidebarYearFilter = "";
   var selectedRunId = null;
   var selectedRunPhotosExpanded = false;
+  var isRightPanelCollapsed = false;
 
   window.addEventListener("load", startApp);
 
@@ -73,6 +77,7 @@
     initMap();
     createRunLayers();
     initSidebarControls();
+    initRightPanelToggle();
     renderSidebar();
     renderSelectedRunPanel();
     fitMapToVisibleRuns();
@@ -108,18 +113,18 @@
 
   function createSelectedPhotoLayer(run) {
     var group = L.layerGroup();
-    var photos = getPhotosWithCoordinates(run);
-    var maxPhotos = getPositiveIntegerConfig(config.photos.maxPhotoMarkers);
 
     if (!arePhotosEnabled() || !config.photos.showPhotoMarkers) {
       return group;
     }
 
-    if (maxPhotos !== null) {
-      photos = photos.slice(0, maxPhotos);
-    }
+    (run.photos || []).forEach(function (photo, index) {
+      var photoId = getPhotoId(run, index);
 
-    photos.forEach(function (photo) {
+      if (!hasPhotoCoordinates(photo)) {
+        return;
+      }
+
       var marker = L.marker([photo.lat, photo.lon], {
         icon: L.divIcon({
           className: "photo-marker",
@@ -130,7 +135,11 @@
       });
 
       marker.bindPopup(createPhotoPopup(photo));
+      marker.on("click", function () {
+        selectPhotoFromMarker(photoId);
+      });
       marker.addTo(group);
+      selectedPhotoMarkersById[photoId] = marker;
     });
 
     return group;
@@ -189,6 +198,41 @@
         clearSelection();
         setAllRunsVisibleOnMap(false);
       });
+    }
+  }
+
+  function initRightPanelToggle() {
+    var toggleButton = document.getElementById("right-panel-toggle");
+
+    if (!toggleButton) {
+      return;
+    }
+
+    toggleButton.addEventListener("click", function () {
+      isRightPanelCollapsed = !isRightPanelCollapsed;
+      updateRightPanelState();
+    });
+
+    updateRightPanelState();
+  }
+
+  function updateRightPanelState() {
+    var shell = document.querySelector(".app-shell");
+    var toggleButton = document.getElementById("right-panel-toggle");
+
+    if (shell) {
+      shell.classList.toggle("right-panel-collapsed", isRightPanelCollapsed);
+    }
+
+    if (toggleButton) {
+      toggleButton.textContent = isRightPanelCollapsed ? "Afficher les d\u00e9tails" : "Masquer les d\u00e9tails";
+      toggleButton.setAttribute("aria-expanded", String(!isRightPanelCollapsed));
+    }
+
+    if (map && typeof map.invalidateSize === "function") {
+      window.setTimeout(function () {
+        map.invalidateSize();
+      }, 100);
     }
   }
 
@@ -453,6 +497,9 @@
       return;
     }
 
+    clearSelectedPhotoMarkers();
+    resetSelectedPhotoState();
+
     if (selectedRunId !== runId) {
       selectedRunPhotosExpanded = false;
     }
@@ -473,12 +520,13 @@
   }
 
   function clearSelection() {
+    clearSelectedPhotoMarkers();
+    resetSelectedPhotoState();
     selectedRunId = null;
     selectedRunPhotosExpanded = false;
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
-    clearSelectedPhotoMarkers();
   }
 
   function applySelectionStyles() {
@@ -552,6 +600,7 @@
     }
 
     panel.innerHTML = "";
+    selectedPhotoThumbsById = {};
 
     if (!run) {
       var emptyMessage = document.createElement("p");
@@ -617,7 +666,7 @@
   function appendSelectedRunGallery(content, run) {
     var photos = run.photos || [];
     var maxPhotos = getPositiveIntegerConfig(config.photos.maxPhotosInPanel);
-    var visiblePhotos;
+    var visiblePhotoCount;
     var gallery;
     var heading;
     var list;
@@ -627,7 +676,7 @@
       return;
     }
 
-    visiblePhotos = selectedRunPhotosExpanded || maxPhotos === null ? photos : photos.slice(0, maxPhotos);
+    visiblePhotoCount = selectedRunPhotosExpanded || maxPhotos === null ? photos.length : Math.min(photos.length, maxPhotos);
 
     gallery = document.createElement("section");
     gallery.className = "selected-photo-gallery";
@@ -639,8 +688,8 @@
     list = document.createElement("div");
     list.className = "photo-gallery-grid";
 
-    visiblePhotos.forEach(function (photo) {
-      list.appendChild(createPhotoThumbnailButton(photo));
+    photos.slice(0, visiblePhotoCount).forEach(function (photo, index) {
+      list.appendChild(createPhotoThumbnailButton(photo, getPhotoId(run, index)));
     });
 
     gallery.appendChild(list);
@@ -657,7 +706,7 @@
           renderSelectedRunPanel();
         });
       } else {
-        toggleButton.textContent = "+" + (photos.length - visiblePhotos.length) + " photos";
+        toggleButton.textContent = "+" + (photos.length - visiblePhotoCount) + " photos";
         toggleButton.addEventListener("click", function () {
           selectedRunPhotosExpanded = true;
           renderSelectedRunPanel();
@@ -670,16 +719,20 @@
     content.appendChild(gallery);
   }
 
-  function createPhotoThumbnailButton(photo) {
+  function createPhotoThumbnailButton(photo, photoId) {
     var button = document.createElement("button");
     var image = document.createElement("img");
 
     button.type = "button";
     button.className = "photo-thumb-button";
+    if (photoId === activePhotoId) {
+      button.className += " is-active";
+    }
     button.title = photo.caption || photo.source || "Photo";
     button.addEventListener("click", function () {
-      window.open(photo.web || photo.thumb, "_blank", "noopener");
+      selectPhotoFromThumb(photo, photoId);
     });
+    selectedPhotoThumbsById[photoId] = button;
 
     image.src = photo.thumb;
     image.alt = photo.caption || photo.source || "Photo";
@@ -738,12 +791,90 @@
       selectedPhotoLayer.removeFrom(map);
       selectedPhotoLayer = null;
     }
+
+    selectedPhotoMarkersById = {};
   }
 
-  function getPhotosWithCoordinates(run) {
-    return (run.photos || []).filter(function (photo) {
-      return isFiniteNumber(photo.lat) && isFiniteNumber(photo.lon);
+  function resetSelectedPhotoState() {
+    activePhotoId = null;
+    selectedPhotoThumbsById = {};
+    selectedPhotoMarkersById = {};
+  }
+
+  function selectPhotoFromThumb(photo, photoId) {
+    var marker = selectedPhotoMarkersById[photoId];
+
+    activatePhotoThumb(photoId);
+
+    if (!hasPhotoCoordinates(photo) || !marker) {
+      return;
+    }
+
+    map.panTo([photo.lat, photo.lon], { animate: true });
+    marker.openPopup();
+  }
+
+  function selectPhotoFromMarker(photoId) {
+    activePhotoId = photoId;
+    ensurePhotoThumbRendered(photoId);
+    activatePhotoThumb(photoId);
+    scrollPhotoThumbIntoView(photoId);
+  }
+
+  function ensurePhotoThumbRendered(photoId) {
+    var run = findRunById(selectedRunId);
+    var maxPhotos = getPositiveIntegerConfig(config.photos.maxPhotosInPanel);
+    var photoIndex;
+
+    if (selectedPhotoThumbsById[photoId] || selectedRunPhotosExpanded || maxPhotos === null || !run) {
+      return;
+    }
+
+    photoIndex = getPhotoIndexById(run, photoId);
+
+    if (photoIndex >= maxPhotos) {
+      selectedRunPhotosExpanded = true;
+      renderSelectedRunPanel();
+    }
+  }
+
+  function activatePhotoThumb(photoId) {
+    activePhotoId = photoId;
+
+    Object.keys(selectedPhotoThumbsById).forEach(function (id) {
+      selectedPhotoThumbsById[id].classList.toggle("is-active", id === photoId);
     });
+  }
+
+  function scrollPhotoThumbIntoView(photoId) {
+    var thumb = selectedPhotoThumbsById[photoId];
+
+    if (!thumb || isRightPanelCollapsed || typeof thumb.scrollIntoView !== "function") {
+      return;
+    }
+
+    thumb.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  function getPhotoId(run, index) {
+    return run.id + "::photo-" + index;
+  }
+
+  function getPhotoIndexById(run, photoId) {
+    var photos = run.photos || [];
+    var foundIndex = -1;
+
+    photos.forEach(function (photo, index) {
+      if (getPhotoId(run, index) === photoId) {
+        foundIndex = index;
+      }
+    });
+
+    return foundIndex;
+  }
+
+  function hasPhotoCoordinates(photo) {
+    return isFiniteNumber(photo.lat) && isFiniteNumber(photo.lon);
   }
 
   function isFiniteNumber(value) {
