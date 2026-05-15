@@ -476,42 +476,41 @@ select {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
 }
 
-.run-start-star-icon,
+.run-start-marker-icon,
 .run-direction-arrow-icon {
   background: transparent;
   border: 0;
-  pointer-events: none;
 }
 
-.leaflet-run-start-markers-pane,
 .leaflet-run-direction-markers-pane {
   pointer-events: none;
 }
 
-.run-start-star {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.run-direction-arrow-icon {
+  pointer-events: none;
+}
+
+.run-start-marker {
+  display: block;
+  position: relative;
   width: 22px;
   height: 22px;
-  color: #176f75;
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.88;
-  text-shadow:
-    0 1px 0 #ffffff,
-    1px 0 0 #ffffff,
-    0 -1px 0 #ffffff,
-    -1px 0 0 #ffffff,
-    0 2px 5px rgba(0, 0, 0, 0.28);
+  border: 3px solid #ffffff;
+  border-radius: 50% 50% 50% 0;
+  background: var(--run-color, #176f75);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.32);
+  transform: rotate(-45deg);
 }
 
-.run-start-star--dimmed {
-  opacity: 0.22;
-}
-
-.run-start-star--hidden {
-  opacity: 0;
+.run-start-marker::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .run-direction-arrow {

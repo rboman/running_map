@@ -101,7 +101,6 @@
   function createMapPanes() {
     map.createPane("run-start-markers");
     map.getPane("run-start-markers").style.zIndex = 430;
-    map.getPane("run-start-markers").style.pointerEvents = "none";
 
     map.createPane("run-direction-markers");
     map.getPane("run-direction-markers").style.zIndex = 450;
@@ -204,14 +203,13 @@
       }
 
       marker = L.marker(points[0], {
-        icon: createRunStartStarIcon("normal"),
-        interactive: false,
-        keyboard: false,
+        icon: createRunStartMarkerIcon(run),
         pane: "run-start-markers",
         title: "D\u00e9part de " + run.title,
         zIndexOffset: -600
       });
 
+      marker.bindPopup(createRunStartPopup(run));
       allRunStartMarkersByRunId[run.id] = marker;
 
       if (run.visible) {
@@ -226,7 +224,6 @@
     Object.keys(allRunStartMarkersByRunId).forEach(function (runId) {
       var marker = allRunStartMarkersByRunId[runId];
       var run = findRunById(runId);
-      var state = "normal";
 
       if (!marker || !run || !allRunStartMarkersLayer) {
         return;
@@ -238,35 +235,35 @@
         marker.removeFrom(allRunStartMarkersLayer);
       }
 
-      if (selectedRunId) {
-        state = runId === selectedRunId ? "hidden" : "dimmed";
-      }
-
-      marker.setIcon(createRunStartStarIcon(state));
+      marker.setIcon(createRunStartMarkerIcon(run));
     });
   }
 
-  function createRunStartStarIcon(state) {
-    var modifier = "";
-
-    if (state === "dimmed") {
-      modifier = " run-start-star--dimmed";
-    } else if (state === "hidden") {
-      modifier = " run-start-star--hidden";
-    }
-
+  function createRunStartMarkerIcon(run) {
     return L.divIcon({
-      className: "run-start-star-icon",
-      html: '<span class="run-start-star' + modifier + '">\u2605</span>',
-      iconSize: [22, 22],
-      iconAnchor: [11, 11]
+      className: "run-start-marker-icon",
+      html: '<span class="run-start-marker" style="--run-color: ' + escapeHtml(run.color) + ';"></span>',
+      iconSize: [24, 32],
+      iconAnchor: [12, 31],
+      popupAnchor: [0, -28]
     });
+  }
+
+  function createRunStartPopup(run) {
+    return [
+      '<div class="track-popup">',
+      "<h2>" + escapeHtml(run.title) + "</h2>",
+      "<p><strong>D\u00e9part du parcours</strong></p>",
+      "<p><strong>Date :</strong> " + escapeHtml(formatDate(run.date)) + "</p>",
+      "<p><strong>Distance :</strong> " + escapeHtml(formatDistance(run.distanceKm)) + "</p>",
+      "</div>"
+    ].join("");
   }
 
   function createSelectedRunDirectionLayer(run) {
     var points = getRunTrackPoints(run);
     var group = L.layerGroup();
-    var arrowIndexes = getDirectionArrowIndexes(points.length);
+    var arrowIndexes = getDirectionArrowIndexes(points.length, run);
 
     if (points.length < 8 || arrowIndexes.length === 0) {
       return group;
@@ -291,9 +288,9 @@
     return group;
   }
 
-  function getDirectionArrowIndexes(pointCount) {
+  function getDirectionArrowIndexes(pointCount, run) {
     var indexes = [];
-    var arrowCount;
+    var arrowCount = getDirectionArrowCount(run, pointCount);
     var startIndex;
     var endIndex;
     var availableCount;
@@ -304,7 +301,6 @@
       return indexes;
     }
 
-    arrowCount = Math.min(8, Math.max(5, Math.floor(pointCount / 60)));
     startIndex = Math.max(1, Math.floor((pointCount - 1) * 0.15));
     endIndex = Math.min(pointCount - 2, Math.ceil((pointCount - 1) * 0.85));
     availableCount = endIndex - startIndex + 1;
@@ -323,6 +319,14 @@
     }
 
     return indexes;
+  }
+
+  function getDirectionArrowCount(run, pointCount) {
+    if (run && isFiniteNumber(run.distanceKm) && run.distanceKm > 0) {
+      return Math.min(40, Math.max(3, Math.round(run.distanceKm / 0.5)));
+    }
+
+    return Math.min(20, Math.max(3, Math.floor(pointCount / 40)));
   }
 
   function getDirectionAngle(previousPoint, nextPoint) {
