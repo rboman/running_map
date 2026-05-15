@@ -3,6 +3,13 @@ window.RUNNING_MAP_CONFIG = {
     defaultOpacity: 0.85,
     defaultWeight: 5
   },
+  photos: {
+    enabled: true,
+    showPhotoGallery: true,
+    showPhotoMarkers: true,
+    maxPhotosInPanel: 12,
+    maxPhotoMarkers: 20
+  },
   selection: {
     selectedColor: "#ffcc00",
     selectedWeight: 8,

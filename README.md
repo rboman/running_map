@@ -54,15 +54,19 @@ window.RUNNING_MAP_CONFIG = {
     showGeneratedRuns: true
   },
   photos: {
+    enabled: true,
+    showPhotoGallery: true,
     showPhotoMarkers: true,
-    maxPhotosPerRun: null
+    maxPhotosInPanel: 12,
+    maxPhotoMarkers: 20
   }
 };
 ```
 
 `map.tileLayer` accepte actuellement `osm` et `opentopomap`. Une valeur inconnue
-retombe sur `osm`. Pour `photos.maxPhotosPerRun`, `null` signifie aucune limite ;
-un nombre positif limite le nombre de photos affichees par course.
+retombe sur `osm`. La configuration `photos` concerne uniquement l'affichage
+dans le navigateur. Les tailles et la qualite des images generees se reglent
+avec les options CLI de `scripts/import_adeps_folder.py`.
 
 ## Fichiers Leaflet vendored
 
@@ -189,6 +193,7 @@ Commande Windows depuis `cmd.exe` :
 
 ```cmd
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --force
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --force
 ```
 
 Le script ne modifie jamais le dossier source : il lit les GPX et génère seulement
@@ -198,6 +203,19 @@ ces fichiers dans le projet :
 tracks\generated-tracks.js
 data\generated-runs.js
 ```
+
+Avec `--photos`, il lit aussi les dossiers `photos\` presents dans les dossiers
+de course et genere des copies web legeres, nettoyees de leurs metadonnees, dans :
+
+```text
+photos\generated\{run_id}\photo-001-thumb.jpg
+photos\generated\{run_id}\photo-001-web.jpg
+```
+
+Les originaux Dropbox ne sont jamais modifies, deplaces ou supprimes. Aucun
+nettoyage automatique des anciennes photos generees n'est effectue dans cette V1.
+Les images generees servent a la consultation web dans la carte, pas a
+l'archivage haute qualite. Les originaux restent la reference dans Dropbox.
 
 Les démos pédagogiques restent dans `data\runs.js`. Les courses importées sont
 ajoutées séparément via `window.GENERATED_RUNS`, et leurs traces via
@@ -220,6 +238,8 @@ python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . -
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --year 2026 --force
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --simplify-tolerance-m 10 --force
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --default-visible true --force
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --dry-run
+python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --force --force-photos
 ```
 
 Options disponibles :
@@ -233,12 +253,30 @@ source_dir
 --elevation-threshold-m
 --simplify-tolerance-m
 --default-visible true|false
+--photos / --with-photos
+--photo-thumb-size
+--photo-web-size
+--photo-quality
+--force-photos
 ```
 
 Par défaut, `--default-visible` vaut `false` pour éviter d'afficher trop de
 traces importées d'un coup. La tolérance de simplification vaut `5.0` mètres.
 Le dénivelé positif reste approximatif, car les altitudes GPS peuvent être
 bruitées.
+
+L'import photo V1 accepte uniquement `.jpg`, `.jpeg` et `.png`. Les autres
+formats sont ignores avec un avertissement. Les coordonnees GPS EXIF, si elles
+existent, sont copiees dans `data/generated-runs.js`; les fichiers JPEG publies
+ne conservent pas les EXIF. Sans `--force-photos`, les fichiers thumb/web deja
+presents ne sont pas reecrits, mais les metadonnees photo sont tout de meme
+regenerees dans `generated-runs.js`.
+
+Par defaut, les miniatures sont generees en `180x112`, soit la taille affichee
+dans les popups photo de la carte. Les images web font au maximum 800 px, avec
+une qualite JPEG de 75. Ces valeurs privilegient un site leger et beaucoup de
+photos visibles plutot qu'une restitution haute resolution. Elles peuvent etre
+ajustees avec `--photo-thumb-size`, `--photo-web-size` et `--photo-quality`.
 
 ## Pourquoi pas `fetch()`, modules, npm ou serveur local ?
 

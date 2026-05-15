@@ -197,6 +197,56 @@ select {
   outline: none;
 }
 
+.selected-photo-gallery {
+  display: grid;
+  gap: 8px;
+}
+
+.selected-photo-gallery h3 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.photo-thumb-button {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.photo-thumb-button:hover,
+.photo-thumb-button:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.photo-thumb-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-gallery-more {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .empty-list {
   margin: 0;
   padding: 14px;

@@ -16,8 +16,11 @@
       showGeneratedRuns: true
     },
     photos: {
+      enabled: true,
+      showPhotoGallery: true,
       showPhotoMarkers: true,
-      maxPhotosPerRun: null
+      maxPhotosInPanel: 12,
+      maxPhotoMarkers: 20
     },
     selection: {
       selectedColor: "#ffcc00",
@@ -49,7 +52,7 @@
   var map;
   var allRuns = [];
   var runLayers = {};
-  var photoLayers = {};
+  var selectedPhotoLayer = null;
   var sidebarSearchText = "";
   var sidebarYearFilter = "";
   var selectedRunId = null;
@@ -94,24 +97,20 @@
         }
       });
 
-      var photosLayer = createPhotoLayer(run);
-
       runLayers[run.id] = trackLayer;
-      photoLayers[run.id] = photosLayer;
 
       if (run.visible) {
         trackLayer.addTo(map);
-        photosLayer.addTo(map);
       }
     });
   }
 
-  function createPhotoLayer(run) {
+  function createSelectedPhotoLayer(run) {
     var group = L.layerGroup();
-    var photos = run.photos || [];
-    var maxPhotos = getMaxPhotosPerRun();
+    var photos = getPhotosWithCoordinates(run);
+    var maxPhotos = getPositiveIntegerConfig(config.photos.maxPhotoMarkers);
 
-    if (!config.photos.showPhotoMarkers) {
+    if (!arePhotosEnabled() || !config.photos.showPhotoMarkers) {
       return group;
     }
 
@@ -384,21 +383,18 @@
 
   function toggleRunVisibility(runId, visible) {
     var trackLayer = runLayers[runId];
-    var photosLayer = photoLayers[runId];
 
-    if (!trackLayer || !photosLayer) {
+    if (!trackLayer) {
       return;
     }
 
     if (visible) {
       trackLayer.addTo(map);
-      photosLayer.addTo(map);
     } else {
       if (selectedRunId === runId) {
         clearSelection();
       }
       trackLayer.removeFrom(map);
-      photosLayer.removeFrom(map);
     }
 
     setRunVisible(runId, visible);
@@ -468,6 +464,7 @@
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
+    renderSelectedPhotoMarkers(run);
   }
 
   function clearSelection() {
@@ -475,6 +472,7 @@
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
+    clearSelectedPhotoMarkers();
   }
 
   function applySelectionStyles() {
@@ -529,21 +527,12 @@
 
   function setRunVisibilityOnMap(runId, visible) {
     var trackLayer = runLayers[runId];
-    var photosLayer = photoLayers[runId];
 
     if (trackLayer) {
       if (visible) {
         trackLayer.addTo(map);
       } else {
         trackLayer.removeFrom(map);
-      }
-    }
-
-    if (photosLayer) {
-      if (visible) {
-        photosLayer.addTo(map);
-      } else {
-        photosLayer.removeFrom(map);
       }
     }
   }
@@ -591,6 +580,7 @@
     appendMeta(meta, "ID", run.id);
     appendMeta(meta, "Photos", formatPhotoCount(run));
     content.appendChild(meta);
+    appendSelectedRunGallery(content, run);
 
     actions.className = "selection-actions";
 
@@ -616,6 +606,66 @@
     content.appendChild(actions);
 
     return content;
+  }
+
+  function appendSelectedRunGallery(content, run) {
+    var photos = run.photos || [];
+    var maxPhotos = getPositiveIntegerConfig(config.photos.maxPhotosInPanel);
+    var visiblePhotos;
+    var gallery;
+    var heading;
+    var list;
+    var more;
+
+    if (!arePhotosEnabled() || !config.photos.showPhotoGallery || photos.length === 0) {
+      return;
+    }
+
+    visiblePhotos = maxPhotos === null ? photos : photos.slice(0, maxPhotos);
+
+    gallery = document.createElement("section");
+    gallery.className = "selected-photo-gallery";
+
+    heading = document.createElement("h3");
+    heading.textContent = "Photos";
+    gallery.appendChild(heading);
+
+    list = document.createElement("div");
+    list.className = "photo-gallery-grid";
+
+    visiblePhotos.forEach(function (photo) {
+      list.appendChild(createPhotoThumbnailButton(photo));
+    });
+
+    gallery.appendChild(list);
+
+    if (visiblePhotos.length < photos.length) {
+      more = document.createElement("p");
+      more.className = "photo-gallery-more";
+      more.textContent = "+" + (photos.length - visiblePhotos.length) + " photos";
+      gallery.appendChild(more);
+    }
+
+    content.appendChild(gallery);
+  }
+
+  function createPhotoThumbnailButton(photo) {
+    var button = document.createElement("button");
+    var image = document.createElement("img");
+
+    button.type = "button";
+    button.className = "photo-thumb-button";
+    button.title = photo.caption || photo.source || "Photo";
+    button.addEventListener("click", function () {
+      window.open(photo.web || photo.thumb, "_blank", "noopener");
+    });
+
+    image.src = photo.thumb;
+    image.alt = photo.caption || photo.source || "Photo";
+    image.loading = "lazy";
+
+    button.appendChild(image);
+    return button;
   }
 
   function createSelectedRunTitle(run) {
@@ -649,6 +699,34 @@
     }
 
     return count + " photos";
+  }
+
+  function renderSelectedPhotoMarkers(run) {
+    clearSelectedPhotoMarkers();
+
+    if (!run || !arePhotosEnabled() || !config.photos.showPhotoMarkers) {
+      return;
+    }
+
+    selectedPhotoLayer = createSelectedPhotoLayer(run);
+    selectedPhotoLayer.addTo(map);
+  }
+
+  function clearSelectedPhotoMarkers() {
+    if (selectedPhotoLayer) {
+      selectedPhotoLayer.removeFrom(map);
+      selectedPhotoLayer = null;
+    }
+  }
+
+  function getPhotosWithCoordinates(run) {
+    return (run.photos || []).filter(function (photo) {
+      return isFiniteNumber(photo.lat) && isFiniteNumber(photo.lon);
+    });
+  }
+
+  function isFiniteNumber(value) {
+    return typeof value === "number" && isFinite(value);
   }
 
   function fitMapToVisibleRuns() {
@@ -705,10 +783,16 @@
   }
 
   function createPhotoPopup(photo) {
+    var caption = photo.caption || photo.source || "Photo";
+    var webPath = photo.web || photo.thumb;
+
     return [
       '<div class="photo-popup">',
-      '<img src="' + escapeHtml(photo.thumb) + '" alt="' + escapeHtml(photo.caption) + '">',
-      "<p>" + escapeHtml(photo.caption) + "</p>",
+      '<a href="' + escapeHtml(webPath) + '" target="_blank" rel="noopener">',
+      '<img src="' + escapeHtml(photo.thumb) + '" alt="' + escapeHtml(caption) + '">',
+      "</a>",
+      "<p>" + escapeHtml(caption) + "</p>",
+      '<a href="' + escapeHtml(webPath) + '" target="_blank" rel="noopener">Ouvrir l\u2019image</a>',
       "</div>"
     ].join("");
   }
@@ -806,9 +890,11 @@
     return TILE_LAYERS.osm;
   }
 
-  function getMaxPhotosPerRun() {
-    var value = config.photos.maxPhotosPerRun;
+  function arePhotosEnabled() {
+    return config.photos && config.photos.enabled !== false;
+  }
 
+  function getPositiveIntegerConfig(value) {
     if (typeof value === "number" && isFinite(value) && value > 0) {
       return Math.floor(value);
     }

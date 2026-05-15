@@ -31,6 +31,10 @@ COLORS = [
     "#666666",
 ]
 
+SUPPORTED_PHOTO_SUFFIXES = set([".jpg", ".jpeg", ".png"])
+PHOTO_OUTPUT_ROOT = "photos/generated"
+PHOTO_THUMB_ASPECT_RATIO = 112.0 / 180.0
+
 SKIPPED_TREE_NAMES = set(
     [
         "videos brutes",
@@ -86,6 +90,36 @@ def parse_args():
         default="false",
         help="Initial visibility for generated runs.",
     )
+    parser.add_argument(
+        "--photos",
+        "--with-photos",
+        dest="with_photos",
+        action="store_true",
+        help="Import selected publication photos from each course photos folder.",
+    )
+    parser.add_argument(
+        "--photo-thumb-size",
+        type=int,
+        default=180,
+        help="Thumbnail width in pixels. Height follows the map popup ratio.",
+    )
+    parser.add_argument(
+        "--photo-web-size",
+        type=int,
+        default=800,
+        help="Maximum web image width or height in pixels.",
+    )
+    parser.add_argument(
+        "--photo-quality",
+        type=int,
+        default=75,
+        help="JPEG quality for generated photo files.",
+    )
+    parser.add_argument(
+        "--force-photos",
+        action="store_true",
+        help="Regenerate photo files even if thumb/web outputs already exist.",
+    )
     return parser.parse_args()
 
 
@@ -139,11 +173,12 @@ def choose_gpx_file(course_folder):
     return None, "multiple GPX files found and no track.gpx"
 
 
-def build_imported_run(course_folder, metadata, gpx_path, args, color):
+def build_imported_run(course_folder, metadata, gpx_path, args, color, output_root, warnings):
     points = read_track_points(gpx_path)
     simplified_points = simplify_points(points, args.simplify_tolerance_m)
     distance_km = total_distance_km(points)
     gain_m = elevation_gain_m(points, args.elevation_threshold_m)
+    photos, photo_report = import_run_photos(course_folder, metadata, args, output_root, warnings)
 
     feature = feature_from_points(simplified_points)
     run = {
@@ -155,7 +190,7 @@ def build_imported_run(course_folder, metadata, gpx_path, args, color):
         "color": color,
         "visible": args.default_visible == "true",
         "trackRef": metadata["id"],
-        "photos": [],
+        "photos": photos,
     }
     report = {
         "id": metadata["id"],
@@ -167,8 +202,209 @@ def build_imported_run(course_folder, metadata, gpx_path, args, color):
         "points_after": len(simplified_points),
         "distance_km": distance_km,
         "gain_m": gain_m,
+        "photo_report": photo_report,
     }
     return feature, run, report
+
+
+def import_run_photos(course_folder, metadata, args, output_root, warnings):
+    photo_report = {
+        "detected": 0,
+        "with_gps": 0,
+        "without_gps": 0,
+        "output_dir": output_root / PHOTO_OUTPUT_ROOT / metadata["id"],
+    }
+
+    if not args.with_photos:
+        return [], photo_report
+
+    validate_photo_options(args)
+
+    photo_folder = course_folder / "photos"
+    if not photo_folder.exists():
+        return [], photo_report
+    if not photo_folder.is_dir():
+        warnings.append("{}: photos exists but is not a folder".format(course_folder))
+        return [], photo_report
+
+    supported_paths = []
+
+    for path in sorted(photo_folder.iterdir(), key=lambda item: item.name.lower()):
+        if not path.is_file():
+            continue
+        suffix = path.suffix.lower()
+        if suffix in SUPPORTED_PHOTO_SUFFIXES:
+            supported_paths.append(path)
+        else:
+            warnings.append("{}: unsupported photo format ignored".format(path))
+
+    photo_report["detected"] = len(supported_paths)
+
+    photos = []
+    for index, source_path in enumerate(supported_paths, start=1):
+        photo = build_photo_metadata(
+            source_path,
+            metadata["id"],
+            index,
+            args,
+            output_root,
+            warnings,
+        )
+        if photo is None:
+            continue
+        if "lat" in photo and "lon" in photo:
+            photo_report["with_gps"] += 1
+        else:
+            photo_report["without_gps"] += 1
+        photos.append(photo)
+
+    return photos, photo_report
+
+
+def validate_photo_options(args):
+    if args.photo_thumb_size <= 0:
+        fail("--photo-thumb-size must be greater than zero.")
+    if args.photo_web_size <= 0:
+        fail("--photo-web-size must be greater than zero.")
+    if args.photo_quality < 1 or args.photo_quality > 95:
+        fail("--photo-quality must be between 1 and 95.")
+
+
+def build_photo_metadata(source_path, run_id, index, args, output_root, warnings):
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        fail("Pillow is required for --photos. Install requirements.txt first.")
+
+    output_dir = output_root / PHOTO_OUTPUT_ROOT / run_id
+    thumb_name = "photo-{0:03d}-thumb.jpg".format(index)
+    web_name = "photo-{0:03d}-web.jpg".format(index)
+    thumb_path = output_dir / thumb_name
+    web_path = output_dir / web_name
+
+    try:
+        with Image.open(source_path) as image:
+            gps = extract_gps_coordinates(image)
+            if not args.dry_run:
+                output_dir.mkdir(parents=True, exist_ok=True)
+                if args.force_photos or not thumb_path.exists():
+                    save_thumbnail_jpeg(
+                        image,
+                        thumb_path,
+                        args.photo_thumb_size,
+                        args.photo_quality,
+                        Image,
+                        ImageOps,
+                    )
+                if args.force_photos or not web_path.exists():
+                    save_resized_jpeg(
+                        image,
+                        web_path,
+                        args.photo_web_size,
+                        args.photo_quality,
+                        ImageOps,
+                    )
+    except OSError as exc:
+        warnings.append("{}: could not read photo ({})".format(source_path, exc))
+        return None
+
+    photo = {
+        "thumb": "./{}/{}/{}".format(PHOTO_OUTPUT_ROOT, run_id, thumb_name),
+        "web": "./{}/{}/{}".format(PHOTO_OUTPUT_ROOT, run_id, web_name),
+        "caption": source_path.stem,
+        "source": source_path.name,
+    }
+
+    if gps is not None:
+        lat, lon = gps
+        photo["lat"] = round(lat, 6)
+        photo["lon"] = round(lon, 6)
+
+    return photo
+
+
+def save_resized_jpeg(image, output_path, max_size, quality, image_ops):
+    resized = image_ops.exif_transpose(image)
+    resized.thumbnail((max_size, max_size))
+    if resized.mode != "RGB":
+        resized = resized.convert("RGB")
+    resized.save(
+        output_path,
+        "JPEG",
+        quality=quality,
+        optimize=True,
+        progressive=True,
+    )
+
+
+def save_thumbnail_jpeg(image, output_path, width, quality, image_module, image_ops):
+    height = int(round(width * PHOTO_THUMB_ASPECT_RATIO))
+    resized = image_ops.exif_transpose(image)
+    resized = image_ops.fit(
+        resized,
+        (width, height),
+        method=image_module.Resampling.LANCZOS,
+        centering=(0.5, 0.5),
+    )
+    if resized.mode != "RGB":
+        resized = resized.convert("RGB")
+    resized.save(
+        output_path,
+        "JPEG",
+        quality=quality,
+        optimize=True,
+        progressive=True,
+    )
+
+
+def extract_gps_coordinates(image):
+    try:
+        exif = image.getexif()
+    except (AttributeError, OSError, ValueError):
+        return None
+
+    if not exif:
+        return None
+
+    gps_info = exif.get_ifd(0x8825)
+    if not gps_info:
+        return None
+
+    latitude = coordinate_from_gps_values(gps_info.get(2), gps_info.get(1))
+    longitude = coordinate_from_gps_values(gps_info.get(4), gps_info.get(3))
+
+    if latitude is None or longitude is None:
+        return None
+
+    return latitude, longitude
+
+
+def coordinate_from_gps_values(values, ref):
+    if not values or not ref or len(values) != 3:
+        return None
+
+    try:
+        degrees = rational_to_float(values[0])
+        minutes = rational_to_float(values[1])
+        seconds = rational_to_float(values[2])
+    except (TypeError, ZeroDivisionError, ValueError):
+        return None
+
+    coordinate = degrees + minutes / 60.0 + seconds / 3600.0
+    ref_text = ref.decode("ascii", "ignore") if isinstance(ref, bytes) else str(ref)
+
+    if ref_text.upper() in ["S", "W"]:
+        coordinate = -coordinate
+
+    return coordinate
+
+
+def rational_to_float(value):
+    if hasattr(value, "numerator") and hasattr(value, "denominator"):
+        return float(value.numerator) / float(value.denominator)
+    if isinstance(value, tuple) and len(value) == 2:
+        return float(value[0]) / float(value[1])
+    return float(value)
 
 
 def write_generated_files(output_root, tracks, runs, force):
@@ -210,7 +446,7 @@ def format_generated_runs_js(runs):
                 "    color: {},".format(js_string(run["color"])),
                 "    visible: {},".format("true" if run["visible"] else "false"),
                 '    track: window.GENERATED_TRACKS[{}],'.format(js_string(run["trackRef"])),
-                "    photos: []",
+                format_photos_js(run["photos"]),
                 "  }}{}".format(suffix),
             ]
         )
@@ -221,6 +457,26 @@ def format_generated_runs_js(runs):
 
 def js_string(value):
     return json.dumps(value, ensure_ascii=False)
+
+
+def format_photos_js(photos):
+    if not photos:
+        return "    photos: []"
+
+    lines = ["    photos: ["]
+    for index, photo in enumerate(photos):
+        suffix = "," if index < len(photos) - 1 else ""
+        lines.append("      {")
+        lines.append("        thumb: {},".format(js_string(photo["thumb"])))
+        lines.append("        web: {},".format(js_string(photo["web"])))
+        if "lat" in photo and "lon" in photo:
+            lines.append("        lat: {:.6f},".format(photo["lat"]))
+            lines.append("        lon: {:.6f},".format(photo["lon"]))
+        lines.append("        caption: {},".format(js_string(photo["caption"])))
+        lines.append("        source: {}".format(js_string(photo["source"])))
+        lines.append("      }}{}".format(suffix))
+    lines.append("    ]")
+    return "\n".join(lines)
 
 
 def print_course_report(report):
@@ -235,6 +491,14 @@ def print_course_report(report):
     )
     print("  Distance: {:.2f} km".format(report["distance_km"]))
     print("  Approx. elevation gain: {:.0f} m".format(report["gain_m"]))
+    photo_report = report["photo_report"]
+    if photo_report["detected"]:
+        print("  Photos: {} (GPS: {}, no GPS: {})".format(
+            photo_report["detected"],
+            photo_report["with_gps"],
+            photo_report["without_gps"],
+        ))
+        print("  Photo output: {}".format(photo_report["output_dir"]))
 
 
 def print_summary(
@@ -244,6 +508,7 @@ def print_summary(
     warnings,
     generated_files,
     dry_run,
+    output_root,
 ):
     total_before = sum(report["points_before"] for report in reports)
     total_after = sum(report["points_after"] for report in reports)
@@ -259,6 +524,47 @@ def print_summary(
     print("Points before simplification: {}".format(total_before))
     print("Points after simplification: {}".format(total_after))
     print("Reduction: {:.1f}%".format(reduction))
+
+    total_photos = sum(report["photo_report"]["detected"] for report in reports)
+    total_photos_with_gps = sum(report["photo_report"]["with_gps"] for report in reports)
+    total_photos_without_gps = sum(report["photo_report"]["without_gps"] for report in reports)
+    photo_output_dirs = sorted(
+        str(report["photo_report"]["output_dir"])
+        for report in reports
+        if report["photo_report"]["detected"]
+    )
+
+    if total_photos:
+        print()
+        print("Photos")
+        print("Detected: {}".format(total_photos))
+        print("With GPS EXIF: {}".format(total_photos_with_gps))
+        print("Without GPS EXIF: {}".format(total_photos_without_gps))
+        if not dry_run:
+            generated_photo_dir = output_root / PHOTO_OUTPUT_ROOT
+            generated_photo_count, generated_photo_size = directory_file_stats(
+                generated_photo_dir
+            )
+            print(
+                "Generated photo files: {} (~{})".format(
+                    generated_photo_count,
+                    format_byte_size(generated_photo_size),
+                )
+            )
+            print(
+                "Generated photo folder size: ~{}".format(
+                    format_byte_size(generated_photo_size)
+                )
+            )
+            if total_photos:
+                print(
+                    "Average generated size per source photo: ~{}".format(
+                        format_byte_size(generated_photo_size / float(total_photos))
+                    )
+                )
+        print("Output folders:")
+        for output_dir in photo_output_dirs:
+            print("- {}".format(output_dir))
 
     print()
     print("Warnings:")
@@ -278,12 +584,30 @@ def print_summary(
 
 
 def format_file_size(path):
-    size = path.stat().st_size
+    return format_byte_size(path.stat().st_size)
+
+
+def format_byte_size(size):
     if size >= 1024 * 1024:
         return "{:.1f} MB".format(size / (1024.0 * 1024.0))
     if size >= 1024:
         return "{:.1f} KB".format(size / 1024.0)
-    return "{} B".format(size)
+    return "{} B".format(int(size))
+
+
+def directory_file_stats(path):
+    file_count = 0
+    total_size = 0
+
+    if not path.exists():
+        return file_count, total_size
+
+    for child in path.rglob("*"):
+        if child.is_file():
+            file_count += 1
+            total_size += child.stat().st_size
+
+    return file_count, total_size
 
 
 def main():
@@ -319,7 +643,7 @@ def main():
         try:
             color = COLORS[index % len(COLORS)]
             feature, run, report = build_imported_run(
-                course_folder, metadata, gpx_path, args, color
+                course_folder, metadata, gpx_path, args, color, output_root, warnings
             )
         except RuntimeError as exc:
             skipped_count += 1
@@ -342,6 +666,7 @@ def main():
         warnings,
         generated_files,
         args.dry_run,
+        output_root,
     )
 
 

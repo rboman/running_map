@@ -8,7 +8,56 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-01-19-aywaille"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-01-19-aywaille/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-01-19-aywaille/photo-001-web.jpg",
+        lat: 50.494479,
+        lon: 5.679157,
+        caption: "2025-01-19 10.09.31",
+        source: "2025-01-19 10.09.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-19-aywaille/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-01-19-aywaille/photo-002-web.jpg",
+        lat: 50.486267,
+        lon: 5.692401,
+        caption: "2025-01-19 10.18.33",
+        source: "2025-01-19 10.18.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-19-aywaille/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-01-19-aywaille/photo-003-web.jpg",
+        lat: 50.481592,
+        lon: 5.689212,
+        caption: "2025-01-19 10.33.14",
+        source: "2025-01-19 10.33.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-19-aywaille/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-01-19-aywaille/photo-004-web.jpg",
+        lat: 50.474122,
+        lon: 5.671354,
+        caption: "2025-01-19 11.08.21",
+        source: "2025-01-19 11.08.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-19-aywaille/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-01-19-aywaille/photo-005-web.jpg",
+        lat: 50.473878,
+        lon: 5.671587,
+        caption: "2025-01-19 11.12.50",
+        source: "2025-01-19 11.12.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-19-aywaille/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-01-19-aywaille/photo-006-web.jpg",
+        lat: 50.473948,
+        lon: 5.671417,
+        caption: "2025-01-19 11.14.34",
+        source: "2025-01-19 11.14.34.jpg"
+      }
+    ]
   },
   {
     id: "2025-01-26-beaufays",
@@ -19,7 +68,92 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-01-26-beaufays"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-001-web.jpg",
+        lat: 50.648198,
+        lon: 5.591387,
+        caption: "2025-01-26 06.28.17",
+        source: "2025-01-26 06.28.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-002-web.jpg",
+        lat: 50.563006,
+        lon: 5.636030,
+        caption: "2025-01-26 09.01.55",
+        source: "2025-01-26 09.01.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-003-web.jpg",
+        lat: 50.571371,
+        lon: 5.651463,
+        caption: "2025-01-26 09.30.08",
+        source: "2025-01-26 09.30.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-004-web.jpg",
+        lat: 50.585633,
+        lon: 5.641238,
+        caption: "2025-01-26 09.55.39",
+        source: "2025-01-26 09.55.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-005-web.jpg",
+        lat: 50.584982,
+        lon: 5.650939,
+        caption: "2025-01-26 10.03.01",
+        source: "2025-01-26 10.03.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-006-web.jpg",
+        lat: 50.582715,
+        lon: 5.650863,
+        caption: "2025-01-26 10.06.26",
+        source: "2025-01-26 10.06.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-007-web.jpg",
+        lat: 50.575393,
+        lon: 5.667256,
+        caption: "2025-01-26 10.18.37",
+        source: "2025-01-26 10.18.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-008-web.jpg",
+        lat: 50.557940,
+        lon: 5.665085,
+        caption: "2025-01-26 11.13.58",
+        source: "2025-01-26 11.13.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-009-web.jpg",
+        lat: 50.563035,
+        lon: 5.636210,
+        caption: "2025-01-26 11.37.25",
+        source: "2025-01-26 11.37.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-010-web.jpg",
+        caption: "2025-01-26 14.52.12",
+        source: "2025-01-26 14.52.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-01-26-beaufays/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-01-26-beaufays/photo-011-web.jpg",
+        caption: "2025-01-26 15.07.15",
+        source: "2025-01-26 15.07.15.jpg"
+      }
+    ]
   },
   {
     id: "2025-02-02-spa",
@@ -30,7 +164,118 @@ window.GENERATED_RUNS = [
     color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-02-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-001-web.jpg",
+        lat: 50.487877,
+        lon: 5.894919,
+        caption: "2025-02-02 09.23.12",
+        source: "2025-02-02 09.23.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-002-web.jpg",
+        lat: 50.487877,
+        lon: 5.894919,
+        caption: "2025-02-02 09.23.20",
+        source: "2025-02-02 09.23.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-003-web.jpg",
+        lat: 50.477836,
+        lon: 5.885233,
+        caption: "2025-02-02 09.45.15",
+        source: "2025-02-02 09.45.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-004-web.jpg",
+        lat: 50.475459,
+        lon: 5.885814,
+        caption: "2025-02-02 09.49.11",
+        source: "2025-02-02 09.49.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-005-web.jpg",
+        lat: 50.460062,
+        lon: 5.886676,
+        caption: "2025-02-02 10.03.51",
+        source: "2025-02-02 10.03.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-006-web.jpg",
+        lat: 50.459697,
+        lon: 5.889408,
+        caption: "2025-02-02 10.05.36",
+        source: "2025-02-02 10.05.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-007-web.jpg",
+        lat: 50.459873,
+        lon: 5.892421,
+        caption: "2025-02-02 10.08.05",
+        source: "2025-02-02 10.08.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-008-web.jpg",
+        lat: 50.458360,
+        lon: 5.900563,
+        caption: "2025-02-02 10.13.32",
+        source: "2025-02-02 10.13.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-009-web.jpg",
+        lat: 50.458345,
+        lon: 5.900632,
+        caption: "2025-02-02 10.14.13",
+        source: "2025-02-02 10.14.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-010-web.jpg",
+        lat: 50.461632,
+        lon: 5.914272,
+        caption: "2025-02-02 10.23.59-1",
+        source: "2025-02-02 10.23.59-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-011-web.jpg",
+        lat: 50.509633,
+        lon: 5.905494,
+        caption: "2025-02-02 11.14.42",
+        source: "2025-02-02 11.14.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-012-web.jpg",
+        caption: "2025-02-02 11.39.06",
+        source: "2025-02-02 11.39.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-013-web.jpg",
+        lat: 50.496753,
+        lon: 5.884901,
+        caption: "2025-02-02 11.39.54-1",
+        source: "2025-02-02 11.39.54-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-02-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-02-02-spa/photo-014-web.jpg",
+        lat: 50.496753,
+        lon: 5.884901,
+        caption: "2025-02-02 11.42.55-1",
+        source: "2025-02-02 11.42.55-1.jpg"
+      }
+    ]
   },
   {
     id: "2025-02-09-havelange-harze",
@@ -41,7 +286,40 @@ window.GENERATED_RUNS = [
     color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-09-havelange-harze"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-02-09-havelange-harze/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-02-09-havelange-harze/photo-001-web.jpg",
+        lat: 50.437193,
+        lon: 5.699512,
+        caption: "2025-02-09 08.38.55",
+        source: "2025-02-09 08.38.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-09-havelange-harze/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-02-09-havelange-harze/photo-002-web.jpg",
+        lat: 50.437166,
+        lon: 5.700888,
+        caption: "2025-02-09 08.40.04",
+        source: "2025-02-09 08.40.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-09-havelange-harze/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-02-09-havelange-harze/photo-003-web.jpg",
+        lat: 50.437161,
+        lon: 5.700935,
+        caption: "2025-02-09 08.44.40",
+        source: "2025-02-09 08.44.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-09-havelange-harze/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-02-09-havelange-harze/photo-004-web.jpg",
+        lat: 50.437261,
+        lon: 5.700902,
+        caption: "2025-02-09 10.41.31",
+        source: "2025-02-09 10.41.31.jpg"
+      }
+    ]
   },
   {
     id: "2025-02-16-filot",
@@ -52,7 +330,134 @@ window.GENERATED_RUNS = [
     color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-16-filot"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-001-web.jpg",
+        lat: 50.425186,
+        lon: 5.569114,
+        caption: "2025-02-16 08.30.59",
+        source: "2025-02-16 08.30.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-002-web.jpg",
+        lat: 50.426663,
+        lon: 5.570977,
+        caption: "2025-02-16 08.39.16",
+        source: "2025-02-16 08.39.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-003-web.jpg",
+        lat: 50.426663,
+        lon: 5.570977,
+        caption: "2025-02-16 08.39.26",
+        source: "2025-02-16 08.39.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-004-web.jpg",
+        lat: 50.427389,
+        lon: 5.575159,
+        caption: "2025-02-16 08.41.37-1",
+        source: "2025-02-16 08.41.37-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-005-web.jpg",
+        lat: 50.427391,
+        lon: 5.575176,
+        caption: "2025-02-16 08.42.28-1",
+        source: "2025-02-16 08.42.28-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-006-web.jpg",
+        lat: 50.428018,
+        lon: 5.586687,
+        caption: "2025-02-16 08.48.14",
+        source: "2025-02-16 08.48.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-007-web.jpg",
+        lat: 50.423316,
+        lon: 5.541064,
+        caption: "2025-02-16 09.33.22",
+        source: "2025-02-16 09.33.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-008-web.jpg",
+        lat: 50.400416,
+        lon: 5.538420,
+        caption: "2025-02-16 10.04.55",
+        source: "2025-02-16 10.04.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-009-web.jpg",
+        lat: 50.394857,
+        lon: 5.541595,
+        caption: "2025-02-16 10.13.43",
+        source: "2025-02-16 10.13.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-010-web.jpg",
+        lat: 50.394857,
+        lon: 5.541595,
+        caption: "2025-02-16 10.14.12",
+        source: "2025-02-16 10.14.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-011-web.jpg",
+        lat: 50.425321,
+        lon: 5.568737,
+        caption: "2025-02-16 10.42.58",
+        source: "2025-02-16 10.42.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-012-web.jpg",
+        lat: 50.425549,
+        lon: 5.563985,
+        caption: "2025-02-16 10.46.27",
+        source: "2025-02-16 10.46.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-013-web.jpg",
+        lat: 50.425150,
+        lon: 5.569074,
+        caption: "2025-02-16 11.32.04",
+        source: "2025-02-16 11.32.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-014-web.jpg",
+        lat: 50.425142,
+        lon: 5.569174,
+        caption: "2025-02-16 11.32.19-1",
+        source: "2025-02-16 11.32.19-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-015-web.jpg",
+        lat: 50.648170,
+        lon: 5.591371,
+        caption: "2025-02-16 15.42.07-1",
+        source: "2025-02-16 15.42.07-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-16-filot/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-02-16-filot/photo-016-web.jpg",
+        caption: "adeps filot",
+        source: "adeps filot.jpg"
+      }
+    ]
   },
   {
     id: "2025-02-23-huy",
@@ -63,7 +468,136 @@ window.GENERATED_RUNS = [
     color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-02-23-huy"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-001-web.jpg",
+        lat: 50.529839,
+        lon: 5.244657,
+        caption: "2025-02-23 08.02.29",
+        source: "2025-02-23 08.02.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-002-web.jpg",
+        lat: 50.530047,
+        lon: 5.244888,
+        caption: "2025-02-23 08.09.44",
+        source: "2025-02-23 08.09.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-003-web.jpg",
+        lat: 50.526955,
+        lon: 5.258524,
+        caption: "2025-02-23 08.23.24",
+        source: "2025-02-23 08.23.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-004-web.jpg",
+        lat: 50.520626,
+        lon: 5.280810,
+        caption: "2025-02-23 08.37.51",
+        source: "2025-02-23 08.37.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-005-web.jpg",
+        lat: 50.498861,
+        lon: 5.275696,
+        caption: "2025-02-23 09.05.20",
+        source: "2025-02-23 09.05.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-006-web.jpg",
+        lat: 50.494017,
+        lon: 5.273217,
+        caption: "2025-02-23 09.08.39",
+        source: "2025-02-23 09.08.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-007-web.jpg",
+        lat: 50.487968,
+        lon: 5.264536,
+        caption: "2025-02-23 09.14.23",
+        source: "2025-02-23 09.14.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-008-web.jpg",
+        lat: 50.487968,
+        lon: 5.264536,
+        caption: "2025-02-23 09.14.32",
+        source: "2025-02-23 09.14.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-009-web.jpg",
+        lat: 50.499121,
+        lon: 5.243065,
+        caption: "2025-02-23 09.32.38",
+        source: "2025-02-23 09.32.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-010-web.jpg",
+        lat: 50.513838,
+        lon: 5.251369,
+        caption: "2025-02-23 09.50.27",
+        source: "2025-02-23 09.50.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-011-web.jpg",
+        lat: 50.513838,
+        lon: 5.251369,
+        caption: "2025-02-23 09.50.38",
+        source: "2025-02-23 09.50.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-012-web.jpg",
+        lat: 50.517435,
+        lon: 5.248321,
+        caption: "2025-02-23 09.55.29",
+        source: "2025-02-23 09.55.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-013-web.jpg",
+        lat: 50.529813,
+        lon: 5.244719,
+        caption: "2025-02-23 10.10.27",
+        source: "2025-02-23 10.10.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-014-web.jpg",
+        lat: 50.530179,
+        lon: 5.244678,
+        caption: "2025-02-23 10.13.35",
+        source: "2025-02-23 10.13.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-015-web.jpg",
+        lat: 50.530179,
+        lon: 5.244678,
+        caption: "2025-02-23 10.14.07",
+        source: "2025-02-23 10.14.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-02-23-huy/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-02-23-huy/photo-016-web.jpg",
+        lat: 50.530187,
+        lon: 5.244737,
+        caption: "2025-02-23 10.19.01",
+        source: "2025-02-23 10.19.01.jpg"
+      }
+    ]
   },
   {
     id: "2025-03-09-oneux-comblain-au-pont",
@@ -74,7 +608,46 @@ window.GENERATED_RUNS = [
     color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-09-oneux-comblain-au-pont"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-001-web.jpg",
+        lat: 50.473453,
+        lon: 5.597267,
+        caption: "2025-03-09 08.26.12",
+        source: "2025-03-09 08.26.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-002-web.jpg",
+        lat: 50.463040,
+        lon: 5.570625,
+        caption: "2025-03-09 08.51.49",
+        source: "2025-03-09 08.51.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-003-web.jpg",
+        lat: 50.470148,
+        lon: 5.651751,
+        caption: "2025-03-09 09.49.42",
+        source: "2025-03-09 09.49.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-004-web.jpg",
+        lat: 50.473526,
+        lon: 5.597466,
+        caption: "2025-03-09 10.30.05",
+        source: "2025-03-09 10.30.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-03-09-oneux-comblain-au-pont/photo-005-web.jpg",
+        caption: "2025-03-09 10.34.01",
+        source: "2025-03-09 10.34.01.jpg"
+      }
+    ]
   },
   {
     id: "2025-03-16-bolland-herve",
@@ -85,7 +658,128 @@ window.GENERATED_RUNS = [
     color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-16-bolland-herve"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-001-web.jpg",
+        lat: 50.661770,
+        lon: 5.759073,
+        caption: "2025-03-16 08.27.38",
+        source: "2025-03-16 08.27.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-002-web.jpg",
+        lat: 50.663279,
+        lon: 5.750241,
+        caption: "2025-03-16 08.33.39",
+        source: "2025-03-16 08.33.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-003-web.jpg",
+        lat: 50.660548,
+        lon: 5.750982,
+        caption: "2025-03-16 08.37.19",
+        source: "2025-03-16 08.37.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-004-web.jpg",
+        lat: 50.660539,
+        lon: 5.750995,
+        caption: "2025-03-16 08.37.29",
+        source: "2025-03-16 08.37.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-005-web.jpg",
+        lat: 50.657953,
+        lon: 5.736941,
+        caption: "2025-03-16 09.02.11",
+        source: "2025-03-16 09.02.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-006-web.jpg",
+        lat: 50.662336,
+        lon: 5.733027,
+        caption: "2025-03-16 09.06.46",
+        source: "2025-03-16 09.06.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-007-web.jpg",
+        lat: 50.665306,
+        lon: 5.729993,
+        caption: "2025-03-16 09.10.24",
+        source: "2025-03-16 09.10.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-008-web.jpg",
+        lat: 50.665306,
+        lon: 5.729993,
+        caption: "2025-03-16 09.10.34-2",
+        source: "2025-03-16 09.10.34-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-009-web.jpg",
+        lat: 50.665718,
+        lon: 5.768061,
+        caption: "2025-03-16 09.55.05",
+        source: "2025-03-16 09.55.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-010-web.jpg",
+        lat: 50.660174,
+        lon: 5.783335,
+        caption: "2025-03-16 10.03.03",
+        source: "2025-03-16 10.03.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-011-web.jpg",
+        lat: 50.655109,
+        lon: 5.791071,
+        caption: "2025-03-16 10.08.36",
+        source: "2025-03-16 10.08.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-012-web.jpg",
+        lat: 50.647738,
+        lon: 5.779163,
+        caption: "2025-03-16 10.20.18",
+        source: "2025-03-16 10.20.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-013-web.jpg",
+        lat: 50.661258,
+        lon: 5.766398,
+        caption: "2025-03-16 10.36.08",
+        source: "2025-03-16 10.36.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-014-web.jpg",
+        lat: 50.661795,
+        lon: 5.759140,
+        caption: "2025-03-16 10.44.27",
+        source: "2025-03-16 10.44.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-16-bolland-herve/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-03-16-bolland-herve/photo-015-web.jpg",
+        lat: 50.661795,
+        lon: 5.759140,
+        caption: "2025-03-16 10.44.49",
+        source: "2025-03-16 10.44.49.jpg"
+      }
+    ]
   },
   {
     id: "2025-03-23-trooz",
@@ -96,7 +790,110 @@ window.GENERATED_RUNS = [
     color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-23-trooz"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-001-web.jpg",
+        lat: 50.570358,
+        lon: 5.690120,
+        caption: "2025-03-23 08.04.40",
+        source: "2025-03-23 08.04.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-002-web.jpg",
+        lat: 50.571107,
+        lon: 5.690545,
+        caption: "2025-03-23 08.14.20",
+        source: "2025-03-23 08.14.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-003-web.jpg",
+        lat: 50.571063,
+        lon: 5.694241,
+        caption: "2025-03-23 08.37.17",
+        source: "2025-03-23 08.37.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-004-web.jpg",
+        lat: 50.573346,
+        lon: 5.736788,
+        caption: "2025-03-23 09.20.37",
+        source: "2025-03-23 09.20.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-005-web.jpg",
+        caption: "2025-03-23 09.21.23",
+        source: "2025-03-23 09.21.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-006-web.jpg",
+        lat: 50.573595,
+        lon: 5.737086,
+        caption: "2025-03-23 09.21.25",
+        source: "2025-03-23 09.21.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-007-web.jpg",
+        lat: 50.576731,
+        lon: 5.734396,
+        caption: "2025-03-23 09.28.11",
+        source: "2025-03-23 09.28.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-008-web.jpg",
+        lat: 50.577878,
+        lon: 5.734937,
+        caption: "2025-03-23 09.29.55",
+        source: "2025-03-23 09.29.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-009-web.jpg",
+        lat: 50.582641,
+        lon: 5.702896,
+        caption: "2025-03-23 09.51.33",
+        source: "2025-03-23 09.51.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-010-web.jpg",
+        lat: 50.583580,
+        lon: 5.701475,
+        caption: "2025-03-23 09.53.11",
+        source: "2025-03-23 09.53.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-011-web.jpg",
+        lat: 50.571104,
+        lon: 5.690143,
+        caption: "2025-03-23 10.44.47-1",
+        source: "2025-03-23 10.44.47-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-012-web.jpg",
+        lat: 50.571090,
+        lon: 5.690600,
+        caption: "2025-03-23 10.48.23",
+        source: "2025-03-23 10.48.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-23-trooz/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-03-23-trooz/photo-013-web.jpg",
+        lat: 50.571097,
+        lon: 5.690571,
+        caption: "2025-03-23 10.49.15",
+        source: "2025-03-23 10.49.15.jpg"
+      }
+    ]
   },
   {
     id: "2025-03-30-sart-lez-spa",
@@ -107,7 +904,192 @@ window.GENERATED_RUNS = [
     color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-03-30-sart-lez-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-001-web.jpg",
+        lat: 50.517071,
+        lon: 5.932508,
+        caption: "2025-03-30 08.14.36",
+        source: "2025-03-30 08.14.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-002-web.jpg",
+        lat: 50.517201,
+        lon: 5.932889,
+        caption: "2025-03-30 08.16.35",
+        source: "2025-03-30 08.16.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-003-web.jpg",
+        lat: 50.517219,
+        lon: 5.932642,
+        caption: "2025-03-30 08.16.58",
+        source: "2025-03-30 08.16.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-004-web.jpg",
+        lat: 50.517674,
+        lon: 5.932423,
+        caption: "2025-03-30 08.19.07",
+        source: "2025-03-30 08.19.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-005-web.jpg",
+        lat: 50.517500,
+        lon: 5.932222,
+        caption: "2025-03-30 08.19.44",
+        source: "2025-03-30 08.19.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-006-web.jpg",
+        lat: 50.510274,
+        lon: 5.921276,
+        caption: "2025-03-30 08.38.46",
+        source: "2025-03-30 08.38.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-007-web.jpg",
+        lat: 50.510274,
+        lon: 5.921276,
+        caption: "2025-03-30 08.38.57",
+        source: "2025-03-30 08.38.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-008-web.jpg",
+        lat: 50.510455,
+        lon: 5.919493,
+        caption: "2025-03-30 08.40.07",
+        source: "2025-03-30 08.40.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-009-web.jpg",
+        lat: 50.509988,
+        lon: 5.910929,
+        caption: "2025-03-30 08.45.23",
+        source: "2025-03-30 08.45.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-010-web.jpg",
+        lat: 50.504620,
+        lon: 5.914915,
+        caption: "2025-03-30 08.49.52",
+        source: "2025-03-30 08.49.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-011-web.jpg",
+        lat: 50.488127,
+        lon: 5.909890,
+        caption: "2025-03-30 09.04.20",
+        source: "2025-03-30 09.04.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-012-web.jpg",
+        lat: 50.486105,
+        lon: 5.896974,
+        caption: "2025-03-30 09.13.00",
+        source: "2025-03-30 09.13.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-013-web.jpg",
+        lat: 50.478167,
+        lon: 5.911189,
+        caption: "2025-03-30 09.47.08",
+        source: "2025-03-30 09.47.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-014-web.jpg",
+        lat: 50.478167,
+        lon: 5.911189,
+        caption: "2025-03-30 09.47.32",
+        source: "2025-03-30 09.47.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-015-web.jpg",
+        lat: 50.478093,
+        lon: 5.911193,
+        caption: "2025-03-30 09.48.59",
+        source: "2025-03-30 09.48.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-016-web.jpg",
+        lat: 50.484490,
+        lon: 5.921589,
+        caption: "2025-03-30 09.58.43",
+        source: "2025-03-30 09.58.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-017-web.jpg",
+        lat: 50.490847,
+        lon: 5.925293,
+        caption: "2025-03-30 10.07.12",
+        source: "2025-03-30 10.07.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-018-web.jpg",
+        lat: 50.495662,
+        lon: 5.934009,
+        caption: "2025-03-30 10.15.37",
+        source: "2025-03-30 10.15.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-019-web.jpg",
+        lat: 50.495887,
+        lon: 5.934522,
+        caption: "2025-03-30 10.16.41",
+        source: "2025-03-30 10.16.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-020-web.jpg",
+        lat: 50.508683,
+        lon: 5.943135,
+        caption: "2025-03-30 10.33.58",
+        source: "2025-03-30 10.33.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-021-web.jpg",
+        lat: 50.511354,
+        lon: 5.946630,
+        caption: "2025-03-30 10.38.48",
+        source: "2025-03-30 10.38.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-022-web.jpg",
+        lat: 50.517415,
+        lon: 5.932516,
+        caption: "2025-03-30 10.48.21",
+        source: "2025-03-30 10.48.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-03-30-sart-lez-spa/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-03-30-sart-lez-spa/photo-023-web.jpg",
+        lat: 50.517716,
+        lon: 5.932366,
+        caption: "2025-03-30 10.51.30",
+        source: "2025-03-30 10.51.30.jpg"
+      }
+    ]
   },
   {
     id: "2025-04-20-chevron",
@@ -118,7 +1100,110 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-04-20-chevron"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-001-web.jpg",
+        lat: 50.382548,
+        lon: 5.731022,
+        caption: "2025-04-20 08.01.31",
+        source: "2025-04-20 08.01.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-002-web.jpg",
+        lat: 50.382560,
+        lon: 5.730947,
+        caption: "2025-04-20 08.03.26",
+        source: "2025-04-20 08.03.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-003-web.jpg",
+        lat: 50.386600,
+        lon: 5.725998,
+        caption: "2025-04-20 08.10.08",
+        source: "2025-04-20 08.10.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-004-web.jpg",
+        lat: 50.383836,
+        lon: 5.708381,
+        caption: "2025-04-20 08.23.07",
+        source: "2025-04-20 08.23.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-005-web.jpg",
+        lat: 50.412936,
+        lon: 5.721115,
+        caption: "2025-04-20 08.44.37",
+        source: "2025-04-20 08.44.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-006-web.jpg",
+        lat: 50.418837,
+        lon: 5.728745,
+        caption: "2025-04-20 08.49.32",
+        source: "2025-04-20 08.49.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-007-web.jpg",
+        lat: 50.416774,
+        lon: 5.734414,
+        caption: "2025-04-20 08.52.14",
+        source: "2025-04-20 08.52.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-008-web.jpg",
+        lat: 50.418338,
+        lon: 5.753309,
+        caption: "2025-04-20 09.07.25",
+        source: "2025-04-20 09.07.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-009-web.jpg",
+        lat: 50.416421,
+        lon: 5.754163,
+        caption: "2025-04-20 09.09.08",
+        source: "2025-04-20 09.09.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-010-web.jpg",
+        lat: 50.409476,
+        lon: 5.767688,
+        caption: "2025-04-20 09.17.48",
+        source: "2025-04-20 09.17.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-011-web.jpg",
+        lat: 50.382712,
+        lon: 5.730762,
+        caption: "2025-04-20 09.59.05",
+        source: "2025-04-20 09.59.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-012-web.jpg",
+        lat: 50.382467,
+        lon: 5.731045,
+        caption: "2025-04-20 10.00.44",
+        source: "2025-04-20 10.00.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-20-chevron/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-04-20-chevron/photo-013-web.jpg",
+        caption: "2025-04-20 10.06.58",
+        source: "2025-04-20 10.06.58.jpg"
+      }
+    ]
   },
   {
     id: "2025-04-27-charneux",
@@ -129,7 +1214,190 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-04-27-charneux"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-001-web.jpg",
+        lat: 50.670401,
+        lon: 5.802574,
+        caption: "2025-04-27 08.02.09",
+        source: "2025-04-27 08.02.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-002-web.jpg",
+        lat: 50.670445,
+        lon: 5.802629,
+        caption: "2025-04-27 08.06.44",
+        source: "2025-04-27 08.06.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-003-web.jpg",
+        lat: 50.670445,
+        lon: 5.802629,
+        caption: "2025-04-27 08.06.52",
+        source: "2025-04-27 08.06.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-004-web.jpg",
+        lat: 50.670410,
+        lon: 5.802592,
+        caption: "2025-04-27 08.09.24",
+        source: "2025-04-27 08.09.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-005-web.jpg",
+        lat: 50.651316,
+        lon: 5.820715,
+        caption: "2025-04-27 08.32.20",
+        source: "2025-04-27 08.32.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-006-web.jpg",
+        lat: 50.651316,
+        lon: 5.820715,
+        caption: "2025-04-27 08.32.31",
+        source: "2025-04-27 08.32.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-007-web.jpg",
+        lat: 50.653179,
+        lon: 5.819450,
+        caption: "2025-04-27 08.34.31",
+        source: "2025-04-27 08.34.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-008-web.jpg",
+        lat: 50.663190,
+        lon: 5.851016,
+        caption: "2025-04-27 08.56.45",
+        source: "2025-04-27 08.56.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-009-web.jpg",
+        caption: "2025-04-27 09.10.09",
+        source: "2025-04-27 09.10.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-010-web.jpg",
+        lat: 50.685099,
+        lon: 5.836762,
+        caption: "2025-04-27 09.32.50",
+        source: "2025-04-27 09.32.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-011-web.jpg",
+        lat: 50.682103,
+        lon: 5.841215,
+        caption: "2025-04-27 09.36.43",
+        source: "2025-04-27 09.36.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-012-web.jpg",
+        lat: 50.682038,
+        lon: 5.841211,
+        caption: "2025-04-27 09.36.56",
+        source: "2025-04-27 09.36.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-013-web.jpg",
+        lat: 50.680500,
+        lon: 5.841955,
+        caption: "2025-04-27 09.38.21",
+        source: "2025-04-27 09.38.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-014-web.jpg",
+        lat: 50.680440,
+        lon: 5.842064,
+        caption: "2025-04-27 09.38.33",
+        source: "2025-04-27 09.38.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-015-web.jpg",
+        lat: 50.675855,
+        lon: 5.833433,
+        caption: "2025-04-27 09.43.33",
+        source: "2025-04-27 09.43.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-016-web.jpg",
+        lat: 50.675757,
+        lon: 5.833173,
+        caption: "2025-04-27 09.44.08",
+        source: "2025-04-27 09.44.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-017-web.jpg",
+        lat: 50.672927,
+        lon: 5.814724,
+        caption: "2025-04-27 09.51.23",
+        source: "2025-04-27 09.51.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-018-web.jpg",
+        lat: 50.672007,
+        lon: 5.812417,
+        caption: "2025-04-27 09.52.51",
+        source: "2025-04-27 09.52.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-019-web.jpg",
+        lat: 50.670289,
+        lon: 5.802645,
+        caption: "2025-04-27 10.00.27",
+        source: "2025-04-27 10.00.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-020-web.jpg",
+        lat: 50.670309,
+        lon: 5.802652,
+        caption: "2025-04-27 10.01.57-1",
+        source: "2025-04-27 10.01.57-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-021-web.jpg",
+        lat: 50.670278,
+        lon: 5.802666,
+        caption: "2025-04-27 10.03.57",
+        source: "2025-04-27 10.03.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-022-web.jpg",
+        lat: 50.670096,
+        lon: 5.803018,
+        caption: "2025-04-27 10.17.21",
+        source: "2025-04-27 10.17.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-04-27-charneux/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-04-27-charneux/photo-023-web.jpg",
+        lat: 50.668474,
+        lon: 5.804372,
+        caption: "2025-04-27 10.20.53",
+        source: "2025-04-27 10.20.53.jpg"
+      }
+    ]
   },
   {
     id: "2025-05-01-francorchamps",
@@ -140,7 +1408,296 @@ window.GENERATED_RUNS = [
     color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-01-francorchamps"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-001-web.jpg",
+        lat: 50.459718,
+        lon: 5.971252,
+        caption: "2025-05-01 08.04.45",
+        source: "2025-05-01 08.04.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-002-web.jpg",
+        lat: 50.459672,
+        lon: 5.971142,
+        caption: "2025-05-01 08.05.41",
+        source: "2025-05-01 08.05.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-003-web.jpg",
+        lat: 50.459672,
+        lon: 5.971012,
+        caption: "2025-05-01 08.07.25",
+        source: "2025-05-01 08.07.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-004-web.jpg",
+        lat: 50.469268,
+        lon: 5.974905,
+        caption: "2025-05-01 08.15.19",
+        source: "2025-05-01 08.15.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-005-web.jpg",
+        lat: 50.469289,
+        lon: 5.974891,
+        caption: "2025-05-01 08.15.24",
+        source: "2025-05-01 08.15.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-006-web.jpg",
+        lat: 50.470694,
+        lon: 5.973730,
+        caption: "2025-05-01 08.16.41",
+        source: "2025-05-01 08.16.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-007-web.jpg",
+        lat: 50.478448,
+        lon: 5.976491,
+        caption: "2025-05-01 08.21.25",
+        source: "2025-05-01 08.21.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-008-web.jpg",
+        lat: 50.488145,
+        lon: 5.993260,
+        caption: "2025-05-01 08.30.08",
+        source: "2025-05-01 08.30.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-009-web.jpg",
+        lat: 50.488212,
+        lon: 5.993285,
+        caption: "2025-05-01 08.30.31",
+        source: "2025-05-01 08.30.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-010-web.jpg",
+        lat: 50.489258,
+        lon: 5.996786,
+        caption: "2025-05-01 08.33.36",
+        source: "2025-05-01 08.33.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-011-web.jpg",
+        lat: 50.492572,
+        lon: 6.010614,
+        caption: "2025-05-01 08.43.21",
+        source: "2025-05-01 08.43.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-012-web.jpg",
+        lat: 50.497577,
+        lon: 6.024735,
+        caption: "2025-05-01 08.49.11",
+        source: "2025-05-01 08.49.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-013-web.jpg",
+        lat: 50.499916,
+        lon: 6.030544,
+        caption: "2025-05-01 08.52.01",
+        source: "2025-05-01 08.52.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-014-web.jpg",
+        lat: 50.502847,
+        lon: 6.040751,
+        caption: "2025-05-01 08.56.20",
+        source: "2025-05-01 08.56.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-015-web.jpg",
+        lat: 50.504670,
+        lon: 6.041299,
+        caption: "2025-05-01 08.57.32",
+        source: "2025-05-01 08.57.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-016-web.jpg",
+        lat: 50.506271,
+        lon: 6.039904,
+        caption: "2025-05-01 08.58.38",
+        source: "2025-05-01 08.58.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-017-web.jpg",
+        lat: 50.509953,
+        lon: 6.040896,
+        caption: "2025-05-01 09.02.57",
+        source: "2025-05-01 09.02.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-018-web.jpg",
+        lat: 50.503009,
+        lon: 6.049945,
+        caption: "2025-05-01 09.09.06",
+        source: "2025-05-01 09.09.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-019-web.jpg",
+        lat: 50.496355,
+        lon: 6.050441,
+        caption: "2025-05-01 09.16.35",
+        source: "2025-05-01 09.16.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-020-web.jpg",
+        lat: 50.491249,
+        lon: 6.037843,
+        caption: "2025-05-01 09.22.55",
+        source: "2025-05-01 09.22.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-021-web.jpg",
+        lat: 50.491249,
+        lon: 6.037843,
+        caption: "2025-05-01 09.23.06",
+        source: "2025-05-01 09.23.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-022-web.jpg",
+        lat: 50.490258,
+        lon: 6.033218,
+        caption: "2025-05-01 09.25.45",
+        source: "2025-05-01 09.25.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-023-web.jpg",
+        lat: 50.488761,
+        lon: 6.029803,
+        caption: "2025-05-01 09.28.52",
+        source: "2025-05-01 09.28.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-024-web.jpg",
+        lat: 50.485595,
+        lon: 6.018212,
+        caption: "2025-05-01 09.34.11",
+        source: "2025-05-01 09.34.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-025-web.jpg",
+        lat: 50.485393,
+        lon: 6.017307,
+        caption: "2025-05-01 09.34.53",
+        source: "2025-05-01 09.34.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-026-web.jpg",
+        lat: 50.484549,
+        lon: 6.016313,
+        caption: "2025-05-01 09.35.47",
+        source: "2025-05-01 09.35.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-027-web.jpg",
+        lat: 50.481911,
+        lon: 6.015129,
+        caption: "2025-05-01 09.38.28",
+        source: "2025-05-01 09.38.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-028-web.jpg",
+        lat: 50.478186,
+        lon: 6.008196,
+        caption: "2025-05-01 09.42.54",
+        source: "2025-05-01 09.42.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-029-web.jpg",
+        lat: 50.480783,
+        lon: 5.994130,
+        caption: "2025-05-01 09.48.54",
+        source: "2025-05-01 09.48.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-030-web.jpg",
+        lat: 50.459975,
+        lon: 5.990116,
+        caption: "2025-05-01 10.04.25",
+        source: "2025-05-01 10.04.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-031-web.jpg",
+        lat: 50.459769,
+        lon: 5.990589,
+        caption: "2025-05-01 10.04.45",
+        source: "2025-05-01 10.04.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-032-web.jpg",
+        lat: 50.458827,
+        lon: 5.985516,
+        caption: "2025-05-01 10.08.17",
+        source: "2025-05-01 10.08.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-033-web.jpg",
+        lat: 50.457568,
+        lon: 5.980840,
+        caption: "2025-05-01 10.10.47",
+        source: "2025-05-01 10.10.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-034-web.jpg",
+        lat: 50.459586,
+        lon: 5.971101,
+        caption: "2025-05-01 10.19.45-1",
+        source: "2025-05-01 10.19.45-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-035-web.jpg",
+        lat: 50.459785,
+        lon: 5.971027,
+        caption: "2025-05-01 10.28.40",
+        source: "2025-05-01 10.28.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-01-francorchamps/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-05-01-francorchamps/photo-036-web.jpg",
+        lat: 50.459784,
+        lon: 5.971373,
+        caption: "2025-05-01 10.31.15",
+        source: "2025-05-01 10.31.15.jpg"
+      }
+    ]
   },
   {
     id: "2025-05-11-spa",
@@ -151,7 +1708,182 @@ window.GENERATED_RUNS = [
     color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-11-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-001-web.jpg",
+        lat: 50.481775,
+        lon: 5.861300,
+        caption: "2025-05-11 08.15.27",
+        source: "2025-05-11 08.15.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-002-web.jpg",
+        lat: 50.479313,
+        lon: 5.861140,
+        caption: "2025-05-11 08.17.49",
+        source: "2025-05-11 08.17.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-003-web.jpg",
+        lat: 50.471708,
+        lon: 5.864226,
+        caption: "2025-05-11 08.25.41",
+        source: "2025-05-11 08.25.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-004-web.jpg",
+        lat: 50.471708,
+        lon: 5.864226,
+        caption: "2025-05-11 08.25.57",
+        source: "2025-05-11 08.25.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-005-web.jpg",
+        lat: 50.469628,
+        lon: 5.866311,
+        caption: "2025-05-11 08.28.52",
+        source: "2025-05-11 08.28.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-006-web.jpg",
+        lat: 50.468682,
+        lon: 5.867011,
+        caption: "2025-05-11 08.30.29",
+        source: "2025-05-11 08.30.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-007-web.jpg",
+        lat: 50.460481,
+        lon: 5.885706,
+        caption: "2025-05-11 08.47.35",
+        source: "2025-05-11 08.47.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-008-web.jpg",
+        lat: 50.459970,
+        lon: 5.888287,
+        caption: "2025-05-11 08.49.13",
+        source: "2025-05-11 08.49.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-009-web.jpg",
+        lat: 50.459795,
+        lon: 5.891588,
+        caption: "2025-05-11 08.51.08",
+        source: "2025-05-11 08.51.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-010-web.jpg",
+        lat: 50.459784,
+        lon: 5.891643,
+        caption: "2025-05-11 08.51.21",
+        source: "2025-05-11 08.51.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-011-web.jpg",
+        lat: 50.459770,
+        lon: 5.891775,
+        caption: "2025-05-11 08.51.48",
+        source: "2025-05-11 08.51.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-012-web.jpg",
+        lat: 50.457216,
+        lon: 5.868438,
+        caption: "2025-05-11 09.12.26",
+        source: "2025-05-11 09.12.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-013-web.jpg",
+        lat: 50.458841,
+        lon: 5.865804,
+        caption: "2025-05-11 09.15.16",
+        source: "2025-05-11 09.15.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-014-web.jpg",
+        lat: 50.463121,
+        lon: 5.843261,
+        caption: "2025-05-11 09.31.01",
+        source: "2025-05-11 09.31.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-015-web.jpg",
+        lat: 50.463146,
+        lon: 5.829959,
+        caption: "2025-05-11 09.42.58",
+        source: "2025-05-11 09.42.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-016-web.jpg",
+        lat: 50.463146,
+        lon: 5.829959,
+        caption: "2025-05-11 09.43.24",
+        source: "2025-05-11 09.43.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-017-web.jpg",
+        lat: 50.465609,
+        lon: 5.831945,
+        caption: "2025-05-11 09.48.32",
+        source: "2025-05-11 09.48.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-018-web.jpg",
+        lat: 50.475339,
+        lon: 5.840351,
+        caption: "2025-05-11 09.59.43",
+        source: "2025-05-11 09.59.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-019-web.jpg",
+        lat: 50.485423,
+        lon: 5.864641,
+        caption: "2025-05-11 10.29.49",
+        source: "2025-05-11 10.29.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-020-web.jpg",
+        caption: "2025-05-11 10.30.38",
+        source: "2025-05-11 10.30.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-021-web.jpg",
+        lat: 50.485444,
+        lon: 5.864674,
+        caption: "2025-05-11 10.31.14",
+        source: "2025-05-11 10.31.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-11-spa/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-05-11-spa/photo-022-web.jpg",
+        lat: 50.648056,
+        lon: 5.591667,
+        caption: "2025-05-11 17.02.58",
+        source: "2025-05-11 17.02.58.jpg"
+      }
+    ]
   },
   {
     id: "2025-05-18-vien-anthisnes",
@@ -162,7 +1894,198 @@ window.GENERATED_RUNS = [
     color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-18-vien-anthisnes"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-001-web.jpg",
+        lat: 50.473036,
+        lon: 5.505504,
+        caption: "2025-05-18 08.23.02",
+        source: "2025-05-18 08.23.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-002-web.jpg",
+        lat: 50.473632,
+        lon: 5.505631,
+        caption: "2025-05-18 08.24.25",
+        source: "2025-05-18 08.24.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-003-web.jpg",
+        caption: "2025-05-18 08.26.31",
+        source: "2025-05-18 08.26.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-004-web.jpg",
+        lat: 50.473618,
+        lon: 5.505799,
+        caption: "2025-05-18 08.31.41",
+        source: "2025-05-18 08.31.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-005-web.jpg",
+        lat: 50.473611,
+        lon: 5.505556,
+        caption: "2025-05-18 08.32.08",
+        source: "2025-05-18 08.32.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-006-web.jpg",
+        lat: 50.475168,
+        lon: 5.510261,
+        caption: "2025-05-18 08.36.18",
+        source: "2025-05-18 08.36.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-007-web.jpg",
+        lat: 50.479752,
+        lon: 5.524044,
+        caption: "2025-05-18 08.42.08",
+        source: "2025-05-18 08.42.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-008-web.jpg",
+        lat: 50.482899,
+        lon: 5.524744,
+        caption: "2025-05-18 08.45.15",
+        source: "2025-05-18 08.45.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-009-web.jpg",
+        lat: 50.482899,
+        lon: 5.524744,
+        caption: "2025-05-18 08.45.30",
+        source: "2025-05-18 08.45.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-010-web.jpg",
+        lat: 50.483834,
+        lon: 5.527810,
+        caption: "2025-05-18 08.47.17",
+        source: "2025-05-18 08.47.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-011-web.jpg",
+        lat: 50.484347,
+        lon: 5.530960,
+        caption: "2025-05-18 08.49.20",
+        source: "2025-05-18 08.49.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-012-web.jpg",
+        lat: 50.484356,
+        lon: 5.530962,
+        caption: "2025-05-18 08.49.34",
+        source: "2025-05-18 08.49.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-013-web.jpg",
+        lat: 50.485956,
+        lon: 5.528678,
+        caption: "2025-05-18 08.51.12",
+        source: "2025-05-18 08.51.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-014-web.jpg",
+        lat: 50.488305,
+        lon: 5.533407,
+        caption: "2025-05-18 08.53.51",
+        source: "2025-05-18 08.53.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-015-web.jpg",
+        lat: 50.490086,
+        lon: 5.542437,
+        caption: "2025-05-18 08.57.09",
+        source: "2025-05-18 08.57.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-016-web.jpg",
+        lat: 50.489365,
+        lon: 5.562959,
+        caption: "2025-05-18 09.05.16",
+        source: "2025-05-18 09.05.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-017-web.jpg",
+        lat: 50.488232,
+        lon: 5.563824,
+        caption: "2025-05-18 09.06.36",
+        source: "2025-05-18 09.06.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-018-web.jpg",
+        lat: 50.488232,
+        lon: 5.563824,
+        caption: "2025-05-18 09.06.49",
+        source: "2025-05-18 09.06.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-019-web.jpg",
+        lat: 50.486828,
+        lon: 5.571369,
+        caption: "2025-05-18 09.15.30",
+        source: "2025-05-18 09.15.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-020-web.jpg",
+        lat: 50.496026,
+        lon: 5.565299,
+        caption: "2025-05-18 09.24.45",
+        source: "2025-05-18 09.24.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-021-web.jpg",
+        lat: 50.496085,
+        lon: 5.545411,
+        caption: "2025-05-18 09.40.09",
+        source: "2025-05-18 09.40.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-022-web.jpg",
+        lat: 50.496861,
+        lon: 5.522341,
+        caption: "2025-05-18 09.58.00",
+        source: "2025-05-18 09.58.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-023-web.jpg",
+        lat: 50.474055,
+        lon: 5.505215,
+        caption: "2025-05-18 10.25.40",
+        source: "2025-05-18 10.25.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-18-vien-anthisnes/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-05-18-vien-anthisnes/photo-024-web.jpg",
+        lat: 50.473530,
+        lon: 5.505884,
+        caption: "2025-05-18 10.28.21",
+        source: "2025-05-18 10.28.21.jpg"
+      }
+    ]
   },
   {
     id: "2025-05-25-pousset",
@@ -173,7 +2096,256 @@ window.GENERATED_RUNS = [
     color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-05-25-pousset"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-001-web.jpg",
+        lat: 50.697834,
+        lon: 5.301921,
+        caption: "2025-05-25 08.02.51",
+        source: "2025-05-25 08.02.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-002-web.jpg",
+        lat: 50.697796,
+        lon: 5.301727,
+        caption: "2025-05-25 08.06.37",
+        source: "2025-05-25 08.06.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-003-web.jpg",
+        lat: 50.697722,
+        lon: 5.301834,
+        caption: "2025-05-25 08.07.51",
+        source: "2025-05-25 08.07.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-004-web.jpg",
+        lat: 50.696351,
+        lon: 5.311629,
+        caption: "2025-05-25 08.16.58",
+        source: "2025-05-25 08.16.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-005-web.jpg",
+        lat: 50.696194,
+        lon: 5.312595,
+        caption: "2025-05-25 08.18.05",
+        source: "2025-05-25 08.18.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-006-web.jpg",
+        lat: 50.695692,
+        lon: 5.338536,
+        caption: "2025-05-25 08.30.38",
+        source: "2025-05-25 08.30.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-007-web.jpg",
+        lat: 50.697570,
+        lon: 5.340237,
+        caption: "2025-05-25 08.36.23",
+        source: "2025-05-25 08.36.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-008-web.jpg",
+        lat: 50.697546,
+        lon: 5.342424,
+        caption: "2025-05-25 08.38.03",
+        source: "2025-05-25 08.38.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-009-web.jpg",
+        lat: 50.699050,
+        lon: 5.344642,
+        caption: "2025-05-25 08.40.28",
+        source: "2025-05-25 08.40.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-010-web.jpg",
+        lat: 50.698743,
+        lon: 5.349278,
+        caption: "2025-05-25 08.43.34",
+        source: "2025-05-25 08.43.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-011-web.jpg",
+        lat: 50.689457,
+        lon: 5.365802,
+        caption: "2025-05-25 08.56.41",
+        source: "2025-05-25 08.56.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-012-web.jpg",
+        lat: 50.685800,
+        lon: 5.370846,
+        caption: "2025-05-25 09.01.05",
+        source: "2025-05-25 09.01.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-013-web.jpg",
+        lat: 50.685332,
+        lon: 5.373048,
+        caption: "2025-05-25 09.03.16",
+        source: "2025-05-25 09.03.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-014-web.jpg",
+        lat: 50.687062,
+        lon: 5.381134,
+        caption: "2025-05-25 09.09.01",
+        source: "2025-05-25 09.09.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-015-web.jpg",
+        lat: 50.686890,
+        lon: 5.381281,
+        caption: "2025-05-25 09.09.32",
+        source: "2025-05-25 09.09.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-016-web.jpg",
+        lat: 50.686045,
+        lon: 5.385056,
+        caption: "2025-05-25 09.12.03",
+        source: "2025-05-25 09.12.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-017-web.jpg",
+        lat: 50.682869,
+        lon: 5.381126,
+        caption: "2025-05-25 09.16.56",
+        source: "2025-05-25 09.16.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-018-web.jpg",
+        lat: 50.683116,
+        lon: 5.370788,
+        caption: "2025-05-25 09.23.02",
+        source: "2025-05-25 09.23.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-019-web.jpg",
+        lat: 50.678298,
+        lon: 5.368260,
+        caption: "2025-05-25 09.26.54",
+        source: "2025-05-25 09.26.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-020-web.jpg",
+        lat: 50.684086,
+        lon: 5.349381,
+        caption: "2025-05-25 09.36.36",
+        source: "2025-05-25 09.36.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-021-web.jpg",
+        lat: 50.684086,
+        lon: 5.349381,
+        caption: "2025-05-25 09.36.58",
+        source: "2025-05-25 09.36.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-022-web.jpg",
+        lat: 50.684109,
+        lon: 5.349336,
+        caption: "2025-05-25 09.37.39",
+        source: "2025-05-25 09.37.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-023-web.jpg",
+        lat: 50.686464,
+        lon: 5.341285,
+        caption: "2025-05-25 09.42.45",
+        source: "2025-05-25 09.42.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-024-web.jpg",
+        lat: 50.680950,
+        lon: 5.336908,
+        caption: "2025-05-25 09.47.06",
+        source: "2025-05-25 09.47.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-025-web.jpg",
+        lat: 50.681314,
+        lon: 5.337307,
+        caption: "2025-05-25 09.49.26",
+        source: "2025-05-25 09.49.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-026-web.jpg",
+        lat: 50.681301,
+        lon: 5.328237,
+        caption: "2025-05-25 09.55.59",
+        source: "2025-05-25 09.55.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-027-web.jpg",
+        lat: 50.682312,
+        lon: 5.323963,
+        caption: "2025-05-25 09.58.33",
+        source: "2025-05-25 09.58.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-028-web.jpg",
+        lat: 50.683797,
+        lon: 5.313126,
+        caption: "2025-05-25 10.05.34",
+        source: "2025-05-25 10.05.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-029-web.jpg",
+        lat: 50.695979,
+        lon: 5.301454,
+        caption: "2025-05-25 10.25.46",
+        source: "2025-05-25 10.25.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-030-web.jpg",
+        lat: 50.697709,
+        lon: 5.301639,
+        caption: "2025-05-25 10.32.33",
+        source: "2025-05-25 10.32.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-05-25-pousset/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-05-25-pousset/photo-031-web.jpg",
+        lat: 50.697711,
+        lon: 5.301644,
+        caption: "2025-05-25 10.32.55",
+        source: "2025-05-25 10.32.55.jpg"
+      }
+    ]
   },
   {
     id: "2025-06-01-herbiester",
@@ -184,7 +2356,230 @@ window.GENERATED_RUNS = [
     color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-01-herbiester"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-001-web.jpg",
+        lat: 50.559658,
+        lon: 5.978522,
+        caption: "2025-06-01 08.11.43",
+        source: "2025-06-01 08.11.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-002-web.jpg",
+        lat: 50.559945,
+        lon: 5.978909,
+        caption: "2025-06-01 08.12.42",
+        source: "2025-06-01 08.12.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-003-web.jpg",
+        lat: 50.561060,
+        lon: 5.976895,
+        caption: "2025-06-01 08.15.39",
+        source: "2025-06-01 08.15.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-004-web.jpg",
+        lat: 50.561043,
+        lon: 5.976610,
+        caption: "2025-06-01 08.19.43",
+        source: "2025-06-01 08.19.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-005-web.jpg",
+        lat: 50.560942,
+        lon: 5.976869,
+        caption: "2025-06-01 08.21.31",
+        source: "2025-06-01 08.21.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-006-web.jpg",
+        lat: 50.561008,
+        lon: 5.973501,
+        caption: "2025-06-01 08.25.00-1",
+        source: "2025-06-01 08.25.00-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-007-web.jpg",
+        lat: 50.563853,
+        lon: 5.988371,
+        caption: "2025-06-01 08.34.52",
+        source: "2025-06-01 08.34.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-008-web.jpg",
+        lat: 50.564821,
+        lon: 5.991405,
+        caption: "2025-06-01 08.36.35",
+        source: "2025-06-01 08.36.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-009-web.jpg",
+        lat: 50.572331,
+        lon: 6.003785,
+        caption: "2025-06-01 08.47.43",
+        source: "2025-06-01 08.47.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-010-web.jpg",
+        caption: "2025-06-01 09.02.40",
+        source: "2025-06-01 09.02.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-011-web.jpg",
+        caption: "2025-06-01 09.10.14",
+        source: "2025-06-01 09.10.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-012-web.jpg",
+        caption: "2025-06-01 09.18.51",
+        source: "2025-06-01 09.18.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-013-web.jpg",
+        caption: "2025-06-01 09.27.27",
+        source: "2025-06-01 09.27.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-014-web.jpg",
+        caption: "2025-06-01 09.28.56",
+        source: "2025-06-01 09.28.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-015-web.jpg",
+        caption: "2025-06-01 09.34.52",
+        source: "2025-06-01 09.34.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-016-web.jpg",
+        caption: "2025-06-01 09.40.54",
+        source: "2025-06-01 09.40.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-017-web.jpg",
+        caption: "2025-06-01 09.47.49",
+        source: "2025-06-01 09.47.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-018-web.jpg",
+        caption: "2025-06-01 09.53.16",
+        source: "2025-06-01 09.53.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-019-web.jpg",
+        caption: "2025-06-01 09.53.34",
+        source: "2025-06-01 09.53.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-020-web.jpg",
+        caption: "2025-06-01 10.08.51-1",
+        source: "2025-06-01 10.08.51-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-021-web.jpg",
+        caption: "2025-06-01 10.14.55",
+        source: "2025-06-01 10.14.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-022-web.jpg",
+        caption: "2025-06-01 10.28.01",
+        source: "2025-06-01 10.28.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-023-web.jpg",
+        caption: "2025-06-01 10.45.34",
+        source: "2025-06-01 10.45.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-024-web.jpg",
+        caption: "2025-06-01 10.46.49",
+        source: "2025-06-01 10.46.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-025-web.jpg",
+        caption: "2025-06-01 10.46.56",
+        source: "2025-06-01 10.46.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-026-web.jpg",
+        caption: "2025-06-01 10.49.45",
+        source: "2025-06-01 10.49.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-027-web.jpg",
+        caption: "2025-06-01 10.54.37",
+        source: "2025-06-01 10.54.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-028-web.jpg",
+        caption: "2025-06-01 11.00.14",
+        source: "2025-06-01 11.00.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-029-web.jpg",
+        caption: "2025-06-01 11.06.28",
+        source: "2025-06-01 11.06.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-030-web.jpg",
+        caption: "2025-06-01 11.06.48",
+        source: "2025-06-01 11.06.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-031-web.jpg",
+        caption: "2025-06-01 11.06.56",
+        source: "2025-06-01 11.06.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-032-web.jpg",
+        caption: "2025-06-01 11.14.28",
+        source: "2025-06-01 11.14.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-033-web.jpg",
+        caption: "2025-06-01 11.15.00",
+        source: "2025-06-01 11.15.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-01-herbiester/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-06-01-herbiester/photo-034-web.jpg",
+        caption: "2025-06-01 11.16.16",
+        source: "2025-06-01 11.16.16.jpg"
+      }
+    ]
   },
   {
     id: "2025-06-08-slins-fexhes-juprelle",
@@ -195,7 +2590,96 @@ window.GENERATED_RUNS = [
     color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-08-slins-fexhes-juprelle"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-001-web.jpg",
+        lat: 50.730095,
+        lon: 5.554831,
+        caption: "2025-06-08 08.09.33",
+        source: "2025-06-08 08.09.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-002-web.jpg",
+        lat: 50.744557,
+        lon: 5.533940,
+        caption: "2025-06-08 08.47.49",
+        source: "2025-06-08 08.47.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-003-web.jpg",
+        lat: 50.751536,
+        lon: 5.545629,
+        caption: "2025-06-08 09.05.59",
+        source: "2025-06-08 09.05.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-004-web.jpg",
+        lat: 50.748514,
+        lon: 5.549655,
+        caption: "2025-06-08 09.08.51",
+        source: "2025-06-08 09.08.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-005-web.jpg",
+        lat: 50.749156,
+        lon: 5.565191,
+        caption: "2025-06-08 09.16.46",
+        source: "2025-06-08 09.16.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-006-web.jpg",
+        lat: 50.750856,
+        lon: 5.571366,
+        caption: "2025-06-08 09.19.48",
+        source: "2025-06-08 09.19.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-007-web.jpg",
+        lat: 50.750851,
+        lon: 5.571359,
+        caption: "2025-06-08 09.20.00",
+        source: "2025-06-08 09.20.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-008-web.jpg",
+        lat: 50.752846,
+        lon: 5.577088,
+        caption: "2025-06-08 09.23.37",
+        source: "2025-06-08 09.23.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-009-web.jpg",
+        lat: 50.730849,
+        lon: 5.581079,
+        caption: "2025-06-08 09.41.31",
+        source: "2025-06-08 09.41.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-010-web.jpg",
+        lat: 50.727821,
+        lon: 5.563341,
+        caption: "2025-06-08 09.58.21",
+        source: "2025-06-08 09.58.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-06-08-slins-fexhes-juprelle/photo-011-web.jpg",
+        lat: 50.648209,
+        lon: 5.591377,
+        caption: "2025-06-08 10.47.00",
+        source: "2025-06-08 10.47.00.jpg"
+      }
+    ]
   },
   {
     id: "2025-06-15-banneux",
@@ -206,7 +2690,134 @@ window.GENERATED_RUNS = [
     color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-15-banneux"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-001-web.jpg",
+        lat: 50.536892,
+        lon: 5.740593,
+        caption: "2025-06-15 09.53.32",
+        source: "2025-06-15 09.53.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-002-web.jpg",
+        lat: 50.541335,
+        lon: 5.750899,
+        caption: "2025-06-15 10.09.43",
+        source: "2025-06-15 10.09.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-003-web.jpg",
+        lat: 50.554496,
+        lon: 5.765921,
+        caption: "2025-06-15 10.21.44",
+        source: "2025-06-15 10.21.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-004-web.jpg",
+        lat: 50.562302,
+        lon: 5.762781,
+        caption: "2025-06-15 10.32.24",
+        source: "2025-06-15 10.32.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-005-web.jpg",
+        lat: 50.556267,
+        lon: 5.725270,
+        caption: "2025-06-15 11.00.07",
+        source: "2025-06-15 11.00.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-006-web.jpg",
+        lat: 50.562738,
+        lon: 5.722836,
+        caption: "2025-06-15 11.06.31",
+        source: "2025-06-15 11.06.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-007-web.jpg",
+        lat: 50.559241,
+        lon: 5.719070,
+        caption: "2025-06-15 11.11.22",
+        source: "2025-06-15 11.11.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-008-web.jpg",
+        lat: 50.557460,
+        lon: 5.717973,
+        caption: "2025-06-15 11.13.38",
+        source: "2025-06-15 11.13.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-009-web.jpg",
+        lat: 50.537687,
+        lon: 5.729038,
+        caption: "2025-06-15 11.52.53",
+        source: "2025-06-15 11.52.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-010-web.jpg",
+        lat: 50.536251,
+        lon: 5.741933,
+        caption: "2025-06-15 12.05.13",
+        source: "2025-06-15 12.05.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-011-web.jpg",
+        lat: 50.536262,
+        lon: 5.741936,
+        caption: "2025-06-15 12.05.32",
+        source: "2025-06-15 12.05.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-012-web.jpg",
+        lat: 50.551678,
+        lon: 5.784219,
+        caption: "2025-06-15 12.28.34",
+        source: "2025-06-15 12.28.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-013-web.jpg",
+        lat: 50.551788,
+        lon: 5.784387,
+        caption: "2025-06-15 12.31.25",
+        source: "2025-06-15 12.31.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-014-web.jpg",
+        lat: 50.551788,
+        lon: 5.784387,
+        caption: "2025-06-15 12.31.32",
+        source: "2025-06-15 12.31.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-015-web.jpg",
+        lat: 50.551567,
+        lon: 5.783601,
+        caption: "2025-06-15 12.36.31",
+        source: "2025-06-15 12.36.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-15-banneux/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-06-15-banneux/photo-016-web.jpg",
+        caption: "2025-06-15 14.11.36",
+        source: "2025-06-15 14.11.36.jpg"
+      }
+    ]
   },
   {
     id: "2025-06-29-cerexhe-heuseux",
@@ -217,7 +2828,236 @@ window.GENERATED_RUNS = [
     color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-06-29-cerexhe-heuseux"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-001-web.jpg",
+        caption: "2025-06-29 08.00.42",
+        source: "2025-06-29 08.00.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-002-web.jpg",
+        lat: 50.656225,
+        lon: 5.720404,
+        caption: "2025-06-29 08.09.31",
+        source: "2025-06-29 08.09.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-003-web.jpg",
+        lat: 50.665777,
+        lon: 5.714727,
+        caption: "2025-06-29 08.18.46",
+        source: "2025-06-29 08.18.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-004-web.jpg",
+        lat: 50.667469,
+        lon: 5.710304,
+        caption: "2025-06-29 08.22.22",
+        source: "2025-06-29 08.22.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-005-web.jpg",
+        lat: 50.670516,
+        lon: 5.707220,
+        caption: "2025-06-29 08.25.20",
+        source: "2025-06-29 08.25.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-006-web.jpg",
+        lat: 50.679535,
+        lon: 5.701954,
+        caption: "2025-06-29 08.37.15",
+        source: "2025-06-29 08.37.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-007-web.jpg",
+        lat: 50.680912,
+        lon: 5.703806,
+        caption: "2025-06-29 08.38.53",
+        source: "2025-06-29 08.38.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-008-web.jpg",
+        lat: 50.680886,
+        lon: 5.703926,
+        caption: "2025-06-29 08.39.26",
+        source: "2025-06-29 08.39.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-009-web.jpg",
+        lat: 50.681343,
+        lon: 5.705176,
+        caption: "2025-06-29 08.40.28",
+        source: "2025-06-29 08.40.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-010-web.jpg",
+        lat: 50.681610,
+        lon: 5.706135,
+        caption: "2025-06-29 08.40.41-2",
+        source: "2025-06-29 08.40.41-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-011-web.jpg",
+        lat: 50.681973,
+        lon: 5.707277,
+        caption: "2025-06-29 08.41.31",
+        source: "2025-06-29 08.41.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-012-web.jpg",
+        lat: 50.689417,
+        lon: 5.720861,
+        caption: "2025-06-29 08.51.28",
+        source: "2025-06-29 08.51.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-013-web.jpg",
+        lat: 50.690197,
+        lon: 5.722059,
+        caption: "2025-06-29 08.52.42",
+        source: "2025-06-29 08.52.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-014-web.jpg",
+        caption: "2025-06-29 08.58.02",
+        source: "2025-06-29 08.58.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-015-web.jpg",
+        lat: 50.687069,
+        lon: 5.734155,
+        caption: "2025-06-29 08.59.15",
+        source: "2025-06-29 08.59.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-016-web.jpg",
+        lat: 50.688776,
+        lon: 5.736535,
+        caption: "2025-06-29 09.02.35",
+        source: "2025-06-29 09.02.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-017-web.jpg",
+        lat: 50.688776,
+        lon: 5.736535,
+        caption: "2025-06-29 09.03.09",
+        source: "2025-06-29 09.03.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-018-web.jpg",
+        lat: 50.688776,
+        lon: 5.736535,
+        caption: "2025-06-29 09.03.16",
+        source: "2025-06-29 09.03.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-019-web.jpg",
+        lat: 50.688955,
+        lon: 5.736671,
+        caption: "2025-06-29 09.03.42",
+        source: "2025-06-29 09.03.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-020-web.jpg",
+        lat: 50.698472,
+        lon: 5.741715,
+        caption: "2025-06-29 09.19.19",
+        source: "2025-06-29 09.19.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-021-web.jpg",
+        lat: 50.692197,
+        lon: 5.753300,
+        caption: "2025-06-29 09.29.53",
+        source: "2025-06-29 09.29.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-022-web.jpg",
+        lat: 50.689211,
+        lon: 5.749516,
+        caption: "2025-06-29 09.33.35",
+        source: "2025-06-29 09.33.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-023-web.jpg",
+        lat: 50.673643,
+        lon: 5.748146,
+        caption: "2025-06-29 09.49.50",
+        source: "2025-06-29 09.49.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-024-web.jpg",
+        lat: 50.673643,
+        lon: 5.748146,
+        caption: "2025-06-29 09.49.57",
+        source: "2025-06-29 09.49.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-025-web.jpg",
+        lat: 50.673643,
+        lon: 5.748146,
+        caption: "2025-06-29 09.50.01",
+        source: "2025-06-29 09.50.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-026-web.jpg",
+        lat: 50.656412,
+        lon: 5.720603,
+        caption: "2025-06-29 10.13.40",
+        source: "2025-06-29 10.13.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-027-web.jpg",
+        lat: 50.656412,
+        lon: 5.720603,
+        caption: "2025-06-29 10.13.45-1",
+        source: "2025-06-29 10.13.45-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-028-web.jpg",
+        lat: 50.656427,
+        lon: 5.720563,
+        caption: "2025-06-29 10.14.57",
+        source: "2025-06-29 10.14.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-06-29-cerexhe-heuseux/photo-029-web.jpg",
+        lat: 50.656421,
+        lon: 5.720557,
+        caption: "2025-06-29 10.17.12-1",
+        source: "2025-06-29 10.17.12-1.jpg"
+      }
+    ]
   },
   {
     id: "2025-07-06-solwaster",
@@ -228,7 +3068,352 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-06-solwaster"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-001-web.jpg",
+        lat: 50.523843,
+        lon: 5.966462,
+        caption: "2025-07-06 08.40.26",
+        source: "2025-07-06 08.40.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-002-web.jpg",
+        lat: 50.524255,
+        lon: 5.965344,
+        caption: "2025-07-06 08.41.45",
+        source: "2025-07-06 08.41.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-003-web.jpg",
+        lat: 50.518308,
+        lon: 5.966279,
+        caption: "2025-07-06 09.09.44",
+        source: "2025-07-06 09.09.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-004-web.jpg",
+        lat: 50.512536,
+        lon: 5.965641,
+        caption: "2025-07-06 09.13.42",
+        source: "2025-07-06 09.13.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-005-web.jpg",
+        lat: 50.508149,
+        lon: 5.960218,
+        caption: "2025-07-06 09.18.17",
+        source: "2025-07-06 09.18.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-006-web.jpg",
+        lat: 50.507740,
+        lon: 5.960398,
+        caption: "2025-07-06 09.18.55",
+        source: "2025-07-06 09.18.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-007-web.jpg",
+        lat: 50.507681,
+        lon: 5.960374,
+        caption: "2025-07-06 09.19.05",
+        source: "2025-07-06 09.19.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-008-web.jpg",
+        lat: 50.506484,
+        lon: 5.961664,
+        caption: "2025-07-06 09.20.28",
+        source: "2025-07-06 09.20.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-009-web.jpg",
+        lat: 50.506484,
+        lon: 5.961664,
+        caption: "2025-07-06 09.20.40",
+        source: "2025-07-06 09.20.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-010-web.jpg",
+        lat: 50.505722,
+        lon: 5.962522,
+        caption: "2025-07-06 09.21.49",
+        source: "2025-07-06 09.21.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-011-web.jpg",
+        lat: 50.505722,
+        lon: 5.962522,
+        caption: "2025-07-06 09.21.59",
+        source: "2025-07-06 09.21.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-012-web.jpg",
+        lat: 50.502699,
+        lon: 5.966714,
+        caption: "2025-07-06 09.26.08",
+        source: "2025-07-06 09.26.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-013-web.jpg",
+        lat: 50.502594,
+        lon: 5.966856,
+        caption: "2025-07-06 09.26.37",
+        source: "2025-07-06 09.26.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-014-web.jpg",
+        lat: 50.502496,
+        lon: 5.966920,
+        caption: "2025-07-06 09.26.50",
+        source: "2025-07-06 09.26.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-015-web.jpg",
+        lat: 50.501670,
+        lon: 5.969984,
+        caption: "2025-07-06 09.29.18",
+        source: "2025-07-06 09.29.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-016-web.jpg",
+        lat: 50.496714,
+        lon: 5.983490,
+        caption: "2025-07-06 09.39.05",
+        source: "2025-07-06 09.39.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-017-web.jpg",
+        lat: 50.491777,
+        lon: 5.991291,
+        caption: "2025-07-06 09.48.34",
+        source: "2025-07-06 09.48.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-018-web.jpg",
+        lat: 50.489243,
+        lon: 5.992174,
+        caption: "2025-07-06 09.51.03",
+        source: "2025-07-06 09.51.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-019-web.jpg",
+        lat: 50.489241,
+        lon: 5.992181,
+        caption: "2025-07-06 09.51.08",
+        source: "2025-07-06 09.51.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-020-web.jpg",
+        lat: 50.491014,
+        lon: 6.003233,
+        caption: "2025-07-06 09.58.51",
+        source: "2025-07-06 09.58.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-021-web.jpg",
+        lat: 50.491014,
+        lon: 6.003233,
+        caption: "2025-07-06 09.58.57",
+        source: "2025-07-06 09.58.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-022-web.jpg",
+        lat: 50.491622,
+        lon: 6.006568,
+        caption: "2025-07-06 10.00.32",
+        source: "2025-07-06 10.00.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-023-web.jpg",
+        lat: 50.496519,
+        lon: 6.021148,
+        caption: "2025-07-06 10.07.05",
+        source: "2025-07-06 10.07.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-024-web.jpg",
+        lat: 50.510307,
+        lon: 6.040097,
+        caption: "2025-07-06 10.23.34",
+        source: "2025-07-06 10.23.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-025-web.jpg",
+        lat: 50.503150,
+        lon: 6.049891,
+        caption: "2025-07-06 10.30.43",
+        source: "2025-07-06 10.30.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-026-web.jpg",
+        lat: 50.506397,
+        lon: 6.049413,
+        caption: "2025-07-06 10.37.34",
+        source: "2025-07-06 10.37.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-027-web.jpg",
+        lat: 50.511071,
+        lon: 6.041965,
+        caption: "2025-07-06 10.43.49",
+        source: "2025-07-06 10.43.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-028-web.jpg",
+        lat: 50.514087,
+        lon: 6.012171,
+        caption: "2025-07-06 10.58.49",
+        source: "2025-07-06 10.58.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-029-web.jpg",
+        lat: 50.514110,
+        lon: 6.012148,
+        caption: "2025-07-06 10.59.14",
+        source: "2025-07-06 10.59.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-030-web.jpg",
+        lat: 50.514996,
+        lon: 6.009975,
+        caption: "2025-07-06 11.01.18",
+        source: "2025-07-06 11.01.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-031-web.jpg",
+        lat: 50.515091,
+        lon: 6.009993,
+        caption: "2025-07-06 11.01.39",
+        source: "2025-07-06 11.01.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-032-web.jpg",
+        lat: 50.515694,
+        lon: 6.008428,
+        caption: "2025-07-06 11.04.09",
+        source: "2025-07-06 11.04.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-033-web.jpg",
+        lat: 50.521414,
+        lon: 5.991988,
+        caption: "2025-07-06 11.19.26",
+        source: "2025-07-06 11.19.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-034-web.jpg",
+        lat: 50.521414,
+        lon: 5.991988,
+        caption: "2025-07-06 11.19.34",
+        source: "2025-07-06 11.19.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-035-web.jpg",
+        lat: 50.519518,
+        lon: 5.982929,
+        caption: "2025-07-06 11.26.49",
+        source: "2025-07-06 11.26.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-036-web.jpg",
+        lat: 50.523860,
+        lon: 5.967505,
+        caption: "2025-07-06 11.36.35",
+        source: "2025-07-06 11.36.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-037-web.jpg",
+        lat: 50.524802,
+        lon: 5.965622,
+        caption: "2025-07-06 11.38.24",
+        source: "2025-07-06 11.38.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-038-web.jpg",
+        lat: 50.524831,
+        lon: 5.965607,
+        caption: "2025-07-06 11.38.47",
+        source: "2025-07-06 11.38.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-039-web.jpg",
+        lat: 50.524982,
+        lon: 5.965636,
+        caption: "2025-07-06 11.42.13",
+        source: "2025-07-06 11.42.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-040-web.jpg",
+        lat: 50.524982,
+        lon: 5.965636,
+        caption: "2025-07-06 11.42.37",
+        source: "2025-07-06 11.42.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-041-web.jpg",
+        lat: 50.524924,
+        lon: 5.965614,
+        caption: "2025-07-06 11.48.25",
+        source: "2025-07-06 11.48.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-042-web.jpg",
+        lat: 50.578546,
+        lon: 5.865504,
+        caption: "2025-07-06 12.18.38",
+        source: "2025-07-06 12.18.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-06-solwaster/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-07-06-solwaster/photo-043-web.jpg",
+        lat: 50.578546,
+        lon: 5.865504,
+        caption: "2025-07-06 12.18.43",
+        source: "2025-07-06 12.18.43.jpg"
+      }
+    ]
   },
   {
     id: "2025-07-13-saint-georges-sur-meuse",
@@ -239,7 +3424,172 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-13-saint-georges-sur-meuse"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-001-web.jpg",
+        lat: 50.585657,
+        lon: 5.360713,
+        caption: "2025-07-13 08.00.28",
+        source: "2025-07-13 08.00.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-002-web.jpg",
+        lat: 50.585683,
+        lon: 5.360695,
+        caption: "2025-07-13 08.03.40",
+        source: "2025-07-13 08.03.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-003-web.jpg",
+        lat: 50.594331,
+        lon: 5.364645,
+        caption: "2025-07-13 08.11.19",
+        source: "2025-07-13 08.11.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-004-web.jpg",
+        lat: 50.594331,
+        lon: 5.364645,
+        caption: "2025-07-13 08.11.24",
+        source: "2025-07-13 08.11.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-005-web.jpg",
+        lat: 50.598383,
+        lon: 5.365755,
+        caption: "2025-07-13 08.15.05",
+        source: "2025-07-13 08.15.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-006-web.jpg",
+        lat: 50.610158,
+        lon: 5.370349,
+        caption: "2025-07-13 08.23.00",
+        source: "2025-07-13 08.23.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-007-web.jpg",
+        lat: 50.602761,
+        lon: 5.361143,
+        caption: "2025-07-13 08.40.53",
+        source: "2025-07-13 08.40.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-008-web.jpg",
+        lat: 50.590470,
+        lon: 5.346098,
+        caption: "2025-07-13 08.51.03",
+        source: "2025-07-13 08.51.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-009-web.jpg",
+        lat: 50.587327,
+        lon: 5.345811,
+        caption: "2025-07-13 08.53.00",
+        source: "2025-07-13 08.53.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-010-web.jpg",
+        lat: 50.573983,
+        lon: 5.345565,
+        caption: "2025-07-13 09.06.16",
+        source: "2025-07-13 09.06.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-011-web.jpg",
+        lat: 50.580725,
+        lon: 5.367910,
+        caption: "2025-07-13 09.22.44",
+        source: "2025-07-13 09.22.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-012-web.jpg",
+        lat: 50.586301,
+        lon: 5.367676,
+        caption: "2025-07-13 09.27.03",
+        source: "2025-07-13 09.27.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-013-web.jpg",
+        lat: 50.586301,
+        lon: 5.367676,
+        caption: "2025-07-13 09.27.11",
+        source: "2025-07-13 09.27.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-014-web.jpg",
+        lat: 50.586012,
+        lon: 5.369150,
+        caption: "2025-07-13 09.28.08",
+        source: "2025-07-13 09.28.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-015-web.jpg",
+        lat: 50.587653,
+        lon: 5.370467,
+        caption: "2025-07-13 09.29.45",
+        source: "2025-07-13 09.29.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-016-web.jpg",
+        lat: 50.585872,
+        lon: 5.360610,
+        caption: "2025-07-13 09.40.20",
+        source: "2025-07-13 09.40.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-017-web.jpg",
+        lat: 50.585846,
+        lon: 5.360426,
+        caption: "2025-07-13 09.45.23",
+        source: "2025-07-13 09.45.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-018-web.jpg",
+        lat: 50.585864,
+        lon: 5.360443,
+        caption: "2025-07-13 09.46.30",
+        source: "2025-07-13 09.46.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-019-web.jpg",
+        lat: 50.585858,
+        lon: 5.360443,
+        caption: "2025-07-13 09.47.01",
+        source: "2025-07-13 09.47.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-020-web.jpg",
+        caption: "2025-07-13 09.47.44",
+        source: "2025-07-13 09.47.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-07-13-saint-georges-sur-meuse/photo-021-web.jpg",
+        caption: "2025-07-13 09.48.06",
+        source: "2025-07-13 09.48.06.jpg"
+      }
+    ]
   },
   {
     id: "2025-07-20-lorce",
@@ -250,7 +3600,92 @@ window.GENERATED_RUNS = [
     color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-20-lorce"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-001-web.jpg",
+        lat: 50.415509,
+        lon: 5.734363,
+        caption: "2025-07-20 08.08.36",
+        source: "2025-07-20 08.08.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-002-web.jpg",
+        lat: 50.413387,
+        lon: 5.728478,
+        caption: "2025-07-20 08.58.47",
+        source: "2025-07-20 08.58.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-003-web.jpg",
+        lat: 50.413372,
+        lon: 5.728444,
+        caption: "2025-07-20 08.58.57",
+        source: "2025-07-20 08.58.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-004-web.jpg",
+        lat: 50.413372,
+        lon: 5.728444,
+        caption: "2025-07-20 08.58.58",
+        source: "2025-07-20 08.58.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-005-web.jpg",
+        lat: 50.416673,
+        lon: 5.737084,
+        caption: "2025-07-20 10.01.28",
+        source: "2025-07-20 10.01.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-006-web.jpg",
+        lat: 50.415564,
+        lon: 5.734211,
+        caption: "2025-07-20 10.42.03",
+        source: "2025-07-20 10.42.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-007-web.jpg",
+        lat: 50.415568,
+        lon: 5.734191,
+        caption: "2025-07-20 10.42.29",
+        source: "2025-07-20 10.42.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-008-web.jpg",
+        lat: 50.415615,
+        lon: 5.734128,
+        caption: "2025-07-20 10.47.49",
+        source: "2025-07-20 10.47.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-009-web.jpg",
+        lat: 50.415585,
+        lon: 5.734175,
+        caption: "2025-07-20 10.48.37",
+        source: "2025-07-20 10.48.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-010-web.jpg",
+        caption: "2025-07-20 12.06.01",
+        source: "2025-07-20 12.06.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-20-lorce/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-07-20-lorce/photo-011-web.jpg",
+        caption: "pv_document",
+        source: "pv_document.jpg"
+      }
+    ]
   },
   {
     id: "2025-07-27-rahier",
@@ -261,7 +3696,206 @@ window.GENERATED_RUNS = [
     color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-07-27-rahier"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-001-web.jpg",
+        lat: 50.386024,
+        lon: 5.778681,
+        caption: "2025-07-27 08.27.05",
+        source: "2025-07-27 08.27.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-002-web.jpg",
+        lat: 50.385953,
+        lon: 5.778970,
+        caption: "2025-07-27 08.33.58",
+        source: "2025-07-27 08.33.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-003-web.jpg",
+        lat: 50.394087,
+        lon: 5.766516,
+        caption: "2025-07-27 08.54.05",
+        source: "2025-07-27 08.54.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-004-web.jpg",
+        lat: 50.391802,
+        lon: 5.761216,
+        caption: "2025-07-27 08.56.46",
+        source: "2025-07-27 08.56.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-005-web.jpg",
+        lat: 50.391802,
+        lon: 5.761216,
+        caption: "2025-07-27 08.56.55",
+        source: "2025-07-27 08.56.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-006-web.jpg",
+        lat: 50.387198,
+        lon: 5.761946,
+        caption: "2025-07-27 09.00.21",
+        source: "2025-07-27 09.00.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-007-web.jpg",
+        lat: 50.383086,
+        lon: 5.762828,
+        caption: "2025-07-27 09.07.46",
+        source: "2025-07-27 09.07.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-008-web.jpg",
+        lat: 50.383014,
+        lon: 5.762880,
+        caption: "2025-07-27 09.07.55",
+        source: "2025-07-27 09.07.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-009-web.jpg",
+        lat: 50.369370,
+        lon: 5.727366,
+        caption: "2025-07-27 09.25.21",
+        source: "2025-07-27 09.25.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-010-web.jpg",
+        lat: 50.362434,
+        lon: 5.730473,
+        caption: "2025-07-27 09.31.17",
+        source: "2025-07-27 09.31.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-011-web.jpg",
+        lat: 50.361683,
+        lon: 5.731396,
+        caption: "2025-07-27 09.32.15",
+        source: "2025-07-27 09.32.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-012-web.jpg",
+        lat: 50.361683,
+        lon: 5.731396,
+        caption: "2025-07-27 09.32.22",
+        source: "2025-07-27 09.32.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-013-web.jpg",
+        lat: 50.359649,
+        lon: 5.735576,
+        caption: "2025-07-27 09.37.08",
+        source: "2025-07-27 09.37.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-014-web.jpg",
+        lat: 50.359649,
+        lon: 5.735576,
+        caption: "2025-07-27 09.37.19",
+        source: "2025-07-27 09.37.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-015-web.jpg",
+        lat: 50.349850,
+        lon: 5.749246,
+        caption: "2025-07-27 09.50.43",
+        source: "2025-07-27 09.50.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-016-web.jpg",
+        lat: 50.378151,
+        lon: 5.782039,
+        caption: "2025-07-27 10.22.20",
+        source: "2025-07-27 10.22.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-017-web.jpg",
+        lat: 50.384665,
+        lon: 5.779433,
+        caption: "2025-07-27 10.29.50",
+        source: "2025-07-27 10.29.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-018-web.jpg",
+        lat: 50.386008,
+        lon: 5.779106,
+        caption: "2025-07-27 10.35.26",
+        source: "2025-07-27 10.35.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-019-web.jpg",
+        lat: 50.385948,
+        lon: 5.779208,
+        caption: "2025-07-27 10.37.04",
+        source: "2025-07-27 10.37.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-020-web.jpg",
+        lat: 50.386004,
+        lon: 5.778941,
+        caption: "2025-07-27 10.43.44",
+        source: "2025-07-27 10.43.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-021-web.jpg",
+        lat: 50.386004,
+        lon: 5.778941,
+        caption: "2025-07-27 10.43.57",
+        source: "2025-07-27 10.43.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-022-web.jpg",
+        lat: 50.386004,
+        lon: 5.778941,
+        caption: "2025-07-27 10.44.24",
+        source: "2025-07-27 10.44.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-023-web.jpg",
+        lat: 50.385858,
+        lon: 5.778611,
+        caption: "2025-07-27 10.45.30",
+        source: "2025-07-27 10.45.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-024-web.jpg",
+        lat: 50.385580,
+        lon: 5.778215,
+        caption: "2025-07-27 10.45.52",
+        source: "2025-07-27 10.45.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-07-27-rahier/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-07-27-rahier/photo-025-web.jpg",
+        caption: "2025-07-27 12.56.42",
+        source: "2025-07-27 12.56.42.jpg"
+      }
+    ]
   },
   {
     id: "2025-08-03-ferrieres",
@@ -272,7 +3906,180 @@ window.GENERATED_RUNS = [
     color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-03-ferrieres"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-001-web.jpg",
+        lat: 50.399427,
+        lon: 5.608155,
+        caption: "2025-08-03 08.21.48",
+        source: "2025-08-03 08.21.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-002-web.jpg",
+        lat: 50.399303,
+        lon: 5.608142,
+        caption: "2025-08-03 08.24.29",
+        source: "2025-08-03 08.24.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-003-web.jpg",
+        lat: 50.399300,
+        lon: 5.608114,
+        caption: "2025-08-03 08.24.40",
+        source: "2025-08-03 08.24.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-004-web.jpg",
+        lat: 50.398866,
+        lon: 5.602666,
+        caption: "2025-08-03 08.33.34",
+        source: "2025-08-03 08.33.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-005-web.jpg",
+        lat: 50.405284,
+        lon: 5.604374,
+        caption: "2025-08-03 08.38.52",
+        source: "2025-08-03 08.38.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-006-web.jpg",
+        lat: 50.407935,
+        lon: 5.604744,
+        caption: "2025-08-03 08.41.16",
+        source: "2025-08-03 08.41.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-007-web.jpg",
+        lat: 50.409470,
+        lon: 5.604856,
+        caption: "2025-08-03 08.42.16",
+        source: "2025-08-03 08.42.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-008-web.jpg",
+        lat: 50.410770,
+        lon: 5.604698,
+        caption: "2025-08-03 08.43.11",
+        source: "2025-08-03 08.43.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-009-web.jpg",
+        lat: 50.421532,
+        lon: 5.617465,
+        caption: "2025-08-03 08.53.13",
+        source: "2025-08-03 08.53.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-010-web.jpg",
+        lat: 50.427896,
+        lon: 5.606012,
+        caption: "2025-08-03 09.03.44",
+        source: "2025-08-03 09.03.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-011-web.jpg",
+        lat: 50.431099,
+        lon: 5.610933,
+        caption: "2025-08-03 09.06.41",
+        source: "2025-08-03 09.06.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-012-web.jpg",
+        lat: 50.440130,
+        lon: 5.631058,
+        caption: "2025-08-03 09.31.43",
+        source: "2025-08-03 09.31.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-013-web.jpg",
+        lat: 50.440130,
+        lon: 5.631058,
+        caption: "2025-08-03 09.32.02",
+        source: "2025-08-03 09.32.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-014-web.jpg",
+        lat: 50.440130,
+        lon: 5.631058,
+        caption: "2025-08-03 09.32.08",
+        source: "2025-08-03 09.32.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-015-web.jpg",
+        lat: 50.438036,
+        lon: 5.635095,
+        caption: "2025-08-03 09.34.49",
+        source: "2025-08-03 09.34.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-016-web.jpg",
+        lat: 50.437082,
+        lon: 5.634465,
+        caption: "2025-08-03 09.36.04",
+        source: "2025-08-03 09.36.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-017-web.jpg",
+        lat: 50.422289,
+        lon: 5.622532,
+        caption: "2025-08-03 09.56.45",
+        source: "2025-08-03 09.56.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-018-web.jpg",
+        lat: 50.412415,
+        lon: 5.617572,
+        caption: "2025-08-03 10.05.16",
+        source: "2025-08-03 10.05.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-019-web.jpg",
+        lat: 50.408506,
+        lon: 5.612503,
+        caption: "2025-08-03 10.12.16",
+        source: "2025-08-03 10.12.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-020-web.jpg",
+        lat: 50.399374,
+        lon: 5.607941,
+        caption: "2025-08-03 10.29.48",
+        source: "2025-08-03 10.29.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-021-web.jpg",
+        caption: "2025-08-03 10.40.21",
+        source: "2025-08-03 10.40.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-03-ferrieres/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-08-03-ferrieres/photo-022-web.jpg",
+        caption: "2025-08-03 11.05.01",
+        source: "2025-08-03 11.05.01.jpg"
+      }
+    ]
   },
   {
     id: "2025-08-10-vaux-et-borset",
@@ -283,7 +4090,128 @@ window.GENERATED_RUNS = [
     color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-10-vaux-et-borset"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-001-web.jpg",
+        lat: 50.613130,
+        lon: 5.235634,
+        caption: "2025-08-10 08.17.40",
+        source: "2025-08-10 08.17.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-002-web.jpg",
+        lat: 50.613457,
+        lon: 5.235603,
+        caption: "2025-08-10 08.18.22",
+        source: "2025-08-10 08.18.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-003-web.jpg",
+        lat: 50.615072,
+        lon: 5.250594,
+        caption: "2025-08-10 08.29.19",
+        source: "2025-08-10 08.29.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-004-web.jpg",
+        lat: 50.623773,
+        lon: 5.246694,
+        caption: "2025-08-10 08.33.57",
+        source: "2025-08-10 08.33.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-005-web.jpg",
+        lat: 50.627559,
+        lon: 5.242903,
+        caption: "2025-08-10 08.38.03",
+        source: "2025-08-10 08.38.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-006-web.jpg",
+        lat: 50.616304,
+        lon: 5.205308,
+        caption: "2025-08-10 09.05.17",
+        source: "2025-08-10 09.05.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-007-web.jpg",
+        lat: 50.616304,
+        lon: 5.205308,
+        caption: "2025-08-10 09.05.19-1",
+        source: "2025-08-10 09.05.19-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-008-web.jpg",
+        lat: 50.596198,
+        lon: 5.208888,
+        caption: "2025-08-10 09.25.30",
+        source: "2025-08-10 09.25.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-009-web.jpg",
+        lat: 50.594321,
+        lon: 5.218716,
+        caption: "2025-08-10 09.29.43",
+        source: "2025-08-10 09.29.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-010-web.jpg",
+        lat: 50.594747,
+        lon: 5.223962,
+        caption: "2025-08-10 09.31.41",
+        source: "2025-08-10 09.31.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-011-web.jpg",
+        lat: 50.595979,
+        lon: 5.243753,
+        caption: "2025-08-10 09.40.51",
+        source: "2025-08-10 09.40.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-012-web.jpg",
+        lat: 50.612595,
+        lon: 5.235207,
+        caption: "2025-08-10 10.00.29",
+        source: "2025-08-10 10.00.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-013-web.jpg",
+        lat: 50.613310,
+        lon: 5.235596,
+        caption: "2025-08-10 10.01.45",
+        source: "2025-08-10 10.01.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-014-web.jpg",
+        lat: 50.613377,
+        lon: 5.235779,
+        caption: "2025-08-10 10.07.21",
+        source: "2025-08-10 10.07.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-10-vaux-et-borset/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-08-10-vaux-et-borset/photo-015-web.jpg",
+        lat: 50.613366,
+        lon: 5.235737,
+        caption: "2025-08-10 10.08.07",
+        source: "2025-08-10 10.08.07.jpg"
+      }
+    ]
   },
   {
     id: "2025-08-17-ellemelle",
@@ -294,7 +4222,294 @@ window.GENERATED_RUNS = [
     color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-17-ellemelle"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-001-web.jpg",
+        lat: 50.466369,
+        lon: 5.441054,
+        caption: "2025-08-17 08.10.18",
+        source: "2025-08-17 08.10.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-002-web.jpg",
+        lat: 50.466408,
+        lon: 5.441017,
+        caption: "2025-08-17 08.11.19",
+        source: "2025-08-17 08.11.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-003-web.jpg",
+        lat: 50.466385,
+        lon: 5.440962,
+        caption: "2025-08-17 08.14.32",
+        source: "2025-08-17 08.14.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-004-web.jpg",
+        lat: 50.465486,
+        lon: 5.436778,
+        caption: "2025-08-17 08.20.37",
+        source: "2025-08-17 08.20.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-005-web.jpg",
+        lat: 50.465486,
+        lon: 5.436778,
+        caption: "2025-08-17 08.20.48",
+        source: "2025-08-17 08.20.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-006-web.jpg",
+        lat: 50.461274,
+        lon: 5.424239,
+        caption: "2025-08-17 08.27.08",
+        source: "2025-08-17 08.27.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-007-web.jpg",
+        lat: 50.462716,
+        lon: 5.418072,
+        caption: "2025-08-17 08.30.33",
+        source: "2025-08-17 08.30.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-008-web.jpg",
+        lat: 50.468271,
+        lon: 5.437047,
+        caption: "2025-08-17 08.46.08",
+        source: "2025-08-17 08.46.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-009-web.jpg",
+        lat: 50.468264,
+        lon: 5.437057,
+        caption: "2025-08-17 08.47.35-1",
+        source: "2025-08-17 08.47.35-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-010-web.jpg",
+        lat: 50.468221,
+        lon: 5.437163,
+        caption: "2025-08-17 08.48.01",
+        source: "2025-08-17 08.48.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-011-web.jpg",
+        lat: 50.466453,
+        lon: 5.443117,
+        caption: "2025-08-17 09.01.05",
+        source: "2025-08-17 09.01.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-012-web.jpg",
+        lat: 50.484779,
+        lon: 5.445350,
+        caption: "2025-08-17 09.13.55",
+        source: "2025-08-17 09.13.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-013-web.jpg",
+        lat: 50.485385,
+        lon: 5.445064,
+        caption: "2025-08-17 09.14.21",
+        source: "2025-08-17 09.14.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-014-web.jpg",
+        lat: 50.485394,
+        lon: 5.445058,
+        caption: "2025-08-17 09.14.31",
+        source: "2025-08-17 09.14.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-015-web.jpg",
+        lat: 50.503608,
+        lon: 5.467921,
+        caption: "2025-08-17 09.30.27",
+        source: "2025-08-17 09.30.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-016-web.jpg",
+        lat: 50.503608,
+        lon: 5.467921,
+        caption: "2025-08-17 09.30.44",
+        source: "2025-08-17 09.30.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-017-web.jpg",
+        lat: 50.507931,
+        lon: 5.468124,
+        caption: "2025-08-17 09.34.29",
+        source: "2025-08-17 09.34.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-018-web.jpg",
+        lat: 50.503316,
+        lon: 5.453016,
+        caption: "2025-08-17 09.43.23",
+        source: "2025-08-17 09.43.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-019-web.jpg",
+        lat: 50.495898,
+        lon: 5.438012,
+        caption: "2025-08-17 09.53.12",
+        source: "2025-08-17 09.53.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-020-web.jpg",
+        lat: 50.486549,
+        lon: 5.425710,
+        caption: "2025-08-17 10.01.24",
+        source: "2025-08-17 10.01.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-021-web.jpg",
+        lat: 50.478785,
+        lon: 5.420257,
+        caption: "2025-08-17 10.07.38",
+        source: "2025-08-17 10.07.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-022-web.jpg",
+        lat: 50.478826,
+        lon: 5.420260,
+        caption: "2025-08-17 10.07.56",
+        source: "2025-08-17 10.07.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-023-web.jpg",
+        lat: 50.475406,
+        lon: 5.413199,
+        caption: "2025-08-17 10.12.08",
+        source: "2025-08-17 10.12.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-024-web.jpg",
+        lat: 50.475406,
+        lon: 5.413199,
+        caption: "2025-08-17 10.12.17",
+        source: "2025-08-17 10.12.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-025-web.jpg",
+        lat: 50.459871,
+        lon: 5.418711,
+        caption: "2025-08-17 10.27.23-1",
+        source: "2025-08-17 10.27.23-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-026-web.jpg",
+        lat: 50.453045,
+        lon: 5.422375,
+        caption: "2025-08-17 10.32.25",
+        source: "2025-08-17 10.32.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-027-web.jpg",
+        lat: 50.453088,
+        lon: 5.424040,
+        caption: "2025-08-17 10.33.40",
+        source: "2025-08-17 10.33.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-028-web.jpg",
+        lat: 50.452463,
+        lon: 5.436293,
+        caption: "2025-08-17 10.41.32",
+        source: "2025-08-17 10.41.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-029-web.jpg",
+        lat: 50.452941,
+        lon: 5.437362,
+        caption: "2025-08-17 10.42.38",
+        source: "2025-08-17 10.42.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-030-web.jpg",
+        lat: 50.457155,
+        lon: 5.461215,
+        caption: "2025-08-17 10.53.42",
+        source: "2025-08-17 10.53.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-031-web.jpg",
+        lat: 50.463717,
+        lon: 5.449790,
+        caption: "2025-08-17 11.03.09",
+        source: "2025-08-17 11.03.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-032-web.jpg",
+        lat: 50.466411,
+        lon: 5.441339,
+        caption: "2025-08-17 11.08.47",
+        source: "2025-08-17 11.08.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-033-web.jpg",
+        caption: "2025-08-17 11.10.27",
+        source: "2025-08-17 11.10.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-034-web.jpg",
+        lat: 50.466458,
+        lon: 5.441046,
+        caption: "2025-08-17 11.11.50",
+        source: "2025-08-17 11.11.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-035-web.jpg",
+        lat: 50.466611,
+        lon: 5.440384,
+        caption: "2025-08-17 11.18.51",
+        source: "2025-08-17 11.18.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-17-ellemelle/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-08-17-ellemelle/photo-036-web.jpg",
+        lat: 50.466610,
+        lon: 5.440362,
+        caption: "2025-08-17 11.19.28",
+        source: "2025-08-17 11.19.28.jpg"
+      }
+    ]
   },
   {
     id: "2025-08-24-xhoris",
@@ -305,7 +4520,358 @@ window.GENERATED_RUNS = [
     color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-24-xhoris"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-001-web.jpg",
+        lat: 50.451445,
+        lon: 5.597194,
+        caption: "2025-08-24 08.12.05",
+        source: "2025-08-24 08.12.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-002-web.jpg",
+        lat: 50.450476,
+        lon: 5.595742,
+        caption: "2025-08-24 08.13.46",
+        source: "2025-08-24 08.13.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-003-web.jpg",
+        lat: 50.450545,
+        lon: 5.595714,
+        caption: "2025-08-24 08.14.55",
+        source: "2025-08-24 08.14.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-004-web.jpg",
+        lat: 50.450548,
+        lon: 5.595733,
+        caption: "2025-08-24 08.15.03",
+        source: "2025-08-24 08.15.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-005-web.jpg",
+        lat: 50.451514,
+        lon: 5.597828,
+        caption: "2025-08-24 08.21.53",
+        source: "2025-08-24 08.21.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-006-web.jpg",
+        lat: 50.457492,
+        lon: 5.608207,
+        caption: "2025-08-24 08.29.04",
+        source: "2025-08-24 08.29.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-007-web.jpg",
+        lat: 50.458299,
+        lon: 5.607858,
+        caption: "2025-08-24 08.29.54",
+        source: "2025-08-24 08.29.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-008-web.jpg",
+        lat: 50.464098,
+        lon: 5.619761,
+        caption: "2025-08-24 08.41.19",
+        source: "2025-08-24 08.41.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-009-web.jpg",
+        lat: 50.467745,
+        lon: 5.618334,
+        caption: "2025-08-24 08.45.34",
+        source: "2025-08-24 08.45.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-010-web.jpg",
+        lat: 50.467932,
+        lon: 5.618695,
+        caption: "2025-08-24 08.46.03",
+        source: "2025-08-24 08.46.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-011-web.jpg",
+        lat: 50.472125,
+        lon: 5.633664,
+        caption: "2025-08-24 08.52.45",
+        source: "2025-08-24 08.52.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-012-web.jpg",
+        lat: 50.467619,
+        lon: 5.642088,
+        caption: "2025-08-24 09.01.10",
+        source: "2025-08-24 09.01.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-013-web.jpg",
+        lat: 50.474664,
+        lon: 5.641957,
+        caption: "2025-08-24 09.08.43",
+        source: "2025-08-24 09.08.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-014-web.jpg",
+        lat: 50.476517,
+        lon: 5.638506,
+        caption: "2025-08-24 09.10.54",
+        source: "2025-08-24 09.10.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-015-web.jpg",
+        lat: 50.476545,
+        lon: 5.636624,
+        caption: "2025-08-24 09.12.09",
+        source: "2025-08-24 09.12.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-016-web.jpg",
+        lat: 50.472020,
+        lon: 5.639873,
+        caption: "2025-08-24 09.16.59",
+        source: "2025-08-24 09.16.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-017-web.jpg",
+        lat: 50.473711,
+        lon: 5.632559,
+        caption: "2025-08-24 09.21.44",
+        source: "2025-08-24 09.21.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-018-web.jpg",
+        lat: 50.473019,
+        lon: 5.626757,
+        caption: "2025-08-24 09.27.21",
+        source: "2025-08-24 09.27.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-019-web.jpg",
+        lat: 50.474134,
+        lon: 5.620798,
+        caption: "2025-08-24 09.33.47",
+        source: "2025-08-24 09.33.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-020-web.jpg",
+        lat: 50.474300,
+        lon: 5.617186,
+        caption: "2025-08-24 09.37.37",
+        source: "2025-08-24 09.37.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-021-web.jpg",
+        lat: 50.474255,
+        lon: 5.610813,
+        caption: "2025-08-24 09.40.51",
+        source: "2025-08-24 09.40.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-022-web.jpg",
+        lat: 50.473707,
+        lon: 5.609672,
+        caption: "2025-08-24 09.41.50",
+        source: "2025-08-24 09.41.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-023-web.jpg",
+        lat: 50.472711,
+        lon: 5.609259,
+        caption: "2025-08-24 09.42.46",
+        source: "2025-08-24 09.42.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-024-web.jpg",
+        lat: 50.467171,
+        lon: 5.613627,
+        caption: "2025-08-24 09.49.08",
+        source: "2025-08-24 09.49.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-025-web.jpg",
+        lat: 50.467066,
+        lon: 5.611268,
+        caption: "2025-08-24 09.50.29",
+        source: "2025-08-24 09.50.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-026-web.jpg",
+        lat: 50.466336,
+        lon: 5.605772,
+        caption: "2025-08-24 09.52.39",
+        source: "2025-08-24 09.52.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-027-web.jpg",
+        lat: 50.466336,
+        lon: 5.605772,
+        caption: "2025-08-24 09.52.52",
+        source: "2025-08-24 09.52.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-028-web.jpg",
+        lat: 50.469386,
+        lon: 5.590655,
+        caption: "2025-08-24 10.00.06",
+        source: "2025-08-24 10.00.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-029-web.jpg",
+        lat: 50.469386,
+        lon: 5.590655,
+        caption: "2025-08-24 10.00.13",
+        source: "2025-08-24 10.00.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-030-web.jpg",
+        lat: 50.469046,
+        lon: 5.590106,
+        caption: "2025-08-24 10.00.56",
+        source: "2025-08-24 10.00.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-031-web.jpg",
+        lat: 50.469046,
+        lon: 5.590106,
+        caption: "2025-08-24 10.01.06",
+        source: "2025-08-24 10.01.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-032-web.jpg",
+        lat: 50.469031,
+        lon: 5.590088,
+        caption: "2025-08-24 10.01.42",
+        source: "2025-08-24 10.01.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-033-web.jpg",
+        lat: 50.469031,
+        lon: 5.590088,
+        caption: "2025-08-24 10.01.55",
+        source: "2025-08-24 10.01.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-034-web.jpg",
+        lat: 50.464289,
+        lon: 5.591910,
+        caption: "2025-08-24 10.07.11",
+        source: "2025-08-24 10.07.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-035-web.jpg",
+        lat: 50.450237,
+        lon: 5.595794,
+        caption: "2025-08-24 10.27.39",
+        source: "2025-08-24 10.27.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-036-web.jpg",
+        lat: 50.444225,
+        lon: 5.600892,
+        caption: "2025-08-24 10.33.47",
+        source: "2025-08-24 10.33.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-037-web.jpg",
+        lat: 50.441829,
+        lon: 5.597754,
+        caption: "2025-08-24 10.38.01",
+        source: "2025-08-24 10.38.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-038-web.jpg",
+        lat: 50.444455,
+        lon: 5.603157,
+        caption: "2025-08-24 10.43.19",
+        source: "2025-08-24 10.43.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-039-web.jpg",
+        lat: 50.443597,
+        lon: 5.609878,
+        caption: "2025-08-24 10.48.28",
+        source: "2025-08-24 10.48.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-040-web.jpg",
+        lat: 50.450505,
+        lon: 5.602510,
+        caption: "2025-08-24 10.58.00",
+        source: "2025-08-24 10.58.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-041-web.jpg",
+        lat: 50.451281,
+        lon: 5.598534,
+        caption: "2025-08-24 11.00.01",
+        source: "2025-08-24 11.00.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-042-web.jpg",
+        lat: 50.450595,
+        lon: 5.595542,
+        caption: "2025-08-24 11.06.31",
+        source: "2025-08-24 11.06.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-043-web.jpg",
+        lat: 50.450588,
+        lon: 5.595537,
+        caption: "2025-08-24 11.07.53",
+        source: "2025-08-24 11.07.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-24-xhoris/photo-044-thumb.jpg",
+        web: "./photos/generated/2025-08-24-xhoris/photo-044-web.jpg",
+        caption: "parcours Xhoris",
+        source: "parcours Xhoris.jpg"
+      }
+    ]
   },
   {
     id: "2025-08-31-louveigne",
@@ -316,7 +4882,156 @@ window.GENERATED_RUNS = [
     color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-08-31-louveigne"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-001-web.jpg",
+        lat: 50.648366,
+        lon: 5.591376,
+        caption: "2025-08-31 07.33.54",
+        source: "2025-08-31 07.33.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-002-web.jpg",
+        lat: 50.530463,
+        lon: 5.716589,
+        caption: "2025-08-31 08.13.11",
+        source: "2025-08-31 08.13.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-003-web.jpg",
+        lat: 50.530463,
+        lon: 5.716589,
+        caption: "2025-08-31 08.13.21",
+        source: "2025-08-31 08.13.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-004-web.jpg",
+        lat: 50.530463,
+        lon: 5.716589,
+        caption: "2025-08-31 08.13.25",
+        source: "2025-08-31 08.13.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-005-web.jpg",
+        lat: 50.521890,
+        lon: 5.732204,
+        caption: "2025-08-31 08.35.04",
+        source: "2025-08-31 08.35.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-006-web.jpg",
+        lat: 50.525298,
+        lon: 5.725739,
+        caption: "2025-08-31 08.45.29",
+        source: "2025-08-31 08.45.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-007-web.jpg",
+        lat: 50.518901,
+        lon: 5.722898,
+        caption: "2025-08-31 09.18.19",
+        source: "2025-08-31 09.18.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-008-web.jpg",
+        lat: 50.507842,
+        lon: 5.711679,
+        caption: "2025-08-31 09.30.53",
+        source: "2025-08-31 09.30.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-009-web.jpg",
+        lat: 50.507842,
+        lon: 5.711679,
+        caption: "2025-08-31 09.31.17",
+        source: "2025-08-31 09.31.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-010-web.jpg",
+        lat: 50.522232,
+        lon: 5.679605,
+        caption: "2025-08-31 10.21.23",
+        source: "2025-08-31 10.21.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-011-web.jpg",
+        lat: 50.530156,
+        lon: 5.674077,
+        caption: "2025-08-31 10.32.35",
+        source: "2025-08-31 10.32.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-012-web.jpg",
+        lat: 50.530442,
+        lon: 5.716600,
+        caption: "2025-08-31 10.58.01",
+        source: "2025-08-31 10.58.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-013-web.jpg",
+        lat: 50.530442,
+        lon: 5.716600,
+        caption: "2025-08-31 10.58.07",
+        source: "2025-08-31 10.58.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-014-web.jpg",
+        lat: 50.530394,
+        lon: 5.716433,
+        caption: "2025-08-31 10.59.28",
+        source: "2025-08-31 10.59.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-015-web.jpg",
+        lat: 50.530433,
+        lon: 5.716462,
+        caption: "2025-08-31 10.59.44",
+        source: "2025-08-31 10.59.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-016-web.jpg",
+        lat: 50.530371,
+        lon: 5.716450,
+        caption: "2025-08-31 11.01.02",
+        source: "2025-08-31 11.01.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-017-web.jpg",
+        lat: 50.551571,
+        lon: 5.783758,
+        caption: "2025-08-31 11.24.58",
+        source: "2025-08-31 11.24.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-018-web.jpg",
+        caption: "540498892_3305493539603042_3520290880692580682_n",
+        source: "540498892_3305493539603042_3520290880692580682_n.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-08-31-louveigne/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-08-31-louveigne/photo-019-web.jpg",
+        caption: "540521142_3305493396269723_7259034860061118272_n",
+        source: "540521142_3305493396269723_7259034860061118272_n.jpg"
+      }
+    ]
   },
   {
     id: "2025-09-07-sart-lez-spa",
@@ -327,7 +5042,422 @@ window.GENERATED_RUNS = [
     color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-07-sart-lez-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-001-web.jpg",
+        lat: 50.516968,
+        lon: 5.932021,
+        caption: "2025-09-07 07.52.07",
+        source: "2025-09-07 07.52.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-002-web.jpg",
+        lat: 50.517159,
+        lon: 5.932371,
+        caption: "2025-09-07 07.52.46",
+        source: "2025-09-07 07.52.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-003-web.jpg",
+        lat: 50.517353,
+        lon: 5.932468,
+        caption: "2025-09-07 07.53.09",
+        source: "2025-09-07 07.53.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-004-web.jpg",
+        lat: 50.517457,
+        lon: 5.932192,
+        caption: "2025-09-07 07.54.11",
+        source: "2025-09-07 07.54.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-005-web.jpg",
+        lat: 50.517457,
+        lon: 5.932192,
+        caption: "2025-09-07 07.54.23",
+        source: "2025-09-07 07.54.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-006-web.jpg",
+        lat: 50.517705,
+        lon: 5.932352,
+        caption: "2025-09-07 07.55.25",
+        source: "2025-09-07 07.55.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-007-web.jpg",
+        lat: 50.517363,
+        lon: 5.932474,
+        caption: "2025-09-07 07.57.50",
+        source: "2025-09-07 07.57.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-008-web.jpg",
+        lat: 50.523102,
+        lon: 5.932697,
+        caption: "2025-09-07 08.03.51",
+        source: "2025-09-07 08.03.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-009-web.jpg",
+        lat: 50.527224,
+        lon: 5.939411,
+        caption: "2025-09-07 08.07.47",
+        source: "2025-09-07 08.07.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-010-web.jpg",
+        lat: 50.528799,
+        lon: 5.941256,
+        caption: "2025-09-07 08.09.26",
+        source: "2025-09-07 08.09.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-011-web.jpg",
+        lat: 50.529339,
+        lon: 5.942093,
+        caption: "2025-09-07 08.09.58",
+        source: "2025-09-07 08.09.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-012-web.jpg",
+        lat: 50.531856,
+        lon: 5.948435,
+        caption: "2025-09-07 08.13.41",
+        source: "2025-09-07 08.13.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-013-web.jpg",
+        lat: 50.531285,
+        lon: 5.949976,
+        caption: "2025-09-07 08.15.30",
+        source: "2025-09-07 08.15.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-014-web.jpg",
+        lat: 50.529708,
+        lon: 5.953428,
+        caption: "2025-09-07 08.19.04",
+        source: "2025-09-07 08.19.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-015-web.jpg",
+        lat: 50.529708,
+        lon: 5.953428,
+        caption: "2025-09-07 08.19.30",
+        source: "2025-09-07 08.19.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-016-web.jpg",
+        lat: 50.529936,
+        lon: 5.953365,
+        caption: "2025-09-07 08.19.44",
+        source: "2025-09-07 08.19.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-017-web.jpg",
+        lat: 50.529936,
+        lon: 5.953365,
+        caption: "2025-09-07 08.19.48",
+        source: "2025-09-07 08.19.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-018-web.jpg",
+        lat: 50.529938,
+        lon: 5.953345,
+        caption: "2025-09-07 08.20.18",
+        source: "2025-09-07 08.20.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-019-web.jpg",
+        lat: 50.533069,
+        lon: 5.967644,
+        caption: "2025-09-07 08.28.04",
+        source: "2025-09-07 08.28.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-020-web.jpg",
+        lat: 50.534176,
+        lon: 5.971535,
+        caption: "2025-09-07 08.30.14",
+        source: "2025-09-07 08.30.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-021-web.jpg",
+        lat: 50.534176,
+        lon: 5.971535,
+        caption: "2025-09-07 08.30.32",
+        source: "2025-09-07 08.30.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-022-web.jpg",
+        lat: 50.530817,
+        lon: 5.995783,
+        caption: "2025-09-07 08.45.15",
+        source: "2025-09-07 08.45.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-023-web.jpg",
+        lat: 50.531254,
+        lon: 5.999031,
+        caption: "2025-09-07 08.48.03",
+        source: "2025-09-07 08.48.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-024-web.jpg",
+        lat: 50.532924,
+        lon: 6.004436,
+        caption: "2025-09-07 08.52.01",
+        source: "2025-09-07 08.52.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-025-web.jpg",
+        lat: 50.534242,
+        lon: 6.000297,
+        caption: "2025-09-07 08.54.22",
+        source: "2025-09-07 08.54.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-026-web.jpg",
+        lat: 50.535013,
+        lon: 5.997455,
+        caption: "2025-09-07 08.55.48",
+        source: "2025-09-07 08.55.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-027-web.jpg",
+        lat: 50.535850,
+        lon: 5.985676,
+        caption: "2025-09-07 09.01.03",
+        source: "2025-09-07 09.01.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-028-web.jpg",
+        lat: 50.536562,
+        lon: 5.978663,
+        caption: "2025-09-07 09.05.22",
+        source: "2025-09-07 09.05.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-029-web.jpg",
+        lat: 50.533866,
+        lon: 5.967793,
+        caption: "2025-09-07 09.12.44",
+        source: "2025-09-07 09.12.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-030-web.jpg",
+        lat: 50.533811,
+        lon: 5.967739,
+        caption: "2025-09-07 09.16.23",
+        source: "2025-09-07 09.16.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-031-web.jpg",
+        lat: 50.533791,
+        lon: 5.967658,
+        caption: "2025-09-07 09.18.15-1",
+        source: "2025-09-07 09.18.15-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-032-web.jpg",
+        lat: 50.533794,
+        lon: 5.967713,
+        caption: "2025-09-07 09.19.06",
+        source: "2025-09-07 09.19.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-033-web.jpg",
+        lat: 50.533799,
+        lon: 5.967686,
+        caption: "2025-09-07 09.19.15",
+        source: "2025-09-07 09.19.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-034-web.jpg",
+        lat: 50.536368,
+        lon: 5.963227,
+        caption: "2025-09-07 09.23.10",
+        source: "2025-09-07 09.23.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-035-web.jpg",
+        lat: 50.536280,
+        lon: 5.963399,
+        caption: "2025-09-07 09.23.44",
+        source: "2025-09-07 09.23.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-036-web.jpg",
+        lat: 50.536953,
+        lon: 5.966271,
+        caption: "2025-09-07 09.27.27",
+        source: "2025-09-07 09.27.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-037-web.jpg",
+        lat: 50.537787,
+        lon: 5.966690,
+        caption: "2025-09-07 09.28.19",
+        source: "2025-09-07 09.28.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-038-web.jpg",
+        lat: 50.537865,
+        lon: 5.958187,
+        caption: "2025-09-07 09.32.52",
+        source: "2025-09-07 09.32.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-039-web.jpg",
+        lat: 50.533765,
+        lon: 5.961698,
+        caption: "2025-09-07 09.41.25",
+        source: "2025-09-07 09.41.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-040-web.jpg",
+        lat: 50.532489,
+        lon: 5.959485,
+        caption: "2025-09-07 09.42.53",
+        source: "2025-09-07 09.42.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-041-web.jpg",
+        lat: 50.531639,
+        lon: 5.945530,
+        caption: "2025-09-07 09.50.15",
+        source: "2025-09-07 09.50.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-042-web.jpg",
+        lat: 50.529482,
+        lon: 5.936793,
+        caption: "2025-09-07 09.57.17",
+        source: "2025-09-07 09.57.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-043-web.jpg",
+        lat: 50.529482,
+        lon: 5.936793,
+        caption: "2025-09-07 09.57.25",
+        source: "2025-09-07 09.57.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-044-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-044-web.jpg",
+        lat: 50.528981,
+        lon: 5.934406,
+        caption: "2025-09-07 09.59.10",
+        source: "2025-09-07 09.59.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-045-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-045-web.jpg",
+        lat: 50.526998,
+        lon: 5.925403,
+        caption: "2025-09-07 10.05.08",
+        source: "2025-09-07 10.05.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-046-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-046-web.jpg",
+        lat: 50.526588,
+        lon: 5.925045,
+        caption: "2025-09-07 10.06.24",
+        source: "2025-09-07 10.06.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-047-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-047-web.jpg",
+        lat: 50.525298,
+        lon: 5.927161,
+        caption: "2025-09-07 10.10.34",
+        source: "2025-09-07 10.10.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-048-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-048-web.jpg",
+        lat: 50.519991,
+        lon: 5.932175,
+        caption: "2025-09-07 10.15.04",
+        source: "2025-09-07 10.15.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-049-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-049-web.jpg",
+        lat: 50.517221,
+        lon: 5.932631,
+        caption: "2025-09-07 10.21.13",
+        source: "2025-09-07 10.21.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-050-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-050-web.jpg",
+        lat: 50.517876,
+        lon: 5.932206,
+        caption: "2025-09-07 10.25.22",
+        source: "2025-09-07 10.25.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-051-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-051-web.jpg",
+        lat: 50.517865,
+        lon: 5.932227,
+        caption: "2025-09-07 10.28.04",
+        source: "2025-09-07 10.28.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-07-sart-lez-spa/photo-052-thumb.jpg",
+        web: "./photos/generated/2025-09-07-sart-lez-spa/photo-052-web.jpg",
+        caption: "sart-lez-spa",
+        source: "sart-lez-spa.jpg"
+      }
+    ]
   },
   {
     id: "2025-09-14-harze",
@@ -338,7 +5468,286 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-14-harze"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-001-web.jpg",
+        lat: 50.431667,
+        lon: 5.675556,
+        caption: "2025-09-14 08.01.20",
+        source: "2025-09-14 08.01.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-002-web.jpg",
+        lat: 50.431667,
+        lon: 5.675556,
+        caption: "2025-09-14 08.01.31",
+        source: "2025-09-14 08.01.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-003-web.jpg",
+        lat: 50.431738,
+        lon: 5.675686,
+        caption: "2025-09-14 08.02.14",
+        source: "2025-09-14 08.02.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-004-web.jpg",
+        lat: 50.431752,
+        lon: 5.675624,
+        caption: "2025-09-14 08.02.53",
+        source: "2025-09-14 08.02.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-005-web.jpg",
+        lat: 50.442161,
+        lon: 5.694563,
+        caption: "2025-09-14 08.22.29",
+        source: "2025-09-14 08.22.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-006-web.jpg",
+        lat: 50.443216,
+        lon: 5.698942,
+        caption: "2025-09-14 08.24.47",
+        source: "2025-09-14 08.24.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-007-web.jpg",
+        lat: 50.453341,
+        lon: 5.684536,
+        caption: "2025-09-14 08.36.41",
+        source: "2025-09-14 08.36.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-008-web.jpg",
+        lat: 50.455490,
+        lon: 5.693710,
+        caption: "2025-09-14 08.41.38",
+        source: "2025-09-14 08.41.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-009-web.jpg",
+        lat: 50.455490,
+        lon: 5.693710,
+        caption: "2025-09-14 08.41.43",
+        source: "2025-09-14 08.41.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-010-web.jpg",
+        lat: 50.454018,
+        lon: 5.695976,
+        caption: "2025-09-14 08.43.45",
+        source: "2025-09-14 08.43.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-011-web.jpg",
+        lat: 50.451593,
+        lon: 5.704811,
+        caption: "2025-09-14 08.50.32",
+        source: "2025-09-14 08.50.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-012-web.jpg",
+        lat: 50.456635,
+        lon: 5.709157,
+        caption: "2025-09-14 09.07.10",
+        source: "2025-09-14 09.07.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-013-web.jpg",
+        lat: 50.450394,
+        lon: 5.721274,
+        caption: "2025-09-14 09.21.19",
+        source: "2025-09-14 09.21.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-014-web.jpg",
+        lat: 50.448391,
+        lon: 5.723106,
+        caption: "2025-09-14 09.25.33",
+        source: "2025-09-14 09.25.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-015-web.jpg",
+        lat: 50.439032,
+        lon: 5.708795,
+        caption: "2025-09-14 09.35.26",
+        source: "2025-09-14 09.35.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-016-web.jpg",
+        lat: 50.436443,
+        lon: 5.708602,
+        caption: "2025-09-14 09.37.51",
+        source: "2025-09-14 09.37.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-017-web.jpg",
+        lat: 50.434252,
+        lon: 5.710258,
+        caption: "2025-09-14 09.40.37",
+        source: "2025-09-14 09.40.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-018-web.jpg",
+        lat: 50.434258,
+        lon: 5.710243,
+        caption: "2025-09-14 09.40.57",
+        source: "2025-09-14 09.40.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-019-web.jpg",
+        lat: 50.434337,
+        lon: 5.712386,
+        caption: "2025-09-14 09.43.39",
+        source: "2025-09-14 09.43.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-020-web.jpg",
+        lat: 50.425272,
+        lon: 5.707117,
+        caption: "2025-09-14 09.52.30",
+        source: "2025-09-14 09.52.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-021-web.jpg",
+        lat: 50.439311,
+        lon: 5.681018,
+        caption: "2025-09-14 10.23.11-1",
+        source: "2025-09-14 10.23.11-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-022-web.jpg",
+        lat: 50.438624,
+        lon: 5.692933,
+        caption: "2025-09-14 10.29.10",
+        source: "2025-09-14 10.29.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-023-web.jpg",
+        lat: 50.438333,
+        lon: 5.706891,
+        caption: "2025-09-14 10.36.24",
+        source: "2025-09-14 10.36.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-024-web.jpg",
+        lat: 50.431789,
+        lon: 5.675611,
+        caption: "2025-09-14 11.14.00",
+        source: "2025-09-14 11.14.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-025-web.jpg",
+        lat: 50.431772,
+        lon: 5.675508,
+        caption: "2025-09-14 11.19.34",
+        source: "2025-09-14 11.19.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-026-web.jpg",
+        lat: 50.431563,
+        lon: 5.675777,
+        caption: "2025-09-14 11.21.27",
+        source: "2025-09-14 11.21.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-027-web.jpg",
+        lat: 50.431595,
+        lon: 5.675641,
+        caption: "2025-09-14 11.22.39",
+        source: "2025-09-14 11.22.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-028-web.jpg",
+        lat: 50.431595,
+        lon: 5.675641,
+        caption: "2025-09-14 11.23.18",
+        source: "2025-09-14 11.23.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-029-web.jpg",
+        lat: 50.431639,
+        lon: 5.675606,
+        caption: "2025-09-14 11.24.23",
+        source: "2025-09-14 11.24.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-030-web.jpg",
+        lat: 50.431621,
+        lon: 5.675621,
+        caption: "2025-09-14 11.32.39",
+        source: "2025-09-14 11.32.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-031-web.jpg",
+        lat: 50.431621,
+        lon: 5.675621,
+        caption: "2025-09-14 11.32.46",
+        source: "2025-09-14 11.32.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-032-web.jpg",
+        lat: 50.431606,
+        lon: 5.675659,
+        caption: "2025-09-14 11.34.04",
+        source: "2025-09-14 11.34.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-033-web.jpg",
+        lat: 50.551221,
+        lon: 5.782931,
+        caption: "2025-09-14 12.06.43",
+        source: "2025-09-14 12.06.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-034-web.jpg",
+        lat: 50.648179,
+        lon: 5.591411,
+        caption: "2025-09-14 12.48.39",
+        source: "2025-09-14 12.48.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-14-harze/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-09-14-harze/photo-035-web.jpg",
+        caption: "affiche",
+        source: "affiche.jpg"
+      }
+    ]
   },
   {
     id: "2025-09-21-stembert",
@@ -349,7 +5758,496 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-21-stembert"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-001-web.jpg",
+        lat: 50.589950,
+        lon: 5.873483,
+        caption: "2025-09-21 07.53.04",
+        source: "2025-09-21 07.53.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-002-web.jpg",
+        lat: 50.590392,
+        lon: 5.872763,
+        caption: "2025-09-21 07.54.32",
+        source: "2025-09-21 07.54.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-003-web.jpg",
+        lat: 50.590222,
+        lon: 5.872428,
+        caption: "2025-09-21 07.55.26",
+        source: "2025-09-21 07.55.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-004-web.jpg",
+        lat: 50.590634,
+        lon: 5.871476,
+        caption: "2025-09-21 07.56.34",
+        source: "2025-09-21 07.56.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-005-web.jpg",
+        lat: 50.590556,
+        lon: 5.871389,
+        caption: "2025-09-21 07.56.58",
+        source: "2025-09-21 07.56.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-006-web.jpg",
+        lat: 50.590634,
+        lon: 5.871360,
+        caption: "2025-09-21 08.00.04",
+        source: "2025-09-21 08.00.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-007-web.jpg",
+        lat: 50.590634,
+        lon: 5.871360,
+        caption: "2025-09-21 08.00.13",
+        source: "2025-09-21 08.00.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-008-web.jpg",
+        lat: 50.590634,
+        lon: 5.871360,
+        caption: "2025-09-21 08.00.41",
+        source: "2025-09-21 08.00.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-009-web.jpg",
+        lat: 50.589750,
+        lon: 5.874061,
+        caption: "2025-09-21 08.04.26",
+        source: "2025-09-21 08.04.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-010-web.jpg",
+        lat: 50.578303,
+        lon: 5.887776,
+        caption: "2025-09-21 08.18.51",
+        source: "2025-09-21 08.18.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-011-web.jpg",
+        lat: 50.576901,
+        lon: 5.887695,
+        caption: "2025-09-21 08.20.09",
+        source: "2025-09-21 08.20.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-012-web.jpg",
+        lat: 50.577635,
+        lon: 5.888992,
+        caption: "2025-09-21 08.21.28",
+        source: "2025-09-21 08.21.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-013-web.jpg",
+        lat: 50.576739,
+        lon: 5.891497,
+        caption: "2025-09-21 08.24.17",
+        source: "2025-09-21 08.24.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-014-web.jpg",
+        lat: 50.573048,
+        lon: 5.887437,
+        caption: "2025-09-21 08.28.03",
+        source: "2025-09-21 08.28.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-015-web.jpg",
+        lat: 50.572880,
+        lon: 5.887122,
+        caption: "2025-09-21 08.28.14",
+        source: "2025-09-21 08.28.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-016-web.jpg",
+        lat: 50.572044,
+        lon: 5.884397,
+        caption: "2025-09-21 08.30.18",
+        source: "2025-09-21 08.30.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-017-web.jpg",
+        lat: 50.572064,
+        lon: 5.883940,
+        caption: "2025-09-21 08.31.08",
+        source: "2025-09-21 08.31.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-018-web.jpg",
+        lat: 50.570041,
+        lon: 5.882645,
+        caption: "2025-09-21 08.33.18",
+        source: "2025-09-21 08.33.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-019-web.jpg",
+        lat: 50.565692,
+        lon: 5.887416,
+        caption: "2025-09-21 08.37.34",
+        source: "2025-09-21 08.37.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-020-web.jpg",
+        lat: 50.556694,
+        lon: 5.882284,
+        caption: "2025-09-21 08.52.10",
+        source: "2025-09-21 08.52.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-021-web.jpg",
+        lat: 50.560040,
+        lon: 5.874489,
+        caption: "2025-09-21 08.57.29",
+        source: "2025-09-21 08.57.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-022-web.jpg",
+        lat: 50.560573,
+        lon: 5.870490,
+        caption: "2025-09-21 08.59.42",
+        source: "2025-09-21 08.59.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-023-web.jpg",
+        lat: 50.561120,
+        lon: 5.866253,
+        caption: "2025-09-21 09.02.37",
+        source: "2025-09-21 09.02.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-024-web.jpg",
+        lat: 50.562260,
+        lon: 5.864265,
+        caption: "2025-09-21 09.05.16",
+        source: "2025-09-21 09.05.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-025-web.jpg",
+        lat: 50.562159,
+        lon: 5.863008,
+        caption: "2025-09-21 09.06.29",
+        source: "2025-09-21 09.06.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-026-web.jpg",
+        lat: 50.561688,
+        lon: 5.857422,
+        caption: "2025-09-21 09.12.59",
+        source: "2025-09-21 09.12.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-027-web.jpg",
+        lat: 50.561538,
+        lon: 5.856751,
+        caption: "2025-09-21 09.13.48",
+        source: "2025-09-21 09.13.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-028-web.jpg",
+        lat: 50.561440,
+        lon: 5.853967,
+        caption: "2025-09-21 09.15.27",
+        source: "2025-09-21 09.15.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-029-web.jpg",
+        lat: 50.560092,
+        lon: 5.849454,
+        caption: "2025-09-21 09.18.36",
+        source: "2025-09-21 09.18.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-030-web.jpg",
+        lat: 50.559692,
+        lon: 5.847159,
+        caption: "2025-09-21 09.20.02",
+        source: "2025-09-21 09.20.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-031-web.jpg",
+        lat: 50.572152,
+        lon: 5.845248,
+        caption: "2025-09-21 09.36.20",
+        source: "2025-09-21 09.36.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-032-web.jpg",
+        lat: 50.572357,
+        lon: 5.845957,
+        caption: "2025-09-21 09.37.21",
+        source: "2025-09-21 09.37.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-033-web.jpg",
+        lat: 50.569872,
+        lon: 5.850648,
+        caption: "2025-09-21 09.43.11",
+        source: "2025-09-21 09.43.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-034-web.jpg",
+        lat: 50.567529,
+        lon: 5.852053,
+        caption: "2025-09-21 09.46.32",
+        source: "2025-09-21 09.46.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-035-web.jpg",
+        lat: 50.568397,
+        lon: 5.851089,
+        caption: "2025-09-21 09.48.22",
+        source: "2025-09-21 09.48.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-036-web.jpg",
+        lat: 50.569135,
+        lon: 5.851868,
+        caption: "2025-09-21 09.49.54",
+        source: "2025-09-21 09.49.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-037-web.jpg",
+        lat: 50.568998,
+        lon: 5.853040,
+        caption: "2025-09-21 09.52.18",
+        source: "2025-09-21 09.52.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-038-web.jpg",
+        lat: 50.568750,
+        lon: 5.852746,
+        caption: "2025-09-21 09.52.56",
+        source: "2025-09-21 09.52.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-039-web.jpg",
+        lat: 50.568750,
+        lon: 5.852746,
+        caption: "2025-09-21 09.53.43",
+        source: "2025-09-21 09.53.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-040-web.jpg",
+        lat: 50.568693,
+        lon: 5.852707,
+        caption: "2025-09-21 09.53.58",
+        source: "2025-09-21 09.53.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-041-web.jpg",
+        lat: 50.568693,
+        lon: 5.852707,
+        caption: "2025-09-21 09.54.05",
+        source: "2025-09-21 09.54.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-042-web.jpg",
+        lat: 50.569683,
+        lon: 5.856910,
+        caption: "2025-09-21 09.58.37",
+        source: "2025-09-21 09.58.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-043-web.jpg",
+        lat: 50.571441,
+        lon: 5.857206,
+        caption: "2025-09-21 10.00.12",
+        source: "2025-09-21 10.00.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-044-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-044-web.jpg",
+        lat: 50.575521,
+        lon: 5.858388,
+        caption: "2025-09-21 10.02.49",
+        source: "2025-09-21 10.02.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-045-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-045-web.jpg",
+        lat: 50.577802,
+        lon: 5.857362,
+        caption: "2025-09-21 10.04.59",
+        source: "2025-09-21 10.04.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-046-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-046-web.jpg",
+        lat: 50.578042,
+        lon: 5.856422,
+        caption: "2025-09-21 10.06.55",
+        source: "2025-09-21 10.06.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-047-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-047-web.jpg",
+        lat: 50.578088,
+        lon: 5.856409,
+        caption: "2025-09-21 10.07.06",
+        source: "2025-09-21 10.07.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-048-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-048-web.jpg",
+        lat: 50.579943,
+        lon: 5.858874,
+        caption: "2025-09-21 10.10.10",
+        source: "2025-09-21 10.10.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-049-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-049-web.jpg",
+        lat: 50.582252,
+        lon: 5.857058,
+        caption: "2025-09-21 10.12.50",
+        source: "2025-09-21 10.12.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-050-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-050-web.jpg",
+        lat: 50.582974,
+        lon: 5.858209,
+        caption: "2025-09-21 10.13.55",
+        source: "2025-09-21 10.13.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-051-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-051-web.jpg",
+        lat: 50.583273,
+        lon: 5.858786,
+        caption: "2025-09-21 10.14.54",
+        source: "2025-09-21 10.14.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-052-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-052-web.jpg",
+        lat: 50.589585,
+        lon: 5.867708,
+        caption: "2025-09-21 10.22.31",
+        source: "2025-09-21 10.22.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-053-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-053-web.jpg",
+        lat: 50.590021,
+        lon: 5.867327,
+        caption: "2025-09-21 10.23.46",
+        source: "2025-09-21 10.23.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-054-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-054-web.jpg",
+        lat: 50.590021,
+        lon: 5.867327,
+        caption: "2025-09-21 10.24.00",
+        source: "2025-09-21 10.24.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-055-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-055-web.jpg",
+        lat: 50.592015,
+        lon: 5.871422,
+        caption: "2025-09-21 10.27.54",
+        source: "2025-09-21 10.27.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-056-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-056-web.jpg",
+        lat: 50.590635,
+        lon: 5.871412,
+        caption: "2025-09-21 10.32.41",
+        source: "2025-09-21 10.32.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-057-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-057-web.jpg",
+        lat: 50.590637,
+        lon: 5.871429,
+        caption: "2025-09-21 10.36.01",
+        source: "2025-09-21 10.36.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-058-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-058-web.jpg",
+        lat: 50.590647,
+        lon: 5.871427,
+        caption: "2025-09-21 10.38.08",
+        source: "2025-09-21 10.38.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-059-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-059-web.jpg",
+        lat: 50.590648,
+        lon: 5.871422,
+        caption: "2025-09-21 10.38.41",
+        source: "2025-09-21 10.38.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-060-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-060-web.jpg",
+        lat: 50.590648,
+        lon: 5.871422,
+        caption: "2025-09-21 10.38.48",
+        source: "2025-09-21 10.38.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-21-stembert/photo-061-thumb.jpg",
+        web: "./photos/generated/2025-09-21-stembert/photo-061-web.jpg",
+        lat: 50.578660,
+        lon: 5.865433,
+        caption: "2025-09-21 11.06.01",
+        source: "2025-09-21 11.06.01.jpg"
+      }
+    ]
   },
   {
     id: "2025-09-28-lince",
@@ -360,7 +6258,588 @@ window.GENERATED_RUNS = [
     color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-09-28-lince"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-001-web.jpg",
+        caption: "2025-09-27 20.56.06",
+        source: "2025-09-27 20.56.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-002-web.jpg",
+        lat: 50.512765,
+        lon: 5.629765,
+        caption: "2025-09-28 07.52.33",
+        source: "2025-09-28 07.52.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-003-web.jpg",
+        lat: 50.512475,
+        lon: 5.629499,
+        caption: "2025-09-28 07.54.36",
+        source: "2025-09-28 07.54.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-004-web.jpg",
+        lat: 50.512525,
+        lon: 5.629518,
+        caption: "2025-09-28 07.58.29",
+        source: "2025-09-28 07.58.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-005-web.jpg",
+        lat: 50.512524,
+        lon: 5.629541,
+        caption: "2025-09-28 07.58.40",
+        source: "2025-09-28 07.58.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-006-web.jpg",
+        lat: 50.512547,
+        lon: 5.629490,
+        caption: "2025-09-28 07.59.16",
+        source: "2025-09-28 07.59.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-007-web.jpg",
+        lat: 50.512547,
+        lon: 5.629490,
+        caption: "2025-09-28 07.59.19",
+        source: "2025-09-28 07.59.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-008-web.jpg",
+        lat: 50.512517,
+        lon: 5.629488,
+        caption: "2025-09-28 07.59.55",
+        source: "2025-09-28 07.59.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-009-web.jpg",
+        lat: 50.512517,
+        lon: 5.629488,
+        caption: "2025-09-28 07.59.56",
+        source: "2025-09-28 07.59.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-010-web.jpg",
+        lat: 50.512558,
+        lon: 5.629464,
+        caption: "2025-09-28 08.02.56",
+        source: "2025-09-28 08.02.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-011-web.jpg",
+        lat: 50.515059,
+        lon: 5.633342,
+        caption: "2025-09-28 08.07.36",
+        source: "2025-09-28 08.07.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-012-web.jpg",
+        lat: 50.515059,
+        lon: 5.633342,
+        caption: "2025-09-28 08.07.47",
+        source: "2025-09-28 08.07.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-013-web.jpg",
+        lat: 50.526665,
+        lon: 5.622252,
+        caption: "2025-09-28 08.18.32",
+        source: "2025-09-28 08.18.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-014-web.jpg",
+        lat: 50.526665,
+        lon: 5.622252,
+        caption: "2025-09-28 08.18.40",
+        source: "2025-09-28 08.18.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-015-web.jpg",
+        lat: 50.526740,
+        lon: 5.622324,
+        caption: "2025-09-28 08.19.05",
+        source: "2025-09-28 08.19.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-016-web.jpg",
+        lat: 50.528674,
+        lon: 5.618465,
+        caption: "2025-09-28 08.22.18",
+        source: "2025-09-28 08.22.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-017-web.jpg",
+        lat: 50.529988,
+        lon: 5.617054,
+        caption: "2025-09-28 08.23.47",
+        source: "2025-09-28 08.23.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-018-web.jpg",
+        lat: 50.529811,
+        lon: 5.616825,
+        caption: "2025-09-28 08.23.54",
+        source: "2025-09-28 08.23.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-019-web.jpg",
+        lat: 50.529395,
+        lon: 5.616496,
+        caption: "2025-09-28 08.24.16",
+        source: "2025-09-28 08.24.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-020-web.jpg",
+        lat: 50.528505,
+        lon: 5.615873,
+        caption: "2025-09-28 08.24.57",
+        source: "2025-09-28 08.24.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-021-web.jpg",
+        lat: 50.527358,
+        lon: 5.614043,
+        caption: "2025-09-28 08.26.20",
+        source: "2025-09-28 08.26.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-022-web.jpg",
+        lat: 50.526926,
+        lon: 5.609665,
+        caption: "2025-09-28 08.29.14",
+        source: "2025-09-28 08.29.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-023-web.jpg",
+        lat: 50.529603,
+        lon: 5.607463,
+        caption: "2025-09-28 08.32.16",
+        source: "2025-09-28 08.32.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-024-web.jpg",
+        lat: 50.527158,
+        lon: 5.601533,
+        caption: "2025-09-28 08.37.21",
+        source: "2025-09-28 08.37.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-025-web.jpg",
+        lat: 50.524423,
+        lon: 5.605176,
+        caption: "2025-09-28 08.39.43",
+        source: "2025-09-28 08.39.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-026-web.jpg",
+        lat: 50.524423,
+        lon: 5.605176,
+        caption: "2025-09-28 08.39.47",
+        source: "2025-09-28 08.39.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-027-web.jpg",
+        lat: 50.522061,
+        lon: 5.601451,
+        caption: "2025-09-28 08.42.15",
+        source: "2025-09-28 08.42.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-028-web.jpg",
+        lat: 50.518395,
+        lon: 5.599887,
+        caption: "2025-09-28 08.47.01",
+        source: "2025-09-28 08.47.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-029-web.jpg",
+        lat: 50.518360,
+        lon: 5.599773,
+        caption: "2025-09-28 08.47.21",
+        source: "2025-09-28 08.47.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-030-web.jpg",
+        lat: 50.516791,
+        lon: 5.597585,
+        caption: "2025-09-28 08.49.38",
+        source: "2025-09-28 08.49.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-031-web.jpg",
+        lat: 50.516238,
+        lon: 5.596675,
+        caption: "2025-09-28 08.50.13",
+        source: "2025-09-28 08.50.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-032-web.jpg",
+        lat: 50.513770,
+        lon: 5.594166,
+        caption: "2025-09-28 08.53.02",
+        source: "2025-09-28 08.53.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-033-web.jpg",
+        lat: 50.514288,
+        lon: 5.595119,
+        caption: "2025-09-28 08.54.05",
+        source: "2025-09-28 08.54.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-034-web.jpg",
+        lat: 50.513914,
+        lon: 5.597558,
+        caption: "2025-09-28 08.55.34",
+        source: "2025-09-28 08.55.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-035-web.jpg",
+        lat: 50.514441,
+        lon: 5.604035,
+        caption: "2025-09-28 09.00.45",
+        source: "2025-09-28 09.00.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-036-web.jpg",
+        lat: 50.514686,
+        lon: 5.617498,
+        caption: "2025-09-28 09.08.51",
+        source: "2025-09-28 09.08.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-037-web.jpg",
+        lat: 50.513275,
+        lon: 5.623511,
+        caption: "2025-09-28 09.13.06",
+        source: "2025-09-28 09.13.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-038-web.jpg",
+        lat: 50.513275,
+        lon: 5.623511,
+        caption: "2025-09-28 09.13.25",
+        source: "2025-09-28 09.13.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-039-web.jpg",
+        lat: 50.512720,
+        lon: 5.630055,
+        caption: "2025-09-28 09.16.52",
+        source: "2025-09-28 09.16.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-040-web.jpg",
+        lat: 50.512720,
+        lon: 5.630055,
+        caption: "2025-09-28 09.17.10",
+        source: "2025-09-28 09.17.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-041-web.jpg",
+        lat: 50.527172,
+        lon: 5.622185,
+        caption: "2025-09-28 09.32.25",
+        source: "2025-09-28 09.32.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-042-web.jpg",
+        lat: 50.527172,
+        lon: 5.622185,
+        caption: "2025-09-28 09.32.40-1",
+        source: "2025-09-28 09.32.40-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-043-web.jpg",
+        lat: 50.543501,
+        lon: 5.625922,
+        caption: "2025-09-28 09.59.02",
+        source: "2025-09-28 09.59.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-044-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-044-web.jpg",
+        lat: 50.545688,
+        lon: 5.623588,
+        caption: "2025-09-28 10.02.03",
+        source: "2025-09-28 10.02.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-045-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-045-web.jpg",
+        lat: 50.545688,
+        lon: 5.623588,
+        caption: "2025-09-28 10.02.07",
+        source: "2025-09-28 10.02.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-046-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-046-web.jpg",
+        lat: 50.546977,
+        lon: 5.621268,
+        caption: "2025-09-28 10.05.43",
+        source: "2025-09-28 10.05.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-047-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-047-web.jpg",
+        lat: 50.546996,
+        lon: 5.621352,
+        caption: "2025-09-28 10.06.10",
+        source: "2025-09-28 10.06.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-048-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-048-web.jpg",
+        lat: 50.544054,
+        lon: 5.613619,
+        caption: "2025-09-28 10.36.06",
+        source: "2025-09-28 10.36.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-049-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-049-web.jpg",
+        lat: 50.541464,
+        lon: 5.606216,
+        caption: "2025-09-28 10.40.33",
+        source: "2025-09-28 10.40.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-050-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-050-web.jpg",
+        lat: 50.541464,
+        lon: 5.606216,
+        caption: "2025-09-28 10.40.35",
+        source: "2025-09-28 10.40.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-051-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-051-web.jpg",
+        lat: 50.541464,
+        lon: 5.606216,
+        caption: "2025-09-28 10.40.47",
+        source: "2025-09-28 10.40.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-052-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-052-web.jpg",
+        lat: 50.541464,
+        lon: 5.606216,
+        caption: "2025-09-28 10.40.50",
+        source: "2025-09-28 10.40.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-053-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-053-web.jpg",
+        lat: 50.529794,
+        lon: 5.594939,
+        caption: "2025-09-28 10.58.56",
+        source: "2025-09-28 10.58.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-054-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-054-web.jpg",
+        lat: 50.524767,
+        lon: 5.604842,
+        caption: "2025-09-28 11.05.49",
+        source: "2025-09-28 11.05.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-055-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-055-web.jpg",
+        lat: 50.524767,
+        lon: 5.604842,
+        caption: "2025-09-28 11.05.56",
+        source: "2025-09-28 11.05.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-056-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-056-web.jpg",
+        lat: 50.514047,
+        lon: 5.594119,
+        caption: "2025-09-28 11.18.24",
+        source: "2025-09-28 11.18.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-057-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-057-web.jpg",
+        lat: 50.513046,
+        lon: 5.623565,
+        caption: "2025-09-28 11.33.52",
+        source: "2025-09-28 11.33.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-058-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-058-web.jpg",
+        lat: 50.513046,
+        lon: 5.623565,
+        caption: "2025-09-28 11.33.59",
+        source: "2025-09-28 11.33.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-059-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-059-web.jpg",
+        lat: 50.512450,
+        lon: 5.629502,
+        caption: "2025-09-28 11.38.15",
+        source: "2025-09-28 11.38.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-060-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-060-web.jpg",
+        lat: 50.512418,
+        lon: 5.629531,
+        caption: "2025-09-28 11.38.59",
+        source: "2025-09-28 11.38.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-061-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-061-web.jpg",
+        lat: 50.512361,
+        lon: 5.629707,
+        caption: "2025-09-28 11.44.34",
+        source: "2025-09-28 11.44.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-062-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-062-web.jpg",
+        lat: 50.512352,
+        lon: 5.629707,
+        caption: "2025-09-28 11.47.51",
+        source: "2025-09-28 11.47.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-063-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-063-web.jpg",
+        lat: 50.512358,
+        lon: 5.629707,
+        caption: "2025-09-28 12.05.55",
+        source: "2025-09-28 12.05.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-064-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-064-web.jpg",
+        lat: 50.512358,
+        lon: 5.629707,
+        caption: "2025-09-28 12.06.08",
+        source: "2025-09-28 12.06.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-065-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-065-web.jpg",
+        lat: 50.512358,
+        lon: 5.629707,
+        caption: "2025-09-28 12.06.18",
+        source: "2025-09-28 12.06.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-066-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-066-web.jpg",
+        lat: 50.512660,
+        lon: 5.629767,
+        caption: "2025-09-28 12.10.23",
+        source: "2025-09-28 12.10.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-067-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-067-web.jpg",
+        lat: 50.512660,
+        lon: 5.629767,
+        caption: "2025-09-28 12.10.29",
+        source: "2025-09-28 12.10.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-068-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-068-web.jpg",
+        lat: 50.512671,
+        lon: 5.629830,
+        caption: "2025-09-28 12.10.51",
+        source: "2025-09-28 12.10.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-069-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-069-web.jpg",
+        lat: 50.514079,
+        lon: 5.631172,
+        caption: "2025-09-28 12.15.31",
+        source: "2025-09-28 12.15.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-070-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-070-web.jpg",
+        caption: "2025-09-28 14.42.39",
+        source: "2025-09-28 14.42.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-071-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-071-web.jpg",
+        caption: "2025-09-28 15.41.16",
+        source: "2025-09-28 15.41.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-072-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-072-web.jpg",
+        caption: "2025-09-28 15.53.12",
+        source: "2025-09-28 15.53.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-073-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-073-web.jpg",
+        caption: "2025-09-29 07.06.43",
+        source: "2025-09-29 07.06.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-09-28-lince/photo-074-thumb.jpg",
+        web: "./photos/generated/2025-09-28-lince/photo-074-web.jpg",
+        caption: "2025-09-29 07.06.52",
+        source: "2025-09-29 07.06.52.jpg"
+      }
+    ]
   },
   {
     id: "2025-10-05-chaudfontaine",
@@ -371,7 +6850,334 @@ window.GENERATED_RUNS = [
     color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-05-chaudfontaine"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-001-web.jpg",
+        lat: 50.602552,
+        lon: 5.649322,
+        caption: "2025-10-05 07.54.17",
+        source: "2025-10-05 07.54.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-002-web.jpg",
+        lat: 50.602238,
+        lon: 5.649290,
+        caption: "2025-10-05 07.55.25",
+        source: "2025-10-05 07.55.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-003-web.jpg",
+        lat: 50.601099,
+        lon: 5.648602,
+        caption: "2025-10-05 07.56.46",
+        source: "2025-10-05 07.56.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-004-web.jpg",
+        lat: 50.601104,
+        lon: 5.648821,
+        caption: "2025-10-05 08.00.33",
+        source: "2025-10-05 08.00.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-005-web.jpg",
+        lat: 50.601126,
+        lon: 5.648780,
+        caption: "2025-10-05 08.01.06",
+        source: "2025-10-05 08.01.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-006-web.jpg",
+        lat: 50.601123,
+        lon: 5.648786,
+        caption: "2025-10-05 08.03.34",
+        source: "2025-10-05 08.03.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-007-web.jpg",
+        lat: 50.600036,
+        lon: 5.633132,
+        caption: "2025-10-05 08.16.06",
+        source: "2025-10-05 08.16.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-008-web.jpg",
+        lat: 50.600087,
+        lon: 5.633135,
+        caption: "2025-10-05 08.16.09",
+        source: "2025-10-05 08.16.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-009-web.jpg",
+        lat: 50.600532,
+        lon: 5.627405,
+        caption: "2025-10-05 08.20.42",
+        source: "2025-10-05 08.20.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-010-web.jpg",
+        lat: 50.600470,
+        lon: 5.626838,
+        caption: "2025-10-05 08.21.35",
+        source: "2025-10-05 08.21.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-011-web.jpg",
+        lat: 50.600276,
+        lon: 5.624556,
+        caption: "2025-10-05 08.23.50",
+        source: "2025-10-05 08.23.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-012-web.jpg",
+        lat: 50.594345,
+        lon: 5.621652,
+        caption: "2025-10-05 08.28.50",
+        source: "2025-10-05 08.28.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-013-web.jpg",
+        lat: 50.588525,
+        lon: 5.623052,
+        caption: "2025-10-05 08.33.26",
+        source: "2025-10-05 08.33.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-014-web.jpg",
+        lat: 50.586509,
+        lon: 5.639623,
+        caption: "2025-10-05 08.41.26",
+        source: "2025-10-05 08.41.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-015-web.jpg",
+        lat: 50.586123,
+        lon: 5.639879,
+        caption: "2025-10-05 08.42.05",
+        source: "2025-10-05 08.42.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-016-web.jpg",
+        lat: 50.585624,
+        lon: 5.640456,
+        caption: "2025-10-05 08.43.11",
+        source: "2025-10-05 08.43.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-017-web.jpg",
+        lat: 50.584898,
+        lon: 5.650928,
+        caption: "2025-10-05 08.52.12",
+        source: "2025-10-05 08.52.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-018-web.jpg",
+        lat: 50.584953,
+        lon: 5.650969,
+        caption: "2025-10-05 08.52.21",
+        source: "2025-10-05 08.52.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-019-web.jpg",
+        lat: 50.578203,
+        lon: 5.651139,
+        caption: "2025-10-05 09.00.40",
+        source: "2025-10-05 09.00.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-020-web.jpg",
+        lat: 50.575014,
+        lon: 5.652307,
+        caption: "2025-10-05 09.06.30",
+        source: "2025-10-05 09.06.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-021-web.jpg",
+        lat: 50.574669,
+        lon: 5.656746,
+        caption: "2025-10-05 09.09.32",
+        source: "2025-10-05 09.09.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-022-web.jpg",
+        lat: 50.573670,
+        lon: 5.655980,
+        caption: "2025-10-05 09.11.14",
+        source: "2025-10-05 09.11.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-023-web.jpg",
+        lat: 50.573474,
+        lon: 5.655623,
+        caption: "2025-10-05 09.12.15",
+        source: "2025-10-05 09.12.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-024-web.jpg",
+        lat: 50.571265,
+        lon: 5.652652,
+        caption: "2025-10-05 09.15.36",
+        source: "2025-10-05 09.15.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-025-web.jpg",
+        lat: 50.571914,
+        lon: 5.648546,
+        caption: "2025-10-05 09.17.52",
+        source: "2025-10-05 09.17.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-026-web.jpg",
+        lat: 50.565438,
+        lon: 5.644099,
+        caption: "2025-10-05 09.25.02",
+        source: "2025-10-05 09.25.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-027-web.jpg",
+        lat: 50.563144,
+        lon: 5.653156,
+        caption: "2025-10-05 09.29.30",
+        source: "2025-10-05 09.29.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-028-web.jpg",
+        lat: 50.565402,
+        lon: 5.658052,
+        caption: "2025-10-05 09.32.25",
+        source: "2025-10-05 09.32.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-029-web.jpg",
+        lat: 50.568481,
+        lon: 5.661303,
+        caption: "2025-10-05 09.35.04",
+        source: "2025-10-05 09.35.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-030-web.jpg",
+        lat: 50.575415,
+        lon: 5.668725,
+        caption: "2025-10-05 09.42.15",
+        source: "2025-10-05 09.42.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-031-web.jpg",
+        lat: 50.576538,
+        lon: 5.669150,
+        caption: "2025-10-05 09.43.58",
+        source: "2025-10-05 09.43.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-032-web.jpg",
+        lat: 50.580380,
+        lon: 5.664306,
+        caption: "2025-10-05 09.47.58",
+        source: "2025-10-05 09.47.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-033-web.jpg",
+        lat: 50.593023,
+        lon: 5.673910,
+        caption: "2025-10-05 10.05.10",
+        source: "2025-10-05 10.05.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-034-web.jpg",
+        lat: 50.593249,
+        lon: 5.673743,
+        caption: "2025-10-05 10.05.35",
+        source: "2025-10-05 10.05.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-035-web.jpg",
+        lat: 50.599173,
+        lon: 5.657332,
+        caption: "2025-10-05 10.23.27",
+        source: "2025-10-05 10.23.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-036-web.jpg",
+        lat: 50.600947,
+        lon: 5.653222,
+        caption: "2025-10-05 10.26.41",
+        source: "2025-10-05 10.26.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-037-web.jpg",
+        lat: 50.600943,
+        lon: 5.649052,
+        caption: "2025-10-05 10.31.46",
+        source: "2025-10-05 10.31.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-038-web.jpg",
+        lat: 50.600956,
+        lon: 5.649049,
+        caption: "2025-10-05 10.32.33",
+        source: "2025-10-05 10.32.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-039-web.jpg",
+        lat: 50.601132,
+        lon: 5.648715,
+        caption: "2025-10-05 10.45.12",
+        source: "2025-10-05 10.45.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-040-web.jpg",
+        lat: 50.601080,
+        lon: 5.648441,
+        caption: "2025-10-05 10.45.36",
+        source: "2025-10-05 10.45.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-05-chaudfontaine/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-10-05-chaudfontaine/photo-041-web.jpg",
+        caption: "2025-10-05 11.48.15",
+        source: "2025-10-05 11.48.15.jpg"
+      }
+    ]
   },
   {
     id: "2025-10-12-esneux",
@@ -382,7 +7188,264 @@ window.GENERATED_RUNS = [
     color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-12-esneux"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-001-web.jpg",
+        lat: 50.534179,
+        lon: 5.562548,
+        caption: "2025-10-12 07.59.58",
+        source: "2025-10-12 07.59.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-002-web.jpg",
+        lat: 50.533169,
+        lon: 5.566846,
+        caption: "2025-10-12 08.07.25",
+        source: "2025-10-12 08.07.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-003-web.jpg",
+        lat: 50.533396,
+        lon: 5.568836,
+        caption: "2025-10-12 08.09.41",
+        source: "2025-10-12 08.09.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-004-web.jpg",
+        lat: 50.530995,
+        lon: 5.575017,
+        caption: "2025-10-12 08.15.45",
+        source: "2025-10-12 08.15.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-005-web.jpg",
+        lat: 50.531014,
+        lon: 5.587742,
+        caption: "2025-10-12 08.28.27",
+        source: "2025-10-12 08.28.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-006-web.jpg",
+        lat: 50.527034,
+        lon: 5.589514,
+        caption: "2025-10-12 08.31.43",
+        source: "2025-10-12 08.31.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-007-web.jpg",
+        lat: 50.519955,
+        lon: 5.602664,
+        caption: "2025-10-12 08.44.22",
+        source: "2025-10-12 08.44.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-008-web.jpg",
+        lat: 50.519955,
+        lon: 5.602664,
+        caption: "2025-10-12 08.44.29",
+        source: "2025-10-12 08.44.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-009-web.jpg",
+        lat: 50.519955,
+        lon: 5.602664,
+        caption: "2025-10-12 08.44.37",
+        source: "2025-10-12 08.44.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-010-web.jpg",
+        lat: 50.529786,
+        lon: 5.624634,
+        caption: "2025-10-12 09.03.35",
+        source: "2025-10-12 09.03.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-011-web.jpg",
+        lat: 50.531112,
+        lon: 5.624924,
+        caption: "2025-10-12 09.04.45",
+        source: "2025-10-12 09.04.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-012-web.jpg",
+        lat: 50.529952,
+        lon: 5.598968,
+        caption: "2025-10-12 09.28.05",
+        source: "2025-10-12 09.28.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-013-web.jpg",
+        lat: 50.529952,
+        lon: 5.598968,
+        caption: "2025-10-12 09.28.12",
+        source: "2025-10-12 09.28.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-014-web.jpg",
+        lat: 50.521627,
+        lon: 5.582485,
+        caption: "2025-10-12 09.39.59",
+        source: "2025-10-12 09.39.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-015-web.jpg",
+        lat: 50.521627,
+        lon: 5.582485,
+        caption: "2025-10-12 09.40.07",
+        source: "2025-10-12 09.40.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-016-web.jpg",
+        lat: 50.520808,
+        lon: 5.572802,
+        caption: "2025-10-12 09.48.02",
+        source: "2025-10-12 09.48.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-017-web.jpg",
+        lat: 50.520757,
+        lon: 5.572762,
+        caption: "2025-10-12 09.48.54",
+        source: "2025-10-12 09.48.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-018-web.jpg",
+        lat: 50.520757,
+        lon: 5.572762,
+        caption: "2025-10-12 09.48.57",
+        source: "2025-10-12 09.48.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-019-web.jpg",
+        lat: 50.526674,
+        lon: 5.584259,
+        caption: "2025-10-12 09.57.22",
+        source: "2025-10-12 09.57.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-020-web.jpg",
+        lat: 50.525160,
+        lon: 5.577364,
+        caption: "2025-10-12 10.01.06",
+        source: "2025-10-12 10.01.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-021-web.jpg",
+        lat: 50.533684,
+        lon: 5.563375,
+        caption: "2025-10-12 10.12.27",
+        source: "2025-10-12 10.12.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-022-web.jpg",
+        lat: 50.534287,
+        lon: 5.562677,
+        caption: "2025-10-12 10.16.28",
+        source: "2025-10-12 10.16.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-023-web.jpg",
+        lat: 50.534283,
+        lon: 5.562684,
+        caption: "2025-10-12 10.17.08",
+        source: "2025-10-12 10.17.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-024-web.jpg",
+        lat: 50.534283,
+        lon: 5.562684,
+        caption: "2025-10-12 10.17.26-1",
+        source: "2025-10-12 10.17.26-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-025-web.jpg",
+        lat: 50.534215,
+        lon: 5.562675,
+        caption: "2025-10-12 10.18.56",
+        source: "2025-10-12 10.18.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-026-web.jpg",
+        lat: 50.534215,
+        lon: 5.562675,
+        caption: "2025-10-12 10.19.03",
+        source: "2025-10-12 10.19.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-027-web.jpg",
+        lat: 50.534170,
+        lon: 5.562744,
+        caption: "2025-10-12 10.54.59",
+        source: "2025-10-12 10.54.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-028-web.jpg",
+        lat: 50.534170,
+        lon: 5.562744,
+        caption: "2025-10-12 10.55.24",
+        source: "2025-10-12 10.55.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-029-web.jpg",
+        lat: 50.534184,
+        lon: 5.562654,
+        caption: "2025-10-12 10.55.53",
+        source: "2025-10-12 10.55.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-030-web.jpg",
+        lat: 50.534196,
+        lon: 5.562548,
+        caption: "2025-10-12 10.56.21",
+        source: "2025-10-12 10.56.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-031-web.jpg",
+        lat: 50.533901,
+        lon: 5.562423,
+        caption: "2025-10-12 10.57.37",
+        source: "2025-10-12 10.57.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-12-esneux/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-10-12-esneux/photo-032-web.jpg",
+        lat: 50.533901,
+        lon: 5.562423,
+        caption: "2025-10-12 10.57.49",
+        source: "2025-10-12 10.57.49.jpg"
+      }
+    ]
   },
   {
     id: "2025-10-19-fraipont",
@@ -393,7 +7456,350 @@ window.GENERATED_RUNS = [
     color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-19-fraipont"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-001-web.jpg",
+        lat: 50.564384,
+        lon: 5.727376,
+        caption: "2025-10-19 07.58.04",
+        source: "2025-10-19 07.58.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-002-web.jpg",
+        lat: 50.564283,
+        lon: 5.727441,
+        caption: "2025-10-19 07.58.28",
+        source: "2025-10-19 07.58.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-003-web.jpg",
+        lat: 50.564023,
+        lon: 5.727122,
+        caption: "2025-10-19 07.59.35",
+        source: "2025-10-19 07.59.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-004-web.jpg",
+        lat: 50.564023,
+        lon: 5.727122,
+        caption: "2025-10-19 07.59.48",
+        source: "2025-10-19 07.59.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-005-web.jpg",
+        lat: 50.564037,
+        lon: 5.727133,
+        caption: "2025-10-19 08.06.32",
+        source: "2025-10-19 08.06.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-006-web.jpg",
+        lat: 50.564037,
+        lon: 5.727133,
+        caption: "2025-10-19 08.06.39",
+        source: "2025-10-19 08.06.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-007-web.jpg",
+        lat: 50.564066,
+        lon: 5.727241,
+        caption: "2025-10-19 08.07.24",
+        source: "2025-10-19 08.07.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-008-web.jpg",
+        lat: 50.564009,
+        lon: 5.727109,
+        caption: "2025-10-19 08.10.27",
+        source: "2025-10-19 08.10.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-009-web.jpg",
+        lat: 50.564033,
+        lon: 5.727150,
+        caption: "2025-10-19 08.10.59",
+        source: "2025-10-19 08.10.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-010-web.jpg",
+        caption: "2025-10-19 08.14.00",
+        source: "2025-10-19 08.14.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-011-web.jpg",
+        lat: 50.564308,
+        lon: 5.727349,
+        caption: "2025-10-19 08.15.41",
+        source: "2025-10-19 08.15.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-012-web.jpg",
+        lat: 50.562524,
+        lon: 5.736712,
+        caption: "2025-10-19 08.22.36",
+        source: "2025-10-19 08.22.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-013-web.jpg",
+        lat: 50.567678,
+        lon: 5.758112,
+        caption: "2025-10-19 08.38.15",
+        source: "2025-10-19 08.38.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-014-web.jpg",
+        lat: 50.567682,
+        lon: 5.758115,
+        caption: "2025-10-19 08.38.25",
+        source: "2025-10-19 08.38.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-015-web.jpg",
+        lat: 50.564327,
+        lon: 5.759539,
+        caption: "2025-10-19 08.42.00",
+        source: "2025-10-19 08.42.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-016-web.jpg",
+        lat: 50.563643,
+        lon: 5.771668,
+        caption: "2025-10-19 08.51.04",
+        source: "2025-10-19 08.51.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-017-web.jpg",
+        lat: 50.563643,
+        lon: 5.771668,
+        caption: "2025-10-19 08.51.09",
+        source: "2025-10-19 08.51.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-018-web.jpg",
+        lat: 50.563588,
+        lon: 5.772109,
+        caption: "2025-10-19 08.51.41",
+        source: "2025-10-19 08.51.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-019-web.jpg",
+        lat: 50.560890,
+        lon: 5.773100,
+        caption: "2025-10-19 08.54.59",
+        source: "2025-10-19 08.54.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-020-web.jpg",
+        lat: 50.558240,
+        lon: 5.752501,
+        caption: "2025-10-19 09.14.02",
+        source: "2025-10-19 09.14.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-021-web.jpg",
+        lat: 50.553885,
+        lon: 5.751817,
+        caption: "2025-10-19 09.22.25",
+        source: "2025-10-19 09.22.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-022-web.jpg",
+        lat: 50.553882,
+        lon: 5.751823,
+        caption: "2025-10-19 09.22.34",
+        source: "2025-10-19 09.22.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-023-web.jpg",
+        lat: 50.554090,
+        lon: 5.753654,
+        caption: "2025-10-19 09.23.55",
+        source: "2025-10-19 09.23.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-024-web.jpg",
+        lat: 50.549550,
+        lon: 5.743971,
+        caption: "2025-10-19 09.32.46",
+        source: "2025-10-19 09.32.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-025-web.jpg",
+        lat: 50.553697,
+        lon: 5.736638,
+        caption: "2025-10-19 09.37.58",
+        source: "2025-10-19 09.37.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-026-web.jpg",
+        lat: 50.556202,
+        lon: 5.725321,
+        caption: "2025-10-19 09.43.14",
+        source: "2025-10-19 09.43.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-027-web.jpg",
+        lat: 50.556202,
+        lon: 5.725321,
+        caption: "2025-10-19 09.43.24",
+        source: "2025-10-19 09.43.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-028-web.jpg",
+        lat: 50.556198,
+        lon: 5.725351,
+        caption: "2025-10-19 09.43.38",
+        source: "2025-10-19 09.43.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-029-web.jpg",
+        lat: 50.563901,
+        lon: 5.723732,
+        caption: "2025-10-19 09.49.54",
+        source: "2025-10-19 09.49.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-030-web.jpg",
+        lat: 50.563901,
+        lon: 5.723732,
+        caption: "2025-10-19 09.50.20",
+        source: "2025-10-19 09.50.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-031-web.jpg",
+        lat: 50.563901,
+        lon: 5.723732,
+        caption: "2025-10-19 09.50.34",
+        source: "2025-10-19 09.50.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-032-web.jpg",
+        lat: 50.563838,
+        lon: 5.723592,
+        caption: "2025-10-19 09.51.35",
+        source: "2025-10-19 09.51.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-033-web.jpg",
+        lat: 50.563029,
+        lon: 5.721762,
+        caption: "2025-10-19 09.53.19",
+        source: "2025-10-19 09.53.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-034-web.jpg",
+        lat: 50.562736,
+        lon: 5.721121,
+        caption: "2025-10-19 09.53.47",
+        source: "2025-10-19 09.53.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-035-web.jpg",
+        lat: 50.562686,
+        lon: 5.720976,
+        caption: "2025-10-19 09.53.58",
+        source: "2025-10-19 09.53.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-036-web.jpg",
+        lat: 50.562825,
+        lon: 5.721171,
+        caption: "2025-10-19 09.55.29",
+        source: "2025-10-19 09.55.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-037-web.jpg",
+        lat: 50.561424,
+        lon: 5.716049,
+        caption: "2025-10-19 10.03.57",
+        source: "2025-10-19 10.03.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-038-web.jpg",
+        lat: 50.557517,
+        lon: 5.712127,
+        caption: "2025-10-19 10.08.08",
+        source: "2025-10-19 10.08.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-039-web.jpg",
+        lat: 50.562218,
+        lon: 5.710404,
+        caption: "2025-10-19 10.21.46",
+        source: "2025-10-19 10.21.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-040-web.jpg",
+        lat: 50.565156,
+        lon: 5.728155,
+        caption: "2025-10-19 10.31.19",
+        source: "2025-10-19 10.31.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-041-web.jpg",
+        lat: 50.564150,
+        lon: 5.727340,
+        caption: "2025-10-19 10.34.09",
+        source: "2025-10-19 10.34.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-042-web.jpg",
+        lat: 50.564016,
+        lon: 5.727135,
+        caption: "2025-10-19 10.36.21",
+        source: "2025-10-19 10.36.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-19-fraipont/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-10-19-fraipont/photo-043-web.jpg",
+        lat: 50.564023,
+        lon: 5.727132,
+        caption: "2025-10-19 10.54.34",
+        source: "2025-10-19 10.54.34.jpg"
+      }
+    ]
   },
   {
     id: "2025-10-26-fraiture-sprimont",
@@ -404,7 +7810,342 @@ window.GENERATED_RUNS = [
     color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2025-10-26-fraiture-sprimont"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-001-web.jpg",
+        lat: 50.487938,
+        lon: 5.605575,
+        caption: "2025-10-26 07.59.38",
+        source: "2025-10-26 07.59.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-002-web.jpg",
+        lat: 50.488747,
+        lon: 5.605264,
+        caption: "2025-10-26 08.04.00",
+        source: "2025-10-26 08.04.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-003-web.jpg",
+        lat: 50.488749,
+        lon: 5.605256,
+        caption: "2025-10-26 08.04.08",
+        source: "2025-10-26 08.04.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-004-web.jpg",
+        lat: 50.488833,
+        lon: 5.605332,
+        caption: "2025-10-26 08.05.52",
+        source: "2025-10-26 08.05.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-005-web.jpg",
+        lat: 50.488611,
+        lon: 5.605278,
+        caption: "2025-10-26 08.06.54",
+        source: "2025-10-26 08.06.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-006-web.jpg",
+        lat: 50.488841,
+        lon: 5.605259,
+        caption: "2025-10-26 08.10.44",
+        source: "2025-10-26 08.10.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-007-web.jpg",
+        lat: 50.490755,
+        lon: 5.606091,
+        caption: "2025-10-26 08.13.41",
+        source: "2025-10-26 08.13.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-008-web.jpg",
+        lat: 50.494449,
+        lon: 5.609028,
+        caption: "2025-10-26 08.16.31",
+        source: "2025-10-26 08.16.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-009-web.jpg",
+        lat: 50.494590,
+        lon: 5.619384,
+        caption: "2025-10-26 08.22.41",
+        source: "2025-10-26 08.22.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-010-web.jpg",
+        lat: 50.494590,
+        lon: 5.619384,
+        caption: "2025-10-26 08.23.00",
+        source: "2025-10-26 08.23.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-011-web.jpg",
+        lat: 50.493479,
+        lon: 5.638292,
+        caption: "2025-10-26 08.33.47",
+        source: "2025-10-26 08.33.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-012-web.jpg",
+        lat: 50.493985,
+        lon: 5.642905,
+        caption: "2025-10-26 08.36.30",
+        source: "2025-10-26 08.36.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-013-web.jpg",
+        lat: 50.494616,
+        lon: 5.649424,
+        caption: "2025-10-26 08.40.03",
+        source: "2025-10-26 08.40.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-014-web.jpg",
+        lat: 50.494616,
+        lon: 5.649424,
+        caption: "2025-10-26 08.40.18",
+        source: "2025-10-26 08.40.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-015-web.jpg",
+        lat: 50.494616,
+        lon: 5.649424,
+        caption: "2025-10-26 08.40.33",
+        source: "2025-10-26 08.40.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-016-web.jpg",
+        lat: 50.494616,
+        lon: 5.649424,
+        caption: "2025-10-26 08.40.44",
+        source: "2025-10-26 08.40.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-017-web.jpg",
+        lat: 50.494226,
+        lon: 5.649654,
+        caption: "2025-10-26 08.41.06",
+        source: "2025-10-26 08.41.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-018-web.jpg",
+        lat: 50.494107,
+        lon: 5.649673,
+        caption: "2025-10-26 08.41.57",
+        source: "2025-10-26 08.41.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-019-web.jpg",
+        lat: 50.494107,
+        lon: 5.649673,
+        caption: "2025-10-26 08.42.15",
+        source: "2025-10-26 08.42.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-020-web.jpg",
+        lat: 50.494048,
+        lon: 5.649763,
+        caption: "2025-10-26 08.42.51",
+        source: "2025-10-26 08.42.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-021-web.jpg",
+        lat: 50.482544,
+        lon: 5.648968,
+        caption: "2025-10-26 08.53.35",
+        source: "2025-10-26 08.53.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-022-web.jpg",
+        lat: 50.482008,
+        lon: 5.647891,
+        caption: "2025-10-26 08.54.04-1",
+        source: "2025-10-26 08.54.04-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-023-web.jpg",
+        lat: 50.480014,
+        lon: 5.642526,
+        caption: "2025-10-26 08.57.26",
+        source: "2025-10-26 08.57.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-024-web.jpg",
+        lat: 50.480014,
+        lon: 5.642526,
+        caption: "2025-10-26 08.57.30",
+        source: "2025-10-26 08.57.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-025-web.jpg",
+        lat: 50.479733,
+        lon: 5.638941,
+        caption: "2025-10-26 08.59.48",
+        source: "2025-10-26 08.59.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-026-web.jpg",
+        lat: 50.479218,
+        lon: 5.638093,
+        caption: "2025-10-26 09.00.42",
+        source: "2025-10-26 09.00.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-027-web.jpg",
+        lat: 50.475456,
+        lon: 5.628316,
+        caption: "2025-10-26 09.17.01",
+        source: "2025-10-26 09.17.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-028-web.jpg",
+        lat: 50.473977,
+        lon: 5.604252,
+        caption: "2025-10-26 09.30.11",
+        source: "2025-10-26 09.30.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-029-web.jpg",
+        lat: 50.476210,
+        lon: 5.595074,
+        caption: "2025-10-26 09.36.29",
+        source: "2025-10-26 09.36.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-030-web.jpg",
+        lat: 50.476210,
+        lon: 5.595074,
+        caption: "2025-10-26 09.37.16",
+        source: "2025-10-26 09.37.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-031-web.jpg",
+        lat: 50.476399,
+        lon: 5.594493,
+        caption: "2025-10-26 09.37.48",
+        source: "2025-10-26 09.37.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-032-web.jpg",
+        lat: 50.476399,
+        lon: 5.594493,
+        caption: "2025-10-26 09.38.00",
+        source: "2025-10-26 09.38.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-033-web.jpg",
+        lat: 50.476399,
+        lon: 5.594493,
+        caption: "2025-10-26 09.38.06",
+        source: "2025-10-26 09.38.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-034-web.jpg",
+        lat: 50.489907,
+        lon: 5.603371,
+        caption: "2025-10-26 10.27.04",
+        source: "2025-10-26 10.27.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-035-web.jpg",
+        lat: 50.489804,
+        lon: 5.603674,
+        caption: "2025-10-26 10.27.21",
+        source: "2025-10-26 10.27.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-036-web.jpg",
+        lat: 50.488849,
+        lon: 5.605375,
+        caption: "2025-10-26 10.34.12-1",
+        source: "2025-10-26 10.34.12-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-037-web.jpg",
+        lat: 50.488836,
+        lon: 5.605383,
+        caption: "2025-10-26 10.35.33",
+        source: "2025-10-26 10.35.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-038-web.jpg",
+        lat: 50.488836,
+        lon: 5.605383,
+        caption: "2025-10-26 10.35.44",
+        source: "2025-10-26 10.35.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-039-web.jpg",
+        lat: 50.488827,
+        lon: 5.605398,
+        caption: "2025-10-26 11.27.30",
+        source: "2025-10-26 11.27.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-040-web.jpg",
+        lat: 50.488755,
+        lon: 5.605197,
+        caption: "2025-10-26 11.28.31",
+        source: "2025-10-26 11.28.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-041-web.jpg",
+        lat: 50.488755,
+        lon: 5.605197,
+        caption: "2025-10-26 11.28.35",
+        source: "2025-10-26 11.28.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-10-26-fraiture-sprimont/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-10-26-fraiture-sprimont/photo-042-web.jpg",
+        caption: "2025-10-26 14.12.40",
+        source: "2025-10-26 14.12.40.jpg"
+      }
+    ]
   },
   {
     id: "2025-11-02-awirs-flemalle",
@@ -415,7 +8156,284 @@ window.GENERATED_RUNS = [
     color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-02-awirs-flemalle"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-001-web.jpg",
+        lat: 50.599573,
+        lon: 5.407011,
+        caption: "2025-11-02 07.56.54",
+        source: "2025-11-02 07.56.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-002-web.jpg",
+        lat: 50.599573,
+        lon: 5.407011,
+        caption: "2025-11-02 07.57.07",
+        source: "2025-11-02 07.57.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-003-web.jpg",
+        caption: "2025-11-02 08.12.04",
+        source: "2025-11-02 08.12.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-004-web.jpg",
+        lat: 50.599751,
+        lon: 5.407276,
+        caption: "2025-11-02 08.18.36",
+        source: "2025-11-02 08.18.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-005-web.jpg",
+        lat: 50.599553,
+        lon: 5.407277,
+        caption: "2025-11-02 08.20.10",
+        source: "2025-11-02 08.20.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-006-web.jpg",
+        lat: 50.607139,
+        lon: 5.417215,
+        caption: "2025-11-02 08.29.25",
+        source: "2025-11-02 08.29.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-007-web.jpg",
+        lat: 50.607139,
+        lon: 5.417215,
+        caption: "2025-11-02 08.29.45",
+        source: "2025-11-02 08.29.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-008-web.jpg",
+        lat: 50.607139,
+        lon: 5.417215,
+        caption: "2025-11-02 08.29.50",
+        source: "2025-11-02 08.29.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-009-web.jpg",
+        lat: 50.607687,
+        lon: 5.421465,
+        caption: "2025-11-02 08.33.18",
+        source: "2025-11-02 08.33.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-010-web.jpg",
+        lat: 50.603682,
+        lon: 5.421533,
+        caption: "2025-11-02 08.36.18",
+        source: "2025-11-02 08.36.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-011-web.jpg",
+        lat: 50.602438,
+        lon: 5.426742,
+        caption: "2025-11-02 08.39.28",
+        source: "2025-11-02 08.39.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-012-web.jpg",
+        lat: 50.605052,
+        lon: 5.433991,
+        caption: "2025-11-02 08.43.33",
+        source: "2025-11-02 08.43.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-013-web.jpg",
+        lat: 50.615788,
+        lon: 5.431606,
+        caption: "2025-11-02 08.50.49",
+        source: "2025-11-02 08.50.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-014-web.jpg",
+        lat: 50.616370,
+        lon: 5.423648,
+        caption: "2025-11-02 08.55.34",
+        source: "2025-11-02 08.55.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-015-web.jpg",
+        lat: 50.609123,
+        lon: 5.396338,
+        caption: "2025-11-02 09.18.29",
+        source: "2025-11-02 09.18.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-016-web.jpg",
+        lat: 50.612329,
+        lon: 5.393421,
+        caption: "2025-11-02 09.21.44",
+        source: "2025-11-02 09.21.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-017-web.jpg",
+        lat: 50.596454,
+        lon: 5.388427,
+        caption: "2025-11-02 09.36.49",
+        source: "2025-11-02 09.36.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-018-web.jpg",
+        lat: 50.590542,
+        lon: 5.376557,
+        caption: "2025-11-02 09.44.29",
+        source: "2025-11-02 09.44.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-019-web.jpg",
+        lat: 50.589889,
+        lon: 5.374941,
+        caption: "2025-11-02 09.45.37",
+        source: "2025-11-02 09.45.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-020-web.jpg",
+        lat: 50.591468,
+        lon: 5.411846,
+        caption: "2025-11-02 10.06.24",
+        source: "2025-11-02 10.06.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-021-web.jpg",
+        lat: 50.598178,
+        lon: 5.412638,
+        caption: "2025-11-02 10.10.35",
+        source: "2025-11-02 10.10.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-022-web.jpg",
+        lat: 50.599719,
+        lon: 5.407385,
+        caption: "2025-11-02 10.16.53",
+        source: "2025-11-02 10.16.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-023-web.jpg",
+        lat: 50.599811,
+        lon: 5.407357,
+        caption: "2025-11-02 10.23.40",
+        source: "2025-11-02 10.23.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-024-web.jpg",
+        lat: 50.599811,
+        lon: 5.407357,
+        caption: "2025-11-02 10.23.45",
+        source: "2025-11-02 10.23.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-025-web.jpg",
+        lat: 50.599811,
+        lon: 5.407357,
+        caption: "2025-11-02 10.24.04",
+        source: "2025-11-02 10.24.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-026-web.jpg",
+        lat: 50.599820,
+        lon: 5.407335,
+        caption: "2025-11-02 10.24.09",
+        source: "2025-11-02 10.24.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-027-web.jpg",
+        lat: 50.599815,
+        lon: 5.407278,
+        caption: "2025-11-02 10.27.38",
+        source: "2025-11-02 10.27.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-028-web.jpg",
+        lat: 50.599747,
+        lon: 5.407343,
+        caption: "2025-11-02 10.31.05",
+        source: "2025-11-02 10.31.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-029-web.jpg",
+        lat: 50.599768,
+        lon: 5.407128,
+        caption: "2025-11-02 10.31.45",
+        source: "2025-11-02 10.31.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-030-web.jpg",
+        lat: 50.599776,
+        lon: 5.407200,
+        caption: "2025-11-02 10.33.11",
+        source: "2025-11-02 10.33.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-031-web.jpg",
+        lat: 50.599875,
+        lon: 5.407157,
+        caption: "2025-11-02 10.34.54",
+        source: "2025-11-02 10.34.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-032-web.jpg",
+        lat: 50.599862,
+        lon: 5.407268,
+        caption: "2025-11-02 10.36.01",
+        source: "2025-11-02 10.36.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-033-web.jpg",
+        lat: 50.599863,
+        lon: 5.407263,
+        caption: "2025-11-02 10.36.06",
+        source: "2025-11-02 10.36.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-034-web.jpg",
+        lat: 50.599814,
+        lon: 5.407320,
+        caption: "2025-11-02 10.37.01",
+        source: "2025-11-02 10.37.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-02-awirs-flemalle/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-11-02-awirs-flemalle/photo-035-web.jpg",
+        caption: "2025-11-02 11.18.31",
+        source: "2025-11-02 11.18.31.jpg"
+      }
+    ]
   },
   {
     id: "2025-11-09-huy-la-sarte",
@@ -426,7 +8444,304 @@ window.GENERATED_RUNS = [
     color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-09-huy-la-sarte"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-001-web.jpg",
+        lat: 50.513603,
+        lon: 5.250795,
+        caption: "2025-11-09 08.00.20",
+        source: "2025-11-09 08.00.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-002-web.jpg",
+        lat: 50.513602,
+        lon: 5.250820,
+        caption: "2025-11-09 08.02.20",
+        source: "2025-11-09 08.02.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-003-web.jpg",
+        lat: 50.513645,
+        lon: 5.250933,
+        caption: "2025-11-09 08.04.09",
+        source: "2025-11-09 08.04.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-004-web.jpg",
+        lat: 50.509292,
+        lon: 5.257815,
+        caption: "2025-11-09 08.11.51",
+        source: "2025-11-09 08.11.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-005-web.jpg",
+        lat: 50.510466,
+        lon: 5.286570,
+        caption: "2025-11-09 08.26.51",
+        source: "2025-11-09 08.26.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-006-web.jpg",
+        lat: 50.510466,
+        lon: 5.286570,
+        caption: "2025-11-09 08.27.00",
+        source: "2025-11-09 08.27.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-007-web.jpg",
+        lat: 50.509227,
+        lon: 5.309931,
+        caption: "2025-11-09 08.36.40",
+        source: "2025-11-09 08.36.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-008-web.jpg",
+        lat: 50.509780,
+        lon: 5.314823,
+        caption: "2025-11-09 08.41.39",
+        source: "2025-11-09 08.41.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-009-web.jpg",
+        lat: 50.523785,
+        lon: 5.328783,
+        caption: "2025-11-09 08.52.26",
+        source: "2025-11-09 08.52.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-010-web.jpg",
+        lat: 50.526380,
+        lon: 5.328087,
+        caption: "2025-11-09 08.54.03",
+        source: "2025-11-09 08.54.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-011-web.jpg",
+        lat: 50.534679,
+        lon: 5.336971,
+        caption: "2025-11-09 09.01.30",
+        source: "2025-11-09 09.01.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-012-web.jpg",
+        lat: 50.535361,
+        lon: 5.330793,
+        caption: "2025-11-09 09.06.27",
+        source: "2025-11-09 09.06.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-013-web.jpg",
+        lat: 50.534343,
+        lon: 5.328711,
+        caption: "2025-11-09 09.07.53",
+        source: "2025-11-09 09.07.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-014-web.jpg",
+        lat: 50.534343,
+        lon: 5.328711,
+        caption: "2025-11-09 09.08.02",
+        source: "2025-11-09 09.08.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-015-web.jpg",
+        lat: 50.528532,
+        lon: 5.323428,
+        caption: "2025-11-09 09.12.11",
+        source: "2025-11-09 09.12.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-016-web.jpg",
+        lat: 50.520766,
+        lon: 5.296778,
+        caption: "2025-11-09 09.30.09",
+        source: "2025-11-09 09.30.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-017-web.jpg",
+        lat: 50.521720,
+        lon: 5.283789,
+        caption: "2025-11-09 09.36.04",
+        source: "2025-11-09 09.36.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-018-web.jpg",
+        lat: 50.521720,
+        lon: 5.283789,
+        caption: "2025-11-09 09.36.16",
+        source: "2025-11-09 09.36.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-019-web.jpg",
+        lat: 50.521720,
+        lon: 5.283789,
+        caption: "2025-11-09 09.36.41",
+        source: "2025-11-09 09.36.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-020-web.jpg",
+        lat: 50.519643,
+        lon: 5.272337,
+        caption: "2025-11-09 09.42.09",
+        source: "2025-11-09 09.42.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-021-web.jpg",
+        lat: 50.516200,
+        lon: 5.266816,
+        caption: "2025-11-09 09.47.58",
+        source: "2025-11-09 09.47.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-022-web.jpg",
+        lat: 50.514539,
+        lon: 5.267416,
+        caption: "2025-11-09 09.49.25",
+        source: "2025-11-09 09.49.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-023-web.jpg",
+        lat: 50.512353,
+        lon: 5.267975,
+        caption: "2025-11-09 09.51.15",
+        source: "2025-11-09 09.51.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-024-web.jpg",
+        lat: 50.513606,
+        lon: 5.265494,
+        caption: "2025-11-09 09.53.02",
+        source: "2025-11-09 09.53.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-025-web.jpg",
+        lat: 50.513869,
+        lon: 5.259415,
+        caption: "2025-11-09 09.56.36",
+        source: "2025-11-09 09.56.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-026-web.jpg",
+        lat: 50.513004,
+        lon: 5.258510,
+        caption: "2025-11-09 09.57.51",
+        source: "2025-11-09 09.57.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-027-web.jpg",
+        lat: 50.513295,
+        lon: 5.254199,
+        caption: "2025-11-09 10.01.22",
+        source: "2025-11-09 10.01.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-028-web.jpg",
+        lat: 50.513084,
+        lon: 5.253257,
+        caption: "2025-11-09 10.02.00",
+        source: "2025-11-09 10.02.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-029-web.jpg",
+        lat: 50.513450,
+        lon: 5.252124,
+        caption: "2025-11-09 10.02.52",
+        source: "2025-11-09 10.02.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-030-web.jpg",
+        lat: 50.513630,
+        lon: 5.250886,
+        caption: "2025-11-09 10.04.17",
+        source: "2025-11-09 10.04.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-031-web.jpg",
+        lat: 50.513540,
+        lon: 5.250802,
+        caption: "2025-11-09 10.05.54",
+        source: "2025-11-09 10.05.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-032-web.jpg",
+        lat: 50.513540,
+        lon: 5.250802,
+        caption: "2025-11-09 10.05.59",
+        source: "2025-11-09 10.05.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-033-web.jpg",
+        lat: 50.513688,
+        lon: 5.250614,
+        caption: "2025-11-09 10.09.49",
+        source: "2025-11-09 10.09.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-034-web.jpg",
+        lat: 50.513702,
+        lon: 5.250633,
+        caption: "2025-11-09 10.10.03",
+        source: "2025-11-09 10.10.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-035-web.jpg",
+        lat: 50.513694,
+        lon: 5.250659,
+        caption: "2025-11-09 10.11.16",
+        source: "2025-11-09 10.11.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-036-web.jpg",
+        lat: 50.513694,
+        lon: 5.250659,
+        caption: "2025-11-09 10.11.36",
+        source: "2025-11-09 10.11.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-09-huy-la-sarte/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-11-09-huy-la-sarte/photo-037-web.jpg",
+        lat: 50.513599,
+        lon: 5.250999,
+        caption: "2025-11-09 10.34.50",
+        source: "2025-11-09 10.34.50.jpg"
+      }
+    ]
   },
   {
     id: "2025-11-16-villers-aux-tours",
@@ -437,7 +8752,298 @@ window.GENERATED_RUNS = [
     color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-16-villers-aux-tours"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-001-web.jpg",
+        lat: 50.497534,
+        lon: 5.509971,
+        caption: "2025-11-16 08.01.00",
+        source: "2025-11-16 08.01.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-002-web.jpg",
+        lat: 50.497961,
+        lon: 5.514517,
+        caption: "2025-11-16 08.04.15",
+        source: "2025-11-16 08.04.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-003-web.jpg",
+        lat: 50.498081,
+        lon: 5.515098,
+        caption: "2025-11-16 08.06.48",
+        source: "2025-11-16 08.06.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-004-web.jpg",
+        lat: 50.498132,
+        lon: 5.515074,
+        caption: "2025-11-16 08.07.08",
+        source: "2025-11-16 08.07.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-005-web.jpg",
+        lat: 50.498134,
+        lon: 5.515001,
+        caption: "2025-11-16 08.07.25",
+        source: "2025-11-16 08.07.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-006-web.jpg",
+        lat: 50.498182,
+        lon: 5.514770,
+        caption: "2025-11-16 08.08.31",
+        source: "2025-11-16 08.08.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-007-web.jpg",
+        lat: 50.490187,
+        lon: 5.515147,
+        caption: "2025-11-16 08.22.52",
+        source: "2025-11-16 08.22.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-008-web.jpg",
+        lat: 50.492540,
+        lon: 5.522181,
+        caption: "2025-11-16 08.26.57",
+        source: "2025-11-16 08.26.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-009-web.jpg",
+        lat: 50.492539,
+        lon: 5.522183,
+        caption: "2025-11-16 08.26.58-1",
+        source: "2025-11-16 08.26.58-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-010-web.jpg",
+        lat: 50.487142,
+        lon: 5.520173,
+        caption: "2025-11-16 08.34.22",
+        source: "2025-11-16 08.34.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-011-web.jpg",
+        lat: 50.493051,
+        lon: 5.529563,
+        caption: "2025-11-16 08.40.06",
+        source: "2025-11-16 08.40.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-012-web.jpg",
+        lat: 50.493082,
+        lon: 5.529591,
+        caption: "2025-11-16 08.40.15",
+        source: "2025-11-16 08.40.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-013-web.jpg",
+        lat: 50.499600,
+        lon: 5.539263,
+        caption: "2025-11-16 08.49.37",
+        source: "2025-11-16 08.49.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-014-web.jpg",
+        lat: 50.499600,
+        lon: 5.539263,
+        caption: "2025-11-16 08.49.46",
+        source: "2025-11-16 08.49.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-015-web.jpg",
+        lat: 50.499600,
+        lon: 5.539263,
+        caption: "2025-11-16 08.49.50",
+        source: "2025-11-16 08.49.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-016-web.jpg",
+        lat: 50.509187,
+        lon: 5.527561,
+        caption: "2025-11-16 09.08.32",
+        source: "2025-11-16 09.08.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-017-web.jpg",
+        lat: 50.510091,
+        lon: 5.526138,
+        caption: "2025-11-16 09.10.36 - Copy",
+        source: "2025-11-16 09.10.36 - Copy.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-018-web.jpg",
+        lat: 50.510202,
+        lon: 5.526367,
+        caption: "2025-11-16 09.11.11",
+        source: "2025-11-16 09.11.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-019-web.jpg",
+        lat: 50.520677,
+        lon: 5.534541,
+        caption: "2025-11-16 09.31.48",
+        source: "2025-11-16 09.31.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-020-web.jpg",
+        lat: 50.520672,
+        lon: 5.534542,
+        caption: "2025-11-16 09.32.03",
+        source: "2025-11-16 09.32.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-021-web.jpg",
+        lat: 50.520672,
+        lon: 5.534542,
+        caption: "2025-11-16 09.32.10",
+        source: "2025-11-16 09.32.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-022-web.jpg",
+        lat: 50.512623,
+        lon: 5.506875,
+        caption: "2025-11-16 09.57.23",
+        source: "2025-11-16 09.57.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-023-web.jpg",
+        lat: 50.511426,
+        lon: 5.509332,
+        caption: "2025-11-16 10.00.19",
+        source: "2025-11-16 10.00.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-024-web.jpg",
+        lat: 50.509740,
+        lon: 5.513670,
+        caption: "2025-11-16 10.04.00",
+        source: "2025-11-16 10.04.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-025-web.jpg",
+        lat: 50.504687,
+        lon: 5.519049,
+        caption: "2025-11-16 10.10.02",
+        source: "2025-11-16 10.10.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-026-web.jpg",
+        lat: 50.502197,
+        lon: 5.517977,
+        caption: "2025-11-16 10.12.38",
+        source: "2025-11-16 10.12.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-027-web.jpg",
+        lat: 50.497899,
+        lon: 5.514967,
+        caption: "2025-11-16 10.21.18",
+        source: "2025-11-16 10.21.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-028-web.jpg",
+        lat: 50.498188,
+        lon: 5.514987,
+        caption: "2025-11-16 10.26.42",
+        source: "2025-11-16 10.26.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-029-web.jpg",
+        lat: 50.498188,
+        lon: 5.514987,
+        caption: "2025-11-16 10.27.07",
+        source: "2025-11-16 10.27.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-030-web.jpg",
+        lat: 50.498187,
+        lon: 5.514985,
+        caption: "2025-11-16 10.27.58",
+        source: "2025-11-16 10.27.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-031-web.jpg",
+        lat: 50.498187,
+        lon: 5.514985,
+        caption: "2025-11-16 10.28.19",
+        source: "2025-11-16 10.28.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-032-web.jpg",
+        lat: 50.498178,
+        lon: 5.515012,
+        caption: "2025-11-16 10.29.52",
+        source: "2025-11-16 10.29.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-033-web.jpg",
+        lat: 50.497967,
+        lon: 5.514682,
+        caption: "2025-11-16 10.40.39",
+        source: "2025-11-16 10.40.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-034-web.jpg",
+        lat: 50.498076,
+        lon: 5.514244,
+        caption: "2025-11-16 10.41.22",
+        source: "2025-11-16 10.41.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-035-web.jpg",
+        caption: "2025-11-16 12.06.57",
+        source: "2025-11-16 12.06.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-036-web.jpg",
+        caption: "2025-11-16 16.20.00",
+        source: "2025-11-16 16.20.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-16-villers-aux-tours/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-11-16-villers-aux-tours/photo-037-web.jpg",
+        caption: "affiche",
+        source: "affiche.jpg"
+      }
+    ]
   },
   {
     id: "2025-11-23-amay",
@@ -448,7 +9054,456 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-23-amay"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-001-web.jpg",
+        lat: 50.543881,
+        lon: 5.318429,
+        caption: "2025-11-23 08.14.02",
+        source: "2025-11-23 08.14.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-002-web.jpg",
+        lat: 50.543460,
+        lon: 5.318709,
+        caption: "2025-11-23 08.15.59",
+        source: "2025-11-23 08.15.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-003-web.jpg",
+        lat: 50.543446,
+        lon: 5.318793,
+        caption: "2025-11-23 08.18.32",
+        source: "2025-11-23 08.18.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-004-web.jpg",
+        lat: 50.543472,
+        lon: 5.318774,
+        caption: "2025-11-23 08.18.38",
+        source: "2025-11-23 08.18.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-005-web.jpg",
+        lat: 50.543472,
+        lon: 5.318774,
+        caption: "2025-11-23 08.18.48",
+        source: "2025-11-23 08.18.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-006-web.jpg",
+        lat: 50.543472,
+        lon: 5.318774,
+        caption: "2025-11-23 08.21.16",
+        source: "2025-11-23 08.21.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-007-web.jpg",
+        lat: 50.543472,
+        lon: 5.318774,
+        caption: "2025-11-23 08.21.39",
+        source: "2025-11-23 08.21.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-008-web.jpg",
+        lat: 50.543472,
+        lon: 5.318774,
+        caption: "2025-11-23 08.21.48",
+        source: "2025-11-23 08.21.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-009-web.jpg",
+        lat: 50.543421,
+        lon: 5.315679,
+        caption: "2025-11-23 08.26.45",
+        source: "2025-11-23 08.26.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-010-web.jpg",
+        lat: 50.536876,
+        lon: 5.318490,
+        caption: "2025-11-23 08.31.48",
+        source: "2025-11-23 08.31.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-011-web.jpg",
+        lat: 50.539231,
+        lon: 5.322776,
+        caption: "2025-11-23 08.34.10",
+        source: "2025-11-23 08.34.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-012-web.jpg",
+        lat: 50.542219,
+        lon: 5.314815,
+        caption: "2025-11-23 08.39.51",
+        source: "2025-11-23 08.39.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-013-web.jpg",
+        lat: 50.542777,
+        lon: 5.320482,
+        caption: "2025-11-23 08.42.57",
+        source: "2025-11-23 08.42.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-014-web.jpg",
+        lat: 50.542860,
+        lon: 5.320515,
+        caption: "2025-11-23 08.43.18",
+        source: "2025-11-23 08.43.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-015-web.jpg",
+        lat: 50.543409,
+        lon: 5.321696,
+        caption: "2025-11-23 08.44.11",
+        source: "2025-11-23 08.44.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-016-web.jpg",
+        lat: 50.539639,
+        lon: 5.323131,
+        caption: "2025-11-23 08.48.38",
+        source: "2025-11-23 08.48.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-017-web.jpg",
+        lat: 50.540805,
+        lon: 5.325834,
+        caption: "2025-11-23 08.50.38",
+        source: "2025-11-23 08.50.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-018-web.jpg",
+        lat: 50.544547,
+        lon: 5.337014,
+        caption: "2025-11-23 08.57.11",
+        source: "2025-11-23 08.57.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-019-web.jpg",
+        lat: 50.544524,
+        lon: 5.337063,
+        caption: "2025-11-23 08.57.36",
+        source: "2025-11-23 08.57.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-020-web.jpg",
+        lat: 50.540813,
+        lon: 5.341417,
+        caption: "2025-11-23 09.01.47",
+        source: "2025-11-23 09.01.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-021-web.jpg",
+        lat: 50.538657,
+        lon: 5.343840,
+        caption: "2025-11-23 09.04.24",
+        source: "2025-11-23 09.04.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-022-web.jpg",
+        lat: 50.537181,
+        lon: 5.341385,
+        caption: "2025-11-23 09.07.56",
+        source: "2025-11-23 09.07.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-023-web.jpg",
+        lat: 50.537422,
+        lon: 5.338184,
+        caption: "2025-11-23 09.10.25",
+        source: "2025-11-23 09.10.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-024-web.jpg",
+        lat: 50.537128,
+        lon: 5.335240,
+        caption: "2025-11-23 09.12.39",
+        source: "2025-11-23 09.12.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-025-web.jpg",
+        lat: 50.536548,
+        lon: 5.334985,
+        caption: "2025-11-23 09.14.04",
+        source: "2025-11-23 09.14.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-026-web.jpg",
+        lat: 50.535939,
+        lon: 5.334762,
+        caption: "2025-11-23 09.15.00",
+        source: "2025-11-23 09.15.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-027-web.jpg",
+        lat: 50.535916,
+        lon: 5.334762,
+        caption: "2025-11-23 09.15.32",
+        source: "2025-11-23 09.15.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-028-web.jpg",
+        lat: 50.533845,
+        lon: 5.336418,
+        caption: "2025-11-23 09.19.01",
+        source: "2025-11-23 09.19.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-029-web.jpg",
+        lat: 50.533809,
+        lon: 5.335826,
+        caption: "2025-11-23 09.19.38",
+        source: "2025-11-23 09.19.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-030-web.jpg",
+        lat: 50.533875,
+        lon: 5.334389,
+        caption: "2025-11-23 09.20.43",
+        source: "2025-11-23 09.20.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-031-web.jpg",
+        lat: 50.531028,
+        lon: 5.330858,
+        caption: "2025-11-23 09.23.49",
+        source: "2025-11-23 09.23.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-032-web.jpg",
+        lat: 50.525691,
+        lon: 5.328015,
+        caption: "2025-11-23 09.28.04",
+        source: "2025-11-23 09.28.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-033-web.jpg",
+        lat: 50.523921,
+        lon: 5.328833,
+        caption: "2025-11-23 09.30.04",
+        source: "2025-11-23 09.30.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-034-web.jpg",
+        lat: 50.516885,
+        lon: 5.323704,
+        caption: "2025-11-23 09.36.15",
+        source: "2025-11-23 09.36.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-035-web.jpg",
+        lat: 50.513339,
+        lon: 5.314699,
+        caption: "2025-11-23 09.42.19",
+        source: "2025-11-23 09.42.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-036-web.jpg",
+        lat: 50.516563,
+        lon: 5.316946,
+        caption: "2025-11-23 09.45.18",
+        source: "2025-11-23 09.45.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-037-web.jpg",
+        lat: 50.517805,
+        lon: 5.317122,
+        caption: "2025-11-23 09.46.50",
+        source: "2025-11-23 09.46.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-038-web.jpg",
+        lat: 50.517778,
+        lon: 5.316944,
+        caption: "2025-11-23 09.47.08",
+        source: "2025-11-23 09.47.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-039-web.jpg",
+        lat: 50.520137,
+        lon: 5.318098,
+        caption: "2025-11-23 09.49.12",
+        source: "2025-11-23 09.49.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-040-web.jpg",
+        lat: 50.531238,
+        lon: 5.324608,
+        caption: "2025-11-23 09.57.07",
+        source: "2025-11-23 09.57.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-041-web.jpg",
+        lat: 50.533779,
+        lon: 5.330783,
+        caption: "2025-11-23 10.07.27",
+        source: "2025-11-23 10.07.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-042-web.jpg",
+        lat: 50.534462,
+        lon: 5.331658,
+        caption: "2025-11-23 10.07.57",
+        source: "2025-11-23 10.07.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-043-web.jpg",
+        lat: 50.535366,
+        lon: 5.330819,
+        caption: "2025-11-23 10.09.42",
+        source: "2025-11-23 10.09.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-044-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-044-web.jpg",
+        lat: 50.532201,
+        lon: 5.324237,
+        caption: "2025-11-23 10.13.38",
+        source: "2025-11-23 10.13.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-045-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-045-web.jpg",
+        lat: 50.532201,
+        lon: 5.324237,
+        caption: "2025-11-23 10.13.46",
+        source: "2025-11-23 10.13.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-046-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-046-web.jpg",
+        lat: 50.533542,
+        lon: 5.319727,
+        caption: "2025-11-23 10.19.36",
+        source: "2025-11-23 10.19.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-047-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-047-web.jpg",
+        lat: 50.533972,
+        lon: 5.320477,
+        caption: "2025-11-23 10.20.12",
+        source: "2025-11-23 10.20.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-048-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-048-web.jpg",
+        lat: 50.543608,
+        lon: 5.335063,
+        caption: "2025-11-23 10.31.58",
+        source: "2025-11-23 10.31.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-049-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-049-web.jpg",
+        lat: 50.543206,
+        lon: 5.333295,
+        caption: "2025-11-23 10.33.18",
+        source: "2025-11-23 10.33.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-050-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-050-web.jpg",
+        lat: 50.544181,
+        lon: 5.331917,
+        caption: "2025-11-23 10.34.15",
+        source: "2025-11-23 10.34.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-051-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-051-web.jpg",
+        lat: 50.545305,
+        lon: 5.329947,
+        caption: "2025-11-23 10.35.37",
+        source: "2025-11-23 10.35.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-052-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-052-web.jpg",
+        lat: 50.543488,
+        lon: 5.318766,
+        caption: "2025-11-23 10.45.14",
+        source: "2025-11-23 10.45.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-053-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-053-web.jpg",
+        lat: 50.543488,
+        lon: 5.318766,
+        caption: "2025-11-23 10.45.25",
+        source: "2025-11-23 10.45.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-054-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-054-web.jpg",
+        lat: 50.543488,
+        lon: 5.318766,
+        caption: "2025-11-23 10.45.50",
+        source: "2025-11-23 10.45.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-055-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-055-web.jpg",
+        lat: 50.543453,
+        lon: 5.318787,
+        caption: "2025-11-23 10.47.08",
+        source: "2025-11-23 10.47.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-23-amay/photo-056-thumb.jpg",
+        web: "./photos/generated/2025-11-23-amay/photo-056-web.jpg",
+        lat: 50.543440,
+        lon: 5.318777,
+        caption: "2025-11-23 10.47.23",
+        source: "2025-11-23 10.47.23.jpg"
+      }
+    ]
   },
   {
     id: "2025-11-30-saint-georges",
@@ -459,7 +9514,310 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2025-11-30-saint-georges"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-001-web.jpg",
+        lat: 50.587309,
+        lon: 5.360521,
+        caption: "2025-11-30 08.03.22",
+        source: "2025-11-30 08.03.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-002-web.jpg",
+        lat: 50.587166,
+        lon: 5.361156,
+        caption: "2025-11-30 08.04.04",
+        source: "2025-11-30 08.04.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-003-web.jpg",
+        lat: 50.587058,
+        lon: 5.361082,
+        caption: "2025-11-30 08.06.31",
+        source: "2025-11-30 08.06.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-004-web.jpg",
+        lat: 50.588867,
+        lon: 5.356566,
+        caption: "2025-11-30 08.12.27",
+        source: "2025-11-30 08.12.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-005-web.jpg",
+        lat: 50.595253,
+        lon: 5.354315,
+        caption: "2025-11-30 08.19.32",
+        source: "2025-11-30 08.19.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-006-web.jpg",
+        lat: 50.601882,
+        lon: 5.361917,
+        caption: "2025-11-30 08.26.56",
+        source: "2025-11-30 08.26.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-007-web.jpg",
+        lat: 50.607059,
+        lon: 5.351100,
+        caption: "2025-11-30 08.33.32",
+        source: "2025-11-30 08.33.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-008-web.jpg",
+        lat: 50.614667,
+        lon: 5.363577,
+        caption: "2025-11-30 08.42.51",
+        source: "2025-11-30 08.42.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-009-web.jpg",
+        lat: 50.618413,
+        lon: 5.364354,
+        caption: "2025-11-30 08.46.28",
+        source: "2025-11-30 08.46.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-010-web.jpg",
+        lat: 50.618413,
+        lon: 5.364354,
+        caption: "2025-11-30 08.46.48",
+        source: "2025-11-30 08.46.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-011-web.jpg",
+        lat: 50.618413,
+        lon: 5.364354,
+        caption: "2025-11-30 08.47.05",
+        source: "2025-11-30 08.47.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-012-web.jpg",
+        lat: 50.622447,
+        lon: 5.383888,
+        caption: "2025-11-30 09.03.00",
+        source: "2025-11-30 09.03.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-013-web.jpg",
+        lat: 50.624423,
+        lon: 5.386703,
+        caption: "2025-11-30 09.06.07",
+        source: "2025-11-30 09.06.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-014-web.jpg",
+        lat: 50.624727,
+        lon: 5.387476,
+        caption: "2025-11-30 09.07.03",
+        source: "2025-11-30 09.07.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-015-web.jpg",
+        lat: 50.625106,
+        lon: 5.388314,
+        caption: "2025-11-30 09.10.19",
+        source: "2025-11-30 09.10.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-016-web.jpg",
+        lat: 50.625938,
+        lon: 5.396219,
+        caption: "2025-11-30 09.17.01",
+        source: "2025-11-30 09.17.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-017-web.jpg",
+        lat: 50.624696,
+        lon: 5.397392,
+        caption: "2025-11-30 09.19.45",
+        source: "2025-11-30 09.19.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-018-web.jpg",
+        lat: 50.621770,
+        lon: 5.400384,
+        caption: "2025-11-30 09.22.44",
+        source: "2025-11-30 09.22.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-019-web.jpg",
+        lat: 50.616520,
+        lon: 5.405318,
+        caption: "2025-11-30 09.27.22",
+        source: "2025-11-30 09.27.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-020-web.jpg",
+        lat: 50.615803,
+        lon: 5.405854,
+        caption: "2025-11-30 09.28.26",
+        source: "2025-11-30 09.28.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-021-web.jpg",
+        lat: 50.609191,
+        lon: 5.396682,
+        caption: "2025-11-30 09.35.50",
+        source: "2025-11-30 09.35.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-022-web.jpg",
+        lat: 50.602850,
+        lon: 5.395893,
+        caption: "2025-11-30 09.44.22",
+        source: "2025-11-30 09.44.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-023-web.jpg",
+        lat: 50.597526,
+        lon: 5.387861,
+        caption: "2025-11-30 09.50.48",
+        source: "2025-11-30 09.50.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-024-web.jpg",
+        lat: 50.596003,
+        lon: 5.390252,
+        caption: "2025-11-30 09.53.52",
+        source: "2025-11-30 09.53.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-025-web.jpg",
+        lat: 50.592596,
+        lon: 5.383280,
+        caption: "2025-11-30 09.58.25",
+        source: "2025-11-30 09.58.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-026-web.jpg",
+        lat: 50.586304,
+        lon: 5.367709,
+        caption: "2025-11-30 10.07.33",
+        source: "2025-11-30 10.07.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-027-web.jpg",
+        lat: 50.586181,
+        lon: 5.368087,
+        caption: "2025-11-30 10.08.12",
+        source: "2025-11-30 10.08.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-028-web.jpg",
+        lat: 50.587736,
+        lon: 5.373642,
+        caption: "2025-11-30 10.13.33",
+        source: "2025-11-30 10.13.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-029-web.jpg",
+        lat: 50.586789,
+        lon: 5.373797,
+        caption: "2025-11-30 10.15.27",
+        source: "2025-11-30 10.15.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-030-web.jpg",
+        lat: 50.584876,
+        lon: 5.373649,
+        caption: "2025-11-30 10.17.40",
+        source: "2025-11-30 10.17.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-031-web.jpg",
+        lat: 50.587249,
+        lon: 5.361199,
+        caption: "2025-11-30 10.34.05",
+        source: "2025-11-30 10.34.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-032-web.jpg",
+        lat: 50.587236,
+        lon: 5.361183,
+        caption: "2025-11-30 10.34.25",
+        source: "2025-11-30 10.34.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-033-web.jpg",
+        lat: 50.587236,
+        lon: 5.361183,
+        caption: "2025-11-30 10.34.36",
+        source: "2025-11-30 10.34.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-034-web.jpg",
+        lat: 50.587051,
+        lon: 5.361190,
+        caption: "2025-11-30 10.39.16",
+        source: "2025-11-30 10.39.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-035-web.jpg",
+        lat: 50.587078,
+        lon: 5.361219,
+        caption: "2025-11-30 10.42.59",
+        source: "2025-11-30 10.42.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-036-web.jpg",
+        lat: 50.584025,
+        lon: 5.359434,
+        caption: "2025-11-30 10.52.08",
+        source: "2025-11-30 10.52.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-037-web.jpg",
+        lat: 50.586875,
+        lon: 5.361236,
+        caption: "2025-11-30 10.52.23",
+        source: "2025-11-30 10.52.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-11-30-saint-georges/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-11-30-saint-georges/photo-038-web.jpg",
+        caption: "2025-11-30 11.34.47",
+        source: "2025-11-30 11.34.47.jpg"
+      }
+    ]
   },
   {
     id: "2025-12-07-my-ferrieres",
@@ -470,7 +9828,328 @@ window.GENERATED_RUNS = [
     color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2025-12-07-my-ferrieres"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-001-web.jpg",
+        lat: 50.406654,
+        lon: 5.574025,
+        caption: "2025-12-07 08.00.44",
+        source: "2025-12-07 08.00.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-002-web.jpg",
+        lat: 50.405748,
+        lon: 5.575166,
+        caption: "2025-12-07 08.03.05",
+        source: "2025-12-07 08.03.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-003-web.jpg",
+        lat: 50.405556,
+        lon: 5.575000,
+        caption: "2025-12-07 08.03.37",
+        source: "2025-12-07 08.03.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-004-web.jpg",
+        lat: 50.405781,
+        lon: 5.575214,
+        caption: "2025-12-07 08.04.23",
+        source: "2025-12-07 08.04.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-005-web.jpg",
+        lat: 50.405781,
+        lon: 5.575214,
+        caption: "2025-12-07 08.04.53",
+        source: "2025-12-07 08.04.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-006-web.jpg",
+        lat: 50.405745,
+        lon: 5.575237,
+        caption: "2025-12-07 08.07.24",
+        source: "2025-12-07 08.07.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-007-web.jpg",
+        lat: 50.405811,
+        lon: 5.575318,
+        caption: "2025-12-07 08.08.58",
+        source: "2025-12-07 08.08.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-008-web.jpg",
+        lat: 50.405811,
+        lon: 5.575318,
+        caption: "2025-12-07 08.09.35",
+        source: "2025-12-07 08.09.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-009-web.jpg",
+        lat: 50.405962,
+        lon: 5.560788,
+        caption: "2025-12-07 08.21.02",
+        source: "2025-12-07 08.21.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-010-web.jpg",
+        lat: 50.394164,
+        lon: 5.549435,
+        caption: "2025-12-07 08.34.55",
+        source: "2025-12-07 08.34.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-011-web.jpg",
+        lat: 50.397582,
+        lon: 5.547014,
+        caption: "2025-12-07 08.38.28",
+        source: "2025-12-07 08.38.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-012-web.jpg",
+        lat: 50.395676,
+        lon: 5.544892,
+        caption: "2025-12-07 08.40.50",
+        source: "2025-12-07 08.40.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-013-web.jpg",
+        lat: 50.394758,
+        lon: 5.541500,
+        caption: "2025-12-07 08.42.40",
+        source: "2025-12-07 08.42.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-014-web.jpg",
+        lat: 50.394673,
+        lon: 5.539646,
+        caption: "2025-12-07 08.44.09",
+        source: "2025-12-07 08.44.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-015-web.jpg",
+        lat: 50.397152,
+        lon: 5.535560,
+        caption: "2025-12-07 08.47.34",
+        source: "2025-12-07 08.47.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-016-web.jpg",
+        lat: 50.398280,
+        lon: 5.531272,
+        caption: "2025-12-07 08.53.35",
+        source: "2025-12-07 08.53.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-017-web.jpg",
+        lat: 50.398342,
+        lon: 5.531256,
+        caption: "2025-12-07 08.53.45",
+        source: "2025-12-07 08.53.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-018-web.jpg",
+        lat: 50.401522,
+        lon: 5.526078,
+        caption: "2025-12-07 09.03.09",
+        source: "2025-12-07 09.03.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-019-web.jpg",
+        lat: 50.401744,
+        lon: 5.525024,
+        caption: "2025-12-07 09.03.49",
+        source: "2025-12-07 09.03.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-020-web.jpg",
+        lat: 50.413080,
+        lon: 5.517777,
+        caption: "2025-12-07 09.17.00",
+        source: "2025-12-07 09.17.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-021-web.jpg",
+        lat: 50.414778,
+        lon: 5.521565,
+        caption: "2025-12-07 09.20.05",
+        source: "2025-12-07 09.20.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-022-web.jpg",
+        lat: 50.416644,
+        lon: 5.529796,
+        caption: "2025-12-07 09.24.37",
+        source: "2025-12-07 09.24.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-023-web.jpg",
+        lat: 50.419148,
+        lon: 5.548705,
+        caption: "2025-12-07 09.33.22",
+        source: "2025-12-07 09.33.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-024-web.jpg",
+        lat: 50.418880,
+        lon: 5.562708,
+        caption: "2025-12-07 09.40.26",
+        source: "2025-12-07 09.40.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-025-web.jpg",
+        lat: 50.416915,
+        lon: 5.566807,
+        caption: "2025-12-07 09.43.11",
+        source: "2025-12-07 09.43.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-026-web.jpg",
+        lat: 50.416915,
+        lon: 5.566807,
+        caption: "2025-12-07 09.43.21",
+        source: "2025-12-07 09.43.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-027-web.jpg",
+        lat: 50.415959,
+        lon: 5.581721,
+        caption: "2025-12-07 09.52.07",
+        source: "2025-12-07 09.52.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-028-web.jpg",
+        lat: 50.416286,
+        lon: 5.582342,
+        caption: "2025-12-07 09.52.42",
+        source: "2025-12-07 09.52.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-029-web.jpg",
+        lat: 50.416556,
+        lon: 5.582972,
+        caption: "2025-12-07 09.53.29",
+        source: "2025-12-07 09.53.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-030-web.jpg",
+        lat: 50.417566,
+        lon: 5.585074,
+        caption: "2025-12-07 09.55.05",
+        source: "2025-12-07 09.55.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-031-web.jpg",
+        lat: 50.420860,
+        lon: 5.592077,
+        caption: "2025-12-07 09.58.56",
+        source: "2025-12-07 09.58.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-032-web.jpg",
+        lat: 50.407126,
+        lon: 5.574690,
+        caption: "2025-12-07 10.20.35",
+        source: "2025-12-07 10.20.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-033-web.jpg",
+        lat: 50.405760,
+        lon: 5.575221,
+        caption: "2025-12-07 10.22.33",
+        source: "2025-12-07 10.22.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-034-web.jpg",
+        lat: 50.405820,
+        lon: 5.575342,
+        caption: "2025-12-07 10.23.42",
+        source: "2025-12-07 10.23.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-035-web.jpg",
+        lat: 50.405858,
+        lon: 5.575198,
+        caption: "2025-12-07 10.24.37",
+        source: "2025-12-07 10.24.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-036-web.jpg",
+        lat: 50.405856,
+        lon: 5.575235,
+        caption: "2025-12-07 10.25.14",
+        source: "2025-12-07 10.25.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-037-web.jpg",
+        lat: 50.405856,
+        lon: 5.575235,
+        caption: "2025-12-07 10.25.52",
+        source: "2025-12-07 10.25.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-038-web.jpg",
+        lat: 50.405858,
+        lon: 5.575236,
+        caption: "2025-12-07 10.26.12",
+        source: "2025-12-07 10.26.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-039-web.jpg",
+        lat: 50.405870,
+        lon: 5.575235,
+        caption: "2025-12-07 10.27.26",
+        source: "2025-12-07 10.27.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-07-my-ferrieres/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-12-07-my-ferrieres/photo-040-web.jpg",
+        lat: 50.405840,
+        lon: 5.575292,
+        caption: "2025-12-07 10.37.29",
+        source: "2025-12-07 10.37.29.jpg"
+      }
+    ]
   },
   {
     id: "2025-12-14-vieuxville-domaine-palogne",
@@ -481,7 +10160,332 @@ window.GENERATED_RUNS = [
     color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2025-12-14-vieuxville-domaine-palogne"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-001-web.jpg",
+        caption: "2025-12-14 06.35.28",
+        source: "2025-12-14 06.35.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-002-web.jpg",
+        lat: 50.398123,
+        lon: 5.531547,
+        caption: "2025-12-14 08.05.29",
+        source: "2025-12-14 08.05.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-003-web.jpg",
+        lat: 50.398123,
+        lon: 5.531547,
+        caption: "2025-12-14 08.05.46",
+        source: "2025-12-14 08.05.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-004-web.jpg",
+        lat: 50.397998,
+        lon: 5.530760,
+        caption: "2025-12-14 08.10.26",
+        source: "2025-12-14 08.10.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-005-web.jpg",
+        lat: 50.394432,
+        lon: 5.535873,
+        caption: "2025-12-14 08.16.40",
+        source: "2025-12-14 08.16.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-006-web.jpg",
+        lat: 50.391927,
+        lon: 5.540250,
+        caption: "2025-12-14 08.20.19",
+        source: "2025-12-14 08.20.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-007-web.jpg",
+        lat: 50.391676,
+        lon: 5.540531,
+        caption: "2025-12-14 08.21.02",
+        source: "2025-12-14 08.21.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-008-web.jpg",
+        lat: 50.389536,
+        lon: 5.544766,
+        caption: "2025-12-14 08.25.03",
+        source: "2025-12-14 08.25.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-009-web.jpg",
+        lat: 50.402567,
+        lon: 5.556496,
+        caption: "2025-12-14 08.44.09",
+        source: "2025-12-14 08.44.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-010-web.jpg",
+        lat: 50.416762,
+        lon: 5.570376,
+        caption: "2025-12-14 08.59.51",
+        source: "2025-12-14 08.59.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-011-web.jpg",
+        lat: 50.416667,
+        lon: 5.567402,
+        caption: "2025-12-14 09.01.32",
+        source: "2025-12-14 09.01.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-012-web.jpg",
+        lat: 50.423241,
+        lon: 5.563165,
+        caption: "2025-12-14 09.11.07",
+        source: "2025-12-14 09.11.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-013-web.jpg",
+        lat: 50.423239,
+        lon: 5.563172,
+        caption: "2025-12-14 09.11.23",
+        source: "2025-12-14 09.11.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-014-web.jpg",
+        lat: 50.418883,
+        lon: 5.557462,
+        caption: "2025-12-14 09.16.16",
+        source: "2025-12-14 09.16.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-015-web.jpg",
+        lat: 50.419453,
+        lon: 5.551461,
+        caption: "2025-12-14 09.19.03",
+        source: "2025-12-14 09.19.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-016-web.jpg",
+        lat: 50.419377,
+        lon: 5.550853,
+        caption: "2025-12-14 09.20.07",
+        source: "2025-12-14 09.20.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-017-web.jpg",
+        lat: 50.419866,
+        lon: 5.544788,
+        caption: "2025-12-14 09.23.19",
+        source: "2025-12-14 09.23.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-018-web.jpg",
+        lat: 50.423142,
+        lon: 5.541124,
+        caption: "2025-12-14 09.27.53",
+        source: "2025-12-14 09.27.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-019-web.jpg",
+        lat: 50.423299,
+        lon: 5.541140,
+        caption: "2025-12-14 09.28.17",
+        source: "2025-12-14 09.28.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-020-web.jpg",
+        lat: 50.424528,
+        lon: 5.538866,
+        caption: "2025-12-14 09.30.31",
+        source: "2025-12-14 09.30.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-021-web.jpg",
+        lat: 50.415658,
+        lon: 5.519837,
+        caption: "2025-12-14 09.41.06",
+        source: "2025-12-14 09.41.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-022-web.jpg",
+        lat: 50.415392,
+        lon: 5.519700,
+        caption: "2025-12-14 09.41.34",
+        source: "2025-12-14 09.41.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-023-web.jpg",
+        lat: 50.414653,
+        lon: 5.519222,
+        caption: "2025-12-14 09.42.32",
+        source: "2025-12-14 09.42.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-024-web.jpg",
+        lat: 50.405451,
+        lon: 5.521407,
+        caption: "2025-12-14 09.50.59",
+        source: "2025-12-14 09.50.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-025-web.jpg",
+        lat: 50.402701,
+        lon: 5.525027,
+        caption: "2025-12-14 09.53.31",
+        source: "2025-12-14 09.53.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-026-web.jpg",
+        lat: 50.402513,
+        lon: 5.524304,
+        caption: "2025-12-14 09.54.21",
+        source: "2025-12-14 09.54.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-027-web.jpg",
+        lat: 50.402535,
+        lon: 5.524309,
+        caption: "2025-12-14 09.55.20",
+        source: "2025-12-14 09.55.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-028-web.jpg",
+        lat: 50.401754,
+        lon: 5.524943,
+        caption: "2025-12-14 09.56.06",
+        source: "2025-12-14 09.56.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-029-web.jpg",
+        lat: 50.401640,
+        lon: 5.520465,
+        caption: "2025-12-14 09.59.01",
+        source: "2025-12-14 09.59.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-030-web.jpg",
+        lat: 50.391953,
+        lon: 5.513284,
+        caption: "2025-12-14 10.10.25",
+        source: "2025-12-14 10.10.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-031-web.jpg",
+        lat: 50.403730,
+        lon: 5.531601,
+        caption: "2025-12-14 10.26.02",
+        source: "2025-12-14 10.26.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-032-web.jpg",
+        lat: 50.398686,
+        lon: 5.531118,
+        caption: "2025-12-14 10.32.00",
+        source: "2025-12-14 10.32.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-033-web.jpg",
+        lat: 50.397952,
+        lon: 5.530729,
+        caption: "2025-12-14 10.33.39",
+        source: "2025-12-14 10.33.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-034-web.jpg",
+        lat: 50.397803,
+        lon: 5.530539,
+        caption: "2025-12-14 10.34.12",
+        source: "2025-12-14 10.34.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-035-web.jpg",
+        lat: 50.397740,
+        lon: 5.530405,
+        caption: "2025-12-14 10.37.05",
+        source: "2025-12-14 10.37.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-036-web.jpg",
+        lat: 50.397740,
+        lon: 5.530405,
+        caption: "2025-12-14 10.37.15",
+        source: "2025-12-14 10.37.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-037-web.jpg",
+        lat: 50.397793,
+        lon: 5.530560,
+        caption: "2025-12-14 10.40.16",
+        source: "2025-12-14 10.40.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-038-web.jpg",
+        lat: 50.397801,
+        lon: 5.530536,
+        caption: "2025-12-14 10.41.21",
+        source: "2025-12-14 10.41.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-039-web.jpg",
+        lat: 50.397801,
+        lon: 5.530536,
+        caption: "2025-12-14 10.41.34",
+        source: "2025-12-14 10.41.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-040-web.jpg",
+        lat: 50.397788,
+        lon: 5.530525,
+        caption: "2025-12-14 11.08.29",
+        source: "2025-12-14 11.08.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-12-14-vieuxville-domaine-palogne/photo-041-web.jpg",
+        caption: "2025-12-14 14.21.53",
+        source: "2025-12-14 14.21.53.jpg"
+      }
+    ]
   },
   {
     id: "2025-12-21-fize-fontaine",
@@ -492,7 +10496,422 @@ window.GENERATED_RUNS = [
     color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2025-12-21-fize-fontaine"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-001-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-001-web.jpg",
+        lat: 50.586189,
+        lon: 5.282484,
+        caption: "2025-12-21 08.04.42",
+        source: "2025-12-21 08.04.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-002-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-002-web.jpg",
+        lat: 50.585775,
+        lon: 5.284319,
+        caption: "2025-12-21 08.08.50",
+        source: "2025-12-21 08.08.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-003-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-003-web.jpg",
+        lat: 50.585910,
+        lon: 5.284701,
+        caption: "2025-12-21 08.09.45",
+        source: "2025-12-21 08.09.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-004-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-004-web.jpg",
+        lat: 50.585934,
+        lon: 5.284645,
+        caption: "2025-12-21 08.13.32",
+        source: "2025-12-21 08.13.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-005-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-005-web.jpg",
+        lat: 50.585734,
+        lon: 5.284723,
+        caption: "2025-12-21 08.16.39",
+        source: "2025-12-21 08.16.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-006-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-006-web.jpg",
+        lat: 50.585739,
+        lon: 5.284723,
+        caption: "2025-12-21 08.16.46",
+        source: "2025-12-21 08.16.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-007-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-007-web.jpg",
+        lat: 50.576590,
+        lon: 5.291147,
+        caption: "2025-12-21 08.26.20",
+        source: "2025-12-21 08.26.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-008-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-008-web.jpg",
+        lat: 50.576352,
+        lon: 5.290680,
+        caption: "2025-12-21 08.26.39",
+        source: "2025-12-21 08.26.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-009-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-009-web.jpg",
+        lat: 50.571685,
+        lon: 5.294412,
+        caption: "2025-12-21 08.31.52",
+        source: "2025-12-21 08.31.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-010-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-010-web.jpg",
+        lat: 50.568720,
+        lon: 5.292901,
+        caption: "2025-12-21 08.33.56",
+        source: "2025-12-21 08.33.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-011-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-011-web.jpg",
+        lat: 50.566681,
+        lon: 5.289069,
+        caption: "2025-12-21 08.35.42",
+        source: "2025-12-21 08.35.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-012-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-012-web.jpg",
+        lat: 50.564285,
+        lon: 5.297557,
+        caption: "2025-12-21 08.43.08",
+        source: "2025-12-21 08.43.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-013-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-013-web.jpg",
+        lat: 50.559547,
+        lon: 5.289110,
+        caption: "2025-12-21 08.48.09",
+        source: "2025-12-21 08.48.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-014-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-014-web.jpg",
+        lat: 50.558562,
+        lon: 5.287715,
+        caption: "2025-12-21 08.49.16",
+        source: "2025-12-21 08.49.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-015-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-015-web.jpg",
+        lat: 50.558158,
+        lon: 5.286821,
+        caption: "2025-12-21 08.50.10",
+        source: "2025-12-21 08.50.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-016-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-016-web.jpg",
+        lat: 50.557075,
+        lon: 5.285470,
+        caption: "2025-12-21 08.51.33",
+        source: "2025-12-21 08.51.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-017-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-017-web.jpg",
+        lat: 50.550637,
+        lon: 5.290964,
+        caption: "2025-12-21 09.00.29",
+        source: "2025-12-21 09.00.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-018-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-018-web.jpg",
+        lat: 50.549117,
+        lon: 5.285969,
+        caption: "2025-12-21 09.04.34",
+        source: "2025-12-21 09.04.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-019-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-019-web.jpg",
+        lat: 50.546344,
+        lon: 5.285910,
+        caption: "2025-12-21 09.06.48",
+        source: "2025-12-21 09.06.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-020-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-020-web.jpg",
+        lat: 50.543975,
+        lon: 5.285958,
+        caption: "2025-12-21 09.10.37",
+        source: "2025-12-21 09.10.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-021-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-021-web.jpg",
+        lat: 50.543532,
+        lon: 5.288100,
+        caption: "2025-12-21 09.12.56",
+        source: "2025-12-21 09.12.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-022-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-022-web.jpg",
+        lat: 50.543193,
+        lon: 5.284488,
+        caption: "2025-12-21 09.18.14",
+        source: "2025-12-21 09.18.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-023-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-023-web.jpg",
+        lat: 50.543124,
+        lon: 5.284107,
+        caption: "2025-12-21 09.19.11",
+        source: "2025-12-21 09.19.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-024-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-024-web.jpg",
+        lat: 50.543717,
+        lon: 5.291855,
+        caption: "2025-12-21 09.24.18",
+        source: "2025-12-21 09.24.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-025-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-025-web.jpg",
+        lat: 50.543833,
+        lon: 5.294307,
+        caption: "2025-12-21 09.25.49",
+        source: "2025-12-21 09.25.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-026-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-026-web.jpg",
+        lat: 50.545012,
+        lon: 5.295360,
+        caption: "2025-12-21 09.28.11",
+        source: "2025-12-21 09.28.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-027-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-027-web.jpg",
+        lat: 50.545175,
+        lon: 5.295701,
+        caption: "2025-12-21 09.29.40",
+        source: "2025-12-21 09.29.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-028-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-028-web.jpg",
+        lat: 50.545942,
+        lon: 5.296329,
+        caption: "2025-12-21 09.31.04",
+        source: "2025-12-21 09.31.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-029-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-029-web.jpg",
+        lat: 50.545942,
+        lon: 5.296329,
+        caption: "2025-12-21 09.31.32",
+        source: "2025-12-21 09.31.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-030-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-030-web.jpg",
+        lat: 50.548535,
+        lon: 5.294435,
+        caption: "2025-12-21 09.34.24",
+        source: "2025-12-21 09.34.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-031-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-031-web.jpg",
+        lat: 50.550328,
+        lon: 5.296742,
+        caption: "2025-12-21 09.36.35",
+        source: "2025-12-21 09.36.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-032-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-032-web.jpg",
+        lat: 50.552979,
+        lon: 5.299000,
+        caption: "2025-12-21 09.40.01",
+        source: "2025-12-21 09.40.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-033-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-033-web.jpg",
+        lat: 50.555732,
+        lon: 5.293957,
+        caption: "2025-12-21 09.45.51",
+        source: "2025-12-21 09.45.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-034-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-034-web.jpg",
+        lat: 50.566627,
+        lon: 5.304664,
+        caption: "2025-12-21 10.00.30",
+        source: "2025-12-21 10.00.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-035-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-035-web.jpg",
+        lat: 50.569794,
+        lon: 5.307144,
+        caption: "2025-12-21 10.03.40",
+        source: "2025-12-21 10.03.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-036-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-036-web.jpg",
+        lat: 50.574894,
+        lon: 5.305480,
+        caption: "2025-12-21 10.07.05",
+        source: "2025-12-21 10.07.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-037-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-037-web.jpg",
+        lat: 50.575253,
+        lon: 5.305206,
+        caption: "2025-12-21 10.07.48",
+        source: "2025-12-21 10.07.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-038-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-038-web.jpg",
+        lat: 50.578309,
+        lon: 5.309588,
+        caption: "2025-12-21 10.11.37",
+        source: "2025-12-21 10.11.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-039-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-039-web.jpg",
+        lat: 50.581547,
+        lon: 5.304725,
+        caption: "2025-12-21 10.15.41",
+        source: "2025-12-21 10.15.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-040-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-040-web.jpg",
+        lat: 50.584176,
+        lon: 5.303298,
+        caption: "2025-12-21 10.18.05",
+        source: "2025-12-21 10.18.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-041-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-041-web.jpg",
+        lat: 50.587201,
+        lon: 5.304042,
+        caption: "2025-12-21 10.20.36",
+        source: "2025-12-21 10.20.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-042-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-042-web.jpg",
+        lat: 50.587121,
+        lon: 5.303615,
+        caption: "2025-12-21 10.21.29",
+        source: "2025-12-21 10.21.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-043-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-043-web.jpg",
+        lat: 50.586760,
+        lon: 5.297813,
+        caption: "2025-12-21 10.23.55",
+        source: "2025-12-21 10.23.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-044-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-044-web.jpg",
+        lat: 50.586714,
+        lon: 5.297235,
+        caption: "2025-12-21 10.25.04",
+        source: "2025-12-21 10.25.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-045-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-045-web.jpg",
+        lat: 50.587813,
+        lon: 5.292632,
+        caption: "2025-12-21 10.27.24",
+        source: "2025-12-21 10.27.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-046-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-046-web.jpg",
+        lat: 50.585741,
+        lon: 5.284825,
+        caption: "2025-12-21 10.31.38",
+        source: "2025-12-21 10.31.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-047-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-047-web.jpg",
+        lat: 50.585833,
+        lon: 5.284744,
+        caption: "2025-12-21 10.39.49",
+        source: "2025-12-21 10.39.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-048-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-048-web.jpg",
+        lat: 50.585812,
+        lon: 5.284763,
+        caption: "2025-12-21 10.40.16",
+        source: "2025-12-21 10.40.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-049-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-049-web.jpg",
+        lat: 50.585830,
+        lon: 5.284757,
+        caption: "2025-12-21 10.46.23",
+        source: "2025-12-21 10.46.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-050-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-050-web.jpg",
+        lat: 50.585830,
+        lon: 5.284757,
+        caption: "2025-12-21 10.46.34",
+        source: "2025-12-21 10.46.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-051-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-051-web.jpg",
+        lat: 50.585830,
+        lon: 5.284757,
+        caption: "2025-12-21 10.47.06",
+        source: "2025-12-21 10.47.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2025-12-21-fize-fontaine/photo-052-thumb.jpg",
+        web: "./photos/generated/2025-12-21-fize-fontaine/photo-052-web.jpg",
+        caption: "2025-12-21 12.14.15",
+        source: "2025-12-21 12.14.15.jpg"
+      }
+    ]
   },
   {
     id: "2026-01-04-fraiture-en-condroz",
@@ -503,7 +10922,352 @@ window.GENERATED_RUNS = [
     color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-01-04-fraiture-en-condroz"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-001-web.jpg",
+        lat: 50.479364,
+        lon: 5.418635,
+        caption: "2026-01-04 07.59.57",
+        source: "2026-01-04 07.59.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-002-web.jpg",
+        lat: 50.479364,
+        lon: 5.418635,
+        caption: "2026-01-04 08.00.08",
+        source: "2026-01-04 08.00.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-003-web.jpg",
+        lat: 50.479465,
+        lon: 5.418913,
+        caption: "2026-01-04 08.01.05",
+        source: "2026-01-04 08.01.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-004-web.jpg",
+        lat: 50.479381,
+        lon: 5.418839,
+        caption: "2026-01-04 08.02.30",
+        source: "2026-01-04 08.02.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-005-web.jpg",
+        lat: 50.479381,
+        lon: 5.418839,
+        caption: "2026-01-04 08.02.43",
+        source: "2026-01-04 08.02.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-006-web.jpg",
+        lat: 50.479444,
+        lon: 5.418889,
+        caption: "2026-01-04 08.08.35",
+        source: "2026-01-04 08.08.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-007-web.jpg",
+        lat: 50.479446,
+        lon: 5.418919,
+        caption: "2026-01-04 08.08.48",
+        source: "2026-01-04 08.08.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-008-web.jpg",
+        lat: 50.475051,
+        lon: 5.411493,
+        caption: "2026-01-04 08.21.50",
+        source: "2026-01-04 08.21.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-009-web.jpg",
+        lat: 50.474902,
+        lon: 5.411109,
+        caption: "2026-01-04 08.22.37",
+        source: "2026-01-04 08.22.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-010-web.jpg",
+        lat: 50.474861,
+        lon: 5.410960,
+        caption: "2026-01-04 08.23.20",
+        source: "2026-01-04 08.23.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-011-web.jpg",
+        lat: 50.470433,
+        lon: 5.397149,
+        caption: "2026-01-04 08.30.37",
+        source: "2026-01-04 08.30.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-012-web.jpg",
+        lat: 50.470433,
+        lon: 5.397149,
+        caption: "2026-01-04 08.31.02-1",
+        source: "2026-01-04 08.31.02-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-013-web.jpg",
+        lat: 50.470061,
+        lon: 5.396131,
+        caption: "2026-01-04 08.32.24",
+        source: "2026-01-04 08.32.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-014-web.jpg",
+        lat: 50.470889,
+        lon: 5.427909,
+        caption: "2026-01-04 08.54.56",
+        source: "2026-01-04 08.54.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-015-web.jpg",
+        lat: 50.468719,
+        lon: 5.435947,
+        caption: "2026-01-04 09.00.38",
+        source: "2026-01-04 09.00.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-016-web.jpg",
+        lat: 50.468719,
+        lon: 5.435947,
+        caption: "2026-01-04 09.01.05",
+        source: "2026-01-04 09.01.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-017-web.jpg",
+        lat: 50.467137,
+        lon: 5.439029,
+        caption: "2026-01-04 09.03.06",
+        source: "2026-01-04 09.03.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-018-web.jpg",
+        lat: 50.467439,
+        lon: 5.444427,
+        caption: "2026-01-04 09.06.48",
+        source: "2026-01-04 09.06.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-019-web.jpg",
+        lat: 50.469873,
+        lon: 5.444664,
+        caption: "2026-01-04 09.10.44",
+        source: "2026-01-04 09.10.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-020-web.jpg",
+        lat: 50.472373,
+        lon: 5.441663,
+        caption: "2026-01-04 09.14.29",
+        source: "2026-01-04 09.14.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-021-web.jpg",
+        lat: 50.473094,
+        lon: 5.440913,
+        caption: "2026-01-04 09.15.48",
+        source: "2026-01-04 09.15.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-022-web.jpg",
+        lat: 50.481224,
+        lon: 5.457477,
+        caption: "2026-01-04 09.27.13",
+        source: "2026-01-04 09.27.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-023-web.jpg",
+        lat: 50.481224,
+        lon: 5.457477,
+        caption: "2026-01-04 09.27.23",
+        source: "2026-01-04 09.27.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-024-web.jpg",
+        lat: 50.478759,
+        lon: 5.459539,
+        caption: "2026-01-04 09.29.37",
+        source: "2026-01-04 09.29.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-025-web.jpg",
+        lat: 50.478759,
+        lon: 5.459539,
+        caption: "2026-01-04 09.30.04",
+        source: "2026-01-04 09.30.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-026-web.jpg",
+        lat: 50.477332,
+        lon: 5.470250,
+        caption: "2026-01-04 09.37.22",
+        source: "2026-01-04 09.37.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-027-web.jpg",
+        lat: 50.485221,
+        lon: 5.476541,
+        caption: "2026-01-04 09.44.19",
+        source: "2026-01-04 09.44.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-028-web.jpg",
+        lat: 50.486165,
+        lon: 5.476025,
+        caption: "2026-01-04 09.46.21",
+        source: "2026-01-04 09.46.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-029-web.jpg",
+        lat: 50.493781,
+        lon: 5.469777,
+        caption: "2026-01-04 09.56.52",
+        source: "2026-01-04 09.56.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-030-web.jpg",
+        lat: 50.494078,
+        lon: 5.469410,
+        caption: "2026-01-04 09.58.06",
+        source: "2026-01-04 09.58.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-031-web.jpg",
+        lat: 50.494078,
+        lon: 5.469410,
+        caption: "2026-01-04 09.58.18",
+        source: "2026-01-04 09.58.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-032-web.jpg",
+        lat: 50.484601,
+        lon: 5.445437,
+        caption: "2026-01-04 10.14.08",
+        source: "2026-01-04 10.14.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-033-web.jpg",
+        lat: 50.480925,
+        lon: 5.419436,
+        caption: "2026-01-04 10.28.33",
+        source: "2026-01-04 10.28.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-034-web.jpg",
+        lat: 50.480925,
+        lon: 5.419436,
+        caption: "2026-01-04 10.28.48",
+        source: "2026-01-04 10.28.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-035-web.jpg",
+        lat: 50.479458,
+        lon: 5.419041,
+        caption: "2026-01-04 10.32.22",
+        source: "2026-01-04 10.32.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-036-web.jpg",
+        lat: 50.479500,
+        lon: 5.419016,
+        caption: "2026-01-04 10.32.38",
+        source: "2026-01-04 10.32.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-037-web.jpg",
+        lat: 50.479420,
+        lon: 5.419111,
+        caption: "2026-01-04 10.34.33",
+        source: "2026-01-04 10.34.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-038-web.jpg",
+        lat: 50.479443,
+        lon: 5.419056,
+        caption: "2026-01-04 10.34.49",
+        source: "2026-01-04 10.34.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-039-web.jpg",
+        lat: 50.479448,
+        lon: 5.419018,
+        caption: "2026-01-04 10.34.55",
+        source: "2026-01-04 10.34.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-040-web.jpg",
+        lat: 50.479448,
+        lon: 5.419018,
+        caption: "2026-01-04 10.35.10",
+        source: "2026-01-04 10.35.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-041-web.jpg",
+        lat: 50.479623,
+        lon: 5.418438,
+        caption: "2026-01-04 10.37.24",
+        source: "2026-01-04 10.37.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-042-web.jpg",
+        lat: 50.479623,
+        lon: 5.418438,
+        caption: "2026-01-04 10.37.32",
+        source: "2026-01-04 10.37.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-043-thumb.jpg",
+        web: "./photos/generated/2026-01-04-fraiture-en-condroz/photo-043-web.jpg",
+        lat: 50.479623,
+        lon: 5.418438,
+        caption: "2026-01-04 10.37.44",
+        source: "2026-01-04 10.37.44.jpg"
+      }
+    ]
   },
   {
     id: "2026-01-11-wonck",
@@ -514,7 +11278,172 @@ window.GENERATED_RUNS = [
     color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2026-01-11-wonck"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-001-web.jpg",
+        caption: "1768123182055",
+        source: "1768123182055.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-002-web.jpg",
+        lat: 50.769177,
+        lon: 5.629314,
+        caption: "2026-01-11 08.05.09",
+        source: "2026-01-11 08.05.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-003-web.jpg",
+        lat: 50.769022,
+        lon: 5.630902,
+        caption: "2026-01-11 08.13.19",
+        source: "2026-01-11 08.13.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-004-web.jpg",
+        lat: 50.769037,
+        lon: 5.630871,
+        caption: "2026-01-11 08.15.43",
+        source: "2026-01-11 08.15.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-005-web.jpg",
+        lat: 50.768904,
+        lon: 5.630726,
+        caption: "2026-01-11 08.16.20",
+        source: "2026-01-11 08.16.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-006-web.jpg",
+        lat: 50.769584,
+        lon: 5.637085,
+        caption: "2026-01-11 08.20.48",
+        source: "2026-01-11 08.20.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-007-web.jpg",
+        lat: 50.770080,
+        lon: 5.637300,
+        caption: "2026-01-11 08.21.21",
+        source: "2026-01-11 08.21.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-008-web.jpg",
+        lat: 50.772050,
+        lon: 5.644708,
+        caption: "2026-01-11 08.24.55",
+        source: "2026-01-11 08.24.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-009-web.jpg",
+        lat: 50.761153,
+        lon: 5.629504,
+        caption: "2026-01-11 08.40.53",
+        source: "2026-01-11 08.40.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-010-web.jpg",
+        lat: 50.753779,
+        lon: 5.607706,
+        caption: "2026-01-11 08.52.32",
+        source: "2026-01-11 08.52.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-011-web.jpg",
+        lat: 50.745747,
+        lon: 5.603115,
+        caption: "2026-01-11 09.00.23",
+        source: "2026-01-11 09.00.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-012-web.jpg",
+        lat: 50.757154,
+        lon: 5.587469,
+        caption: "2026-01-11 09.19.53",
+        source: "2026-01-11 09.19.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-013-web.jpg",
+        lat: 50.759333,
+        lon: 5.593786,
+        caption: "2026-01-11 09.24.10",
+        source: "2026-01-11 09.24.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-014-web.jpg",
+        lat: 50.764319,
+        lon: 5.604203,
+        caption: "2026-01-11 09.34.31",
+        source: "2026-01-11 09.34.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-015-web.jpg",
+        lat: 50.764191,
+        lon: 5.609706,
+        caption: "2026-01-11 09.36.51",
+        source: "2026-01-11 09.36.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-016-web.jpg",
+        lat: 50.766086,
+        lon: 5.609718,
+        caption: "2026-01-11 09.38.30",
+        source: "2026-01-11 09.38.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-017-web.jpg",
+        lat: 50.769019,
+        lon: 5.630829,
+        caption: "2026-01-11 10.11.03",
+        source: "2026-01-11 10.11.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-018-web.jpg",
+        lat: 50.768983,
+        lon: 5.630842,
+        caption: "2026-01-11 10.13.34",
+        source: "2026-01-11 10.13.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-019-web.jpg",
+        lat: 50.768975,
+        lon: 5.630808,
+        caption: "2026-01-11 10.15.18",
+        source: "2026-01-11 10.15.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-020-web.jpg",
+        lat: 50.768889,
+        lon: 5.630833,
+        caption: "2026-01-11 10.15.18b",
+        source: "2026-01-11 10.15.18b.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-11-wonck/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-01-11-wonck/photo-021-web.jpg",
+        caption: "2026-01-11 11.53.49",
+        source: "2026-01-11 11.53.49.jpg"
+      }
+    ]
   },
   {
     id: "2026-01-18-aywaille",
@@ -525,7 +11454,604 @@ window.GENERATED_RUNS = [
     color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2026-01-18-aywaille"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-001-web.jpg",
+        lat: 50.473999,
+        lon: 5.671455,
+        caption: "2026-01-18 08.10.28",
+        source: "2026-01-18 08.10.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-002-web.jpg",
+        lat: 50.473999,
+        lon: 5.671455,
+        caption: "2026-01-18 08.11.10",
+        source: "2026-01-18 08.11.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-003-web.jpg",
+        lat: 50.474009,
+        lon: 5.671475,
+        caption: "2026-01-18 08.11.17",
+        source: "2026-01-18 08.11.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-004-web.jpg",
+        lat: 50.473971,
+        lon: 5.671507,
+        caption: "2026-01-18 08.11.26",
+        source: "2026-01-18 08.11.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-005-web.jpg",
+        lat: 50.470176,
+        lon: 5.665824,
+        caption: "2026-01-18 08.23.27",
+        source: "2026-01-18 08.23.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-006-web.jpg",
+        lat: 50.468716,
+        lon: 5.645253,
+        caption: "2026-01-18 08.38.20",
+        source: "2026-01-18 08.38.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-007-web.jpg",
+        lat: 50.465106,
+        lon: 5.638456,
+        caption: "2026-01-18 08.43.39",
+        source: "2026-01-18 08.43.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-008-web.jpg",
+        lat: 50.471319,
+        lon: 5.633678,
+        caption: "2026-01-18 08.49.09",
+        source: "2026-01-18 08.49.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-009-web.jpg",
+        lat: 50.471462,
+        lon: 5.633644,
+        caption: "2026-01-18 08.49.31",
+        source: "2026-01-18 08.49.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-010-web.jpg",
+        lat: 50.469705,
+        lon: 5.629082,
+        caption: "2026-01-18 08.53.29",
+        source: "2026-01-18 08.53.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-011-web.jpg",
+        lat: 50.469256,
+        lon: 5.626280,
+        caption: "2026-01-18 08.55.16",
+        source: "2026-01-18 08.55.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-012-web.jpg",
+        lat: 50.464687,
+        lon: 5.616937,
+        caption: "2026-01-18 09.01.54",
+        source: "2026-01-18 09.01.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-013-web.jpg",
+        lat: 50.464665,
+        lon: 5.617040,
+        caption: "2026-01-18 09.02.15",
+        source: "2026-01-18 09.02.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-014-web.jpg",
+        lat: 50.459831,
+        lon: 5.610362,
+        caption: "2026-01-18 09.10.23",
+        source: "2026-01-18 09.10.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-015-web.jpg",
+        lat: 50.459715,
+        lon: 5.610067,
+        caption: "2026-01-18 09.11.01",
+        source: "2026-01-18 09.11.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-016-web.jpg",
+        lat: 50.459497,
+        lon: 5.606244,
+        caption: "2026-01-18 09.13.33",
+        source: "2026-01-18 09.13.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-017-web.jpg",
+        lat: 50.473924,
+        lon: 5.603495,
+        caption: "2026-01-18 09.43.08",
+        source: "2026-01-18 09.43.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-018-web.jpg",
+        lat: 50.472293,
+        lon: 5.635097,
+        caption: "2026-01-18 10.01.57",
+        source: "2026-01-18 10.01.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-019-web.jpg",
+        lat: 50.473149,
+        lon: 5.643191,
+        caption: "2026-01-18 10.08.58-1",
+        source: "2026-01-18 10.08.58-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-020-web.jpg",
+        lat: 50.473149,
+        lon: 5.643196,
+        caption: "2026-01-18 10.08.59",
+        source: "2026-01-18 10.08.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-021-web.jpg",
+        lat: 50.470638,
+        lon: 5.654793,
+        caption: "2026-01-18 10.15.25",
+        source: "2026-01-18 10.15.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-022-web.jpg",
+        lat: 50.470544,
+        lon: 5.654562,
+        caption: "2026-01-18 10.15.59",
+        source: "2026-01-18 10.15.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-023-web.jpg",
+        lat: 50.470544,
+        lon: 5.654562,
+        caption: "2026-01-18 10.16.12",
+        source: "2026-01-18 10.16.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-024-web.jpg",
+        lat: 50.470329,
+        lon: 5.652660,
+        caption: "2026-01-18 10.18.52",
+        source: "2026-01-18 10.18.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-025-web.jpg",
+        lat: 50.470093,
+        lon: 5.651802,
+        caption: "2026-01-18 10.20.14",
+        source: "2026-01-18 10.20.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-026-web.jpg",
+        lat: 50.470093,
+        lon: 5.651802,
+        caption: "2026-01-18 10.21.00",
+        source: "2026-01-18 10.21.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-027-web.jpg",
+        lat: 50.474161,
+        lon: 5.671339,
+        caption: "2026-01-18 10.41.50",
+        source: "2026-01-18 10.41.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-028-web.jpg",
+        lat: 50.473963,
+        lon: 5.671486,
+        caption: "2026-01-18 10.53.32",
+        source: "2026-01-18 10.53.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-029-web.jpg",
+        lat: -0.000000,
+        lon: -0.000000,
+        caption: "2026-01-18 10.55.19",
+        source: "2026-01-18 10.55.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-030-web.jpg",
+        lat: 50.473944,
+        lon: 5.671450,
+        caption: "2026-01-18 10.59.34",
+        source: "2026-01-18 10.59.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-031-web.jpg",
+        lat: 50.474053,
+        lon: 5.671557,
+        caption: "2026-01-18 11.06.10",
+        source: "2026-01-18 11.06.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-032-web.jpg",
+        lat: 50.473994,
+        lon: 5.671509,
+        caption: "2026-01-18 11.06.40",
+        source: "2026-01-18 11.06.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-033-web.jpg",
+        lat: 50.473994,
+        lon: 5.671509,
+        caption: "2026-01-18 11.07.01",
+        source: "2026-01-18 11.07.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-034-web.jpg",
+        lat: 50.473994,
+        lon: 5.671509,
+        caption: "2026-01-18 11.07.10",
+        source: "2026-01-18 11.07.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-035-web.jpg",
+        lat: 50.473994,
+        lon: 5.671509,
+        caption: "2026-01-18 11.07.13",
+        source: "2026-01-18 11.07.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-036-web.jpg",
+        lat: 50.474020,
+        lon: 5.671525,
+        caption: "2026-01-18 11.09.22",
+        source: "2026-01-18 11.09.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-037-web.jpg",
+        lat: 50.474057,
+        lon: 5.671372,
+        caption: "2026-01-18 11.10.10",
+        source: "2026-01-18 11.10.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-038-web.jpg",
+        caption: "2026-01-18 13.29.41",
+        source: "2026-01-18 13.29.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-039-web.jpg",
+        caption: "2026-01-18 13.33.02",
+        source: "2026-01-18 13.33.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-040-web.jpg",
+        caption: "2026-01-18 13.34.08",
+        source: "2026-01-18 13.34.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-041-web.jpg",
+        caption: "2026-01-18 13.35.35",
+        source: "2026-01-18 13.35.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-042-web.jpg",
+        caption: "2026-01-18 13.39.50",
+        source: "2026-01-18 13.39.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-043-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-043-web.jpg",
+        caption: "2026-01-18 13.41.17",
+        source: "2026-01-18 13.41.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-044-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-044-web.jpg",
+        caption: "2026-01-18 13.46.22",
+        source: "2026-01-18 13.46.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-045-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-045-web.jpg",
+        caption: "2026-01-18 13.48.27",
+        source: "2026-01-18 13.48.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-046-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-046-web.jpg",
+        caption: "2026-01-18 13.49.45",
+        source: "2026-01-18 13.49.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-047-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-047-web.jpg",
+        caption: "2026-01-18 13.51.16",
+        source: "2026-01-18 13.51.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-048-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-048-web.jpg",
+        caption: "2026-01-18 13.52.07",
+        source: "2026-01-18 13.52.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-049-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-049-web.jpg",
+        caption: "2026-01-18 13.53.05",
+        source: "2026-01-18 13.53.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-050-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-050-web.jpg",
+        caption: "2026-01-18 13.53.42",
+        source: "2026-01-18 13.53.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-051-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-051-web.jpg",
+        caption: "2026-01-18 13.54.38",
+        source: "2026-01-18 13.54.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-052-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-052-web.jpg",
+        caption: "2026-01-18 13.55.17",
+        source: "2026-01-18 13.55.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-053-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-053-web.jpg",
+        caption: "2026-01-18 13.55.51",
+        source: "2026-01-18 13.55.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-054-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-054-web.jpg",
+        caption: "2026-01-18 13.56.27",
+        source: "2026-01-18 13.56.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-055-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-055-web.jpg",
+        caption: "2026-01-18 13.57.16",
+        source: "2026-01-18 13.57.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-056-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-056-web.jpg",
+        caption: "2026-01-18 13.57.40",
+        source: "2026-01-18 13.57.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-057-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-057-web.jpg",
+        caption: "2026-01-18 13.58.55",
+        source: "2026-01-18 13.58.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-058-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-058-web.jpg",
+        caption: "2026-01-18 14.00.35",
+        source: "2026-01-18 14.00.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-059-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-059-web.jpg",
+        caption: "2026-01-18 14.01.35",
+        source: "2026-01-18 14.01.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-060-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-060-web.jpg",
+        caption: "2026-01-18 14.04.07",
+        source: "2026-01-18 14.04.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-061-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-061-web.jpg",
+        caption: "2026-01-18 14.05.11",
+        source: "2026-01-18 14.05.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-062-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-062-web.jpg",
+        caption: "2026-01-18 14.08.36",
+        source: "2026-01-18 14.08.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-063-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-063-web.jpg",
+        caption: "2026-01-18 14.10.33",
+        source: "2026-01-18 14.10.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-064-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-064-web.jpg",
+        caption: "2026-01-18 14.14.08",
+        source: "2026-01-18 14.14.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-065-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-065-web.jpg",
+        caption: "2026-01-18 14.14.57",
+        source: "2026-01-18 14.14.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-066-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-066-web.jpg",
+        caption: "2026-01-18 14.17.43",
+        source: "2026-01-18 14.17.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-067-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-067-web.jpg",
+        caption: "2026-01-18 14.18.19",
+        source: "2026-01-18 14.18.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-068-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-068-web.jpg",
+        caption: "2026-01-18 14.20.25",
+        source: "2026-01-18 14.20.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-069-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-069-web.jpg",
+        caption: "2026-01-18 14.21.06",
+        source: "2026-01-18 14.21.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-070-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-070-web.jpg",
+        caption: "2026-01-18 14.22.32",
+        source: "2026-01-18 14.22.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-071-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-071-web.jpg",
+        caption: "2026-01-18 14.23.24",
+        source: "2026-01-18 14.23.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-072-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-072-web.jpg",
+        caption: "2026-01-18 14.24.07",
+        source: "2026-01-18 14.24.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-073-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-073-web.jpg",
+        caption: "2026-01-18 14.25.25",
+        source: "2026-01-18 14.25.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-074-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-074-web.jpg",
+        caption: "2026-01-18 14.26.02",
+        source: "2026-01-18 14.26.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-075-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-075-web.jpg",
+        caption: "2026-01-18 14.27.23",
+        source: "2026-01-18 14.27.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-076-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-076-web.jpg",
+        caption: "2026-01-18 14.27.58",
+        source: "2026-01-18 14.27.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-077-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-077-web.jpg",
+        caption: "2026-01-18 14.28.10",
+        source: "2026-01-18 14.28.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-078-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-078-web.jpg",
+        caption: "2026-01-18 14.29.06",
+        source: "2026-01-18 14.29.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-079-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-079-web.jpg",
+        caption: "2026-01-18 14.33.00",
+        source: "2026-01-18 14.33.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-080-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-080-web.jpg",
+        caption: "2026-01-18 14.33.39",
+        source: "2026-01-18 14.33.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-081-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-081-web.jpg",
+        caption: "2026-01-18 14.34.37",
+        source: "2026-01-18 14.34.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-082-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-082-web.jpg",
+        caption: "2026-01-18 14.35.36",
+        source: "2026-01-18 14.35.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-083-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-083-web.jpg",
+        caption: "2026-01-18 14.37.01",
+        source: "2026-01-18 14.37.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-084-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-084-web.jpg",
+        caption: "2026-01-18 14.37.55",
+        source: "2026-01-18 14.37.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-085-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-085-web.jpg",
+        caption: "2026-01-18 14.38.22",
+        source: "2026-01-18 14.38.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-086-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-086-web.jpg",
+        caption: "2026-01-18 14.39.42",
+        source: "2026-01-18 14.39.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-01-18-aywaille/photo-087-thumb.jpg",
+        web: "./photos/generated/2026-01-18-aywaille/photo-087-web.jpg",
+        caption: "2026-01-18 14.41.14",
+        source: "2026-01-18 14.41.14.jpg"
+      }
+    ]
   },
   {
     id: "2026-02-01-spa",
@@ -536,7 +12062,284 @@ window.GENERATED_RUNS = [
     color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-01-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-001-web.jpg",
+        caption: "2026-01-31 20.26.35",
+        source: "2026-01-31 20.26.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-002-web.jpg",
+        lat: 50.497613,
+        lon: 5.884581,
+        caption: "2026-02-01 07.46.08",
+        source: "2026-02-01 07.46.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-003-web.jpg",
+        lat: 50.496843,
+        lon: 5.886721,
+        caption: "2026-02-01 07.51.13",
+        source: "2026-02-01 07.51.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-004-web.jpg",
+        lat: 50.496842,
+        lon: 5.886715,
+        caption: "2026-02-01 07.56.55",
+        source: "2026-02-01 07.56.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-005-web.jpg",
+        lat: 50.496899,
+        lon: 5.886967,
+        caption: "2026-02-01 07.57.37",
+        source: "2026-02-01 07.57.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-006-web.jpg",
+        lat: 50.496911,
+        lon: 5.887019,
+        caption: "2026-02-01 07.57.56",
+        source: "2026-02-01 07.57.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-007-web.jpg",
+        lat: 50.492593,
+        lon: 5.871098,
+        caption: "2026-02-01 08.18.50",
+        source: "2026-02-01 08.18.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-008-web.jpg",
+        lat: 50.493771,
+        lon: 5.864578,
+        caption: "2026-02-01 08.26.02-1",
+        source: "2026-02-01 08.26.02-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-009-web.jpg",
+        lat: 50.493771,
+        lon: 5.864578,
+        caption: "2026-02-01 08.26.15",
+        source: "2026-02-01 08.26.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-010-web.jpg",
+        lat: 50.494794,
+        lon: 5.858792,
+        caption: "2026-02-01 08.31.12",
+        source: "2026-02-01 08.31.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-011-web.jpg",
+        lat: 50.497861,
+        lon: 5.859001,
+        caption: "2026-02-01 08.35.30",
+        source: "2026-02-01 08.35.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-012-web.jpg",
+        lat: 50.497950,
+        lon: 5.858312,
+        caption: "2026-02-01 08.36.10",
+        source: "2026-02-01 08.36.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-013-web.jpg",
+        lat: 50.497856,
+        lon: 5.855375,
+        caption: "2026-02-01 08.38.25",
+        source: "2026-02-01 08.38.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-014-web.jpg",
+        lat: 50.498136,
+        lon: 5.847511,
+        caption: "2026-02-01 08.43.34",
+        source: "2026-02-01 08.43.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-015-web.jpg",
+        lat: 50.502227,
+        lon: 5.848032,
+        caption: "2026-02-01 08.46.53",
+        source: "2026-02-01 08.46.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-016-web.jpg",
+        lat: 50.506683,
+        lon: 5.834524,
+        caption: "2026-02-01 08.57.19",
+        source: "2026-02-01 08.57.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-017-web.jpg",
+        lat: 50.507874,
+        lon: 5.829222,
+        caption: "2026-02-01 09.00.10",
+        source: "2026-02-01 09.00.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-018-web.jpg",
+        lat: 50.508363,
+        lon: 5.826971,
+        caption: "2026-02-01 09.01.41",
+        source: "2026-02-01 09.01.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-019-web.jpg",
+        lat: 50.513172,
+        lon: 5.825042,
+        caption: "2026-02-01 09.05.59",
+        source: "2026-02-01 09.05.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-020-web.jpg",
+        lat: 50.514038,
+        lon: 5.822141,
+        caption: "2026-02-01 09.07.45",
+        source: "2026-02-01 09.07.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-021-web.jpg",
+        lat: 50.516348,
+        lon: 5.821842,
+        caption: "2026-02-01 09.10.05",
+        source: "2026-02-01 09.10.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-022-web.jpg",
+        lat: 50.518369,
+        lon: 5.826724,
+        caption: "2026-02-01 09.14.31",
+        source: "2026-02-01 09.14.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-023-web.jpg",
+        lat: 50.517063,
+        lon: 5.829370,
+        caption: "2026-02-01 09.19.55",
+        source: "2026-02-01 09.19.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-024-web.jpg",
+        lat: 50.517434,
+        lon: 5.830055,
+        caption: "2026-02-01 09.20.48",
+        source: "2026-02-01 09.20.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-025-web.jpg",
+        lat: 50.518608,
+        lon: 5.834459,
+        caption: "2026-02-01 09.23.39",
+        source: "2026-02-01 09.23.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-026-web.jpg",
+        lat: 50.518608,
+        lon: 5.834459,
+        caption: "2026-02-01 09.23.52",
+        source: "2026-02-01 09.23.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-027-web.jpg",
+        lat: 50.516562,
+        lon: 5.843149,
+        caption: "2026-02-01 09.30.52",
+        source: "2026-02-01 09.30.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-028-web.jpg",
+        lat: 50.514636,
+        lon: 5.844731,
+        caption: "2026-02-01 09.32.42",
+        source: "2026-02-01 09.32.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-029-web.jpg",
+        lat: 50.507767,
+        lon: 5.891243,
+        caption: "2026-02-01 10.02.52-1",
+        source: "2026-02-01 10.02.52-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-030-web.jpg",
+        lat: 50.502060,
+        lon: 5.888244,
+        caption: "2026-02-01 10.20.48",
+        source: "2026-02-01 10.20.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-031-web.jpg",
+        lat: 50.496844,
+        lon: 5.886710,
+        caption: "2026-02-01 10.32.29",
+        source: "2026-02-01 10.32.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-032-web.jpg",
+        lat: 50.496844,
+        lon: 5.886710,
+        caption: "2026-02-01 10.32.38",
+        source: "2026-02-01 10.32.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-033-web.jpg",
+        lat: 50.496844,
+        lon: 5.886710,
+        caption: "2026-02-01 10.33.10",
+        source: "2026-02-01 10.33.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-034-web.jpg",
+        lat: 50.496844,
+        lon: 5.886712,
+        caption: "2026-02-01 10.35.52",
+        source: "2026-02-01 10.35.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-01-spa/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-02-01-spa/photo-035-web.jpg",
+        caption: "2026-02-01 16.01.54",
+        source: "2026-02-01 16.01.54.jpg"
+      }
+    ]
   },
   {
     id: "2026-02-08-harze-havelange",
@@ -547,7 +12350,264 @@ window.GENERATED_RUNS = [
     color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-08-harze-havelange"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-001-web.jpg",
+        lat: 50.648189,
+        lon: 5.591420,
+        caption: "2026-02-08 07.16.44",
+        source: "2026-02-08 07.16.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-002-web.jpg",
+        lat: 50.437531,
+        lon: 5.702501,
+        caption: "2026-02-08 07.58.24",
+        source: "2026-02-08 07.58.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-003-web.jpg",
+        lat: 50.437278,
+        lon: 5.700975,
+        caption: "2026-02-08 08.02.53",
+        source: "2026-02-08 08.02.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-004-web.jpg",
+        lat: 50.437154,
+        lon: 5.700945,
+        caption: "2026-02-08 08.06.03",
+        source: "2026-02-08 08.06.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-005-web.jpg",
+        lat: 50.444564,
+        lon: 5.718443,
+        caption: "2026-02-08 08.17.25",
+        source: "2026-02-08 08.17.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-006-web.jpg",
+        lat: 50.444564,
+        lon: 5.718443,
+        caption: "2026-02-08 08.17.32",
+        source: "2026-02-08 08.17.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-007-web.jpg",
+        lat: 50.448129,
+        lon: 5.724407,
+        caption: "2026-02-08 08.20.53",
+        source: "2026-02-08 08.20.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-008-web.jpg",
+        lat: 50.442471,
+        lon: 5.735143,
+        caption: "2026-02-08 08.32.48",
+        source: "2026-02-08 08.32.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-009-web.jpg",
+        lat: 50.441900,
+        lon: 5.739753,
+        caption: "2026-02-08 08.36.46",
+        source: "2026-02-08 08.36.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-010-web.jpg",
+        lat: 50.441893,
+        lon: 5.739757,
+        caption: "2026-02-08 08.37.11",
+        source: "2026-02-08 08.37.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-011-web.jpg",
+        lat: 50.442828,
+        lon: 5.743995,
+        caption: "2026-02-08 08.40.43",
+        source: "2026-02-08 08.40.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-012-web.jpg",
+        lat: 50.440880,
+        lon: 5.748151,
+        caption: "2026-02-08 08.43.37",
+        source: "2026-02-08 08.43.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-013-web.jpg",
+        lat: 50.440905,
+        lon: 5.748159,
+        caption: "2026-02-08 08.43.43",
+        source: "2026-02-08 08.43.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-014-web.jpg",
+        lat: 50.440905,
+        lon: 5.748159,
+        caption: "2026-02-08 08.43.48",
+        source: "2026-02-08 08.43.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-015-web.jpg",
+        lat: 50.441972,
+        lon: 5.752469,
+        caption: "2026-02-08 08.49.42",
+        source: "2026-02-08 08.49.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-016-web.jpg",
+        lat: 50.438971,
+        lon: 5.755461,
+        caption: "2026-02-08 08.55.41",
+        source: "2026-02-08 08.55.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-017-web.jpg",
+        lat: 50.435092,
+        lon: 5.772234,
+        caption: "2026-02-08 09.06.23",
+        source: "2026-02-08 09.06.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-018-web.jpg",
+        lat: 50.435092,
+        lon: 5.772234,
+        caption: "2026-02-08 09.06.47",
+        source: "2026-02-08 09.06.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-019-web.jpg",
+        lat: 50.427896,
+        lon: 5.754251,
+        caption: "2026-02-08 09.22.46",
+        source: "2026-02-08 09.22.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-020-web.jpg",
+        lat: 50.427896,
+        lon: 5.754251,
+        caption: "2026-02-08 09.22.54",
+        source: "2026-02-08 09.22.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-021-web.jpg",
+        lat: 50.415952,
+        lon: 5.749955,
+        caption: "2026-02-08 09.47.58",
+        source: "2026-02-08 09.47.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-022-web.jpg",
+        lat: 50.406026,
+        lon: 5.742963,
+        caption: "2026-02-08 10.00.42",
+        source: "2026-02-08 10.00.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-023-web.jpg",
+        lat: 50.408447,
+        lon: 5.726282,
+        caption: "2026-02-08 10.14.40",
+        source: "2026-02-08 10.14.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-024-web.jpg",
+        lat: 50.412752,
+        lon: 5.727853,
+        caption: "2026-02-08 10.20.32",
+        source: "2026-02-08 10.20.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-025-web.jpg",
+        lat: 50.412761,
+        lon: 5.727867,
+        caption: "2026-02-08 10.20.54",
+        source: "2026-02-08 10.20.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-026-web.jpg",
+        lat: 50.415411,
+        lon: 5.719955,
+        caption: "2026-02-08 10.28.37",
+        source: "2026-02-08 10.28.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-027-web.jpg",
+        lat: 50.425250,
+        lon: 5.707213,
+        caption: "2026-02-08 10.39.08",
+        source: "2026-02-08 10.39.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-028-web.jpg",
+        lat: 50.437460,
+        lon: 5.700889,
+        caption: "2026-02-08 10.52.07",
+        source: "2026-02-08 10.52.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-029-web.jpg",
+        lat: 50.437295,
+        lon: 5.700893,
+        caption: "2026-02-08 10.54.38",
+        source: "2026-02-08 10.54.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-030-web.jpg",
+        lat: 50.437293,
+        lon: 5.700908,
+        caption: "2026-02-08 10.55.39",
+        source: "2026-02-08 10.55.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-031-web.jpg",
+        lat: 50.437261,
+        lon: 5.700858,
+        caption: "2026-02-08 11.02.49",
+        source: "2026-02-08 11.02.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-08-harze-havelange/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-02-08-harze-havelange/photo-032-web.jpg",
+        lat: 50.648056,
+        lon: 5.590833,
+        caption: "2026-02-08 17.39.15",
+        source: "2026-02-08 17.39.15.jpg"
+      }
+    ]
   },
   {
     id: "2026-02-15-filot",
@@ -558,7 +12618,304 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-15-filot"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-001-web.jpg",
+        lat: 50.425877,
+        lon: 5.565868,
+        caption: "2026-02-15 08.06.56",
+        source: "2026-02-15 08.06.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-002-web.jpg",
+        lat: 50.425350,
+        lon: 5.568697,
+        caption: "2026-02-15 08.10.25",
+        source: "2026-02-15 08.10.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-003-web.jpg",
+        lat: 50.425350,
+        lon: 5.568697,
+        caption: "2026-02-15 08.10.35",
+        source: "2026-02-15 08.10.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-004-web.jpg",
+        lat: 50.425194,
+        lon: 5.569202,
+        caption: "2026-02-15 08.16.29",
+        source: "2026-02-15 08.16.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-005-web.jpg",
+        lat: 50.425171,
+        lon: 5.569195,
+        caption: "2026-02-15 08.17.07",
+        source: "2026-02-15 08.17.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-006-web.jpg",
+        lat: 50.425000,
+        lon: 5.568889,
+        caption: "2026-02-15 08.17.42",
+        source: "2026-02-15 08.17.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-007-web.jpg",
+        lat: 50.429493,
+        lon: 5.562007,
+        caption: "2026-02-15 08.27.23",
+        source: "2026-02-15 08.27.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-008-web.jpg",
+        lat: 50.429493,
+        lon: 5.562007,
+        caption: "2026-02-15 08.27.38",
+        source: "2026-02-15 08.27.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-009-web.jpg",
+        lat: 50.434408,
+        lon: 5.567500,
+        caption: "2026-02-15 08.37.01",
+        source: "2026-02-15 08.37.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-010-web.jpg",
+        lat: 50.431364,
+        lon: 5.566887,
+        caption: "2026-02-15 08.40.12",
+        source: "2026-02-15 08.40.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-011-web.jpg",
+        lat: 50.431364,
+        lon: 5.566887,
+        caption: "2026-02-15 08.41.07",
+        source: "2026-02-15 08.41.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-012-web.jpg",
+        lat: 50.430982,
+        lon: 5.578748,
+        caption: "2026-02-15 08.51.17",
+        source: "2026-02-15 08.51.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-013-web.jpg",
+        lat: 50.430979,
+        lon: 5.578748,
+        caption: "2026-02-15 08.51.38",
+        source: "2026-02-15 08.51.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-014-web.jpg",
+        lat: 50.430920,
+        lon: 5.600482,
+        caption: "2026-02-15 09.05.14",
+        source: "2026-02-15 09.05.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-015-web.jpg",
+        lat: 50.425913,
+        lon: 5.601243,
+        caption: "2026-02-15 09.09.54",
+        source: "2026-02-15 09.09.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-016-web.jpg",
+        lat: 50.426029,
+        lon: 5.612355,
+        caption: "2026-02-15 09.15.05",
+        source: "2026-02-15 09.15.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-017-web.jpg",
+        lat: 50.431123,
+        lon: 5.610990,
+        caption: "2026-02-15 09.21.41",
+        source: "2026-02-15 09.21.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-018-web.jpg",
+        lat: 50.431189,
+        lon: 5.611074,
+        caption: "2026-02-15 09.22.10",
+        source: "2026-02-15 09.22.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-019-web.jpg",
+        lat: 50.429585,
+        lon: 5.620535,
+        caption: "2026-02-15 09.29.26",
+        source: "2026-02-15 09.29.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-020-web.jpg",
+        lat: 50.429549,
+        lon: 5.620526,
+        caption: "2026-02-15 09.29.40",
+        source: "2026-02-15 09.29.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-021-web.jpg",
+        lat: 50.426259,
+        lon: 5.625770,
+        caption: "2026-02-15 09.33.44",
+        source: "2026-02-15 09.33.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-022-web.jpg",
+        lat: 50.426259,
+        lon: 5.625770,
+        caption: "2026-02-15 09.34.01",
+        source: "2026-02-15 09.34.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-023-web.jpg",
+        lat: 50.419597,
+        lon: 5.617177,
+        caption: "2026-02-15 09.53.54",
+        source: "2026-02-15 09.53.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-024-web.jpg",
+        lat: 50.420545,
+        lon: 5.605373,
+        caption: "2026-02-15 10.02.37",
+        source: "2026-02-15 10.02.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-025-web.jpg",
+        lat: 50.420499,
+        lon: 5.605072,
+        caption: "2026-02-15 10.04.16",
+        source: "2026-02-15 10.04.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-026-web.jpg",
+        lat: 50.420501,
+        lon: 5.605076,
+        caption: "2026-02-15 10.04.25",
+        source: "2026-02-15 10.04.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-027-web.jpg",
+        lat: 50.417751,
+        lon: 5.590292,
+        caption: "2026-02-15 10.15.09",
+        source: "2026-02-15 10.15.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-028-web.jpg",
+        lat: 50.417265,
+        lon: 5.588839,
+        caption: "2026-02-15 10.16.23",
+        source: "2026-02-15 10.16.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-029-web.jpg",
+        lat: 50.416941,
+        lon: 5.584486,
+        caption: "2026-02-15 10.18.58",
+        source: "2026-02-15 10.18.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-030-web.jpg",
+        lat: 50.416941,
+        lon: 5.584486,
+        caption: "2026-02-15 10.19.06",
+        source: "2026-02-15 10.19.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-031-web.jpg",
+        lat: 50.424336,
+        lon: 5.566977,
+        caption: "2026-02-15 10.33.55",
+        source: "2026-02-15 10.33.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-032-web.jpg",
+        lat: 50.425138,
+        lon: 5.569141,
+        caption: "2026-02-15 10.40.51",
+        source: "2026-02-15 10.40.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-033-web.jpg",
+        lat: 50.425138,
+        lon: 5.569137,
+        caption: "2026-02-15 10.41.03",
+        source: "2026-02-15 10.41.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-034-web.jpg",
+        lat: 50.425136,
+        lon: 5.569126,
+        caption: "2026-02-15 10.41.13",
+        source: "2026-02-15 10.41.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-035-web.jpg",
+        lat: 50.425135,
+        lon: 5.569105,
+        caption: "2026-02-15 10.41.26",
+        source: "2026-02-15 10.41.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-036-web.jpg",
+        lat: 50.425126,
+        lon: 5.569121,
+        caption: "2026-02-15 10.45.12",
+        source: "2026-02-15 10.45.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-15-filot/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-02-15-filot/photo-037-web.jpg",
+        lat: -0.000000,
+        lon: -0.000000,
+        caption: "2026-02-15 13.04.19",
+        source: "2026-02-15 13.04.19.jpg"
+      }
+    ]
   },
   {
     id: "2026-02-22-wasseiges",
@@ -569,7 +12926,96 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2026-02-22-wasseiges"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-001-web.jpg",
+        lat: 50.621853,
+        lon: 5.006813,
+        caption: "2026-02-22 08.07.13",
+        source: "2026-02-22 08.07.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-002-web.jpg",
+        lat: 50.621618,
+        lon: 5.004989,
+        caption: "2026-02-22 08.16.33",
+        source: "2026-02-22 08.16.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-003-web.jpg",
+        lat: 50.621618,
+        lon: 5.004989,
+        caption: "2026-02-22 08.16.59",
+        source: "2026-02-22 08.16.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-004-web.jpg",
+        lat: 50.631870,
+        lon: 5.030739,
+        caption: "2026-02-22 09.39.59",
+        source: "2026-02-22 09.39.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-005-web.jpg",
+        lat: 50.621538,
+        lon: 5.004996,
+        caption: "x2026-02-22 09.59.20",
+        source: "x2026-02-22 09.59.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-006-web.jpg",
+        lat: 50.621706,
+        lon: 5.005230,
+        caption: "y2026-02-22 10.18.36",
+        source: "y2026-02-22 10.18.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-007-web.jpg",
+        lat: 50.621713,
+        lon: 5.005235,
+        caption: "z2026-02-22 10.04.59",
+        source: "z2026-02-22 10.04.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-008-web.jpg",
+        lat: 50.621710,
+        lon: 5.005230,
+        caption: "z2026-02-22 10.15.44",
+        source: "z2026-02-22 10.15.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-009-web.jpg",
+        lat: 50.621709,
+        lon: 5.005231,
+        caption: "z2026-02-22 10.17.55",
+        source: "z2026-02-22 10.17.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-010-web.jpg",
+        lat: 50.621713,
+        lon: 5.005234,
+        caption: "z2026-02-22 10.18.14",
+        source: "z2026-02-22 10.18.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-02-22-wasseiges/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-02-22-wasseiges/photo-011-web.jpg",
+        lat: 50.621713,
+        lon: 5.005234,
+        caption: "z2026-02-22 10.18.21",
+        source: "z2026-02-22 10.18.21.jpg"
+      }
+    ]
   },
   {
     id: "2026-03-01-theux-la-reid",
@@ -580,7 +13026,280 @@ window.GENERATED_RUNS = [
     color: "#009E73",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-01-theux-la-reid"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-001-web.jpg",
+        lat: 50.487792,
+        lon: 5.788686,
+        caption: "2026-03-01 07.56.19",
+        source: "2026-03-01 07.56.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-002-web.jpg",
+        lat: 50.488311,
+        lon: 5.790071,
+        caption: "2026-03-01 07.58.39",
+        source: "2026-03-01 07.58.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-003-web.jpg",
+        lat: 50.488072,
+        lon: 5.791054,
+        caption: "2026-03-01 08.05.08",
+        source: "2026-03-01 08.05.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-004-web.jpg",
+        lat: 50.488132,
+        lon: 5.791048,
+        caption: "2026-03-01 08.05.55",
+        source: "2026-03-01 08.05.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-005-web.jpg",
+        lat: 50.488132,
+        lon: 5.791048,
+        caption: "2026-03-01 08.06.01",
+        source: "2026-03-01 08.06.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-006-web.jpg",
+        lat: 50.488148,
+        lon: 5.791145,
+        caption: "2026-03-01 08.07.51",
+        source: "2026-03-01 08.07.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-007-web.jpg",
+        lat: 50.497333,
+        lon: 5.788801,
+        caption: "2026-03-01 08.21.22",
+        source: "2026-03-01 08.21.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-008-web.jpg",
+        lat: 50.499048,
+        lon: 5.788466,
+        caption: "2026-03-01 08.23.00",
+        source: "2026-03-01 08.23.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-009-web.jpg",
+        lat: 50.502773,
+        lon: 5.787856,
+        caption: "2026-03-01 08.26.02",
+        source: "2026-03-01 08.26.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-010-web.jpg",
+        lat: 50.503392,
+        lon: 5.787536,
+        caption: "2026-03-01 08.26.59",
+        source: "2026-03-01 08.26.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-011-web.jpg",
+        lat: 50.514454,
+        lon: 5.785892,
+        caption: "2026-03-01 08.35.24-1",
+        source: "2026-03-01 08.35.24-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-012-web.jpg",
+        lat: 50.525337,
+        lon: 5.788471,
+        caption: "2026-03-01 08.46.13",
+        source: "2026-03-01 08.46.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-013-web.jpg",
+        lat: 50.525910,
+        lon: 5.790787,
+        caption: "2026-03-01 08.48.33",
+        source: "2026-03-01 08.48.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-014-web.jpg",
+        lat: 50.525743,
+        lon: 5.792035,
+        caption: "2026-03-01 08.49.11",
+        source: "2026-03-01 08.49.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-015-web.jpg",
+        lat: 50.525743,
+        lon: 5.792035,
+        caption: "2026-03-01 08.49.27",
+        source: "2026-03-01 08.49.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-016-web.jpg",
+        lat: 50.528423,
+        lon: 5.794516,
+        caption: "2026-03-01 08.51.50",
+        source: "2026-03-01 08.51.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-017-web.jpg",
+        lat: 50.528948,
+        lon: 5.794557,
+        caption: "2026-03-01 08.52.14",
+        source: "2026-03-01 08.52.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-018-web.jpg",
+        lat: 50.529233,
+        lon: 5.794480,
+        caption: "2026-03-01 08.52.40",
+        source: "2026-03-01 08.52.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-019-web.jpg",
+        lat: 50.529612,
+        lon: 5.794452,
+        caption: "2026-03-01 08.53.06",
+        source: "2026-03-01 08.53.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-020-web.jpg",
+        lat: 50.538525,
+        lon: 5.786070,
+        caption: "2026-03-01 09.02.12",
+        source: "2026-03-01 09.02.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-021-web.jpg",
+        lat: 50.538525,
+        lon: 5.786070,
+        caption: "2026-03-01 09.02.29",
+        source: "2026-03-01 09.02.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-022-web.jpg",
+        lat: 50.539718,
+        lon: 5.784012,
+        caption: "2026-03-01 09.04.07",
+        source: "2026-03-01 09.04.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-023-web.jpg",
+        lat: 50.538912,
+        lon: 5.772859,
+        caption: "2026-03-01 09.10.42",
+        source: "2026-03-01 09.10.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-024-web.jpg",
+        lat: 50.515660,
+        lon: 5.736806,
+        caption: "2026-03-01 09.36.51",
+        source: "2026-03-01 09.36.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-025-web.jpg",
+        lat: 50.501835,
+        lon: 5.732481,
+        caption: "2026-03-01 09.50.05",
+        source: "2026-03-01 09.50.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-026-web.jpg",
+        lat: 50.499288,
+        lon: 5.733503,
+        caption: "2026-03-01 09.53.58",
+        source: "2026-03-01 09.53.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-027-web.jpg",
+        lat: 50.495478,
+        lon: 5.739021,
+        caption: "2026-03-01 10.00.58",
+        source: "2026-03-01 10.00.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-028-web.jpg",
+        lat: 50.491198,
+        lon: 5.753955,
+        caption: "2026-03-01 10.12.10",
+        source: "2026-03-01 10.12.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-029-web.jpg",
+        lat: 50.488251,
+        lon: 5.790970,
+        caption: "2026-03-01 10.42.15",
+        source: "2026-03-01 10.42.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-030-web.jpg",
+        lat: 50.488451,
+        lon: 5.790851,
+        caption: "2026-03-01 10.42.23",
+        source: "2026-03-01 10.42.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-031-web.jpg",
+        lat: 50.488455,
+        lon: 5.790881,
+        caption: "2026-03-01 10.45.16",
+        source: "2026-03-01 10.45.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-032-web.jpg",
+        lat: 50.488430,
+        lon: 5.790928,
+        caption: "2026-03-01 10.45.21",
+        source: "2026-03-01 10.45.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-033-web.jpg",
+        lat: 50.488334,
+        lon: 5.790906,
+        caption: "2026-03-01 11.17.39",
+        source: "2026-03-01 11.17.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-01-theux-la-reid/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-03-01-theux-la-reid/photo-034-web.jpg",
+        lat: 50.551511,
+        lon: 5.783699,
+        caption: "20260301_114132",
+        source: "20260301_114132.jpg"
+      }
+    ]
   },
   {
     id: "2026-03-08-oneux-comblain-au-pont",
@@ -591,7 +13310,338 @@ window.GENERATED_RUNS = [
     color: "#CC79A7",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-08-oneux-comblain-au-pont"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-001-web.jpg",
+        lat: 50.472811,
+        lon: 5.595007,
+        caption: "2026-03-08 08.04.11",
+        source: "2026-03-08 08.04.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-002-web.jpg",
+        lat: 50.473342,
+        lon: 5.597087,
+        caption: "2026-03-08 08.07.06",
+        source: "2026-03-08 08.07.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-003-web.jpg",
+        lat: 50.473597,
+        lon: 5.597279,
+        caption: "2026-03-08 08.09.14",
+        source: "2026-03-08 08.09.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-004-web.jpg",
+        lat: 50.473597,
+        lon: 5.597279,
+        caption: "2026-03-08 08.09.19",
+        source: "2026-03-08 08.09.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-005-web.jpg",
+        lat: 50.474924,
+        lon: 5.599093,
+        caption: "2026-03-08 08.14.00",
+        source: "2026-03-08 08.14.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-006-web.jpg",
+        lat: 50.477147,
+        lon: 5.600524,
+        caption: "2026-03-08 08.15.49",
+        source: "2026-03-08 08.15.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-007-web.jpg",
+        lat: 50.481091,
+        lon: 5.603162,
+        caption: "2026-03-08 08.19.40",
+        source: "2026-03-08 08.19.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-008-web.jpg",
+        lat: 50.481619,
+        lon: 5.603929,
+        caption: "2026-03-08 08.20.38",
+        source: "2026-03-08 08.20.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-009-web.jpg",
+        lat: 50.481238,
+        lon: 5.594702,
+        caption: "2026-03-08 08.25.17",
+        source: "2026-03-08 08.25.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-010-web.jpg",
+        lat: 50.481472,
+        lon: 5.591176,
+        caption: "2026-03-08 08.26.57",
+        source: "2026-03-08 08.26.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-011-web.jpg",
+        lat: 50.481695,
+        lon: 5.589668,
+        caption: "2026-03-08 08.28.29",
+        source: "2026-03-08 08.28.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-012-web.jpg",
+        lat: 50.480472,
+        lon: 5.588972,
+        caption: "2026-03-08 08.31.15",
+        source: "2026-03-08 08.31.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-013-web.jpg",
+        lat: 50.478326,
+        lon: 5.589890,
+        caption: "2026-03-08 08.33.25",
+        source: "2026-03-08 08.33.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-014-web.jpg",
+        lat: 50.475722,
+        lon: 5.586743,
+        caption: "2026-03-08 08.36.14",
+        source: "2026-03-08 08.36.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-015-web.jpg",
+        lat: 50.476078,
+        lon: 5.577921,
+        caption: "2026-03-08 08.41.04",
+        source: "2026-03-08 08.41.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-016-web.jpg",
+        lat: 50.475711,
+        lon: 5.576031,
+        caption: "2026-03-08 08.42.32",
+        source: "2026-03-08 08.42.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-017-web.jpg",
+        lat: 50.475637,
+        lon: 5.575670,
+        caption: "2026-03-08 08.43.20",
+        source: "2026-03-08 08.43.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-018-web.jpg",
+        lat: 50.475377,
+        lon: 5.574701,
+        caption: "2026-03-08 08.44.58",
+        source: "2026-03-08 08.44.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-019-web.jpg",
+        lat: 50.476527,
+        lon: 5.574442,
+        caption: "2026-03-08 08.47.44",
+        source: "2026-03-08 08.47.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-020-web.jpg",
+        lat: 50.477843,
+        lon: 5.574924,
+        caption: "2026-03-08 08.49.50",
+        source: "2026-03-08 08.49.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-021-web.jpg",
+        lat: 50.478654,
+        lon: 5.574635,
+        caption: "2026-03-08 08.50.50",
+        source: "2026-03-08 08.50.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-022-web.jpg",
+        lat: 50.484819,
+        lon: 5.568145,
+        caption: "2026-03-08 09.00.02",
+        source: "2026-03-08 09.00.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-023-web.jpg",
+        lat: 50.469279,
+        lon: 5.549096,
+        caption: "2026-03-08 09.21.09",
+        source: "2026-03-08 09.21.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-024-web.jpg",
+        lat: 50.465289,
+        lon: 5.529971,
+        caption: "2026-03-08 09.31.22",
+        source: "2026-03-08 09.31.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-025-web.jpg",
+        lat: 50.465286,
+        lon: 5.529968,
+        caption: "2026-03-08 09.31.35",
+        source: "2026-03-08 09.31.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-026-web.jpg",
+        lat: 50.462922,
+        lon: 5.522808,
+        caption: "2026-03-08 09.36.12",
+        source: "2026-03-08 09.36.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-027-web.jpg",
+        lat: 50.462711,
+        lon: 5.520314,
+        caption: "2026-03-08 09.38.45",
+        source: "2026-03-08 09.38.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-028-web.jpg",
+        lat: 50.463530,
+        lon: 5.530101,
+        caption: "2026-03-08 09.47.44",
+        source: "2026-03-08 09.47.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-029-web.jpg",
+        lat: 50.459303,
+        lon: 5.534824,
+        caption: "2026-03-08 09.53.26",
+        source: "2026-03-08 09.53.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-030-web.jpg",
+        lat: 50.461469,
+        lon: 5.542400,
+        caption: "2026-03-08 09.57.54",
+        source: "2026-03-08 09.57.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-031-web.jpg",
+        lat: 50.456585,
+        lon: 5.543108,
+        caption: "2026-03-08 10.02.16",
+        source: "2026-03-08 10.02.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-032-web.jpg",
+        lat: 50.456509,
+        lon: 5.543126,
+        caption: "2026-03-08 10.02.46",
+        source: "2026-03-08 10.02.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-033-web.jpg",
+        lat: 50.454613,
+        lon: 5.566221,
+        caption: "2026-03-08 10.13.06",
+        source: "2026-03-08 10.13.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-034-web.jpg",
+        lat: 50.456224,
+        lon: 5.567061,
+        caption: "2026-03-08 10.15.22",
+        source: "2026-03-08 10.15.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-035-web.jpg",
+        lat: 50.464674,
+        lon: 5.584855,
+        caption: "2026-03-08 10.29.56",
+        source: "2026-03-08 10.29.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-036-web.jpg",
+        lat: 50.473559,
+        lon: 5.597438,
+        caption: "2026-03-08 10.39.48",
+        source: "2026-03-08 10.39.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-037-web.jpg",
+        caption: "2026-03-08 10.47.52",
+        source: "2026-03-08 10.47.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-038-web.jpg",
+        lat: 50.473557,
+        lon: 5.597353,
+        caption: "2026-03-08 10.51.17",
+        source: "2026-03-08 10.51.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-039-web.jpg",
+        lat: 50.473557,
+        lon: 5.597353,
+        caption: "2026-03-08 10.51.45",
+        source: "2026-03-08 10.51.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-040-web.jpg",
+        lat: 50.473354,
+        lon: 5.597139,
+        caption: "2026-03-08 10.52.10",
+        source: "2026-03-08 10.52.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-041-web.jpg",
+        caption: "2026-03-08 13.01.11",
+        source: "2026-03-08 13.01.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-03-08-oneux-comblain-au-pont/photo-042-web.jpg",
+        caption: "carte",
+        source: "carte.jpg"
+      }
+    ]
   },
   {
     id: "2026-03-15-bolland",
@@ -602,7 +13652,428 @@ window.GENERATED_RUNS = [
     color: "#E69F00",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-15-bolland"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-001-web.jpg",
+        lat: 50.661479,
+        lon: 5.758338,
+        caption: "2026-03-15 07.54.52",
+        source: "2026-03-15 07.54.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-002-web.jpg",
+        lat: 50.661715,
+        lon: 5.758273,
+        caption: "2026-03-15 07.55.31",
+        source: "2026-03-15 07.55.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-003-web.jpg",
+        lat: 50.661840,
+        lon: 5.758889,
+        caption: "2026-03-15 07.58.26-1",
+        source: "2026-03-15 07.58.26-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-004-web.jpg",
+        lat: 50.661794,
+        lon: 5.758933,
+        caption: "2026-03-15 07.59.12",
+        source: "2026-03-15 07.59.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-005-web.jpg",
+        lat: 50.661584,
+        lon: 5.758869,
+        caption: "2026-03-15 08.04.34",
+        source: "2026-03-15 08.04.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-006-web.jpg",
+        lat: 50.661734,
+        lon: 5.759039,
+        caption: "2026-03-15 08.07.25",
+        source: "2026-03-15 08.07.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-007-web.jpg",
+        lat: 50.661264,
+        lon: 5.766402,
+        caption: "2026-03-15 08.12.06",
+        source: "2026-03-15 08.12.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-008-web.jpg",
+        lat: 50.660941,
+        lon: 5.771268,
+        caption: "2026-03-15 08.16.32",
+        source: "2026-03-15 08.16.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-009-web.jpg",
+        lat: 50.656261,
+        lon: 5.769515,
+        caption: "2026-03-15 08.21.36",
+        source: "2026-03-15 08.21.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-010-web.jpg",
+        lat: 50.655816,
+        lon: 5.768235,
+        caption: "2026-03-15 08.22.35",
+        source: "2026-03-15 08.22.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-011-web.jpg",
+        lat: 50.650783,
+        lon: 5.763986,
+        caption: "2026-03-15 08.29.18",
+        source: "2026-03-15 08.29.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-012-web.jpg",
+        lat: 50.653933,
+        lon: 5.772796,
+        caption: "2026-03-15 08.36.16",
+        source: "2026-03-15 08.36.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-013-web.jpg",
+        lat: 50.655920,
+        lon: 5.773620,
+        caption: "2026-03-15 08.37.57",
+        source: "2026-03-15 08.37.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-014-web.jpg",
+        lat: 50.655920,
+        lon: 5.773620,
+        caption: "2026-03-15 08.38.08",
+        source: "2026-03-15 08.38.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-015-web.jpg",
+        lat: 50.658849,
+        lon: 5.777421,
+        caption: "2026-03-15 08.40.58",
+        source: "2026-03-15 08.40.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-016-web.jpg",
+        lat: 50.658139,
+        lon: 5.778856,
+        caption: "2026-03-15 08.42.03",
+        source: "2026-03-15 08.42.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-017-web.jpg",
+        lat: 50.657267,
+        lon: 5.780258,
+        caption: "2026-03-15 08.43.22",
+        source: "2026-03-15 08.43.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-018-web.jpg",
+        lat: 50.655155,
+        lon: 5.784296,
+        caption: "2026-03-15 08.47.26",
+        source: "2026-03-15 08.47.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-019-web.jpg",
+        lat: 50.660645,
+        lon: 5.782180,
+        caption: "2026-03-15 08.54.43",
+        source: "2026-03-15 08.54.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-020-web.jpg",
+        lat: 50.660739,
+        lon: 5.781869,
+        caption: "2026-03-15 08.55.09",
+        source: "2026-03-15 08.55.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-021-web.jpg",
+        lat: 50.662277,
+        lon: 5.779353,
+        caption: "2026-03-15 08.57.10",
+        source: "2026-03-15 08.57.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-022-web.jpg",
+        lat: 50.665081,
+        lon: 5.760098,
+        caption: "2026-03-15 09.05.37",
+        source: "2026-03-15 09.05.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-023-web.jpg",
+        lat: 50.664506,
+        lon: 5.746819,
+        caption: "2026-03-15 09.11.35",
+        source: "2026-03-15 09.11.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-024-web.jpg",
+        lat: 50.665292,
+        lon: 5.735591,
+        caption: "2026-03-15 09.16.02",
+        source: "2026-03-15 09.16.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-025-web.jpg",
+        lat: 50.665292,
+        lon: 5.735591,
+        caption: "2026-03-15 09.16.25",
+        source: "2026-03-15 09.16.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-026-web.jpg",
+        lat: 50.665292,
+        lon: 5.735591,
+        caption: "2026-03-15 09.16.27",
+        source: "2026-03-15 09.16.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-027-web.jpg",
+        lat: 50.660242,
+        lon: 5.723086,
+        caption: "2026-03-15 09.28.39",
+        source: "2026-03-15 09.28.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-028-web.jpg",
+        lat: 50.660394,
+        lon: 5.725515,
+        caption: "2026-03-15 09.30.39",
+        source: "2026-03-15 09.30.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-029-web.jpg",
+        lat: 50.654487,
+        lon: 5.726676,
+        caption: "2026-03-15 09.36.38",
+        source: "2026-03-15 09.36.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-030-web.jpg",
+        lat: 50.645697,
+        lon: 5.726101,
+        caption: "2026-03-15 09.46.26",
+        source: "2026-03-15 09.46.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-031-web.jpg",
+        lat: 50.645697,
+        lon: 5.726101,
+        caption: "2026-03-15 09.46.32",
+        source: "2026-03-15 09.46.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-032-web.jpg",
+        lat: 50.650431,
+        lon: 5.729837,
+        caption: "2026-03-15 09.52.10",
+        source: "2026-03-15 09.52.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-033-web.jpg",
+        lat: 50.650431,
+        lon: 5.729837,
+        caption: "2026-03-15 09.52.36",
+        source: "2026-03-15 09.52.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-034-web.jpg",
+        lat: 50.653476,
+        lon: 5.736145,
+        caption: "2026-03-15 09.57.29",
+        source: "2026-03-15 09.57.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-035-web.jpg",
+        lat: 50.652859,
+        lon: 5.736677,
+        caption: "2026-03-15 09.58.36",
+        source: "2026-03-15 09.58.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-036-web.jpg",
+        lat: 50.652859,
+        lon: 5.736677,
+        caption: "2026-03-15 09.58.47",
+        source: "2026-03-15 09.58.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-037-web.jpg",
+        lat: 50.648922,
+        lon: 5.735680,
+        caption: "2026-03-15 10.02.42",
+        source: "2026-03-15 10.02.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-038-web.jpg",
+        lat: 50.649075,
+        lon: 5.745310,
+        caption: "2026-03-15 10.10.38",
+        source: "2026-03-15 10.10.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-039-web.jpg",
+        lat: 50.649075,
+        lon: 5.745310,
+        caption: "2026-03-15 10.10.51",
+        source: "2026-03-15 10.10.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-040-web.jpg",
+        lat: 50.651125,
+        lon: 5.748955,
+        caption: "2026-03-15 10.12.59",
+        source: "2026-03-15 10.12.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-041-web.jpg",
+        lat: 50.661288,
+        lon: 5.748956,
+        caption: "2026-03-15 10.23.05",
+        source: "2026-03-15 10.23.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-042-web.jpg",
+        lat: 50.662567,
+        lon: 5.749449,
+        caption: "2026-03-15 10.24.49-1",
+        source: "2026-03-15 10.24.49-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-043-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-043-web.jpg",
+        lat: 50.661901,
+        lon: 5.759095,
+        caption: "2026-03-15 10.32.25",
+        source: "2026-03-15 10.32.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-044-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-044-web.jpg",
+        lat: 50.661755,
+        lon: 5.758981,
+        caption: "2026-03-15 10.32.54",
+        source: "2026-03-15 10.32.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-045-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-045-web.jpg",
+        lat: 50.661536,
+        lon: 5.759072,
+        caption: "2026-03-15 10.33.28",
+        source: "2026-03-15 10.33.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-046-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-046-web.jpg",
+        lat: 50.661545,
+        lon: 5.759045,
+        caption: "2026-03-15 10.34.15",
+        source: "2026-03-15 10.34.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-047-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-047-web.jpg",
+        lat: 50.661536,
+        lon: 5.758996,
+        caption: "2026-03-15 10.37.13",
+        source: "2026-03-15 10.37.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-048-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-048-web.jpg",
+        lat: 50.661517,
+        lon: 5.759037,
+        caption: "2026-03-15 10.43.49",
+        source: "2026-03-15 10.43.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-049-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-049-web.jpg",
+        lat: 50.661517,
+        lon: 5.759037,
+        caption: "2026-03-15 10.44.08",
+        source: "2026-03-15 10.44.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-050-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-050-web.jpg",
+        lat: 50.661511,
+        lon: 5.759097,
+        caption: "2026-03-15 11.09.14",
+        source: "2026-03-15 11.09.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-051-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-051-web.jpg",
+        lat: 50.661511,
+        lon: 5.759097,
+        caption: "2026-03-15 11.09.54",
+        source: "2026-03-15 11.09.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-052-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-052-web.jpg",
+        caption: "2026-03-15 18.04.31",
+        source: "2026-03-15 18.04.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-15-bolland/photo-053-thumb.jpg",
+        web: "./photos/generated/2026-03-15-bolland/photo-053-web.jpg",
+        caption: "2026-03-15 18.06.49",
+        source: "2026-03-15 18.06.49.jpg"
+      }
+    ]
   },
   {
     id: "2026-03-22-trooz",
@@ -613,7 +14084,108 @@ window.GENERATED_RUNS = [
     color: "#7F3C8D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-22-trooz"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-001-web.jpg",
+        lat: 50.570238,
+        lon: 5.690181,
+        caption: "2026-03-22 07.58.22",
+        source: "2026-03-22 07.58.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-002-web.jpg",
+        lat: 50.571007,
+        lon: 5.690415,
+        caption: "2026-03-22 08.01.19",
+        source: "2026-03-22 08.01.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-003-web.jpg",
+        lat: 50.571007,
+        lon: 5.690415,
+        caption: "2026-03-22 08.01.41",
+        source: "2026-03-22 08.01.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-004-web.jpg",
+        lat: 50.582056,
+        lon: 5.662512,
+        caption: "2026-03-22 09.11.11",
+        source: "2026-03-22 09.11.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-005-web.jpg",
+        lat: 50.580653,
+        lon: 5.665345,
+        caption: "2026-03-22 09.13.22",
+        source: "2026-03-22 09.13.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-006-web.jpg",
+        lat: 50.565399,
+        lon: 5.644029,
+        caption: "2026-03-22 09.46.32",
+        source: "2026-03-22 09.46.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-007-web.jpg",
+        lat: 50.571083,
+        lon: 5.690446,
+        caption: "2026-03-22 10.18.04",
+        source: "2026-03-22 10.18.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-008-web.jpg",
+        lat: 50.571222,
+        lon: 5.690620,
+        caption: "2026-03-22 10.23.34",
+        source: "2026-03-22 10.23.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-009-web.jpg",
+        lat: 50.571222,
+        lon: 5.690620,
+        caption: "2026-03-22 10.23.48",
+        source: "2026-03-22 10.23.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-010-web.jpg",
+        lat: 50.571217,
+        lon: 5.690666,
+        caption: "2026-03-22 10.26.27",
+        source: "2026-03-22 10.26.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-011-web.jpg",
+        caption: "2026-03-22 10.28.46",
+        source: "2026-03-22 10.28.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-012-web.jpg",
+        lat: 50.571205,
+        lon: 5.690661,
+        caption: "2026-03-22 10.28.47",
+        source: "2026-03-22 10.28.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-22-trooz/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-03-22-trooz/photo-013-web.jpg",
+        caption: "2026-03-22 10.39.21",
+        source: "2026-03-22 10.39.21.jpg"
+      }
+    ]
   },
   {
     id: "2026-03-29-sart-lez-spa",
@@ -624,7 +14196,344 @@ window.GENERATED_RUNS = [
     color: "#3969AC",
     visible: false,
     track: window.GENERATED_TRACKS["2026-03-29-sart-lez-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-001-web.jpg",
+        lat: 50.517076,
+        lon: 5.931843,
+        caption: "2026-03-29 08.04.07",
+        source: "2026-03-29 08.04.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-002-web.jpg",
+        lat: 50.517054,
+        lon: 5.931946,
+        caption: "2026-03-29 08.05.13",
+        source: "2026-03-29 08.05.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-003-web.jpg",
+        lat: 50.517054,
+        lon: 5.931946,
+        caption: "2026-03-29 08.05.29",
+        source: "2026-03-29 08.05.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-004-web.jpg",
+        lat: 50.517620,
+        lon: 5.932312,
+        caption: "2026-03-29 08.07.12",
+        source: "2026-03-29 08.07.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-005-web.jpg",
+        lat: 50.522369,
+        lon: 5.913982,
+        caption: "2026-03-29 08.29.31-1",
+        source: "2026-03-29 08.29.31-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-006-web.jpg",
+        lat: 50.522803,
+        lon: 5.912710,
+        caption: "2026-03-29 08.30.19",
+        source: "2026-03-29 08.30.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-007-web.jpg",
+        lat: 50.528675,
+        lon: 5.901976,
+        caption: "2026-03-29 08.39.01",
+        source: "2026-03-29 08.39.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-008-web.jpg",
+        lat: 50.528675,
+        lon: 5.901976,
+        caption: "2026-03-29 08.39.48",
+        source: "2026-03-29 08.39.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-009-web.jpg",
+        lat: 50.528676,
+        lon: 5.901964,
+        caption: "2026-03-29 08.40.09-1",
+        source: "2026-03-29 08.40.09-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-010-web.jpg",
+        lat: 50.528681,
+        lon: 5.901997,
+        caption: "2026-03-29 08.40.47",
+        source: "2026-03-29 08.40.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-011-web.jpg",
+        lat: 50.528681,
+        lon: 5.901997,
+        caption: "2026-03-29 08.40.55-1",
+        source: "2026-03-29 08.40.55-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-012-web.jpg",
+        lat: 50.529221,
+        lon: 5.902378,
+        caption: "2026-03-29 08.42.08",
+        source: "2026-03-29 08.42.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-013-web.jpg",
+        lat: 50.529221,
+        lon: 5.902378,
+        caption: "2026-03-29 08.42.16",
+        source: "2026-03-29 08.42.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-014-web.jpg",
+        lat: 50.534585,
+        lon: 5.901867,
+        caption: "2026-03-29 08.47.11",
+        source: "2026-03-29 08.47.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-015-web.jpg",
+        lat: 50.539394,
+        lon: 5.891871,
+        caption: "2026-03-29 08.56.30",
+        source: "2026-03-29 08.56.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-016-web.jpg",
+        lat: 50.533930,
+        lon: 5.892721,
+        caption: "2026-03-29 09.04.43",
+        source: "2026-03-29 09.04.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-017-web.jpg",
+        lat: 50.538132,
+        lon: 5.881772,
+        caption: "2026-03-29 09.19.11",
+        source: "2026-03-29 09.19.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-018-web.jpg",
+        lat: 50.538270,
+        lon: 5.881739,
+        caption: "2026-03-29 09.19.41",
+        source: "2026-03-29 09.19.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-019-web.jpg",
+        lat: 50.540505,
+        lon: 5.885212,
+        caption: "2026-03-29 09.22.49",
+        source: "2026-03-29 09.22.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-020-web.jpg",
+        lat: 50.540904,
+        lon: 5.887227,
+        caption: "2026-03-29 09.24.56",
+        source: "2026-03-29 09.24.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-021-web.jpg",
+        lat: 50.539243,
+        lon: 5.894414,
+        caption: "2026-03-29 09.30.19",
+        source: "2026-03-29 09.30.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-022-web.jpg",
+        lat: 50.539183,
+        lon: 5.898021,
+        caption: "2026-03-29 09.33.02",
+        source: "2026-03-29 09.33.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-023-web.jpg",
+        lat: 50.538744,
+        lon: 5.905536,
+        caption: "2026-03-29 09.39.13",
+        source: "2026-03-29 09.39.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-024-web.jpg",
+        lat: 50.538744,
+        lon: 5.905536,
+        caption: "2026-03-29 09.39.53",
+        source: "2026-03-29 09.39.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-025-web.jpg",
+        lat: 50.537338,
+        lon: 5.908343,
+        caption: "2026-03-29 09.45.24",
+        source: "2026-03-29 09.45.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-026-web.jpg",
+        lat: 50.533925,
+        lon: 5.913135,
+        caption: "2026-03-29 09.52.06",
+        source: "2026-03-29 09.52.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-027-web.jpg",
+        lat: 50.538230,
+        lon: 5.924168,
+        caption: "2026-03-29 10.00.47",
+        source: "2026-03-29 10.00.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-028-web.jpg",
+        lat: 50.534183,
+        lon: 5.927862,
+        caption: "2026-03-29 10.05.07",
+        source: "2026-03-29 10.05.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-029-web.jpg",
+        lat: 50.532662,
+        lon: 5.923911,
+        caption: "2026-03-29 10.11.37",
+        source: "2026-03-29 10.11.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-030-web.jpg",
+        lat: 50.532692,
+        lon: 5.923895,
+        caption: "2026-03-29 10.11.46",
+        source: "2026-03-29 10.11.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-031-web.jpg",
+        lat: 50.532692,
+        lon: 5.923895,
+        caption: "2026-03-29 10.12.38",
+        source: "2026-03-29 10.12.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-032-web.jpg",
+        lat: 50.532113,
+        lon: 5.922489,
+        caption: "2026-03-29 10.13.45",
+        source: "2026-03-29 10.13.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-033-web.jpg",
+        lat: 50.526677,
+        lon: 5.923470,
+        caption: "2026-03-29 10.20.36",
+        source: "2026-03-29 10.20.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-034-web.jpg",
+        lat: 50.526677,
+        lon: 5.923470,
+        caption: "2026-03-29 10.20.45",
+        source: "2026-03-29 10.20.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-035-web.jpg",
+        lat: 50.526677,
+        lon: 5.923470,
+        caption: "2026-03-29 10.21.05",
+        source: "2026-03-29 10.21.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-036-web.jpg",
+        lat: 50.517539,
+        lon: 5.932174,
+        caption: "2026-03-29 10.35.38",
+        source: "2026-03-29 10.35.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-037-web.jpg",
+        lat: 50.517650,
+        lon: 5.932376,
+        caption: "2026-03-29 10.37.53",
+        source: "2026-03-29 10.37.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-038-web.jpg",
+        lat: 50.517650,
+        lon: 5.932376,
+        caption: "2026-03-29 10.38.35",
+        source: "2026-03-29 10.38.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-039-web.jpg",
+        lat: 50.517650,
+        lon: 5.932376,
+        caption: "2026-03-29 10.38.45",
+        source: "2026-03-29 10.38.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-040-web.jpg",
+        lat: 50.517775,
+        lon: 5.932336,
+        caption: "2026-03-29 10.42.56",
+        source: "2026-03-29 10.42.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-041-web.jpg",
+        lat: 50.517783,
+        lon: 5.932342,
+        caption: "2026-03-29 10.50.13",
+        source: "2026-03-29 10.50.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-03-29-sart-lez-spa/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-03-29-sart-lez-spa/photo-042-web.jpg",
+        lat: 50.517783,
+        lon: 5.932342,
+        caption: "2026-03-29 10.50.29",
+        source: "2026-03-29 10.50.29.jpg"
+      }
+    ]
   },
   {
     id: "2026-04-04-olne",
@@ -635,7 +14544,244 @@ window.GENERATED_RUNS = [
     color: "#E73F74",
     visible: false,
     track: window.GENERATED_TRACKS["2026-04-04-olne"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-001-web.jpg",
+        lat: 50.590614,
+        lon: 5.748719,
+        caption: "2026-04-05 08.06.03",
+        source: "2026-04-05 08.06.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-002-web.jpg",
+        lat: 50.590039,
+        lon: 5.749751,
+        caption: "2026-04-05 08.13.41",
+        source: "2026-04-05 08.13.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-003-web.jpg",
+        lat: 50.590059,
+        lon: 5.749777,
+        caption: "2026-04-05 08.16.03",
+        source: "2026-04-05 08.16.03.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-004-web.jpg",
+        lat: 50.590019,
+        lon: 5.749864,
+        caption: "2026-04-05 08.16.46",
+        source: "2026-04-05 08.16.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-005-web.jpg",
+        lat: 50.593443,
+        lon: 5.722493,
+        caption: "2026-04-05 08.33.40",
+        source: "2026-04-05 08.33.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-006-web.jpg",
+        lat: 50.589155,
+        lon: 5.708911,
+        caption: "2026-04-05 08.42.12",
+        source: "2026-04-05 08.42.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-007-web.jpg",
+        lat: 50.584384,
+        lon: 5.704631,
+        caption: "2026-04-05 08.47.08",
+        source: "2026-04-05 08.47.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-008-web.jpg",
+        lat: 50.584184,
+        lon: 5.701236,
+        caption: "2026-04-05 08.49.02",
+        source: "2026-04-05 08.49.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-009-web.jpg",
+        lat: 50.580542,
+        lon: 5.688667,
+        caption: "2026-04-05 09.12.17",
+        source: "2026-04-05 09.12.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-010-web.jpg",
+        lat: 50.580542,
+        lon: 5.688667,
+        caption: "2026-04-05 09.12.29",
+        source: "2026-04-05 09.12.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-011-web.jpg",
+        lat: 50.583808,
+        lon: 5.691833,
+        caption: "2026-04-05 09.15.08",
+        source: "2026-04-05 09.15.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-012-web.jpg",
+        lat: 50.583650,
+        lon: 5.698304,
+        caption: "2026-04-05 09.18.27",
+        source: "2026-04-05 09.18.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-013-web.jpg",
+        lat: 50.575091,
+        lon: 5.694180,
+        caption: "2026-04-05 09.25.00",
+        source: "2026-04-05 09.25.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-014-web.jpg",
+        lat: 50.569819,
+        lon: 5.712890,
+        caption: "2026-04-05 09.46.42",
+        source: "2026-04-05 09.46.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-015-web.jpg",
+        lat: 50.569819,
+        lon: 5.712890,
+        caption: "2026-04-05 09.46.45",
+        source: "2026-04-05 09.46.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-016-web.jpg",
+        lat: 50.571456,
+        lon: 5.716448,
+        caption: "2026-04-05 09.49.19",
+        source: "2026-04-05 09.49.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-017-web.jpg",
+        lat: 50.570799,
+        lon: 5.721158,
+        caption: "2026-04-05 09.51.39",
+        source: "2026-04-05 09.51.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-018-web.jpg",
+        lat: 50.573524,
+        lon: 5.734731,
+        caption: "2026-04-05 10.00.14",
+        source: "2026-04-05 10.00.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-019-web.jpg",
+        lat: 50.576565,
+        lon: 5.734510,
+        caption: "2026-04-05 10.03.28",
+        source: "2026-04-05 10.03.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-020-web.jpg",
+        lat: 50.576549,
+        lon: 5.734528,
+        caption: "2026-04-05 10.03.45",
+        source: "2026-04-05 10.03.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-021-web.jpg",
+        lat: 50.576689,
+        lon: 5.736776,
+        caption: "2026-04-05 10.05.27",
+        source: "2026-04-05 10.05.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-022-web.jpg",
+        lat: 50.577866,
+        lon: 5.738450,
+        caption: "2026-04-05 10.06.48",
+        source: "2026-04-05 10.06.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-023-web.jpg",
+        lat: 50.590007,
+        lon: 5.749865,
+        caption: "2026-04-05 10.25.51",
+        source: "2026-04-05 10.25.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-024-web.jpg",
+        lat: 50.590070,
+        lon: 5.749817,
+        caption: "2026-04-05 10.30.27",
+        source: "2026-04-05 10.30.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-025-web.jpg",
+        lat: 50.590063,
+        lon: 5.749803,
+        caption: "2026-04-05 10.32.31",
+        source: "2026-04-05 10.32.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-026-web.jpg",
+        lat: 50.590029,
+        lon: 5.749762,
+        caption: "2026-04-05 10.40.34",
+        source: "2026-04-05 10.40.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-027-web.jpg",
+        lat: 50.590029,
+        lon: 5.749762,
+        caption: "2026-04-05 10.40.38",
+        source: "2026-04-05 10.40.38.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-028-web.jpg",
+        lat: 50.590029,
+        lon: 5.749762,
+        caption: "2026-04-05 10.40.42",
+        source: "2026-04-05 10.40.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-029-web.jpg",
+        caption: "2026-04-05 12.38.54",
+        source: "2026-04-05 12.38.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-04-olne/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-04-04-olne/photo-030-web.jpg",
+        caption: "2026-04-05 16.19.59",
+        source: "2026-04-05 16.19.59.jpg"
+      }
+    ]
   },
   {
     id: "2026-04-19-lanaye",
@@ -646,7 +14792,700 @@ window.GENERATED_RUNS = [
     color: "#A6761D",
     visible: false,
     track: window.GENERATED_TRACKS["2026-04-19-lanaye"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-001-web.jpg",
+        lat: 50.780637,
+        lon: 5.694804,
+        caption: "2026-04-19 08.08.30",
+        source: "2026-04-19 08.08.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-002-web.jpg",
+        caption: "2026-04-19 08.09.16-1",
+        source: "2026-04-19 08.09.16-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-003-web.jpg",
+        caption: "2026-04-19 08.09.16-2",
+        source: "2026-04-19 08.09.16-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-004-web.jpg",
+        caption: "2026-04-19 08.15.56",
+        source: "2026-04-19 08.15.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-005-web.jpg",
+        lat: 50.781895,
+        lon: 5.693730,
+        caption: "2026-04-19 08.21.33",
+        source: "2026-04-19 08.21.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-006-web.jpg",
+        lat: 50.781624,
+        lon: 5.694452,
+        caption: "2026-04-19 08.24.05",
+        source: "2026-04-19 08.24.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-007-web.jpg",
+        lat: 50.781624,
+        lon: 5.694452,
+        caption: "2026-04-19 08.24.22",
+        source: "2026-04-19 08.24.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-008-web.jpg",
+        lat: 50.781624,
+        lon: 5.694452,
+        caption: "2026-04-19 08.24.52",
+        source: "2026-04-19 08.24.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-009-web.jpg",
+        lat: 50.783362,
+        lon: 5.691007,
+        caption: "2026-04-19 08.31.10",
+        source: "2026-04-19 08.31.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-010-web.jpg",
+        lat: 50.780614,
+        lon: 5.682782,
+        caption: "2026-04-19 08.36.51",
+        source: "2026-04-19 08.36.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-011-web.jpg",
+        lat: 50.780068,
+        lon: 5.682229,
+        caption: "2026-04-19 08.37.58",
+        source: "2026-04-19 08.37.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-012-web.jpg",
+        lat: 50.779032,
+        lon: 5.680828,
+        caption: "2026-04-19 08.40.57",
+        source: "2026-04-19 08.40.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-013-web.jpg",
+        lat: 50.778379,
+        lon: 5.680127,
+        caption: "2026-04-19 08.43.29",
+        source: "2026-04-19 08.43.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-014-web.jpg",
+        lat: 50.778379,
+        lon: 5.680127,
+        caption: "2026-04-19 08.43.33",
+        source: "2026-04-19 08.43.33.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-015-web.jpg",
+        caption: "2026-04-19 08.50.51",
+        source: "2026-04-19 08.50.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-016-web.jpg",
+        caption: "2026-04-19 08.58.40",
+        source: "2026-04-19 08.58.40.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-017-web.jpg",
+        lat: 50.770920,
+        lon: 5.670107,
+        caption: "2026-04-19 08.59.59-2",
+        source: "2026-04-19 08.59.59-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-018-web.jpg",
+        lat: 50.768563,
+        lon: 5.667381,
+        caption: "2026-04-19 09.02.47",
+        source: "2026-04-19 09.02.47.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-019-web.jpg",
+        lat: 50.769559,
+        lon: 5.667426,
+        caption: "2026-04-19 09.04.41",
+        source: "2026-04-19 09.04.41.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-020-web.jpg",
+        lat: 50.770948,
+        lon: 5.668037,
+        caption: "2026-04-19 09.07.06",
+        source: "2026-04-19 09.07.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-021-web.jpg",
+        lat: 50.767800,
+        lon: 5.649736,
+        caption: "2026-04-19 09.27.21",
+        source: "2026-04-19 09.27.21.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-022-web.jpg",
+        lat: 50.767800,
+        lon: 5.649736,
+        caption: "2026-04-19 09.27.49",
+        source: "2026-04-19 09.27.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-023-web.jpg",
+        lat: 50.770750,
+        lon: 5.647152,
+        caption: "2026-04-19 09.31.52",
+        source: "2026-04-19 09.31.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-024-web.jpg",
+        lat: 50.770753,
+        lon: 5.647145,
+        caption: "2026-04-19 09.32.14",
+        source: "2026-04-19 09.32.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-025-web.jpg",
+        lat: 50.770779,
+        lon: 5.647121,
+        caption: "2026-04-19 09.32.52",
+        source: "2026-04-19 09.32.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-026-web.jpg",
+        caption: "2026-04-19 09.35.41-1",
+        source: "2026-04-19 09.35.41-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-027-web.jpg",
+        lat: 50.773742,
+        lon: 5.641311,
+        caption: "2026-04-19 09.36.48",
+        source: "2026-04-19 09.36.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-028-web.jpg",
+        caption: "2026-04-19 09.37.15",
+        source: "2026-04-19 09.37.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-029-web.jpg",
+        lat: 50.774460,
+        lon: 5.641328,
+        caption: "2026-04-19 09.38.00",
+        source: "2026-04-19 09.38.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-030-web.jpg",
+        lat: 50.775061,
+        lon: 5.641446,
+        caption: "2026-04-19 09.38.58",
+        source: "2026-04-19 09.38.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-031-web.jpg",
+        lat: 50.775150,
+        lon: 5.642232,
+        caption: "2026-04-19 09.39.52",
+        source: "2026-04-19 09.39.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-032-web.jpg",
+        lat: 50.775227,
+        lon: 5.642699,
+        caption: "2026-04-19 09.40.11",
+        source: "2026-04-19 09.40.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-033-web.jpg",
+        lat: 50.775317,
+        lon: 5.643084,
+        caption: "2026-04-19 09.41.19",
+        source: "2026-04-19 09.41.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-034-web.jpg",
+        caption: "2026-04-19 09.44.43",
+        source: "2026-04-19 09.44.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-035-web.jpg",
+        lat: 50.776553,
+        lon: 5.645635,
+        caption: "2026-04-19 09.45.19",
+        source: "2026-04-19 09.45.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-036-web.jpg",
+        lat: 50.776553,
+        lon: 5.645635,
+        caption: "2026-04-19 09.45.39",
+        source: "2026-04-19 09.45.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-037-web.jpg",
+        lat: 50.776381,
+        lon: 5.649109,
+        caption: "2026-04-19 09.47.26",
+        source: "2026-04-19 09.47.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-038-web.jpg",
+        lat: 50.776381,
+        lon: 5.649109,
+        caption: "2026-04-19 09.47.53",
+        source: "2026-04-19 09.47.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-039-web.jpg",
+        lat: 50.776263,
+        lon: 5.649602,
+        caption: "2026-04-19 09.49.54",
+        source: "2026-04-19 09.49.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-040-web.jpg",
+        caption: "2026-04-19 09.50.01-1",
+        source: "2026-04-19 09.50.01-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-041-web.jpg",
+        caption: "2026-04-19 09.50.01-2",
+        source: "2026-04-19 09.50.01-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-042-web.jpg",
+        caption: "2026-04-19 09.50.01",
+        source: "2026-04-19 09.50.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-043-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-043-web.jpg",
+        lat: 50.776292,
+        lon: 5.649653,
+        caption: "2026-04-19 09.50.52",
+        source: "2026-04-19 09.50.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-044-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-044-web.jpg",
+        lat: 50.776236,
+        lon: 5.649820,
+        caption: "2026-04-19 09.52.56",
+        source: "2026-04-19 09.52.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-045-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-045-web.jpg",
+        lat: 50.776228,
+        lon: 5.650046,
+        caption: "2026-04-19 09.53.56",
+        source: "2026-04-19 09.53.56.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-046-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-046-web.jpg",
+        lat: 50.780501,
+        lon: 5.659668,
+        caption: "2026-04-19 10.01.05",
+        source: "2026-04-19 10.01.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-047-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-047-web.jpg",
+        lat: 50.780446,
+        lon: 5.662820,
+        caption: "2026-04-19 10.03.58",
+        source: "2026-04-19 10.03.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-048-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-048-web.jpg",
+        caption: "2026-04-19 10.04.12-1",
+        source: "2026-04-19 10.04.12-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-049-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-049-web.jpg",
+        lat: 50.781594,
+        lon: 5.665861,
+        caption: "2026-04-19 10.06.55",
+        source: "2026-04-19 10.06.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-050-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-050-web.jpg",
+        lat: 50.781912,
+        lon: 5.665904,
+        caption: "2026-04-19 10.08.27",
+        source: "2026-04-19 10.08.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-051-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-051-web.jpg",
+        caption: "2026-04-19 10.10.10",
+        source: "2026-04-19 10.10.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-052-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-052-web.jpg",
+        lat: 50.783795,
+        lon: 5.670775,
+        caption: "2026-04-19 10.11.46",
+        source: "2026-04-19 10.11.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-053-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-053-web.jpg",
+        caption: "2026-04-19 10.13.12",
+        source: "2026-04-19 10.13.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-054-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-054-web.jpg",
+        caption: "2026-04-19 10.14.25-1",
+        source: "2026-04-19 10.14.25-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-055-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-055-web.jpg",
+        caption: "2026-04-19 10.14.25",
+        source: "2026-04-19 10.14.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-056-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-056-web.jpg",
+        lat: 50.787874,
+        lon: 5.670257,
+        caption: "2026-04-19 10.16.09",
+        source: "2026-04-19 10.16.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-057-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-057-web.jpg",
+        lat: 50.787861,
+        lon: 5.670245,
+        caption: "2026-04-19 10.16.36",
+        source: "2026-04-19 10.16.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-058-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-058-web.jpg",
+        lat: 50.792743,
+        lon: 5.668722,
+        caption: "2026-04-19 10.20.42-1",
+        source: "2026-04-19 10.20.42-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-059-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-059-web.jpg",
+        lat: 50.792743,
+        lon: 5.668722,
+        caption: "2026-04-19 10.20.55",
+        source: "2026-04-19 10.20.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-060-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-060-web.jpg",
+        lat: 50.792743,
+        lon: 5.668722,
+        caption: "2026-04-19 10.21.17",
+        source: "2026-04-19 10.21.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-061-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-061-web.jpg",
+        lat: 50.792748,
+        lon: 5.668723,
+        caption: "2026-04-19 10.21.22-1",
+        source: "2026-04-19 10.21.22-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-062-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-062-web.jpg",
+        lat: 50.792817,
+        lon: 5.668664,
+        caption: "2026-04-19 10.21.58",
+        source: "2026-04-19 10.21.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-063-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-063-web.jpg",
+        caption: "2026-04-19 10.24.55-1",
+        source: "2026-04-19 10.24.55-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-064-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-064-web.jpg",
+        caption: "2026-04-19 10.24.55",
+        source: "2026-04-19 10.24.55.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-065-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-065-web.jpg",
+        lat: 50.796750,
+        lon: 5.673071,
+        caption: "2026-04-19 10.27.15",
+        source: "2026-04-19 10.27.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-066-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-066-web.jpg",
+        lat: 50.796749,
+        lon: 5.673084,
+        caption: "2026-04-19 10.27.48",
+        source: "2026-04-19 10.27.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-067-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-067-web.jpg",
+        caption: "2026-04-19 10.28.36",
+        source: "2026-04-19 10.28.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-068-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-068-web.jpg",
+        lat: 50.796530,
+        lon: 5.673980,
+        caption: "2026-04-19 10.29.39",
+        source: "2026-04-19 10.29.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-069-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-069-web.jpg",
+        caption: "2026-04-19 10.33.29-1",
+        source: "2026-04-19 10.33.29-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-070-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-070-web.jpg",
+        caption: "2026-04-19 10.33.29",
+        source: "2026-04-19 10.33.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-071-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-071-web.jpg",
+        caption: "2026-04-19 10.43.19",
+        source: "2026-04-19 10.43.19.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-072-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-072-web.jpg",
+        caption: "2026-04-19 10.45.53",
+        source: "2026-04-19 10.45.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-073-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-073-web.jpg",
+        lat: 50.793225,
+        lon: 5.686587,
+        caption: "2026-04-19 10.49.54",
+        source: "2026-04-19 10.49.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-074-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-074-web.jpg",
+        lat: 50.793225,
+        lon: 5.686587,
+        caption: "2026-04-19 10.50.18",
+        source: "2026-04-19 10.50.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-075-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-075-web.jpg",
+        caption: "2026-04-19 10.50.42-1",
+        source: "2026-04-19 10.50.42-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-076-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-076-web.jpg",
+        caption: "2026-04-19 10.50.42-2",
+        source: "2026-04-19 10.50.42-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-077-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-077-web.jpg",
+        caption: "2026-04-19 10.50.42",
+        source: "2026-04-19 10.50.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-078-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-078-web.jpg",
+        caption: "2026-04-19 10.56.10",
+        source: "2026-04-19 10.56.10.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-079-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-079-web.jpg",
+        caption: "2026-04-19 10.57.28",
+        source: "2026-04-19 10.57.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-080-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-080-web.jpg",
+        caption: "2026-04-19 10.58.50-2",
+        source: "2026-04-19 10.58.50-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-081-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-081-web.jpg",
+        lat: 50.789363,
+        lon: 5.691365,
+        caption: "2026-04-19 11.05.52",
+        source: "2026-04-19 11.05.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-082-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-082-web.jpg",
+        caption: "2026-04-19 11.08.31",
+        source: "2026-04-19 11.08.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-083-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-083-web.jpg",
+        caption: "2026-04-19 11.12.18",
+        source: "2026-04-19 11.12.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-084-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-084-web.jpg",
+        caption: "2026-04-19 11.13.15",
+        source: "2026-04-19 11.13.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-085-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-085-web.jpg",
+        lat: 50.788626,
+        lon: 5.695501,
+        caption: "2026-04-19 11.13.51",
+        source: "2026-04-19 11.13.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-086-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-086-web.jpg",
+        caption: "2026-04-19 11.15.24",
+        source: "2026-04-19 11.15.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-087-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-087-web.jpg",
+        caption: "2026-04-19 11.15.46-2",
+        source: "2026-04-19 11.15.46-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-088-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-088-web.jpg",
+        caption: "2026-04-19 11.15.46",
+        source: "2026-04-19 11.15.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-089-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-089-web.jpg",
+        lat: 50.785173,
+        lon: 5.696883,
+        caption: "2026-04-19 11.17.15",
+        source: "2026-04-19 11.17.15.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-090-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-090-web.jpg",
+        caption: "2026-04-19 11.27.59",
+        source: "2026-04-19 11.27.59.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-091-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-091-web.jpg",
+        caption: "2026-04-19 11.29.07-2",
+        source: "2026-04-19 11.29.07-2.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-092-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-092-web.jpg",
+        caption: "2026-04-19 11.29.07",
+        source: "2026-04-19 11.29.07.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-093-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-093-web.jpg",
+        lat: 50.781795,
+        lon: 5.693530,
+        caption: "2026-04-19 11.30.00",
+        source: "2026-04-19 11.30.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-094-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-094-web.jpg",
+        lat: 50.781676,
+        lon: 5.693672,
+        caption: "2026-04-19 11.33.17",
+        source: "2026-04-19 11.33.17.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-095-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-095-web.jpg",
+        lat: 50.648056,
+        lon: 5.590833,
+        caption: "2026-04-19 14.48.37",
+        source: "2026-04-19 14.48.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-19-lanaye/photo-096-thumb.jpg",
+        web: "./photos/generated/2026-04-19-lanaye/photo-096-web.jpg",
+        lat: 50.648056,
+        lon: 5.591111,
+        caption: "2026-04-19 14.49.08",
+        source: "2026-04-19 14.49.08.jpg"
+      }
+    ]
   },
   {
     id: "2026-04-26-charneux",
@@ -657,7 +15496,280 @@ window.GENERATED_RUNS = [
     color: "#666666",
     visible: false,
     track: window.GENERATED_TRACKS["2026-04-26-charneux"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-001-web.jpg",
+        lat: 50.670062,
+        lon: 5.800166,
+        caption: "2026-04-26 08.03.54",
+        source: "2026-04-26 08.03.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-002-web.jpg",
+        lat: 50.670373,
+        lon: 5.802527,
+        caption: "2026-04-26 08.09.14",
+        source: "2026-04-26 08.09.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-003-web.jpg",
+        lat: 50.670370,
+        lon: 5.802496,
+        caption: "2026-04-26 08.10.43",
+        source: "2026-04-26 08.10.43.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-004-web.jpg",
+        lat: 50.670402,
+        lon: 5.802479,
+        caption: "2026-04-26 08.11.32",
+        source: "2026-04-26 08.11.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-005-web.jpg",
+        lat: 50.693303,
+        lon: 5.781304,
+        caption: "2026-04-26 08.41.08",
+        source: "2026-04-26 08.41.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-006-web.jpg",
+        lat: 50.695819,
+        lon: 5.770627,
+        caption: "2026-04-26 08.46.25",
+        source: "2026-04-26 08.46.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-007-web.jpg",
+        lat: 50.696013,
+        lon: 5.768068,
+        caption: "2026-04-26 08.47.51",
+        source: "2026-04-26 08.47.51.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-008-web.jpg",
+        lat: 50.697081,
+        lon: 5.765301,
+        caption: "2026-04-26 08.49.23",
+        source: "2026-04-26 08.49.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-009-web.jpg",
+        lat: 50.697075,
+        lon: 5.765304,
+        caption: "2026-04-26 08.49.57",
+        source: "2026-04-26 08.49.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-010-web.jpg",
+        lat: 50.697075,
+        lon: 5.765304,
+        caption: "2026-04-26 08.50.09",
+        source: "2026-04-26 08.50.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-011-web.jpg",
+        lat: 50.710418,
+        lon: 5.756071,
+        caption: "2026-04-26 09.02.16",
+        source: "2026-04-26 09.02.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-012-web.jpg",
+        lat: 50.711410,
+        lon: 5.753895,
+        caption: "2026-04-26 09.03.46",
+        source: "2026-04-26 09.03.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-013-web.jpg",
+        lat: 50.716994,
+        lon: 5.755157,
+        caption: "2026-04-26 09.10.26",
+        source: "2026-04-26 09.10.26.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-014-web.jpg",
+        lat: 50.718421,
+        lon: 5.755273,
+        caption: "2026-04-26 09.11.37",
+        source: "2026-04-26 09.11.37.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-015-web.jpg",
+        lat: 50.720429,
+        lon: 5.756887,
+        caption: "2026-04-26 09.13.42",
+        source: "2026-04-26 09.13.42.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-016-web.jpg",
+        lat: 50.719179,
+        lon: 5.761433,
+        caption: "2026-04-26 09.16.11",
+        source: "2026-04-26 09.16.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-017-web.jpg",
+        lat: 50.716768,
+        lon: 5.764307,
+        caption: "2026-04-26 09.20.05",
+        source: "2026-04-26 09.20.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-018-web.jpg",
+        lat: 50.704562,
+        lon: 5.777288,
+        caption: "2026-04-26 09.45.23",
+        source: "2026-04-26 09.45.23.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-019-web.jpg",
+        lat: 50.704562,
+        lon: 5.777288,
+        caption: "2026-04-26 09.46.08-1",
+        source: "2026-04-26 09.46.08-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-020-web.jpg",
+        lat: 50.703916,
+        lon: 5.777461,
+        caption: "2026-04-26 09.47.16",
+        source: "2026-04-26 09.47.16.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-021-web.jpg",
+        lat: 50.699179,
+        lon: 5.788270,
+        caption: "2026-04-26 09.54.09",
+        source: "2026-04-26 09.54.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-022-web.jpg",
+        lat: 50.699214,
+        lon: 5.788848,
+        caption: "2026-04-26 09.54.45",
+        source: "2026-04-26 09.54.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-023-web.jpg",
+        lat: 50.698274,
+        lon: 5.802505,
+        caption: "2026-04-26 10.03.04",
+        source: "2026-04-26 10.03.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-024-web.jpg",
+        lat: 50.693614,
+        lon: 5.808450,
+        caption: "2026-04-26 10.13.57",
+        source: "2026-04-26 10.13.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-025-web.jpg",
+        lat: 50.686234,
+        lon: 5.812185,
+        caption: "2026-04-26 10.22.57",
+        source: "2026-04-26 10.22.57.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-026-web.jpg",
+        lat: 50.680550,
+        lon: 5.811056,
+        caption: "2026-04-26 10.29.14",
+        source: "2026-04-26 10.29.14.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-027-web.jpg",
+        lat: 50.677905,
+        lon: 5.811085,
+        caption: "2026-04-26 10.31.08",
+        source: "2026-04-26 10.31.08.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-028-web.jpg",
+        lat: 50.669952,
+        lon: 5.804892,
+        caption: "2026-04-26 10.38.01",
+        source: "2026-04-26 10.38.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-029-web.jpg",
+        lat: 50.669951,
+        lon: 5.804896,
+        caption: "2026-04-26 10.38.13",
+        source: "2026-04-26 10.38.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-030-web.jpg",
+        lat: 50.670565,
+        lon: 5.802871,
+        caption: "2026-04-26 10.43.33-1",
+        source: "2026-04-26 10.43.33-1.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-031-web.jpg",
+        lat: 50.670561,
+        lon: 5.802839,
+        caption: "2026-04-26 10.49.13",
+        source: "2026-04-26 10.49.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-032-web.jpg",
+        lat: 50.670561,
+        lon: 5.802839,
+        caption: "2026-04-26 10.49.22",
+        source: "2026-04-26 10.49.22.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-033-web.jpg",
+        lat: 50.670567,
+        lon: 5.802827,
+        caption: "2026-04-26 10.49.35",
+        source: "2026-04-26 10.49.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-04-26-charneux/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-04-26-charneux/photo-034-web.jpg",
+        lat: 50.670568,
+        lon: 5.802845,
+        caption: "2026-04-26 10.50.17",
+        source: "2026-04-26 10.50.17.jpg"
+      }
+    ]
   },
   {
     id: "2026-05-03-wanne",
@@ -668,7 +15780,396 @@ window.GENERATED_RUNS = [
     color: "#D55E00",
     visible: false,
     track: window.GENERATED_TRACKS["2026-05-03-wanne"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-001-web.jpg",
+        lat: 50.352404,
+        lon: 5.920091,
+        caption: "2026-05-03 08.47.24",
+        source: "2026-05-03 08.47.24.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-002-web.jpg",
+        lat: 50.352404,
+        lon: 5.920091,
+        caption: "2026-05-03 08.48.00",
+        source: "2026-05-03 08.48.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-003-web.jpg",
+        lat: 50.353363,
+        lon: 5.919772,
+        caption: "2026-05-03 08.49.00",
+        source: "2026-05-03 08.49.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-004-web.jpg",
+        caption: "2026-05-03 08.49.00",
+        source: "2026-05-03 08.49.00.png"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-005-web.jpg",
+        lat: 50.354103,
+        lon: 5.907650,
+        caption: "2026-05-03 08.55.12",
+        source: "2026-05-03 08.55.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-006-web.jpg",
+        lat: 50.358055,
+        lon: 5.902954,
+        caption: "2026-05-03 09.00.00",
+        source: "2026-05-03 09.00.00.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-007-web.jpg",
+        lat: 50.360971,
+        lon: 5.902476,
+        caption: "2026-05-03 09.02.28",
+        source: "2026-05-03 09.02.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-008-web.jpg",
+        lat: 50.364488,
+        lon: 5.903223,
+        caption: "2026-05-03 09.05.05",
+        source: "2026-05-03 09.05.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-009-web.jpg",
+        lat: 50.367958,
+        lon: 5.914684,
+        caption: "2026-05-03 09.11.09",
+        source: "2026-05-03 09.11.09.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-010-web.jpg",
+        lat: 50.369271,
+        lon: 5.920432,
+        caption: "2026-05-03 09.15.35",
+        source: "2026-05-03 09.15.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-011-web.jpg",
+        lat: 50.369271,
+        lon: 5.920432,
+        caption: "2026-05-03 09.15.49",
+        source: "2026-05-03 09.15.49.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-012-web.jpg",
+        lat: 50.366430,
+        lon: 5.928988,
+        caption: "2026-05-03 09.24.12",
+        source: "2026-05-03 09.24.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-013-web.jpg",
+        lat: 50.368463,
+        lon: 5.928218,
+        caption: "2026-05-03 09.26.45",
+        source: "2026-05-03 09.26.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-014-web.jpg",
+        lat: 50.372059,
+        lon: 5.925097,
+        caption: "2026-05-03 09.30.05",
+        source: "2026-05-03 09.30.05.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-015-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-015-web.jpg",
+        lat: 50.372059,
+        lon: 5.925097,
+        caption: "2026-05-03 09.30.13",
+        source: "2026-05-03 09.30.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-016-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-016-web.jpg",
+        lat: 50.373851,
+        lon: 5.930115,
+        caption: "2026-05-03 09.35.25",
+        source: "2026-05-03 09.35.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-017-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-017-web.jpg",
+        lat: 50.373883,
+        lon: 5.930721,
+        caption: "2026-05-03 09.36.12",
+        source: "2026-05-03 09.36.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-018-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-018-web.jpg",
+        lat: 50.372875,
+        lon: 5.943790,
+        caption: "2026-05-03 09.44.13",
+        source: "2026-05-03 09.44.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-019-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-019-web.jpg",
+        lat: 50.372875,
+        lon: 5.943790,
+        caption: "2026-05-03 09.44.32",
+        source: "2026-05-03 09.44.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-020-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-020-web.jpg",
+        lat: 50.372875,
+        lon: 5.943790,
+        caption: "2026-05-03 09.44.39",
+        source: "2026-05-03 09.44.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-021-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-021-web.jpg",
+        lat: 50.367662,
+        lon: 5.951931,
+        caption: "2026-05-03 09.52.31",
+        source: "2026-05-03 09.52.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-022-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-022-web.jpg",
+        lat: 50.366006,
+        lon: 5.960090,
+        caption: "2026-05-03 09.57.52",
+        source: "2026-05-03 09.57.52.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-023-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-023-web.jpg",
+        lat: 50.364557,
+        lon: 5.968543,
+        caption: "2026-05-03 10.02.34",
+        source: "2026-05-03 10.02.34.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-024-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-024-web.jpg",
+        lat: 50.359493,
+        lon: 5.976505,
+        caption: "2026-05-03 10.09.45",
+        source: "2026-05-03 10.09.45.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-025-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-025-web.jpg",
+        lat: 50.358676,
+        lon: 5.975893,
+        caption: "2026-05-03 10.11.04",
+        source: "2026-05-03 10.11.04.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-026-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-026-web.jpg",
+        caption: "2026-05-03 10.11.04",
+        source: "2026-05-03 10.11.04.png"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-027-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-027-web.jpg",
+        lat: 50.358676,
+        lon: 5.975893,
+        caption: "2026-05-03 10.11.29",
+        source: "2026-05-03 10.11.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-028-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-028-web.jpg",
+        lat: 50.352335,
+        lon: 5.966884,
+        caption: "2026-05-03 10.20.36",
+        source: "2026-05-03 10.20.36.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-029-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-029-web.jpg",
+        lat: 50.352305,
+        lon: 5.966273,
+        caption: "2026-05-03 10.21.12",
+        source: "2026-05-03 10.21.12.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-030-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-030-web.jpg",
+        lat: 50.352100,
+        lon: 5.965481,
+        caption: "2026-05-03 10.22.31",
+        source: "2026-05-03 10.22.31.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-031-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-031-web.jpg",
+        lat: 50.352100,
+        lon: 5.965481,
+        caption: "2026-05-03 10.22.54",
+        source: "2026-05-03 10.22.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-032-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-032-web.jpg",
+        lat: 50.342372,
+        lon: 5.961744,
+        caption: "2026-05-03 10.30.18",
+        source: "2026-05-03 10.30.18.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-033-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-033-web.jpg",
+        lat: 50.342526,
+        lon: 5.961332,
+        caption: "2026-05-03 10.31.20",
+        source: "2026-05-03 10.31.20.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-034-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-034-web.jpg",
+        lat: 50.347251,
+        lon: 5.928980,
+        caption: "2026-05-03 10.50.48",
+        source: "2026-05-03 10.50.48.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-035-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-035-web.jpg",
+        lat: 50.347251,
+        lon: 5.928980,
+        caption: "2026-05-03 10.51.06",
+        source: "2026-05-03 10.51.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-036-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-036-web.jpg",
+        lat: 50.347251,
+        lon: 5.928980,
+        caption: "2026-05-03 10.51.11",
+        source: "2026-05-03 10.51.11.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-037-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-037-web.jpg",
+        lat: 50.347381,
+        lon: 5.928647,
+        caption: "2026-05-03 10.51.54",
+        source: "2026-05-03 10.51.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-038-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-038-web.jpg",
+        lat: 50.345270,
+        lon: 5.921081,
+        caption: "2026-05-03 10.56.39",
+        source: "2026-05-03 10.56.39.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-039-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-039-web.jpg",
+        lat: 50.346655,
+        lon: 5.918888,
+        caption: "2026-05-03 11.07.01",
+        source: "2026-05-03 11.07.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-040-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-040-web.jpg",
+        lat: 50.347098,
+        lon: 5.917808,
+        caption: "2026-05-03 11.07.44",
+        source: "2026-05-03 11.07.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-041-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-041-web.jpg",
+        lat: 50.355435,
+        lon: 5.920494,
+        caption: "2026-05-03 11.19.58",
+        source: "2026-05-03 11.19.58.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-042-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-042-web.jpg",
+        lat: 50.355882,
+        lon: 5.920511,
+        caption: "2026-05-03 11.20.27",
+        source: "2026-05-03 11.20.27.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-043-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-043-web.jpg",
+        lat: 50.355954,
+        lon: 5.920730,
+        caption: "2026-05-03 11.25.01",
+        source: "2026-05-03 11.25.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-044-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-044-web.jpg",
+        lat: 50.355948,
+        lon: 5.920728,
+        caption: "2026-05-03 11.25.13",
+        source: "2026-05-03 11.25.13.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-045-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-045-web.jpg",
+        lat: 50.355942,
+        lon: 5.920721,
+        caption: "2026-05-03 11.25.32",
+        source: "2026-05-03 11.25.32.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-046-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-046-web.jpg",
+        lat: 50.355446,
+        lon: 5.920319,
+        caption: "2026-05-03 11.43.30",
+        source: "2026-05-03 11.43.30.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-047-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-047-web.jpg",
+        lat: 50.355446,
+        lon: 5.920319,
+        caption: "2026-05-03 11.43.54",
+        source: "2026-05-03 11.43.54.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-048-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-048-web.jpg",
+        lat: 50.355446,
+        lon: 5.920319,
+        caption: "2026-05-03 11.44.06",
+        source: "2026-05-03 11.44.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-03-wanne/photo-049-thumb.jpg",
+        web: "./photos/generated/2026-05-03-wanne/photo-049-web.jpg",
+        lat: 50.648056,
+        lon: 5.591111,
+        caption: "2026-05-03 18.13.58",
+        source: "2026-05-03 18.13.58.jpg"
+      }
+    ]
   },
   {
     id: "2026-05-10-spa",
@@ -679,6 +16180,117 @@ window.GENERATED_RUNS = [
     color: "#0072B2",
     visible: false,
     track: window.GENERATED_TRACKS["2026-05-10-spa"],
-    photos: []
+    photos: [
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-001-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-001-web.jpg",
+        lat: 50.485497,
+        lon: 5.864807,
+        caption: "2026-05-10 08.06.25",
+        source: "2026-05-10 08.06.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-002-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-002-web.jpg",
+        caption: "2026-05-10 08.06.25",
+        source: "2026-05-10 08.06.25.png"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-003-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-003-web.jpg",
+        lat: 50.485497,
+        lon: 5.864807,
+        caption: "2026-05-10 08.06.29",
+        source: "2026-05-10 08.06.29.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-004-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-004-web.jpg",
+        lat: 50.485502,
+        lon: 5.864813,
+        caption: "2026-05-10 08.08.25",
+        source: "2026-05-10 08.08.25.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-005-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-005-web.jpg",
+        lat: 50.485502,
+        lon: 5.864813,
+        caption: "2026-05-10 08.08.28",
+        source: "2026-05-10 08.08.28.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-006-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-006-web.jpg",
+        lat: 50.485502,
+        lon: 5.864813,
+        caption: "2026-05-10 08.08.35",
+        source: "2026-05-10 08.08.35.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-007-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-007-web.jpg",
+        lat: 50.485503,
+        lon: 5.864789,
+        caption: "2026-05-10 10.12.02",
+        source: "2026-05-10 10.12.02.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-008-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-008-web.jpg",
+        lat: 50.485355,
+        lon: 5.864908,
+        caption: "2026-05-10 10.13.44",
+        source: "2026-05-10 10.13.44.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-009-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-009-web.jpg",
+        lat: 50.485365,
+        lon: 5.864896,
+        caption: "2026-05-10 10.13.50",
+        source: "2026-05-10 10.13.50.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-010-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-010-web.jpg",
+        lat: 50.485502,
+        lon: 5.864791,
+        caption: "2026-05-10 10.17.53",
+        source: "2026-05-10 10.17.53.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-011-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-011-web.jpg",
+        lat: 50.485485,
+        lon: 5.864799,
+        caption: "2026-05-10 10.18.01",
+        source: "2026-05-10 10.18.01.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-012-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-012-web.jpg",
+        lat: 50.485438,
+        lon: 5.864770,
+        caption: "2026-05-10 10.24.46",
+        source: "2026-05-10 10.24.46.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-013-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-013-web.jpg",
+        lat: 50.485395,
+        lon: 5.864780,
+        caption: "2026-05-10 10.25.06",
+        source: "2026-05-10 10.25.06.jpg"
+      },
+      {
+        thumb: "./photos/generated/2026-05-10-spa/photo-014-thumb.jpg",
+        web: "./photos/generated/2026-05-10-spa/photo-014-web.jpg",
+        lat: 50.491060,
+        lon: 5.863108,
+        caption: "2026-05-10 11.37.41",
+        source: "2026-05-10 11.37.41.jpg"
+      }
+    ]
   }
 ];
