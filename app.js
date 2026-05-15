@@ -397,6 +397,7 @@
     }
 
     updateRunsCount(filteredRuns.length);
+    updateRunsTotal(filteredRuns);
     applySelectionStyles();
   }
 
@@ -591,6 +592,27 @@
     count.textContent = visibleCount + " / " + allRuns.length + " courses visibles sur la carte";
   }
 
+  function updateRunsTotal(filteredRuns) {
+    var total = document.getElementById("runs-total");
+    var distanceKm = 0;
+    var elevationGainM = 0;
+
+    if (!total) {
+      return;
+    }
+
+    filteredRuns.forEach(function (run) {
+      if (isFiniteNumber(run.distanceKm)) {
+        distanceKm += run.distanceKm;
+      }
+      if (isFiniteNumber(run.elevationGainM)) {
+        elevationGainM += run.elevationGainM;
+      }
+    });
+
+    total.textContent = "Total affich\u00e9 : " + formatDistance(distanceKm) + " \u00b7 D+ " + formatElevation(Math.round(elevationGainM));
+  }
+
   function createRunListItem(run) {
     var item = document.createElement("button");
     item.type = "button";
@@ -605,6 +627,9 @@
 
     item.addEventListener("click", function () {
       selectRun(run.id);
+    });
+    item.addEventListener("dblclick", function () {
+      selectAndCenterRun(run.id);
     });
 
     var color = document.createElement("span");
