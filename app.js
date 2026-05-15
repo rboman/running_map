@@ -101,6 +101,7 @@
 
     L.tileLayer(tileLayer.url, tileLayer.options).addTo(map);
     createMapPanes();
+    map.getContainer().addEventListener("click", handlePhotoPopupLightboxClick);
   }
 
   function createMapPanes() {
@@ -151,7 +152,7 @@
         title: photo.caption
       });
 
-      marker.bindPopup(createPhotoPopup(photo));
+      marker.bindPopup(createPhotoPopup(photo, photoId));
       marker.on("click", function () {
         selectPhotoFromMarker(photoId);
       });
@@ -1364,20 +1365,30 @@
     ].join("");
   }
 
-  function createPhotoPopup(photo) {
+  function createPhotoPopup(photo, photoId) {
     var caption = photo.caption || photo.source || "Photo";
     var webPath = photo.web || photo.thumb;
     var popupClass = "photo-popup photo-popup--" + getPhotoOrientation(photo);
 
     return [
       '<div class="' + popupClass + '">',
-      '<a href="' + escapeHtml(webPath) + '" target="_blank" rel="noopener">',
-      '<img src="' + escapeHtml(webPath) + '" alt="' + escapeHtml(caption) + '">',
-      "</a>",
+      '<img class="photo-popup__image" src="' + escapeHtml(webPath) + '" alt="' + escapeHtml(caption) + '">',
       "<p>" + escapeHtml(caption) + "</p>",
-      '<a href="' + escapeHtml(webPath) + '" target="_blank" rel="noopener">Ouvrir l\u2019image</a>',
+      '<button class="photo-popup__lightbox-button" type="button" data-photo-lightbox-id="' + escapeHtml(photoId) + '">Voir en grand</button>',
       "</div>"
     ].join("");
+  }
+
+  function handlePhotoPopupLightboxClick(event) {
+    var target = event.target;
+
+    if (!target || !target.classList || !target.classList.contains("photo-popup__lightbox-button")) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    openPhotoLightbox(target.getAttribute("data-photo-lightbox-id"));
   }
 
   function getPhotoOrientation(photo) {

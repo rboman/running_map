@@ -427,6 +427,23 @@ select {
   height: 310px;
 }
 
+.photo-popup__lightbox-button {
+  width: 100%;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 7px 9px;
+  background: var(--button-bg);
+  color: #124f54;
+  cursor: pointer;
+  font: inherit;
+}
+
+.photo-popup__lightbox-button:hover,
+.photo-popup__lightbox-button:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
 .photo-lightbox {
   --photo-lightbox-edge-gap: 4vh;
   --photo-lightbox-footer-gap: 14px;
