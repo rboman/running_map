@@ -248,6 +248,11 @@ select {
   outline: none;
 }
 
+.photo-thumb-button--no-gps {
+  border-color: #c83f3f;
+  box-shadow: inset 0 0 0 3px rgba(200, 63, 63, 0.75);
+}
+
 .photo-thumb-button.is-active {
   border-color: #b99b00;
   box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.35);

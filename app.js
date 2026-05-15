@@ -73,6 +73,7 @@
     applySiteTitle();
 
     allRuns = getConfiguredRuns();
+    showAllRunsByDefault();
 
     initMap();
     createRunLayers();
@@ -725,6 +726,9 @@
 
     button.type = "button";
     button.className = "photo-thumb-button";
+    if (!hasPhotoCoordinates(photo)) {
+      button.className += " photo-thumb-button--no-gps";
+    }
     if (photoId === activePhotoId) {
       button.className += " is-active";
     }
@@ -1035,6 +1039,12 @@
     var generatedRuns = config.sidebar.showGeneratedRuns ? window.GENERATED_RUNS || [] : [];
 
     return [].concat(demoRuns).concat(generatedRuns);
+  }
+
+  function showAllRunsByDefault() {
+    allRuns.forEach(function (run) {
+      run.visible = true;
+    });
   }
 
   function getConfiguredTileLayer() {
