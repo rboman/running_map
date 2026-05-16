@@ -73,7 +73,7 @@
   var lightboxPhotoIndex = -1;
   var isLightboxOpen = false;
   var photoThumbClickTimer = null;
-  var mobileMediaQuery = window.matchMedia ? window.matchMedia("(max-width: 900px)") : null;
+  var isMobileLayoutActive = false;
 
   window.addEventListener("load", startApp);
 
@@ -87,6 +87,7 @@
 
     allRuns = getConfiguredRuns();
 
+    updateLayoutMode(false);
     initMap();
     createRunLayers();
     createAllRunStartMarkersLayer(allRuns);
@@ -544,14 +545,8 @@
     });
 
     document.addEventListener("keydown", handleMobilePanelKeydown);
-
-    if (mobileMediaQuery) {
-      if (typeof mobileMediaQuery.addEventListener === "function") {
-        mobileMediaQuery.addEventListener("change", handleMobileLayoutChange);
-      } else if (typeof mobileMediaQuery.addListener === "function") {
-        mobileMediaQuery.addListener(handleMobileLayoutChange);
-      }
-    }
+    window.addEventListener("resize", handleLayoutResize);
+    window.addEventListener("orientationchange", handleLayoutResize);
 
     updateDesktopPanelState(false);
     updatePanelControls();
@@ -652,22 +647,55 @@
     closeMobilePanels();
   }
 
-  function handleMobileLayoutChange() {
-    if (!isMobileLayout()) {
-      closeMobilePanels();
-    } else {
-      updatePanelControls();
+  function handleLayoutResize() {
+    updateLayoutMode(true);
+  }
+
+  function updateLayoutMode(shouldInvalidateMap) {
+    var body = document.body;
+    var shell = document.querySelector(".app-shell");
+    var nextIsMobileLayout = shouldUseMobileLayout();
+    var layoutChanged = nextIsMobileLayout !== isMobileLayoutActive;
+
+    isMobileLayoutActive = nextIsMobileLayout;
+
+    if (body) {
+      body.classList.toggle("mobile-layout", isMobileLayoutActive);
     }
 
-    invalidateMapSoon();
+    if (shell) {
+      shell.classList.toggle("mobile-layout", isMobileLayoutActive);
+
+      if (!isMobileLayoutActive) {
+        shell.classList.remove("left-panel-open");
+        shell.classList.remove("right-panel-open");
+      }
+    }
+
+    updatePanelControls();
+
+    if (shouldInvalidateMap && (layoutChanged || map)) {
+      invalidateMapSoon();
+    }
   }
 
   function isMobileLayout() {
-    if (mobileMediaQuery) {
-      return mobileMediaQuery.matches;
-    }
+    return isMobileLayoutActive;
+  }
 
-    return window.innerWidth <= 900;
+  function shouldUseMobileLayout() {
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var fullDesktopPanelsWidth = getConfiguredPanelWidth("--left-panel-width") + getConfiguredPanelWidth("--right-panel-width");
+
+    return viewportWidth <= viewportHeight + fullDesktopPanelsWidth;
+  }
+
+  function getConfiguredPanelWidth(propertyName) {
+    var value = window.getComputedStyle(document.documentElement).getPropertyValue(propertyName);
+    var width = parseFloat(value);
+
+    return isFinite(width) ? width : 0;
   }
 
   function invalidateMapSoon() {
