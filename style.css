@@ -797,7 +797,7 @@ body.mobile-layout {
   inset: 0;
   z-index: 1200;
   display: none;
-  background: rgba(17, 24, 27, 0.34);
+  background: transparent;
 }
 
 .app-shell.mobile-layout.left-panel-open + .mobile-backdrop,
