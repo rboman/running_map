@@ -1434,6 +1434,7 @@
   function closePhotoLightbox() {
     var lightbox = document.getElementById("photo-lightbox");
     var image = lightbox ? lightbox.querySelector(".photo-lightbox__image") : null;
+    var runTitle = lightbox ? lightbox.querySelector(".photo-lightbox__run-title") : null;
 
     if (photoThumbClickTimer) {
       window.clearTimeout(photoThumbClickTimer);
@@ -1452,6 +1453,9 @@
       image.removeAttribute("src");
       image.alt = "";
     }
+    if (runTitle) {
+      runTitle.textContent = "";
+    }
 
     if (lightbox) {
       lightbox.classList.remove("is-open");
@@ -1463,6 +1467,8 @@
     var lightbox = document.getElementById("photo-lightbox");
     var image = lightbox ? lightbox.querySelector(".photo-lightbox__image") : null;
     var caption = lightbox ? lightbox.querySelector(".photo-lightbox__caption") : null;
+    var runTitle = lightbox ? lightbox.querySelector(".photo-lightbox__run-title") : null;
+    var run = findRunById(selectedRunId);
     var photo;
     var imagePath;
     var captionText;
@@ -1486,11 +1492,40 @@
     if (caption) {
       caption.textContent = captionText;
     }
+    if (runTitle) {
+      renderLightboxRunTitle(runTitle, run, captionText);
+    }
 
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     updateLightboxControls();
     syncMapToLightboxPhoto(index);
+  }
+
+  function renderLightboxRunTitle(element, run, photoCaption) {
+    var runTitleParts = [];
+    var lines = [];
+
+    element.innerHTML = "";
+
+    if (run && run.title) {
+      runTitleParts.push(run.title);
+    }
+    if (run && run.date) {
+      runTitleParts.push(formatDate(run.date));
+    }
+    if (runTitleParts.length > 0) {
+      lines.push(runTitleParts.join(" - "));
+    }
+    if (photoCaption) {
+      lines.push(photoCaption);
+    }
+
+    lines.forEach(function (line) {
+      var lineElement = document.createElement("span");
+      lineElement.textContent = line;
+      element.appendChild(lineElement);
+    });
   }
 
   function syncMapToLightboxPhoto(index) {
