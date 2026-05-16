@@ -10,7 +10,7 @@
   <body>
     <div class="app-shell">
       <aside class="left-panel" aria-label="Liste des courses">
-        <button class="mobile-panel-close" type="button" data-mobile-panel-close aria-label="Fermer le panneau des parcours">&times;</button>
+        <button class="mobile-panel-close" type="button" data-mobile-panel-close aria-label="Fermer le panneau de recherche">&times;</button>
         <header class="sidebar-header">
           <h1>running-map</h1>
           <p>Parcours de démonstration</p>
@@ -33,11 +33,10 @@
       </aside>
 
       <main class="map-panel" aria-label="Carte des parcours">
-        <div class="mobile-panel-actions" aria-label="Navigation mobile">
-          <button id="mobile-left-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="runs-list" aria-expanded="false">Parcours</button>
+        <div class="mobile-panel-actions" aria-label="Contr&ocirc;les des panneaux">
+          <button id="mobile-left-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="runs-list" aria-expanded="false">Recherche</button>
           <button id="mobile-right-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="selected-run-panel" aria-expanded="false">D&eacute;tails</button>
         </div>
-        <button id="right-panel-toggle" class="right-panel-toggle" type="button" aria-controls="selected-run-panel" aria-expanded="true">Masquer les d&eacute;tails</button>
         <div id="map"></div>
       </main>
 

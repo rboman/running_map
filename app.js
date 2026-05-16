@@ -67,6 +67,7 @@
   var sidebarYearFilter = "";
   var selectedRunId = null;
   var selectedRunPhotosExpanded = false;
+  var isLeftPanelCollapsed = false;
   var isRightPanelCollapsed = false;
   var lightboxPhotos = [];
   var lightboxPhotoIndex = -1;
@@ -90,8 +91,7 @@
     createRunLayers();
     createAllRunStartMarkersLayer(allRuns);
     initSidebarControls();
-    initRightPanelToggle();
-    initMobilePanelControls();
+    initPanelControls();
     initPhotoLightbox();
     renderSidebar();
     renderSelectedRunPanel();
@@ -522,53 +522,20 @@
     document.addEventListener("keydown", handlePhotoLightboxKeydown);
   }
 
-  function initRightPanelToggle() {
-    var toggleButton = document.getElementById("right-panel-toggle");
-
-    if (!toggleButton) {
-      return;
-    }
-
-    toggleButton.addEventListener("click", function () {
-      isRightPanelCollapsed = !isRightPanelCollapsed;
-      updateRightPanelState();
-    });
-
-    updateRightPanelState();
-  }
-
-  function updateRightPanelState() {
-    var shell = document.querySelector(".app-shell");
-    var toggleButton = document.getElementById("right-panel-toggle");
-
-    if (shell) {
-      shell.classList.toggle("right-panel-collapsed", isRightPanelCollapsed);
-    }
-
-    if (toggleButton) {
-      toggleButton.textContent = isRightPanelCollapsed ? "Afficher les d\u00e9tails" : "Masquer les d\u00e9tails";
-      toggleButton.setAttribute("aria-expanded", String(!isRightPanelCollapsed));
-    }
-
-    if (map && typeof map.invalidateSize === "function") {
-      invalidateMapSoon();
-    }
-  }
-
-  function initMobilePanelControls() {
+  function initPanelControls() {
     var leftToggleButton = document.getElementById("mobile-left-panel-toggle");
     var rightToggleButton = document.getElementById("mobile-right-panel-toggle");
     var closeButtons = document.querySelectorAll("[data-mobile-panel-close]");
 
     if (leftToggleButton) {
       leftToggleButton.addEventListener("click", function () {
-        openMobilePanel("left");
+        togglePanel("left");
       });
     }
 
     if (rightToggleButton) {
       rightToggleButton.addEventListener("click", function () {
-        openMobilePanel("right");
+        togglePanel("right");
       });
     }
 
@@ -586,7 +553,23 @@
       }
     }
 
-    updateMobilePanelControls();
+    updateDesktopPanelState(false);
+    updatePanelControls();
+  }
+
+  function togglePanel(panelName) {
+    if (isMobileLayout()) {
+      openMobilePanel(panelName);
+      return;
+    }
+
+    if (panelName === "left") {
+      isLeftPanelCollapsed = !isLeftPanelCollapsed;
+    } else if (panelName === "right") {
+      isRightPanelCollapsed = !isRightPanelCollapsed;
+    }
+
+    updateDesktopPanelState(true);
   }
 
   function openMobilePanel(panelName) {
@@ -598,7 +581,7 @@
 
     shell.classList.toggle("left-panel-open", panelName === "left");
     shell.classList.toggle("right-panel-open", panelName === "right");
-    updateMobilePanelControls();
+    updatePanelControls();
     invalidateMapSoon();
   }
 
@@ -613,26 +596,47 @@
     hadOpenPanel = shell.classList.contains("left-panel-open") || shell.classList.contains("right-panel-open");
     shell.classList.remove("left-panel-open");
     shell.classList.remove("right-panel-open");
-    updateMobilePanelControls();
+    updatePanelControls();
 
     if (hadOpenPanel) {
       invalidateMapSoon();
     }
   }
 
-  function updateMobilePanelControls() {
+  function updateDesktopPanelState(shouldInvalidateMap) {
+    var shell = document.querySelector(".app-shell");
+
+    if (!shell) {
+      return;
+    }
+
+    shell.classList.toggle("left-panel-collapsed", isLeftPanelCollapsed);
+    shell.classList.toggle("right-panel-collapsed", isRightPanelCollapsed);
+    updatePanelControls();
+
+    if (shouldInvalidateMap) {
+      invalidateMapSoon();
+    }
+  }
+
+  function updatePanelControls() {
     var shell = document.querySelector(".app-shell");
     var leftToggleButton = document.getElementById("mobile-left-panel-toggle");
     var rightToggleButton = document.getElementById("mobile-right-panel-toggle");
-    var isLeftPanelOpen = shell && shell.classList.contains("left-panel-open");
-    var isRightPanelOpen = shell && shell.classList.contains("right-panel-open");
+    var mobileLayout = isMobileLayout();
+    var isLeftPanelActive = mobileLayout ? shell && shell.classList.contains("left-panel-open") : !isLeftPanelCollapsed;
+    var isRightPanelActive = mobileLayout ? shell && shell.classList.contains("right-panel-open") : !isRightPanelCollapsed;
 
     if (leftToggleButton) {
-      leftToggleButton.setAttribute("aria-expanded", String(Boolean(isLeftPanelOpen)));
+      leftToggleButton.classList.toggle("is-active", Boolean(isLeftPanelActive));
+      leftToggleButton.setAttribute("aria-expanded", String(Boolean(isLeftPanelActive)));
+      leftToggleButton.setAttribute("aria-pressed", String(Boolean(isLeftPanelActive)));
     }
 
     if (rightToggleButton) {
-      rightToggleButton.setAttribute("aria-expanded", String(Boolean(isRightPanelOpen)));
+      rightToggleButton.classList.toggle("is-active", Boolean(isRightPanelActive));
+      rightToggleButton.setAttribute("aria-expanded", String(Boolean(isRightPanelActive)));
+      rightToggleButton.setAttribute("aria-pressed", String(Boolean(isRightPanelActive)));
     }
   }
 
@@ -651,7 +655,11 @@
   function handleMobileLayoutChange() {
     if (!isMobileLayout()) {
       closeMobilePanels();
+    } else {
+      updatePanelControls();
     }
+
+    invalidateMapSoon();
   }
 
   function isMobileLayout() {
@@ -823,13 +831,10 @@
     }
 
     item.addEventListener("click", function () {
-      selectRun(run.id);
-      if (isMobileLayout()) {
-        closeMobilePanels();
-      }
-    });
-    item.addEventListener("dblclick", function () {
       selectAndCenterRun(run.id);
+      if (isMobileLayout()) {
+        openMobilePanel("right");
+      }
     });
 
     var color = document.createElement("span");
