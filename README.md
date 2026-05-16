@@ -165,7 +165,6 @@ window.TRACK_DEMO_NAMUR = {
   distanceKm: 8.2,
   elevationGainM: 140,
   color: "#6a3d9a",
-  visible: true,
   track: window.TRACK_DEMO_NAMUR,
   photos: []
 }
@@ -270,7 +269,6 @@ Options utiles :
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --dry-run
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --year 2026 --force
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --simplify-tolerance-m 10 --force
-python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --default-visible true --force
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --dry-run
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --force --force-photos
 ```
@@ -285,7 +283,6 @@ source_dir
 --year
 --elevation-threshold-m
 --simplify-tolerance-m
---default-visible true|false
 --photos / --with-photos
 --photo-thumb-size
 --photo-web-size
@@ -295,7 +292,6 @@ source_dir
 
 Valeurs par défaut importantes :
 
-- `--default-visible false` pour éviter d'afficher trop de traces dès l'ouverture ;
 - `--simplify-tolerance-m 5.0` ;
 - `--elevation-threshold-m 3.0` ;
 - miniatures de 180 px de large ;

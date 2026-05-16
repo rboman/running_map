@@ -85,12 +85,6 @@ def parse_args():
         help="Douglas-Peucker tolerance for exported geometry, in meters.",
     )
     parser.add_argument(
-        "--default-visible",
-        choices=["true", "false"],
-        default="false",
-        help="Initial visibility for generated runs.",
-    )
-    parser.add_argument(
         "--photos",
         "--with-photos",
         dest="with_photos",
@@ -188,7 +182,6 @@ def build_imported_run(course_folder, metadata, gpx_path, args, color, output_ro
         "distanceKm": round(distance_km, 2),
         "elevationGainM": int(round(gain_m)),
         "color": color,
-        "visible": args.default_visible == "true",
         "trackRef": metadata["id"],
         "photos": photos,
     }
@@ -476,7 +469,6 @@ def format_generated_runs_js(runs):
                 "    distanceKm: {:.2f},".format(run["distanceKm"]),
                 "    elevationGainM: {},".format(run["elevationGainM"]),
                 "    color: {},".format(js_string(run["color"])),
-                "    visible: {},".format("true" if run["visible"] else "false"),
                 '    track: window.GENERATED_TRACKS[{}],'.format(js_string(run["trackRef"])),
                 format_photos_js(run["photos"]),
                 "  }}{}".format(suffix),

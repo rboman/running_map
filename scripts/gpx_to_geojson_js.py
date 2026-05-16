@@ -83,7 +83,6 @@ def print_summary(args, point_count, distance_km, gain_m):
     print("  distanceKm: {:.2f},".format(distance_km))
     print("  elevationGainM: {:.0f},".format(gain_m))
     print("  color: {},".format(js_string(args.color)))
-    print("  visible: true,")
     print("  track: window.{},".format(args.var_name))
     print("  photos: []")
     print("}")

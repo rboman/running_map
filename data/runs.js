@@ -6,7 +6,6 @@ window.RUNS = [
     distanceKm: 12.4,
     elevationGainM: 320,
     color: "#e66100",
-    visible: true,
     track: window.TRACK_DEMO_STAVELOT,
     photos: [
       {
@@ -30,7 +29,6 @@ window.RUNS = [
     distanceKm: 9.8,
     elevationGainM: 180,
     color: "#1f78b4",
-    visible: true,
     track: window.TRACK_DEMO_LIEGE,
     photos: [
       {
