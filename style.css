@@ -379,22 +379,26 @@ select {
 
 .mobile-panel-actions {
   position: absolute;
+  left: 12px;
   right: 12px;
-  top: 12px;
+  bottom: 28px;
   z-index: 900;
   display: flex;
-  gap: 8px;
+  justify-content: center;
+  gap: 10px;
   pointer-events: none;
 }
 
 .mobile-panel-toggle {
+  min-width: 112px;
+  min-height: 44px;
   border: 1px solid var(--button-border);
-  border-radius: 6px;
-  padding: 8px 10px;
+  border-radius: 999px;
+  padding: 10px 16px;
   background: rgba(255, 255, 255, 0.96);
   color: #124f54;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.22);
   pointer-events: auto;
 }
 
@@ -762,28 +766,6 @@ select {
 
   #map {
     height: 100vh;
-  }
-
-  .mobile-panel-actions {
-    left: 12px;
-    right: 12px;
-    top: auto;
-    bottom: 28px;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .mobile-panel-toggle {
-    min-width: 112px;
-    min-height: 44px;
-    border: 1px solid var(--button-border);
-    border-radius: 999px;
-    padding: 10px 16px;
-    background: rgba(255, 255, 255, 0.96);
-    color: #124f54;
-    cursor: pointer;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.22);
-    pointer-events: auto;
   }
 
   .mobile-panel-toggle:hover,
