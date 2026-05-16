@@ -960,11 +960,28 @@ body.mobile-layout {
   }
 
   .about-modal.is-open {
-    padding: 12px;
+    padding: 56px 24px 32px;
   }
 
   .about-modal__content {
-    max-height: calc(100vh - 24px);
+    width: min(560px, 100%);
+    max-height: calc(100vh - 112px);
     padding: 20px 18px;
+  }
+}
+
+@supports (height: 100dvh) {
+  @media (max-width: 560px) {
+    .about-modal__content {
+      max-height: calc(100dvh - 112px);
+    }
+  }
+}
+
+@supports (height: 100svh) {
+  @media (max-width: 560px) {
+    .about-modal__content {
+      max-height: calc(100svh - 112px);
+    }
   }
 }
