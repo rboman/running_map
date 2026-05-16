@@ -2,7 +2,7 @@
   var DEFAULT_CONFIG = {
     // Empty keeps the existing ./photos/... paths working from file:///.
     PHOTO_BASE_URL: "",
-    siteTitle: "running-map",
+    siteTitle: "RunningMap",
     siteSubtitle: "Parcours de d\u00e9monstration",
     map: {
       initialCenter: [50.53, 5.75],
@@ -50,6 +50,7 @@
     }
   };
 
+  var PROJECT_GITHUB_URL = "https://github.com/rboman/running_map";
   var runtimeConfig = mergeConfig(DEFAULT_CONFIG, window.RUNNINGMAP_CONFIG || {});
   var config = mergeConfig(runtimeConfig, window.RUNNING_MAP_CONFIG || {});
   var map;
@@ -72,6 +73,8 @@
   var lightboxPhotos = [];
   var lightboxPhotoIndex = -1;
   var isLightboxOpen = false;
+  var isAboutModalOpen = false;
+  var aboutModalPreviousFocus = null;
   var photoThumbClickTimer = null;
   var isMobileLayoutActive = false;
 
@@ -94,6 +97,7 @@
     initSidebarControls();
     initPanelControls();
     initPhotoLightbox();
+    initAboutModal();
     renderSidebar();
     renderSelectedRunPanel();
     fitMapToVisibleRuns();
@@ -521,6 +525,88 @@
     }
 
     document.addEventListener("keydown", handlePhotoLightboxKeydown);
+  }
+
+  function initAboutModal() {
+    var button = document.getElementById("about-help-toggle");
+    var modal = document.getElementById("about-modal");
+    var closeButtons = modal ? modal.querySelectorAll("[data-about-close]") : [];
+    var githubLink = document.getElementById("project-github-link");
+
+    if (modal && modal.getAttribute("data-about-initialized") === "true") {
+      return;
+    }
+
+    if (githubLink && PROJECT_GITHUB_URL) {
+      githubLink.href = PROJECT_GITHUB_URL;
+    }
+
+    if (modal) {
+      modal.setAttribute("data-about-initialized", "true");
+    }
+
+    if (button) {
+      button.addEventListener("click", openAboutModal);
+    }
+
+    Array.prototype.forEach.call(closeButtons, function (closeButton) {
+      closeButton.addEventListener("click", closeAboutModal);
+    });
+
+    document.addEventListener("keydown", handleAboutModalKeydown);
+  }
+
+  function openAboutModal() {
+    var button = document.getElementById("about-help-toggle");
+    var modal = document.getElementById("about-modal");
+    var closeButton = modal ? modal.querySelector(".about-modal__close") : null;
+
+    if (!modal || isAboutModalOpen) {
+      return;
+    }
+
+    closePhotoLightbox();
+    aboutModalPreviousFocus = document.activeElement;
+    isAboutModalOpen = true;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+
+    if (button) {
+      button.setAttribute("aria-expanded", "true");
+    }
+    if (closeButton) {
+      closeButton.focus();
+    }
+  }
+
+  function closeAboutModal() {
+    var button = document.getElementById("about-help-toggle");
+    var modal = document.getElementById("about-modal");
+
+    if (!modal || !isAboutModalOpen) {
+      return;
+    }
+
+    isAboutModalOpen = false;
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+
+    if (button) {
+      button.setAttribute("aria-expanded", "false");
+    }
+    if (aboutModalPreviousFocus && typeof aboutModalPreviousFocus.focus === "function") {
+      aboutModalPreviousFocus.focus();
+    }
+    aboutModalPreviousFocus = null;
+  }
+
+  function handleAboutModalKeydown(event) {
+    if (!isAboutModalOpen || event.key !== "Escape") {
+      return;
+    }
+
+    event.preventDefault();
+    closeAboutModal();
   }
 
   function initPanelControls() {

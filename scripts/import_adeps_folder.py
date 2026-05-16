@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import ADEPS GPX folders into generated running-map data files."""
+"""Import ADEPS GPX folders into generated RunningMap data files."""
 
 import argparse
 import json
@@ -50,13 +50,13 @@ SKIPPED_TREE_NAMES = set(
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Import ADEPS GPX folders into generated running-map JS files."
+        description="Import ADEPS GPX folders into generated RunningMap JS files."
     )
     parser.add_argument("source_dir", help="Source ADEPS folder to scan recursively.")
     parser.add_argument(
         "--output",
         default=".",
-        help="running-map project root where generated files are written.",
+        help="RunningMap project root where generated files are written.",
     )
     parser.add_argument(
         "--force",

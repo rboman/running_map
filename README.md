@@ -1,4 +1,4 @@
-# running-map
+# 🏃🏻‍➡️ RunningMap
 
 Mini-site statique pour afficher des marches et courses sur une carte Leaflet.
 
@@ -99,7 +99,7 @@ Configuration actuelle :
 ```js
 window.RUNNING_MAP_CONFIG = {
   PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev",
-  siteTitle: "🏃🏻‍➡️running-map",
+  siteTitle: "🏃🏻‍➡️RunningMap",
   siteSubtitle: "Mes marches ADEPS",
   tracks: {
     defaultOpacity: 0.85,
@@ -370,18 +370,6 @@ pages:
 ```
 
 Ajoutez `photos/` seulement si vous voulez publier les photos dans le même site. Si les photos sont servies par R2, gardez plutôt `PHOTO_BASE_URL`.
-
-Pour intégrer dans Hugo, copiez le dossier dans :
-
-```text
-static/running-map/
-```
-
-Le site sera accessible via :
-
-```text
-/running-map/index.html
-```
 
 ## Pourquoi cette architecture ?
 

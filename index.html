@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>running-map</title>
+    <title>RunningMap</title>
     <link rel="icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
     <link rel="stylesheet" href="./style.css">
@@ -13,7 +13,7 @@
       <aside class="left-panel" aria-label="Liste des courses">
         <button class="mobile-panel-close" type="button" data-mobile-panel-close aria-label="Fermer le panneau de recherche">&times;</button>
         <header class="sidebar-header">
-          <h1>running-map</h1>
+          <h1>RunningMap</h1>
           <p>Parcours de démonstration</p>
         </header>
         <section class="sidebar-controls" aria-label="Filtres et actions sur les parcours">
@@ -37,6 +37,7 @@
         <div class="mobile-panel-actions" aria-label="Contr&ocirc;les des panneaux">
           <button id="mobile-left-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="runs-list" aria-expanded="false">Recherche</button>
           <button id="mobile-right-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="selected-run-panel" aria-expanded="false">D&eacute;tails</button>
+          <button id="about-help-toggle" class="mobile-panel-toggle about-help-button" type="button" aria-label="&Agrave; propos et aide" aria-controls="about-modal" aria-expanded="false">?</button>
         </div>
         <div id="map"></div>
       </main>
@@ -58,6 +59,48 @@
           <p class="photo-lightbox__caption"></p>
           <button class="photo-lightbox__button photo-lightbox__button--next" type="button" aria-label="Photo suivante">&rsaquo;</button>
         </div>
+      </div>
+    </div>
+
+    <div id="about-modal" class="about-modal" aria-hidden="true">
+      <div class="about-modal__backdrop" data-about-close></div>
+      <div class="about-modal__content" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+        <button class="about-modal__close" type="button" data-about-close aria-label="Fermer">&times;</button>
+        <header class="about-modal__header">
+          <h2 id="about-modal-title">RunningMap</h2>
+          <p>Visualisation de traces GPX avec photos associ&eacute;es.</p>
+          <p class="about-modal__author">Romain Boman</p>
+        </header>
+
+        <section>
+          <h3>&Agrave; propos</h3>
+          <p>RunningMap est une application statique pour explorer des parcours de course, leurs traces GPX et les photos associ&eacute;es.</p>
+        </section>
+
+        <section>
+          <h3>Aide rapide</h3>
+          <ul>
+            <li>Rechercher ou filtrer les courses avec le bouton &ldquo;Recherche&rdquo;.</li>
+            <li>Cliquer sur une course pour la s&eacute;lectionner et centrer la carte.</li>
+            <li>Utiliser le bouton &ldquo;D&eacute;tails&rdquo; pour afficher les informations et photos de la course s&eacute;lectionn&eacute;e.</li>
+            <li>Cliquer sur une miniature photo pour centrer la carte sur la photo.</li>
+            <li>Double-cliquer sur une miniature photo pour ouvrir la photo en grand.</li>
+            <li>Utiliser les boutons pr&eacute;c&eacute;dent/suivant dans la visualisation photo pour parcourir les images.</li>
+            <li>Les marqueurs &ldquo;D&eacute;part&rdquo; et &ldquo;Arriv&eacute;e&rdquo; indiquent le d&eacute;but et la fin du parcours s&eacute;lectionn&eacute;.</li>
+            <li>Les fl&egrave;ches indiquent le sens du parcours s&eacute;lectionn&eacute;.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Cr&eacute;dits</h3>
+          <ul>
+            <li>Cartographie : Leaflet.</li>
+            <li>Donn&eacute;es de fond de carte : OpenStreetMap contributors.</li>
+            <li>H&eacute;bergement des photos : Cloudflare R2.</li>
+            <li>H&eacute;bergement du site : GitHub Pages.</li>
+          </ul>
+          <p><a id="project-github-link" href="https://github.com/rboman/running_map" target="_blank" rel="noopener">Code source sur GitHub</a></p>
+        </section>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert a GPX track to a GeoJSON JavaScript file for running-map."""
+"""Convert a GPX track to a GeoJSON JavaScript file for RunningMap."""
 
 import argparse
 import json

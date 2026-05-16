@@ -1,6 +1,6 @@
 window.RUNNING_MAP_CONFIG = {
   PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev",
-  siteTitle: "🏃🏻‍➡️running-map",
+  siteTitle: "🏃🏻‍➡️RunningMap",
   siteSubtitle: "Mes marches ADEPS",
   tracks: {
     defaultOpacity: 0.85,

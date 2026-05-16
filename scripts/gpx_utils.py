@@ -1,4 +1,4 @@
-"""Shared GPX helpers for running-map scripts.
+"""Shared GPX helpers for RunningMap scripts.
 
 The elevation gain is intentionally approximate: GPS altitude is noisy, so
 small positive changes are ignored with a configurable threshold.
