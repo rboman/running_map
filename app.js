@@ -861,7 +861,7 @@
     item.addEventListener("click", function () {
       selectAndCenterRun(run.id);
       if (isMobileLayout()) {
-        openMobilePanel("right");
+        closeMobilePanels();
       }
     });
 
