@@ -2,6 +2,8 @@
 
 Mini-site statique pour afficher des marches et courses sur une carte Leaflet.
 
+![](screenshot-desktop.png)
+
 Le projet reste volontairement simple : un fichier `index.html`, du CSS, du JavaScript classique, des données chargées par balises `<script>`, et quelques scripts Python utilitaires pour générer les fichiers statiques à partir de traces GPX.
 
 Il n'y a pas de build, pas de serveur local obligatoire, pas de `fetch()` pour les données locales, pas de framework front-end.

@@ -72,6 +72,7 @@
   var lightboxPhotoIndex = -1;
   var isLightboxOpen = false;
   var photoThumbClickTimer = null;
+  var mobileMediaQuery = window.matchMedia ? window.matchMedia("(max-width: 900px)") : null;
 
   window.addEventListener("load", startApp);
 
@@ -90,6 +91,7 @@
     createAllRunStartMarkersLayer(allRuns);
     initSidebarControls();
     initRightPanelToggle();
+    initMobilePanelControls();
     initPhotoLightbox();
     renderSidebar();
     renderSelectedRunPanel();
@@ -549,10 +551,125 @@
     }
 
     if (map && typeof map.invalidateSize === "function") {
-      window.setTimeout(function () {
-        map.invalidateSize();
-      }, 100);
+      invalidateMapSoon();
     }
+  }
+
+  function initMobilePanelControls() {
+    var leftToggleButton = document.getElementById("mobile-left-panel-toggle");
+    var rightToggleButton = document.getElementById("mobile-right-panel-toggle");
+    var closeButtons = document.querySelectorAll("[data-mobile-panel-close]");
+
+    if (leftToggleButton) {
+      leftToggleButton.addEventListener("click", function () {
+        openMobilePanel("left");
+      });
+    }
+
+    if (rightToggleButton) {
+      rightToggleButton.addEventListener("click", function () {
+        openMobilePanel("right");
+      });
+    }
+
+    Array.prototype.forEach.call(closeButtons, function (button) {
+      button.addEventListener("click", closeMobilePanels);
+    });
+
+    document.addEventListener("keydown", handleMobilePanelKeydown);
+
+    if (mobileMediaQuery) {
+      if (typeof mobileMediaQuery.addEventListener === "function") {
+        mobileMediaQuery.addEventListener("change", handleMobileLayoutChange);
+      } else if (typeof mobileMediaQuery.addListener === "function") {
+        mobileMediaQuery.addListener(handleMobileLayoutChange);
+      }
+    }
+
+    updateMobilePanelControls();
+  }
+
+  function openMobilePanel(panelName) {
+    var shell = document.querySelector(".app-shell");
+
+    if (!shell || !isMobileLayout()) {
+      return;
+    }
+
+    shell.classList.toggle("left-panel-open", panelName === "left");
+    shell.classList.toggle("right-panel-open", panelName === "right");
+    updateMobilePanelControls();
+    invalidateMapSoon();
+  }
+
+  function closeMobilePanels() {
+    var shell = document.querySelector(".app-shell");
+    var hadOpenPanel;
+
+    if (!shell) {
+      return;
+    }
+
+    hadOpenPanel = shell.classList.contains("left-panel-open") || shell.classList.contains("right-panel-open");
+    shell.classList.remove("left-panel-open");
+    shell.classList.remove("right-panel-open");
+    updateMobilePanelControls();
+
+    if (hadOpenPanel) {
+      invalidateMapSoon();
+    }
+  }
+
+  function updateMobilePanelControls() {
+    var shell = document.querySelector(".app-shell");
+    var leftToggleButton = document.getElementById("mobile-left-panel-toggle");
+    var rightToggleButton = document.getElementById("mobile-right-panel-toggle");
+    var isLeftPanelOpen = shell && shell.classList.contains("left-panel-open");
+    var isRightPanelOpen = shell && shell.classList.contains("right-panel-open");
+
+    if (leftToggleButton) {
+      leftToggleButton.setAttribute("aria-expanded", String(Boolean(isLeftPanelOpen)));
+    }
+
+    if (rightToggleButton) {
+      rightToggleButton.setAttribute("aria-expanded", String(Boolean(isRightPanelOpen)));
+    }
+  }
+
+  function handleMobilePanelKeydown(event) {
+    var shell = document.querySelector(".app-shell");
+    var hasOpenPanel = shell && (shell.classList.contains("left-panel-open") || shell.classList.contains("right-panel-open"));
+
+    if (event.key !== "Escape" || isLightboxOpen || !isMobileLayout() || !hasOpenPanel) {
+      return;
+    }
+
+    event.preventDefault();
+    closeMobilePanels();
+  }
+
+  function handleMobileLayoutChange() {
+    if (!isMobileLayout()) {
+      closeMobilePanels();
+    }
+  }
+
+  function isMobileLayout() {
+    if (mobileMediaQuery) {
+      return mobileMediaQuery.matches;
+    }
+
+    return window.innerWidth <= 900;
+  }
+
+  function invalidateMapSoon() {
+    if (!map || typeof map.invalidateSize !== "function") {
+      return;
+    }
+
+    window.setTimeout(function () {
+      map.invalidateSize();
+    }, 100);
   }
 
   function renderYearFilter() {
@@ -707,6 +824,9 @@
 
     item.addEventListener("click", function () {
       selectRun(run.id);
+      if (isMobileLayout()) {
+        closeMobilePanels();
+      }
     });
     item.addEventListener("dblclick", function () {
       selectAndCenterRun(run.id);

@@ -10,6 +10,7 @@
   <body>
     <div class="app-shell">
       <aside class="left-panel" aria-label="Liste des courses">
+        <button class="mobile-panel-close" type="button" data-mobile-panel-close aria-label="Fermer le panneau des parcours">&times;</button>
         <header class="sidebar-header">
           <h1>running-map</h1>
           <p>Parcours de démonstration</p>
@@ -32,14 +33,20 @@
       </aside>
 
       <main class="map-panel" aria-label="Carte des parcours">
+        <div class="mobile-panel-actions" aria-label="Navigation mobile">
+          <button id="mobile-left-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="runs-list" aria-expanded="false">Parcours</button>
+          <button id="mobile-right-panel-toggle" class="mobile-panel-toggle" type="button" aria-controls="selected-run-panel" aria-expanded="false">D&eacute;tails</button>
+        </div>
         <button id="right-panel-toggle" class="right-panel-toggle" type="button" aria-controls="selected-run-panel" aria-expanded="true">Masquer les d&eacute;tails</button>
         <div id="map"></div>
       </main>
 
       <aside class="right-panel" aria-label="D&eacute;tails de la course s&eacute;lectionn&eacute;e">
+        <button class="mobile-panel-close" type="button" data-mobile-panel-close aria-label="Fermer le panneau des d&eacute;tails">&times;</button>
         <section id="selected-run-panel" class="selection-panel" aria-live="polite"></section>
       </aside>
     </div>
+    <div class="mobile-backdrop" data-mobile-panel-close aria-hidden="true"></div>
 
     <div id="photo-lightbox" class="photo-lightbox" aria-hidden="true">
       <div class="photo-lightbox__backdrop" data-lightbox-close></div>
