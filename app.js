@@ -1167,6 +1167,7 @@
     var heading = document.createElement("h2");
     var meta = document.createElement("dl");
     var actions = document.createElement("div");
+    var downloadGpxButton = document.createElement("button");
     var centerButton = document.createElement("button");
     var clearButton = document.createElement("button");
 
@@ -1187,6 +1188,16 @@
 
     actions.className = "selection-actions";
 
+    downloadGpxButton.type = "button";
+    downloadGpxButton.textContent = "T\u00e9l\u00e9chargement GPX";
+    downloadGpxButton.disabled = !hasDownloadableTrack(run);
+    if (downloadGpxButton.disabled) {
+      downloadGpxButton.title = "Aucune trace disponible pour cette course.";
+    }
+    downloadGpxButton.addEventListener("click", function () {
+      downloadRunGpx(run);
+    });
+
     centerButton.type = "button";
     centerButton.textContent = "Centrer";
     centerButton.addEventListener("click", function () {
@@ -1197,6 +1208,7 @@
     clearButton.textContent = "Effacer s\u00e9lection";
     clearButton.addEventListener("click", clearSelection);
 
+    actions.appendChild(downloadGpxButton);
     actions.appendChild(centerButton);
     actions.appendChild(clearButton);
     content.appendChild(actions);
@@ -1314,6 +1326,107 @@
 
     list.appendChild(term);
     list.appendChild(detail);
+  }
+
+  function hasDownloadableTrack(run) {
+    return getRunTrackCoordinates(run).length > 0;
+  }
+
+  function downloadRunGpx(run) {
+    var gpx = createRunGpx(run);
+    var urlApi = window.URL || window.webkitURL;
+    var blob;
+    var url;
+    var link;
+
+    if (!gpx || !urlApi) {
+      return;
+    }
+
+    blob = new Blob([gpx], { type: "application/gpx+xml;charset=utf-8" });
+    url = urlApi.createObjectURL(blob);
+    link = document.createElement("a");
+    link.href = url;
+    link.download = getRunGpxFilename(run);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.setTimeout(function () {
+      urlApi.revokeObjectURL(url);
+    }, 0);
+  }
+
+  function createRunGpx(run) {
+    var coordinates = getRunTrackCoordinates(run);
+    var lines;
+
+    if (coordinates.length === 0) {
+      return "";
+    }
+
+    lines = [
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<gpx version="1.1" creator="RunningMap" xmlns="http://www.topografix.com/GPX/1/1">',
+      "  <metadata>",
+      "    <name>" + escapeXml(run.title || run.id || "Trace RunningMap") + "</name>",
+      "  </metadata>",
+      "  <trk>",
+      "    <name>" + escapeXml(run.title || run.id || "Trace RunningMap") + "</name>",
+      "    <trkseg>"
+    ];
+
+    coordinates.forEach(function (point) {
+      var line = '      <trkpt lat="' + formatGpxNumber(point[1], 7) + '" lon="' + formatGpxNumber(point[0], 7) + '">';
+
+      if (isFiniteNumber(point[2])) {
+        line += "<ele>" + formatGpxNumber(point[2], 1) + "</ele>";
+      }
+
+      line += "</trkpt>";
+      lines.push(line);
+    });
+
+    lines.push(
+      "    </trkseg>",
+      "  </trk>",
+      "</gpx>"
+    );
+
+    return lines.join("\n") + "\n";
+  }
+
+  function getRunTrackCoordinates(run) {
+    var coordinates = run && run.track && run.track.geometry && run.track.geometry.coordinates;
+
+    if (!Array.isArray(coordinates)) {
+      return [];
+    }
+
+    return coordinates.filter(function (point) {
+      return Array.isArray(point) && isFiniteNumber(point[0]) && isFiniteNumber(point[1]);
+    });
+  }
+
+  function getRunGpxFilename(run) {
+    var filename = String(run.id || run.title || "trace-runningmap")
+      .toLowerCase()
+      .replace(/[^a-z0-9_-]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+
+    return (filename || "trace-runningmap") + ".gpx";
+  }
+
+  function formatGpxNumber(value, precision) {
+    return Number(value).toFixed(precision).replace(/\.?0+$/g, "");
+  }
+
+  function escapeXml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
   }
 
   function formatPhotoCount(run) {

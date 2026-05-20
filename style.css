@@ -222,6 +222,11 @@ select {
   outline: none;
 }
 
+.selection-actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .selected-photo-gallery {
   display: grid;
   gap: 8px;
