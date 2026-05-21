@@ -1387,7 +1387,7 @@
     var padding = {
       top: 16,
       right: 12,
-      bottom: 24,
+      bottom: 8,
       left: 48
     };
     var chartWidth = width - padding.left - padding.right;

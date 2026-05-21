@@ -215,7 +215,7 @@ select {
 
 .elevation-profile__chart {
   display: grid;
-  gap: 4px;
+  gap: 2px;
 }
 
 .elevation-profile__chart svg {
