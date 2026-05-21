@@ -1344,7 +1344,7 @@
       return section;
     }
 
-    section.appendChild(createElevationProfileChart(series));
+    section.appendChild(createElevationProfileChart(run, series));
     return section;
   }
 
@@ -1381,29 +1381,32 @@
     return series;
   }
 
-  function createElevationProfileChart(series) {
+  function createElevationProfileChart(run, series) {
     var width = 320;
     var height = 150;
     var padding = {
-      top: 18,
-      right: 8,
-      bottom: 26,
-      left: 38
+      top: 16,
+      right: 12,
+      bottom: 24,
+      left: 48
     };
     var chartWidth = width - padding.left - padding.right;
     var chartHeight = height - padding.top - padding.bottom;
     var minElevation = getMinElevation(series);
     var maxElevation = getMaxElevation(series);
+    var originalMinElevation = minElevation;
+    var originalMaxElevation = maxElevation;
     var totalDistanceKm = series[series.length - 1].distanceKm;
+    var displayDistanceKm = isFiniteNumber(run.distanceKm) && run.distanceKm > 0 ? run.distanceKm : totalDistanceKm;
     var elevationRange = maxElevation - minElevation;
     var svg = createSvgElement("svg");
     var axisGroup = createSvgElement("g");
+    var frame = createSvgElement("rect");
     var area = createSvgElement("path");
     var line = createSvgElement("path");
     var labels = document.createElement("div");
-    var minLabel = document.createElement("span");
-    var distanceLabel = document.createElement("span");
-    var maxLabel = document.createElement("span");
+    var startLabel = document.createElement("span");
+    var endLabel = document.createElement("span");
     var chart = document.createElement("div");
     var pointsPath;
     var areaPath;
@@ -1439,9 +1442,23 @@
     svg.setAttribute("preserveAspectRatio", "none");
 
     axisGroup.setAttribute("class", "elevation-profile__axis");
-    axisGroup.appendChild(createSvgLine(padding.left, padding.top, padding.left, padding.top + chartHeight));
-    axisGroup.appendChild(createSvgLine(padding.left, padding.top + chartHeight, padding.left + chartWidth, padding.top + chartHeight));
-    axisGroup.appendChild(createSvgLine(padding.left, padding.top, padding.left + chartWidth, padding.top));
+    frame.setAttribute("x", formatSvgNumber(padding.left));
+    frame.setAttribute("y", formatSvgNumber(padding.top));
+    frame.setAttribute("width", formatSvgNumber(chartWidth));
+    frame.setAttribute("height", formatSvgNumber(chartHeight));
+    axisGroup.appendChild(frame);
+    axisGroup.appendChild(createSvgText(
+      padding.left - 8,
+      padding.top + 4,
+      Math.round(originalMaxElevation) + " m",
+      "elevation-profile__axis-label elevation-profile__axis-label--max"
+    ));
+    axisGroup.appendChild(createSvgText(
+      padding.left - 8,
+      padding.top + chartHeight,
+      Math.round(originalMinElevation) + " m",
+      "elevation-profile__axis-label elevation-profile__axis-label--min"
+    ));
 
     area.setAttribute("class", "elevation-profile__area");
     area.setAttribute("d", areaPath);
@@ -1455,12 +1472,10 @@
     chart.appendChild(svg);
 
     labels.className = "elevation-profile__labels";
-    minLabel.textContent = Math.round(getMinElevation(series)) + " m";
-    distanceLabel.textContent = formatDistance(totalDistanceKm);
-    maxLabel.textContent = Math.round(getMaxElevation(series)) + " m";
-    labels.appendChild(minLabel);
-    labels.appendChild(distanceLabel);
-    labels.appendChild(maxLabel);
+    startLabel.textContent = "0 km";
+    endLabel.textContent = formatDistance(displayDistanceKm);
+    labels.appendChild(startLabel);
+    labels.appendChild(endLabel);
     chart.appendChild(labels);
 
     return chart;
@@ -1470,15 +1485,15 @@
     return document.createElementNS("http://www.w3.org/2000/svg", name);
   }
 
-  function createSvgLine(x1, y1, x2, y2) {
-    var line = createSvgElement("line");
+  function createSvgText(x, y, text, className) {
+    var label = createSvgElement("text");
 
-    line.setAttribute("x1", formatSvgNumber(x1));
-    line.setAttribute("y1", formatSvgNumber(y1));
-    line.setAttribute("x2", formatSvgNumber(x2));
-    line.setAttribute("y2", formatSvgNumber(y2));
+    label.setAttribute("x", formatSvgNumber(x));
+    label.setAttribute("y", formatSvgNumber(y));
+    label.setAttribute("class", className);
+    label.textContent = text;
 
-    return line;
+    return label;
   }
 
   function getMinElevation(series) {
