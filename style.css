@@ -200,6 +200,74 @@ select {
   font-weight: 700;
 }
 
+.elevation-profile {
+  display: grid;
+  gap: 8px;
+}
+
+.elevation-profile h3 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.elevation-profile__chart {
+  display: grid;
+  gap: 4px;
+}
+
+.elevation-profile__chart svg {
+  display: block;
+  width: 100%;
+  height: 145px;
+  overflow: visible;
+}
+
+.elevation-profile__axis line {
+  stroke: var(--border);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.elevation-profile__area {
+  fill: var(--run-color, var(--accent));
+  opacity: 0.16;
+}
+
+.elevation-profile__line {
+  fill: none;
+  stroke: var(--run-color, var(--accent));
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.elevation-profile__labels {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.elevation-profile__labels span:nth-child(2) {
+  text-align: center;
+}
+
+.elevation-profile__labels span:last-child {
+  text-align: right;
+}
+
+.elevation-profile__empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .selection-actions {
   display: grid;
   grid-template-columns: 1fr;

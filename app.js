@@ -419,11 +419,7 @@
   }
 
   function getRunTrackPoints(run) {
-    var coordinates = run && run.track && run.track.geometry && run.track.geometry.coordinates;
-
-    if (!Array.isArray(coordinates)) {
-      return [];
-    }
+    var coordinates = getRunTrackCoordinates(run);
 
     return coordinates
       .filter(function (point) {
@@ -1184,6 +1180,7 @@
     appendMeta(meta, "ID", run.id);
     appendMeta(meta, "Photos", formatPhotoCount(run));
     content.appendChild(meta);
+    content.appendChild(renderElevationProfile(run));
     appendSelectedRunGallery(content, run);
 
     actions.className = "selection-actions";
@@ -1328,6 +1325,196 @@
     list.appendChild(detail);
   }
 
+  function renderElevationProfile(run) {
+    var section = document.createElement("section");
+    var heading = document.createElement("h3");
+    var series = buildElevationProfileSeries(run);
+
+    section.className = "elevation-profile";
+    section.style.setProperty("--run-color", run.color || config.selection.selectedColor || config.map.accent || "#176f75");
+
+    heading.textContent = "Profil altim\u00e9trique";
+    section.appendChild(heading);
+
+    if (!series) {
+      var emptyMessage = document.createElement("p");
+      emptyMessage.className = "elevation-profile__empty";
+      emptyMessage.textContent = "Profil altim\u00e9trique indisponible";
+      section.appendChild(emptyMessage);
+      return section;
+    }
+
+    section.appendChild(createElevationProfileChart(series));
+    return section;
+  }
+
+  function buildElevationProfileSeries(run) {
+    var coordinates = getRunTrackCoordinates(run);
+    var series = [];
+    var previousPoint = null;
+    var distanceKm = 0;
+
+    coordinates.forEach(function (point) {
+      var longitude = point[0];
+      var latitude = point[1];
+      var elevation = point[2];
+
+      if (!isFiniteNumber(longitude) || !isFiniteNumber(latitude) || !isFiniteNumber(elevation)) {
+        return;
+      }
+
+      if (previousPoint) {
+        distanceKm += haversineDistanceKm(previousPoint[0], previousPoint[1], longitude, latitude);
+      }
+
+      series.push({
+        distanceKm: distanceKm,
+        elevationM: elevation
+      });
+      previousPoint = point;
+    });
+
+    if (series.length < 2 || distanceKm <= 0) {
+      return null;
+    }
+
+    return series;
+  }
+
+  function createElevationProfileChart(series) {
+    var width = 320;
+    var height = 150;
+    var padding = {
+      top: 18,
+      right: 8,
+      bottom: 26,
+      left: 38
+    };
+    var chartWidth = width - padding.left - padding.right;
+    var chartHeight = height - padding.top - padding.bottom;
+    var minElevation = getMinElevation(series);
+    var maxElevation = getMaxElevation(series);
+    var totalDistanceKm = series[series.length - 1].distanceKm;
+    var elevationRange = maxElevation - minElevation;
+    var svg = createSvgElement("svg");
+    var axisGroup = createSvgElement("g");
+    var area = createSvgElement("path");
+    var line = createSvgElement("path");
+    var labels = document.createElement("div");
+    var minLabel = document.createElement("span");
+    var distanceLabel = document.createElement("span");
+    var maxLabel = document.createElement("span");
+    var chart = document.createElement("div");
+    var pointsPath;
+    var areaPath;
+
+    if (elevationRange === 0) {
+      minElevation -= 5;
+      maxElevation += 5;
+      elevationRange = maxElevation - minElevation;
+    }
+
+    function pointToX(point) {
+      return padding.left + (point.distanceKm / totalDistanceKm) * chartWidth;
+    }
+
+    function pointToY(point) {
+      return padding.top + ((maxElevation - point.elevationM) / elevationRange) * chartHeight;
+    }
+
+    pointsPath = series.map(function (point, index) {
+      return (index === 0 ? "M " : "L ") + formatSvgNumber(pointToX(point)) + " " + formatSvgNumber(pointToY(point));
+    }).join(" ");
+
+    areaPath = pointsPath +
+      " L " + formatSvgNumber(padding.left + chartWidth) + " " + formatSvgNumber(padding.top + chartHeight) +
+      " L " + formatSvgNumber(padding.left) + " " + formatSvgNumber(padding.top + chartHeight) +
+      " Z";
+
+    chart.className = "elevation-profile__chart";
+
+    svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Profil altim\u00e9trique du parcours");
+    svg.setAttribute("preserveAspectRatio", "none");
+
+    axisGroup.setAttribute("class", "elevation-profile__axis");
+    axisGroup.appendChild(createSvgLine(padding.left, padding.top, padding.left, padding.top + chartHeight));
+    axisGroup.appendChild(createSvgLine(padding.left, padding.top + chartHeight, padding.left + chartWidth, padding.top + chartHeight));
+    axisGroup.appendChild(createSvgLine(padding.left, padding.top, padding.left + chartWidth, padding.top));
+
+    area.setAttribute("class", "elevation-profile__area");
+    area.setAttribute("d", areaPath);
+
+    line.setAttribute("class", "elevation-profile__line");
+    line.setAttribute("d", pointsPath);
+
+    svg.appendChild(area);
+    svg.appendChild(axisGroup);
+    svg.appendChild(line);
+    chart.appendChild(svg);
+
+    labels.className = "elevation-profile__labels";
+    minLabel.textContent = Math.round(getMinElevation(series)) + " m";
+    distanceLabel.textContent = formatDistance(totalDistanceKm);
+    maxLabel.textContent = Math.round(getMaxElevation(series)) + " m";
+    labels.appendChild(minLabel);
+    labels.appendChild(distanceLabel);
+    labels.appendChild(maxLabel);
+    chart.appendChild(labels);
+
+    return chart;
+  }
+
+  function createSvgElement(name) {
+    return document.createElementNS("http://www.w3.org/2000/svg", name);
+  }
+
+  function createSvgLine(x1, y1, x2, y2) {
+    var line = createSvgElement("line");
+
+    line.setAttribute("x1", formatSvgNumber(x1));
+    line.setAttribute("y1", formatSvgNumber(y1));
+    line.setAttribute("x2", formatSvgNumber(x2));
+    line.setAttribute("y2", formatSvgNumber(y2));
+
+    return line;
+  }
+
+  function getMinElevation(series) {
+    return series.reduce(function (min, point) {
+      return Math.min(min, point.elevationM);
+    }, series[0].elevationM);
+  }
+
+  function getMaxElevation(series) {
+    return series.reduce(function (max, point) {
+      return Math.max(max, point.elevationM);
+    }, series[0].elevationM);
+  }
+
+  function haversineDistanceKm(lon1, lat1, lon2, lat2) {
+    var earthRadiusKm = 6371.0088;
+    var lat1Rad = degreesToRadians(lat1);
+    var lat2Rad = degreesToRadians(lat2);
+    var deltaLat = degreesToRadians(lat2 - lat1);
+    var deltaLon = degreesToRadians(lon2 - lon1);
+    var a = Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
+      Math.cos(lat1Rad) * Math.cos(lat2Rad) *
+      Math.sin(deltaLon / 2) * Math.sin(deltaLon / 2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return earthRadiusKm * c;
+  }
+
+  function degreesToRadians(value) {
+    return value * Math.PI / 180;
+  }
+
+  function formatSvgNumber(value) {
+    return Number(value).toFixed(2).replace(/\.?0+$/g, "");
+  }
+
   function hasDownloadableTrack(run) {
     return getRunTrackCoordinates(run).length > 0;
   }
@@ -1396,7 +1583,22 @@
   }
 
   function getRunTrackCoordinates(run) {
-    var coordinates = run && run.track && run.track.geometry && run.track.geometry.coordinates;
+    var track = run && run.track;
+    var coordinates;
+
+    if (!track && run && run.trackRef && window.GENERATED_TRACKS) {
+      track = window.GENERATED_TRACKS[run.trackRef];
+    }
+
+    if (!track && run && run.id && window.GENERATED_TRACKS) {
+      track = window.GENERATED_TRACKS[run.id];
+    }
+
+    if (!track || !track.geometry || track.geometry.type !== "LineString") {
+      return [];
+    }
+
+    coordinates = track.geometry.coordinates;
 
     if (!Array.isArray(coordinates)) {
       return [];
