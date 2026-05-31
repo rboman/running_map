@@ -443,16 +443,26 @@ def write_generated_files(output_root, tracks, runs, force):
     tracks_path.parent.mkdir(parents=True, exist_ok=True)
     runs_path.parent.mkdir(parents=True, exist_ok=True)
 
-    tracks_payload = json.dumps(tracks, ensure_ascii=False, separators=(",", ":"))
-    tracks_path.write_text(
-        "window.GENERATED_TRACKS = {};\n".format(tracks_payload),
-        encoding="utf-8",
-    )
+    tracks_text = format_generated_tracks_js(tracks)
+    tracks_path.write_text(tracks_text, encoding="utf-8")
 
     runs_text = format_generated_runs_js(runs)
     runs_path.write_text(runs_text, encoding="utf-8")
 
     return tracks_path, runs_path
+
+
+def format_generated_tracks_js(tracks):
+    lines = ["window.GENERATED_TRACKS = {"]
+
+    items = list(tracks.items())
+    for index, (track_id, feature) in enumerate(items):
+        suffix = "," if index < len(items) - 1 else ""
+        feature_payload = json.dumps(feature, ensure_ascii=False, separators=(",", ":"))
+        lines.append("  {}: {}{}".format(js_string(track_id), feature_payload, suffix))
+
+    lines.append("};")
+    return "\n".join(lines) + "\n"
 
 
 def format_generated_runs_js(runs):

@@ -4,4 +4,4 @@ __pycache__/
 inputs/
 
 # temporary while developing the site
-photos/generated/
+photos/generated*/
