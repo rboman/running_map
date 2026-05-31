@@ -100,7 +100,11 @@
     initAboutModal();
     renderSidebar();
     renderSelectedRunPanel();
-    fitMapToVisibleRuns();
+    if (!selectInitialRunFromUrl()) {
+      fitMapToVisibleRuns();
+    }
+
+    window.addEventListener("hashchange", handleUrlHashChange);
   }
 
   function initMap() {
@@ -1020,6 +1024,7 @@
     renderSelectedRunDirection(run);
     renderSelectedRunEndpoints(run);
     renderSelectedPhotoMarkers(run);
+    updateUrlForSelectedRun(runId);
   }
 
   function clearSelection() {
@@ -1028,6 +1033,7 @@
     applySelectionStyles();
     renderSidebar();
     renderSelectedRunPanel();
+    clearRunIdFromUrl();
   }
 
   function clearSelectionState() {
@@ -1059,7 +1065,77 @@
       closePhotoLightbox();
       clearSelectionState();
       renderSelectedRunPanel();
+      clearRunIdFromUrl();
     }
+  }
+
+  function selectInitialRunFromUrl() {
+    var runId = getRunIdFromUrlHash();
+
+    if (!runId || !findRunById(runId)) {
+      return false;
+    }
+
+    selectAndCenterRun(runId);
+    return true;
+  }
+
+  function handleUrlHashChange() {
+    var runId = getRunIdFromUrlHash();
+
+    if (!runId) {
+      clearSelection();
+      fitMapToVisibleRuns();
+      return;
+    }
+
+    if (findRunById(runId)) {
+      selectAndCenterRun(runId);
+    }
+  }
+
+  function getRunIdFromUrlHash() {
+    var hash = window.location.hash || "";
+    var value;
+
+    if (hash.charAt(0) === "#") {
+      hash = hash.slice(1);
+    }
+
+    if (!hash) {
+      return "";
+    }
+
+    try {
+      value = decodeURIComponent(hash);
+    } catch (error) {
+      return "";
+    }
+
+    if (value.indexOf("run=") === 0) {
+      value = value.slice(4);
+    }
+
+    return value.trim();
+  }
+
+  function updateUrlForSelectedRun(runId) {
+    if (!runId || getRunIdFromUrlHash() === runId || !window.history || !history.replaceState) {
+      return;
+    }
+
+    history.replaceState(null, "", "#" + encodeURIComponent(runId));
+  }
+
+  function clearRunIdFromUrl() {
+    var cleanUrl;
+
+    if (!window.location.hash || !window.history || !history.replaceState) {
+      return;
+    }
+
+    cleanUrl = window.location.href.split("#")[0];
+    history.replaceState(null, "", cleanUrl);
   }
 
   function applySelectionStyles() {
