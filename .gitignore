@@ -2,6 +2,7 @@
 __pycache__/
 *.pyc
 inputs/
+*.exe
 
 # temporary while developing the site
 photos/generated*/
