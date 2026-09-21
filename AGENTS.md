@@ -1,201 +1,93 @@
-# AGENTS.md
+# Agent instructions
 
-## Project philosophy
+## Architecture: keep the project simple
 
-This project is intentionally simple, static, and educational.
+This static, educational architecture is intentional. Keep it understandable,
+hackable, dependency-light and runnable by opening `index.html` directly via
+`file:///`. Do not modernize it unless the user explicitly asks.
 
-Do not modernize the architecture unless explicitly requested.
+- Do not introduce npm, Vite, React, Vue, Svelte, TypeScript, bundlers,
+  transpilers, ES modules, server-side code or a required development server.
+- Do not use `fetch()` for local data or replace classic script loading with
+  asynchronous loading. Keep local asset paths relative.
+- Data uses `window.RUNS`, `window.GENERATED_TRACKS`, `window.GENERATED_RUNS` and
+  `window.RUNNING_MAP_CONFIG`. Preserve script ordering in `index.html`.
+- Site configuration belongs in `config/site-config.js`. No fetched JSON,
+  browser persistence or backend configuration system. Python's local cache
+  and manifest are offline generation utilities, not browser configuration.
+- Prefer geometry simplification and static preprocessing over runtime complexity.
+  Preserve compatibility with direct file opening and static hosting.
 
-The project must remain:
-- understandable;
-- hackable;
-- double-click runnable;
-- dependency-light;
-- easy to inspect manually.
+## Sources, generated data and photos
 
-The current architecture is a deliberate choice, not a temporary limitation.
+- Dropbox is read-only source data. Never modify, rename or delete its files
+  automatically. Do not change source GPX files or photos as a side effect of a fix.
+- Do not hand-edit `data/generated-runs.js` or `tracks/generated-tracks.js`
+  unless explicitly requested. Change the importer, configuration or authorized
+  source data, then regenerate when the task requires it.
+- Generated photos are identified by their JPEG content hash, never by their
+  position in a list. Keep image identity independent of gallery ordering.
+- GPS and captions belong to the corresponding source photo. A photo without
+  GPS must not acquire a map marker from another photo.
+- Cache reuse must verify the outputs. Preserve no-write `--dry-run` behavior
+  and atomic replacement of generated files, cache and manifest.
+- Keep `config/local.ini`, `.venv/`, `.cache/`, `.tools/`, `backups/` and generated
+  photos out of Git. Do not commit credentials or machine-specific paths.
 
----
+## Publication invariants
 
-## Hard constraints
+- In `file:///`, generated photo URLs stay local. On HTTP/HTTPS, use
+  `PHOTO_BASE_URL`. Do not silently fall back to remote images for missing local files.
+- Use `scripts/manage_photos.py` for generated photo publication. It prefers
+  the project-local rclone installed by `scripts/install_rclone.py`.
+- Copy and verify images before publishing the generated JavaScript that
+  references them. Copy must not delete remote objects.
+- Do not bypass manifest validation or the full downloaded-content verification.
+  Publication requires a complete import with photos, not `--year` output.
+- Cleanup is separate: verify the published site, inventory only obsolete
+  objects under `photos/generated/`, back them up, verify the backup, then
+  delete only the explicit inventory. Preserve recovery information.
+- Do not run imports, installations, uploads or cleanup merely to validate
+  documentation. Keep network and publication operations within the requested scope.
 
-Do NOT introduce:
-- npm
-- Vite
-- React
-- Vue
-- Svelte
-- TypeScript
-- bundlers
-- transpilers
-- fetch() for local data
-- ES modules
-- server-side requirements
-- local development server requirements
+## User interface
 
-The site must continue to work by directly opening:
+Traces provide context when visible and focus when selected. Selection is unique.
+Sidebar filters affect navigation lists only: they must not implicitly hide map
+traces or clear the selection. Visibility and selection are separate states.
 
-index.html
+## Python and changes
 
-through:
+Use standalone scripts with explicit CLI interfaces, deterministic output and
+readable code. Prefer the standard library; Pillow is the photo dependency.
+Do not add unnecessary dependencies or abstractions.
 
-file:///...
+Inspect the existing code, state a short plan and concrete risks, then make small,
+incremental changes. Prefer extending existing code over rewrites. For fixes to
+photo identity or publication safety, add regression tests using temporary fixtures
+and mocked remote calls; tests must not modify Dropbox or real R2 objects.
 
-All paths must remain relative.
+## Documentation
 
----
+- `README.md`: short operational guide for setup, local updates and publication.
+- `docs/maintenance.md`: R2 setup, troubleshooting, cleanup and recovery.
+- `docs/developpement.md`: configuration, architecture, CLI details and development.
+- `README_HUMANS.md`: human-owned notes. Read but **never modify**; report stale
+  instructions to the user instead. The README is the maintained user procedure.
 
-## Data loading philosophy
+Keep commands aligned with the actual CLI and defaults. Avoid duplicating large
+configuration blocks, hard-coded dataset counts, migration reports or development
+history in the README. Preserve rationale only when it prevents future mistakes.
 
-Data is intentionally loaded through classic script tags and global variables.
+## Validation
 
-Examples:
-- window.RUNS
-- window.GENERATED_RUNS
-- window.GENERATED_TRACKS
-- window.RUNNING_MAP_CONFIG
-
-Do not replace this with asynchronous loading unless explicitly requested.
-
----
-
-## Python philosophy
-
-Python scripts are standalone utilities.
-
-Prefer:
-- standard library
-- readability
-- deterministic outputs
-- explicit CLI interfaces
-
-Avoid unnecessary dependencies.
-
-Current Python tooling:
-- GPX parsing
-- ADEPS folder import
-- geometry simplification
-- static JS generation
-
-The Dropbox ADEPS folder is read-only input data.
-Never modify or delete Dropbox source files automatically.
-
----
-
-## Browser testing
-
-The Browser plugin may be unavailable in some Codex sessions.
-
-Do not pretend browser visual tests succeeded if browser execution tools are unavailable.
-
-If browser execution is unavailable:
-- perform static inspection;
-- inspect modified files carefully;
-- run syntax checks where possible;
-- provide a manual browser test checklist.
-
-Do not modify the project to work around missing browser tooling.
-
----
-
-## UX philosophy
-
-Map traces are:
-- context when visible;
-- focus when selected.
-
-Selection is unique.
-
-Sidebar filters:
-- only filter navigation lists;
-- do not implicitly hide map traces;
-- do not implicitly clear selection.
-
-Visibility and selection are separate concepts.
-
----
-
-## Configuration philosophy
-
-Configuration is static and script-based.
-
-Use:
-- config/site-config.js
-
-Do not introduce:
-- config.json loaded with fetch()
-- runtime persistence
-- backend configuration systems
-
-Configuration must remain compatible with:
-- file:///
-- static hosting
-- GitLab Pages
-
----
-
-## Generated files
-
-Files such as:
-- generated-runs.js
-- generated-tracks.js
-
-are generated artifacts.
-
-Do not edit them manually unless explicitly requested.
-
-Prefer changing:
-- source GPX files
-- import scripts
-- configuration
-- templates
-
-then regenerating outputs.
-
----
-
-## Preferred workflow
-
-When making changes:
-1. inspect existing code;
-2. propose a short plan;
-3. identify risks;
-4. implement incrementally;
-5. keep diffs small and readable;
-6. avoid unnecessary rewrites.
-
-Prefer modifying existing code over introducing new abstractions.
-
----
-
-## Performance philosophy
-
-The project should remain lightweight.
-
-Prefer:
-- geometry simplification;
-- static preprocessing;
-- compact generated JS;
-
-over:
-- runtime complexity;
-- dynamic loading systems;
-- framework abstractions.
-
----
-
-## Validation checklist
-
-Before concluding work:
-- no fetch() added;
-- no modules added;
-- no npm tooling added;
-- index.html still works by double-click;
-- no broken script ordering;
-- no generated file corruption;
-- no unnecessary architectural rewrite.
-
-When possible:
-- run syntax checks;
-- inspect console-visible risks;
-- provide manual testing steps.
+- Check relevant syntax and run `python -m unittest discover -s tests -v` for
+  Python behavior changes. Documentation-only edits need link and command checks,
+  not data regeneration or remote operations.
+- Verify no local-data `fetch()`, modules, npm tooling or server requirement was
+  introduced, and that script order and generated data remain valid.
+- For UI changes, test the map, filters, unique selection, photo markers and
+  galleries, including photos without GPS, and inspect browser errors.
+- Never claim visual tests passed if browser execution was unavailable or blocked.
+  Use static inspection and syntax checks, explain the limitation, and provide
+  a short manual checklist. Do not change the project to bypass browser restrictions.

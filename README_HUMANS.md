@@ -7,7 +7,7 @@
 
 ## Comment mettre à jour le site?
 
-**Mise à jour du site web:** 9 aout 2026
+**Procédure mise à jour :** 21 septembre 2026
 
 * Installer/mettre à jour venv python
 
@@ -38,18 +38,19 @@ python scripts/import_adeps_folder.py --output . --photos --force
 ```
 
 
-* Sync les photos `photos/generated/` avec **Cloudflare R2**:
+* Copier les photos référencées vers **Cloudflare R2**, sans suppression :
 
 ```
 tools\dry_run_sync_photos_to_r2.cmd  
 ```
-(check) puis (effectue le sync):
+(vérifier la simulation) puis (copier et vérifier le contenu distant) :
 ```
 tools\sync_photos_to_r2.cmd
-y      (pas "Y")
 ```
 
-push le site sur github => le site web va être généré sur github pages.
+Ces commandes ne demandent plus de confirmation `y`.
+
+Après réussite de la copie et de la vérification, commit puis push des données générées sur GitHub => le site web va être généré sur GitHub Pages.
 
 
 
@@ -59,16 +60,16 @@ push le site sur github => le site web va être généré sur github pages.
 
 ### Upload des photos RunningMap vers Cloudflare R2
 
-Les photos ne sont pas stockées dans Git. Elles sont synchronisées vers le bucket Cloudflare R2 `runningmap-photos`.
+Les photos ne sont pas stockées dans Git. Les images référencées par le manifeste local sont copiées et vérifiées dans le bucket Cloudflare R2 `runningmap-photos`.
 
 Exemple:
 
 URL publique (si pas de nom de domaine): https://pub-3f924d453f9647d78e861450e9ee52bf.r2.dev
 
-Configuration RunningMap: ( `config/site-config.js` )
+Configuration actuelle RunningMap : champ de `window.RUNNING_MAP_CONFIG` dans `config/site-config.js` :
 
 ```
-PHOTO_BASE_URL = "https://pub-3f924d453f9647d78e861450e9ee52bf.r2.dev"
+PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev",
 ```
 
 Simulation:
@@ -77,7 +78,7 @@ Simulation:
 tools\dry_run_sync_photos_to_r2.cmd
 ```
 
-Synchronisation réelle:
+Copie réelle et vérification du contenu distant :
 
 ```
 tools\sync_photos_to_r2.cmd
@@ -85,4 +86,4 @@ tools\sync_photos_to_r2.cmd
 
 Attention:
 
-`rclone sync` supprime côté R2 les fichiers absents du dossier local `photos/`. Toujours lancer le dry-run avant le vrai sync.
+Malgré leur nom « sync », ces lanceurs utilisent désormais `manage_photos.py copy` : ils ne suppriment aucun fichier sur R2. Toujours lancer le dry-run avant la copie. Le nettoyage est une opération séparée, avec sauvegarde préalable, décrite dans [la documentation de maintenance](docs/maintenance.md#nettoyer-les-anciennes-photos-r2).
