@@ -18,12 +18,25 @@ py -m venv .venv
 python.exe -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
+Linux:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
 
 * Ajoute les derniers runs ADEPS sur la Dropbox
 
 ```
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --photos --force
 ```
+Linux:
+```
+python scripts/import_adeps_folder.py --photos --dry-run
+python scripts/import_adeps_folder.py --output . --photos --force
+```
+
 
 * Sync les photos `photos/generated/` avec **Cloudflare R2**:
 
