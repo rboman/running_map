@@ -85,7 +85,10 @@ def safe_remote_name(name):
 
 
 def obsolete_photos(remote, current):
-    listing = json.loads(rclone("lsjson", remote_path(remote), "--recursive", "--files-only", capture=True))
+    listing = json.loads(rclone(
+        "lsjson", remote_path(remote), "--recursive", "--files-only",
+        "--no-modtime", "--no-mimetype", capture=True,
+    ))
     return sorted(safe_remote_name(item["Path"]) for item in listing if item["Path"] not in current)
 
 
