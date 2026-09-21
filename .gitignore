@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 inputs/
 *.exe
+config/local.ini
 
 # temporary while developing the site
 photos/generated*/

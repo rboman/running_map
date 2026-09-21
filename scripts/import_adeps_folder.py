@@ -2,6 +2,7 @@
 """Import ADEPS GPX folders into generated RunningMap data files."""
 
 import argparse
+import configparser
 import json
 import os
 import sys
@@ -52,7 +53,11 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Import ADEPS GPX folders into generated RunningMap JS files."
     )
-    parser.add_argument("source_dir", help="Source ADEPS folder to scan recursively.")
+    parser.add_argument(
+        "source_dir",
+        nargs="?",
+        help="Source ADEPS folder to scan recursively (default: config/local.ini).",
+    )
     parser.add_argument(
         "--output",
         default=".",
@@ -115,6 +120,33 @@ def parse_args():
         help="Regenerate photo files even if thumb/web outputs already exist.",
     )
     return parser.parse_args()
+
+
+def resolve_source_dir(source_arg):
+    if source_arg is not None:
+        return Path(source_arg).expanduser()
+
+    project_root = Path(__file__).resolve().parent.parent
+    config_path = project_root / "config" / "local.ini"
+    config = configparser.ConfigParser(interpolation=None)
+    try:
+        with config_path.open(encoding="utf-8-sig") as source:
+            config.read_file(source)
+    except FileNotFoundError:
+        fail(
+            "Copy config/local.example.ini to {} and set [import] adeps_dir, "
+            "or pass the source folder on the command line.".format(config_path)
+        )
+    except (OSError, UnicodeError, configparser.Error) as exc:
+        fail("Cannot read {}: {}".format(config_path, exc))
+
+    value = config.get("import", "adeps_dir", fallback="").strip()
+    if not value:
+        fail("Set [import] adeps_dir in {}.".format(config_path))
+    source_dir = Path(value).expanduser()
+    if not source_dir.is_absolute():
+        source_dir = project_root / source_dir
+    return source_dir
 
 
 def find_course_folders(source_dir, year):
@@ -650,7 +682,7 @@ def directory_file_stats(path):
 
 def main():
     args = parse_args()
-    source_dir = Path(args.source_dir)
+    source_dir = resolve_source_dir(args.source_dir)
     output_root = Path(args.output)
 
     if args.year and not (len(args.year) == 4 and args.year.isdigit()):

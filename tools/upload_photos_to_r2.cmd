@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-cd /d D:\dev\VIBECODING\running_map
+cd /d "%~dp0.." || exit /b 1
 
 echo Upload des photos vers Cloudflare R2...
 rclone copy photos r2-runningmap:runningmap-photos/photos --progress

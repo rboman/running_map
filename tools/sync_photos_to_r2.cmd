@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-cd /d D:\dev\VIBECODING\running_map
+cd /d "%~dp0.." || exit /b 1
 
 echo.
 echo ATTENTION : synchronisation reelle des photos vers Cloudflare R2.

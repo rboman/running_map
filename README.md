@@ -225,7 +225,43 @@ Exemples :
 2025\2025-01-19 - Aywaille
 ```
 
-Commande de base depuis Windows :
+### Configurer chaque machine
+
+Copiez `config/local.example.ini` vers `config/local.ini`, puis renseignez le
+chemin de votre dossier ADEPS, sans guillemets :
+
+```ini
+[import]
+adeps_dir = G:/Dropbox/Mine/Sport/ADEPS
+```
+
+Sur Linux, utilisez par exemple `/home/roger/Dropbox/Mine/Sport/ADEPS`.
+Chaque machine conserve son propre `config/local.ini`, ignoré par Git ; le
+modèle reste partagé dans le dépôt. Aucune dépendance Python supplémentaire
+n'est nécessaire. Cette configuration sert uniquement à l'import Python.
+
+Depuis la racine du projet, lancez :
+
+```text
+python scripts/import_adeps_folder.py --photos --dry-run
+python scripts/import_adeps_folder.py --photos --force
+```
+
+Sur Linux, utilisez `python3` si nécessaire. Le fichier INI est retrouvé à partir
+de l'emplacement du script, même depuis un autre dossier. Un chemin relatif dans
+l'INI est interprété depuis la racine du projet ; `~` désigne le dossier personnel.
+La destination reste le dossier courant par défaut : depuis un autre dossier,
+précisez `--output` avec le chemin du projet.
+
+Le chemin source passé dans la commande reste prioritaire et permet d'importer
+un autre dossier sans modifier la configuration locale. Un chemin relatif passé
+en argument reste relatif au dossier courant. Si la configuration manque, est
+invalide ou désigne un dossier inexistant, l'import s'arrête avec un message
+d'erreur avant toute génération.
+
+### Fournir le chemin dans la commande
+
+Commande de base depuis Windows (toujours utilisable sans fichier INI) :
 
 ```cmd
 python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . --force
@@ -276,7 +312,7 @@ python scripts\import_adeps_folder.py "G:\Dropbox\Mine\Sport\ADEPS" --output . -
 Options disponibles :
 
 ```text
-source_dir
+source_dir (facultatif si config/local.ini est renseigné)
 --output
 --force
 --dry-run
@@ -321,6 +357,10 @@ https://runningmap-photos.rboman.dev/photos/generated/2025-01-19-aywaille/photo-
 ```
 
 Les commandes rclone sont dans `tools/` :
+
+Ces scripts Windows retrouvent le projet depuis leur propre emplacement :
+aucun chemin propre à un PC n'est à modifier. Ils nécessitent `rclone` configuré
+sur chaque machine. Les fichiers `.cmd` ne sont pas des scripts Linux.
 
 ```cmd
 tools\dry_run_sync_photos_to_r2.cmd
