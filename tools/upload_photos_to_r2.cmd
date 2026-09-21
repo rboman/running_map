@@ -1,16 +1,10 @@
 @echo off
 setlocal
-
 cd /d "%~dp0.." || exit /b 1
+set "PHOTO_PYTHON=python"
+if exist ".venv\Scripts\python.exe" set "PHOTO_PYTHON=.venv\Scripts\python.exe"
 
-echo Upload des photos vers Cloudflare R2...
-rclone copy photos r2-runningmap:runningmap-photos/photos --progress
-
-if errorlevel 1 (
-    echo.
-    echo ERREUR pendant l'upload.
-    exit /b 1
-)
-
-echo.
-echo Upload termine.
+rem Compatibility wrapper: copy referenced images only; never delete remote files.
+"%PHOTO_PYTHON%" scripts\manage_photos.py copy
+if errorlevel 1 exit /b 1
+echo Photos verified.

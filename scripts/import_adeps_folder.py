@@ -3,10 +3,13 @@
 
 import argparse
 import configparser
+import io
 import json
 import os
 import sys
 from pathlib import Path
+
+from photo_assets import DATA_PATHS, PhotoCache, atomic_write, digest_bytes, write_manifest
 
 from gpx_utils import (
     elevation_gain_m,
@@ -33,6 +36,7 @@ COLORS = [
 ]
 
 SUPPORTED_PHOTO_SUFFIXES = set([".jpg", ".jpeg", ".png"])
+VIDEO_SUFFIXES = set([".mp4", ".mov", ".m4v", ".avi"])
 PHOTO_OUTPUT_ROOT = "photos/generated"
 PHOTO_THUMB_ASPECT_RATIO = 112.0 / 180.0
 
@@ -254,23 +258,24 @@ def import_run_photos(course_folder, metadata, args, output_root, warnings):
 
     supported_paths = []
 
-    for path in sorted(photo_folder.iterdir(), key=lambda item: item.name.lower()):
+    for path in sorted(photo_folder.iterdir(), key=lambda item: (item.name.lower(), item.name)):
         if not path.is_file():
             continue
         suffix = path.suffix.lower()
         if suffix in SUPPORTED_PHOTO_SUFFIXES:
             supported_paths.append(path)
+        elif suffix in VIDEO_SUFFIXES:
+            print("Skipped video (not a photo): {}".format(path))
         else:
             warnings.append("{}: unsupported photo format ignored".format(path))
 
     photo_report["detected"] = len(supported_paths)
 
     photos = []
-    for index, source_path in enumerate(supported_paths, start=1):
+    for source_path in supported_paths:
         photo = build_photo_metadata(
             source_path,
             metadata["id"],
-            index,
             args,
             output_root,
             warnings,
@@ -295,49 +300,54 @@ def validate_photo_options(args):
         fail("--photo-quality must be between 1 and 95.")
 
 
-def build_photo_metadata(source_path, run_id, index, args, output_root, warnings):
+def build_photo_metadata(source_path, run_id, args, output_root, warnings):
     try:
-        from PIL import Image, ImageOps
+        from PIL import Image, ImageOps, features, __version__ as pillow_version
     except ImportError:
         fail("Pillow is required for --photos. Install requirements.txt first.")
 
     output_dir = output_root / PHOTO_OUTPUT_ROOT / run_id
-    thumb_name = "photo-{0:03d}-thumb.jpg".format(index)
-    web_name = "photo-{0:03d}-web.jpg".format(index)
-    thumb_path = output_dir / thumb_name
-    web_path = output_dir / web_name
-
+    cache = args.photo_cache
     try:
-        with Image.open(source_path) as image:
+        # Hash and decode the same bytes, even if Dropbox changes the source later.
+        source_bytes = source_path.read_bytes()
+        recipe = {
+            "algorithm": 1,
+            "source": digest_bytes(source_bytes),
+            "thumb_size": args.photo_thumb_size,
+            "web_size": args.photo_web_size,
+            "quality": args.photo_quality,
+            "pillow": pillow_version,
+            "jpeg": features.version_codec("jpg"),
+            "libjpeg_turbo": features.version_feature("libjpeg_turbo"),
+        }
+        key = digest_bytes(json.dumps(recipe, sort_keys=True).encode("utf-8"))
+        with Image.open(io.BytesIO(source_bytes)) as image:
             gps = extract_gps_coordinates(image)
-            thumb_size = None
-            web_size = None
-            if not args.dry_run:
-                output_dir.mkdir(parents=True, exist_ok=True)
-                if args.force_photos or not thumb_path.exists():
-                    thumb_size = save_thumbnail_jpeg(
-                        image,
-                        thumb_path,
-                        args.photo_thumb_size,
-                        args.photo_quality,
-                        Image,
-                        ImageOps,
-                    )
-                else:
-                    thumb_size = read_image_size(thumb_path, Image)
-                if args.force_photos or not web_path.exists():
-                    web_size = save_resized_jpeg(
-                        image,
-                        web_path,
-                        args.photo_web_size,
-                        args.photo_quality,
-                        ImageOps,
-                    )
-                else:
-                    web_size = read_image_size(web_path, Image)
-            else:
-                thumb_size = (args.photo_thumb_size, thumbnail_height(args.photo_thumb_size))
-                web_size = resized_dimensions(image, args.photo_web_size, ImageOps)
+            entry = None if args.force_photos else cache.get(key, run_id, Image)
+            if entry is None:
+                entry = {}
+                for variant in ("thumb", "web"):
+                    buffer = io.BytesIO()
+                    if variant == "thumb":
+                        size = save_thumbnail_jpeg(
+                            image, buffer, args.photo_thumb_size,
+                            args.photo_quality, Image, ImageOps,
+                        )
+                    else:
+                        size = save_resized_jpeg(
+                            image, buffer, args.photo_web_size,
+                            args.photo_quality, ImageOps,
+                        )
+                    data = buffer.getvalue()
+                    name = "photo-{}-{}.jpg".format(digest_bytes(data), variant)
+                    if not args.dry_run:
+                        atomic_write(output_dir / name, data)
+                    entry[variant] = {"name": name, "size": list(size)}
+                cache.entries[key] = entry
+                cache.generated += 1
+            thumb_name, thumb_size = entry["thumb"]["name"], entry["thumb"]["size"]
+            web_name, web_size = entry["web"]["name"], entry["web"]["size"]
     except OSError as exc:
         warnings.append("{}: could not read photo ({})".format(source_path, exc))
         return None
@@ -397,21 +407,8 @@ def save_thumbnail_jpeg(image, output_path, width, quality, image_module, image_
     return resized.size
 
 
-def read_image_size(path, image_module):
-    with image_module.open(path) as image:
-        return image.size
-
-
 def thumbnail_height(width):
     return int(round(width * PHOTO_THUMB_ASPECT_RATIO))
-
-
-def resized_dimensions(image, max_size, image_ops):
-    width, height = image_ops.exif_transpose(image).size
-    if width <= max_size and height <= max_size:
-        return (width, height)
-    scale = min(float(max_size) / float(width), float(max_size) / float(height))
-    return (int(width * scale), int(height * scale))
 
 
 def extract_gps_coordinates(image):
@@ -476,10 +473,10 @@ def write_generated_files(output_root, tracks, runs, force):
     runs_path.parent.mkdir(parents=True, exist_ok=True)
 
     tracks_text = format_generated_tracks_js(tracks)
-    tracks_path.write_text(tracks_text, encoding="utf-8")
+    atomic_write(tracks_path, tracks_text.encode("utf-8"))
 
     runs_text = format_generated_runs_js(runs)
-    runs_path.write_text(runs_text, encoding="utf-8")
+    atomic_write(runs_path, runs_text.encode("utf-8"))
 
     return tracks_path, runs_path
 
@@ -684,6 +681,11 @@ def main():
     args = parse_args()
     source_dir = resolve_source_dir(args.source_dir)
     output_root = Path(args.output)
+    args.photo_cache = PhotoCache(output_root)
+    if not args.dry_run and not args.force:
+        for path in DATA_PATHS:
+            if (output_root / path).exists():
+                fail("Output file already exists: {}. Use --force to overwrite.".format(path))
 
     if args.year and not (len(args.year) == 4 and args.year.isdigit()):
         fail("--year must use the YYYY format.")
@@ -728,6 +730,18 @@ def main():
     generated_files = []
     if not args.dry_run:
         generated_files = write_generated_files(output_root, tracks, runs, args.force)
+        if args.with_photos:
+            args.photo_cache.save()
+        write_manifest(
+            output_root, runs,
+            bool(args.with_photos and not args.year and not warnings and not skipped_count and runs),
+            warnings,
+        )
+
+    if args.with_photos:
+        print("Photos reused: {}; recalculated: {}".format(
+            args.photo_cache.reused, args.photo_cache.generated,
+        ))
 
     print_summary(
         len(course_folders),

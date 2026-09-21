@@ -123,7 +123,7 @@ window.RUNNING_MAP_CONFIG = {
 
 Options principales :
 
-- `PHOTO_BASE_URL` : préfixe public pour les photos. Vide, les chemins `./photos/...` restent locaux.
+- `PHOTO_BASE_URL` : préfixe public des photos sur HTTP/HTTPS. En `file:///`, les copies locales sont toujours utilisées, même si ce préfixe est renseigné.
 - `siteTitle` et `siteSubtitle` : texte de l'en-tête latéral.
 - `map.initialCenter`, `map.initialZoom`, `map.tileLayer` : réglages initiaux de carte.
 - `map.tileLayer` : accepte `osm` ou `opentopomap`.
@@ -285,8 +285,8 @@ data\generated-runs.js
 Avec `--photos`, le script lit les sous-dossiers `photos\` présents dans chaque dossier de course et génère des copies web légères dans :
 
 ```text
-photos\generated\{run_id}\photo-001-thumb.jpg
-photos\generated\{run_id}\photo-001-web.jpg
+photos/generated/{run_id}/photo-<SHA256 du JPEG miniature>-thumb.jpg
+photos/generated/{run_id}/photo-<SHA256 du JPEG web>-web.jpg
 ```
 
 Les originaux restent la référence dans Dropbox. Les JPEG générés sont destinés à la consultation web et ne conservent pas les EXIF.
@@ -334,46 +334,124 @@ Valeurs par défaut importantes :
 - images web limitées à 800 px ;
 - qualité JPEG 75.
 
-L'import photo accepte `.jpg`, `.jpeg` et `.png`. Les formats non supportés sont ignorés avec avertissement. Si une photo contient des coordonnées GPS EXIF, elles sont copiées dans `data/generated-runs.js` pour placer le marqueur photo sur la carte.
+L'import photo accepte `.jpg`, `.jpeg` et `.png`. Les vidéos `.mp4`, `.mov`, `.m4v` et `.avi` sont signalées comme ignorées ; les autres formats non supportés déclenchent un avertissement. Si une photo contient des coordonnées GPS EXIF, elles sont copiées dans `data/generated-runs.js` pour placer le marqueur photo sur la carte.
 
-## Photos et Cloudflare R2
+## Photos locales, cache et publication Cloudflare R2
 
-Les photos générées peuvent fonctionner localement avec les chemins `./photos/...`, mais le site peut aussi utiliser une base publique via :
+Les photos portent une empreinte SHA256 de leur contenu JPEG, et non leur numéro
+dans la galerie. Ajouter, supprimer ou renommer une source ne réattribue donc
+jamais l'adresse d'une image à une autre. L'ordre d'affichage reste celui des noms
+sources triés. Les GPS et légendes proviennent toujours de la source correspondante.
 
-```js
-PHOTO_BASE_URL: "https://runningmap-photos.rboman.dev"
-```
+À l'ouverture par double-clic (`file:///`), le site utilise **les photos locales**.
+Sur HTTP/HTTPS, il utilise `PHOTO_BASE_URL` dans `config/site-config.js`, actuellement
+`https://runningmap-photos.rboman.dev`. Pas de repli automatique vers R2 si une
+photo locale manque : sur un nouveau PC, il faut d'abord importer avec `--photos`.
 
-Dans ce mode, l'application préfixe les chemins photo relatifs. Par exemple :
+Le cache `.cache/photo-import.json` évite de réencoder les sources inchangées.
+Il dépend des octets sources, des paramètres et des versions du convertisseur,
+de Pillow et de JPEG. Les fichiers réutilisés sont vérifiés par leur empreinte.
+Une sortie absente ou altérée est recréée. Le cache peut être supprimé sans perte :
+le prochain import sera simplement plus lent. Il reste propre à chaque machine,
+ignoré par Git, et n'est jamais transféré à R2. Une version différente de Pillow
+peut produire de nouvelles adresses ; elle ne peut pas mélanger les images.
+
+`--force` autorise le remplacement des données JavaScript ; `--force-photos`
+force le recalcul des JPEG. `--dry-run` ne modifie ni images, ni données, ni cache
+(même s'il doit calculer en mémoire des images encore inconnues).
+
+### Procédure habituelle, Ubuntu et Windows
+
+Sur Ubuntu, activer l'environnement avec `source .venv/bin/activate` ; sur Windows,
+avec `.venv\Scripts\activate.bat`. Exécuter depuis la racine du projet :
+
+1. Attendre la synchronisation complète des sources Dropbox. Ne pas publier
+   simultanément depuis deux PC.
+2. Importer **tous** les parcours et leurs photos, sans `--year` :
+
+   ```text
+   python scripts/import_adeps_folder.py --photos --force
+   python scripts/manage_photos.py verify-local
+   ```
+
+3. Examiner le bilan (aucun avertissement ni dossier ignoré), puis ouvrir
+   `index.html`. Vérifier les galeries, légendes et marqueurs GPS.
+4. Simuler puis copier seulement les images référencées, sans suppression :
+
+   ```text
+   python scripts/manage_photos.py copy --dry-run
+   python scripts/manage_photos.py copy
+   ```
+
+5. Une fois la vérification réussie, committer et pousser les modifications du
+   site, y compris les deux fichiers JavaScript générés. Attendre GitHub Pages.
+6. Vérifier que la version publique correspond exactement à la version locale :
+
+   ```text
+   python scripts/manage_photos.py verify-public
+   ```
+
+L'utilitaire utilise `rclone`, configuré sur chaque PC avec le remote
+`r2-runningmap`. Il accepte `--root`, `--remote` (défaut :
+`r2-runningmap:runningmap-photos`) et `--site-url` (défaut :
+`https://runningmap.rboman.dev`). `verify-remote` compare les contenus téléchargés,
+pas seulement leurs tailles ; cette vérification est aussi exécutée automatiquement
+à la fin de `copy`. Les opérations distantes restent confinées à
+`photos/generated/` dans le bucket.
+
+L'outil passe explicitement `--s3-acl private --s3-no-check-bucket`, conformément
+à la [configuration R2 de rclone](https://developers.cloudflare.com/r2/examples/rclone/).
+L'accès public reste celui du domaine R2 configuré sur le bucket ; ces options
+ne changent pas cette configuration.
+
+La copie utilise également `--s3-no-head` pour éviter une requête HEAD avec
+`versionId` émise par l'ancien rclone Ubuntu après un upload : R2 la refuse avec
+`501 Not Implemented`, même quand le fichier a bien été reçu. Cette vérification
+est remplacée par **la comparaison obligatoire de tous les contenus téléchargés**
+avant que `copy` ne termine avec succès. La commande `verify-remote` permet de
+répéter ce contrôle indépendamment.
+
+L'import crée `.cache/photo-manifest.json`, qui relie les images référencées aux
+empreintes des deux fichiers JavaScript. Une modification ultérieure des données,
+un import partiel ou des images altérées empêchent la publication par cet outil.
+Relancer un import complet pour reconstruire le manifeste. Le manifeste reste
+local ; il ne sert pas au chargement du site.
+
+Les anciens lanceurs Windows `tools/dry_run_sync_photos_to_r2.cmd`,
+`tools/sync_photos_to_r2.cmd` et `tools/upload_photos_to_r2.cmd` utilisent désormais
+cet outil. Malgré le nom historique « sync », **ils ne suppriment plus rien**.
+
+### Nettoyer les anciennes images séparément
+
+Après publication et contrôle visuel du site :
 
 ```text
-./photos/generated/2025-01-19-aywaille/photo-001-web.jpg
+python scripts/manage_photos.py cleanup --dry-run
+python scripts/manage_photos.py cleanup
 ```
 
-devient :
+Le nettoyage exige que le site public corresponde aux fichiers locaux et vérifie
+les images actuelles sur R2. Il inventorie seulement les objets de
+`photos/generated/` absents du manifeste publié, les sauvegarde dans
+`backups/r2-<date UTC>/photos/generated/`, vérifie cette copie, puis supprime
+uniquement la liste inventoriée. Aucun nettoyage n'a lieu pendant l'import.
+
+Le dossier de sauvegarde, ignoré par Git, contient `cleanup.json` et `obsolete.txt`.
+Pour restaurer une sauvegarde, remplacer `<date UTC>` dans cette commande :
 
 ```text
-https://runningmap-photos.rboman.dev/photos/generated/2025-01-19-aywaille/photo-001-web.jpg
+rclone copy backups/r2-<date UTC>/photos/generated r2-runningmap:runningmap-photos/photos/generated --checksum --s3-no-head --s3-acl private --s3-no-check-bucket
+rclone check backups/r2-<date UTC>/photos/generated r2-runningmap:runningmap-photos/photos/generated --download --one-way
 ```
 
-Les commandes rclone sont dans `tools/` :
+Conserver cette sauvegarde tant qu'un retour à une ancienne version du site reste
+utile : les anciennes pages ou les onglets non rechargés peuvent sinon référencer
+des images supprimées. Les fichiers hors de `photos/generated/` restent intacts.
 
-Ces scripts Windows retrouvent le projet depuis leur propre emplacement :
-aucun chemin propre à un PC n'est à modifier. Ils nécessitent `rclone` configuré
-sur chaque machine. Les fichiers `.cmd` ne sont pas des scripts Linux.
-
-```cmd
-tools\dry_run_sync_photos_to_r2.cmd
-tools\sync_photos_to_r2.cmd
-tools\upload_photos_to_r2.cmd
-```
-
-Utilisez toujours le dry-run avant `sync`, car `rclone sync` peut supprimer côté R2 les fichiers absents du dossier local `photos/`.
-
-Les photos générées sont ignorées par Git via `.gitignore` :
+## Vérifications des utilitaires
 
 ```text
-photos/generated/
+python -m unittest discover -s tests -v
 ```
 
 ## Dépendances Python

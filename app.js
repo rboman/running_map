@@ -1,6 +1,6 @@
 (function () {
   var DEFAULT_CONFIG = {
-    // Empty keeps the existing ./photos/... paths working from file:///.
+    // Public photo base. file:/// always uses the local copies.
     PHOTO_BASE_URL: "",
     siteTitle: "RunningMap",
     siteSubtitle: "Parcours de d\u00e9monstration",
@@ -2023,6 +2023,10 @@
   }
 
   function getPhotoBaseUrl() {
+    if (window.location.protocol === "file:") {
+      return "";
+    }
+
     return String(config.PHOTO_BASE_URL || "").trim();
   }
 

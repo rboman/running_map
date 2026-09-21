@@ -1,24 +1,10 @@
 @echo off
 setlocal
-
 cd /d "%~dp0.." || exit /b 1
+set "PHOTO_PYTHON=python"
+if exist ".venv\Scripts\python.exe" set "PHOTO_PYTHON=.venv\Scripts\python.exe"
 
-echo.
-echo Simulation de synchronisation des photos vers Cloudflare R2
-echo Source      : photos
-echo Destination : r2-runningmap:runningmap-photos/photos
-echo.
-echo Aucune modification ne sera effectuee.
-echo.
-
-rclone sync photos r2-runningmap:runningmap-photos/photos --dry-run --progress
-
-if errorlevel 1 (
-    echo.
-    echo ERREUR pendant la simulation.
-    exit /b 1
-)
-
-echo.
-echo Simulation terminee.
-echo Verifie bien la liste des fichiers a copier/modifier/supprimer avant de lancer le vrai sync.
+rem Compatibility wrapper: copy referenced images only; never delete remote files.
+"%PHOTO_PYTHON%" scripts\manage_photos.py copy --dry-run
+if errorlevel 1 exit /b 1
+echo Simulation complete. No remote changes.
