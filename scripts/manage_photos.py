@@ -25,9 +25,13 @@ def rclone_executable():
 
 
 def rclone(*arguments, capture=False):
+    executable = rclone_executable()
+    print("Running {}: {}".format(executable, arguments[0]), flush=True)
     result = subprocess.run(
         # R2 configuration: private ACL and an already existing bucket.
-        [rclone_executable(), *map(str, arguments), "--s3-acl", "private", "--s3-no-check-bucket"], check=True,
+        [executable, *map(str, arguments), "--s3-acl", "private", "--s3-no-check-bucket",
+         "--checkers", "16", "--transfers", "8", "--stats", "30s",
+         "--stats-one-line", "--stats-log-level", "NOTICE"], check=True,
         stdout=subprocess.PIPE if capture else None,
         text=True,
     )
@@ -47,7 +51,9 @@ def write_list(path, names):
 
 
 def public_bytes(base, path):
-    request = Request(base.rstrip("/") + "/" + path, headers={"Cache-Control": "no-cache"})
+    request = Request(base.rstrip("/") + "/" + path, headers={
+        "Cache-Control": "no-cache", "User-Agent": "RunningMap/1.0 (photo verification)",
+    })
     with urlopen(request, timeout=60) as response:
         return response.read()
 
