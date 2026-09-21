@@ -11,3 +11,4 @@ photos/generated*/
 # Local photo cache, publication manifest and R2 recovery copies
 .cache/
 backups/
+.tools/

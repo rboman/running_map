@@ -4,6 +4,7 @@
 import argparse
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path, PurePosixPath
 import subprocess
 import sys
@@ -14,12 +15,19 @@ from photo_assets import DATA_PATHS, digest_bytes, validate_manifest, write_json
 
 
 PUBLIC_FILES = DATA_PATHS + ("app.js", "config/site-config.js", "index.html", "style.css")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+
+def rclone_executable():
+    name = "rclone.exe" if os.name == "nt" else "rclone"
+    local = PROJECT_ROOT / ".tools/rclone" / name
+    return str(local) if local.is_file() else "rclone"
 
 
 def rclone(*arguments, capture=False):
     result = subprocess.run(
         # R2 configuration: private ACL and an already existing bucket.
-        ["rclone", *map(str, arguments), "--s3-acl", "private", "--s3-no-check-bucket"], check=True,
+        [rclone_executable(), *map(str, arguments), "--s3-acl", "private", "--s3-no-check-bucket"], check=True,
         stdout=subprocess.PIPE if capture else None,
         text=True,
     )

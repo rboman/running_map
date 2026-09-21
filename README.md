@@ -391,6 +391,35 @@ avec `.venv\Scripts\activate.bat`. Exécuter depuis la racine du projet :
    python scripts/manage_photos.py verify-public
    ```
 
+### Installer rclone uniquement dans ce projet
+
+Sur Ubuntu, Windows ou macOS 64 bits (Intel/AMD ou ARM), après activation du venv :
+
+```text
+python scripts/install_rclone.py
+```
+
+Ce script installe la version stable **1.75.1** depuis les
+[téléchargements officiels](https://rclone.org/downloads/), après comparaison avec
+le fichier officiel `SHA256SUMS`. L'exécutable est placé dans
+`.tools/rclone/rclone` (`rclone.exe` sur Windows), sans sudo et sans modifier
+l'installation système. Pour choisir une autre version stable, utiliser
+`--version X.Y.Z`.
+
+`manage_photos.py` préfère automatiquement cet exécutable local ; s'il manque,
+il utilise `rclone` dans le PATH. Le remote déjà configuré sur la machine est
+réutilisé : les identifiants ne sont ni copiés dans le projet ni ajoutés à Git.
+Le dossier `.tools/` est ignoré par Git ; refaire l'installation sur chaque PC.
+Les empreintes et la version installée sont conservées dans
+`.tools/rclone/installation.json`.
+
+Pour utiliser directement la version locale sous Ubuntu :
+
+```text
+.tools/rclone/rclone version
+.tools/rclone/rclone listremotes
+```
+
 L'utilitaire utilise `rclone`, configuré sur chaque PC avec le remote
 `r2-runningmap`. Il accepte `--root`, `--remote` (défaut :
 `r2-runningmap:runningmap-photos`) et `--site-url` (défaut :
@@ -456,7 +485,7 @@ python -m unittest discover -s tests -v
 
 ## Dépendances Python
 
-Les scripts GPX utilisent la bibliothèque standard Python.
+Utiliser Python 3.9 ou plus récent. Les scripts GPX utilisent la bibliothèque standard Python.
 
 Pillow est nécessaire uniquement pour l'option `--photos` :
 
