@@ -80,7 +80,7 @@ défaut : préciser `--output` si l'on lance la commande ailleurs.
 | `--photo-quality` | Qualité JPEG : `75`. |
 | `--force-photos` | Recalcule les JPEG même si le cache est valide. |
 
-Les photos `.jpg`, `.jpeg` et `.png` sont lues dans le sous-dossier `photos/`
+Les photos `.jpg`, `.jpeg`, `.jfif` et `.png` sont lues dans le sous-dossier `photos/`
 de chaque parcours. Les vidéos `.mp4`, `.mov`, `.m4v` et `.avi` sont signalées
 comme ignorées ; les autres formats non supportés déclenchent un avertissement.
 L'orientation EXIF est appliquée. Les GPS présents sont copiés dans les données

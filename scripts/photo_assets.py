@@ -120,7 +120,13 @@ def validate_manifest(root):
     if not isinstance(manifest, dict) or manifest.get("version") != 1:
         raise RuntimeError("Missing or invalid photo manifest. Run a full import with --photos.")
     if manifest.get("publishable") is not True:
-        raise RuntimeError("Publication requires a full import with --photos, without warnings or skipped folders.")
+        message = "Publication requires a full import with --photos, without warnings or skipped folders."
+        warnings = manifest.get("warnings")
+        if isinstance(warnings, list):
+            for warning in warnings:
+                message += "\n- {}".format(warning)
+        message += "\nResolve any warnings, then run a full import with --photos --force (without --year)."
+        raise RuntimeError(message)
     try:
         if set(manifest["data"]) != set(DATA_PATHS):
             raise ValueError("Unexpected data files")

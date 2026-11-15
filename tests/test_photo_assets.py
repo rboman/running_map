@@ -178,6 +178,32 @@ class PhotoTests(unittest.TestCase):
         (self.sources / 'clip.mp4').write_bytes(b'video')
         self.assertEqual(len(self.import_folder()), 1)
 
+    def test_jfif_is_imported_without_changing_source(self):
+        path = self.source().rename(self.sources / 'photo.JFIF')
+        original = path.read_bytes()
+        photos = self.import_folder()
+        self.assertEqual(len(photos), 1)
+        self.assertEqual(photos[0]['source'], 'photo.JFIF')
+        self.assertNotIn('lat', photos[0])
+        self.assertNotIn('lon', photos[0])
+        self.assertEqual(path.read_bytes(), original)
+        self.assertTrue(self.manifest(photos)['publishable'])
+
+    def test_unpublishable_manifest_reports_import_warnings_before_remote_calls(self):
+        photo = self.build(self.source())
+        manifest = self.manifest([photo])
+        manifest['publishable'] = False
+        warning = 'photos/broken.jfif: could not read photo'
+        manifest['warnings'] = [warning]
+        (self.output / MANIFEST_PATH).write_text(json.dumps(manifest))
+        with patch.object(manage_photos, 'rclone') as remote:
+            argv = ['manage_photos', 'copy', '--root', str(self.output)]
+            with patch.object(sys, 'argv', argv), self.assertRaises(RuntimeError) as error:
+                manage_photos.main()
+            self.assertIn(warning, str(error.exception))
+            self.assertIn('--photos --force', str(error.exception))
+            remote.assert_not_called()
+
     def test_manifest_rejects_changed_data_and_tampered_photo(self):
         photo = self.build(self.source())
         self.manifest([photo])

@@ -35,7 +35,7 @@ COLORS = [
     "#666666",
 ]
 
-SUPPORTED_PHOTO_SUFFIXES = set([".jpg", ".jpeg", ".png"])
+SUPPORTED_PHOTO_SUFFIXES = set([".jpg", ".jpeg", ".jfif", ".png"])
 VIDEO_SUFFIXES = set([".mp4", ".mov", ".m4v", ".avi"])
 PHOTO_OUTPUT_ROOT = "photos/generated"
 PHOTO_THUMB_ASPECT_RATIO = 112.0 / 180.0
