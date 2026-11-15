@@ -3,6 +3,12 @@ __pycache__/
 *.pyc
 inputs/
 *.exe
+config/local.ini
 
 # temporary while developing the site
 photos/generated*/
+
+# Local photo cache, publication manifest and R2 recovery copies
+.cache/
+backups/
+.tools/
