@@ -56,8 +56,9 @@ il utilise `rclone` dans le PATH. Il affiche l'exécutable choisi à chaque opé
 | --- | --- |
 | `python scripts/manage_photos.py verify-local` | Images locales, manifeste et données générées concordent. |
 | `python scripts/manage_photos.py copy --dry-run` | Simulation des transferts, sans changement sur R2. |
-| `python scripts/manage_photos.py copy` | Copie sans suppression, suivie d'une comparaison complète des contenus distants. |
-| `python scripts/manage_photos.py verify-remote` | Répète uniquement cette comparaison avec R2. |
+| `python scripts/manage_photos.py copy` | Copie sans suppression, puis vérification de toutes les images par MD5 ; téléchargement seulement si l'empreinte distante est inexploitable. |
+| `python scripts/manage_photos.py verify-remote` | Répète uniquement cette vérification avec R2. |
+| `python scripts/manage_photos.py verify-remote --download` | Audit intégral facultatif : retélécharge toutes les images référencées et compare leurs contenus. |
 | `python scripts/manage_photos.py verify-public` | Compare les deux fichiers de données, `app.js`, `config/site-config.js`, `index.html` et `style.css` au site publié, en tolérant les fins de ligne Windows. |
 
 `verify-public` ne remplace pas le contrôle visuel ni la vérification des images
@@ -68,6 +69,13 @@ Les lanceurs `tools/dry_run_sync_photos_to_r2.cmd`, `tools/sync_photos_to_r2.cmd
 et `tools/upload_photos_to_r2.cmd` appellent cet outil. Le premier simule la copie ;
 les deux autres copient et vérifient. Ils ne demandent pas de confirmation `y`
 et ne suppriment pas de fichiers distants malgré le nom « sync ».
+
+En usage normal, la vérification lit l'inventaire et les checksums distants,
+sans retélécharger les images dont le MD5 correspond. Le bilan indique le nombre
+d'images vérifiées par MD5 et par téléchargement. Une relance ne nécessite pas
+de cache local de vérification. Des requêtes de métadonnées restent nécessaires.
+Une image absente, une taille différente ou un MD5 différent bloque la procédure ;
+une taille identique ne suffit jamais à déclarer une image vérifiée.
 
 ## Nettoyer les anciennes photos R2
 
@@ -81,11 +89,13 @@ python scripts/manage_photos.py cleanup
 
 La simulation affiche la liste des objets inutilisés. La commande réelle :
 
-1. Vérifie le site public et les images actuelles sur R2.
+1. Vérifie le site public et toutes les images actuelles sur R2 par téléchargement,
+   y compris lors de `cleanup --dry-run`.
 2. Liste les objets de `photos/generated/` absents du manifeste publié.
-3. Les copie dans `backups/r2-<date UTC>/photos/generated/` et vérifie les contenus.
+3. Les copie dans `backups/r2-<date UTC>/photos/generated/` et vérifie les contenus
+   par téléchargement avant toute suppression.
 4. Revérifie le manifeste et le site, puis supprime uniquement la liste inventoriée.
-5. Vérifie de nouveau les images actuelles sur R2.
+5. Vérifie de nouveau les images actuelles sur R2 par téléchargement.
 
 L'import et `copy` ne déclenchent jamais ce nettoyage. Les autres chemins du
 bucket restent intacts. Les anciens onglets ou versions du site peuvent perdre
@@ -120,7 +130,8 @@ Git distincte ; la restauration des photos seule ne modifie pas le site.
 | Image générée absente ou altérée | Un nouvel import la recrée. `--force-photos` force le recalcul de toutes les photos. |
 | `verify-public` signale une différence | Attendre le déploiement GitHub Pages ; vérifier la branche publiée, les fichiers committés et l'URL du site. Ne pas nettoyer R2 tant que ce contrôle échoue. |
 | Remote inconnu ou accès refusé | Vérifier `listremotes`, les identifiants et leurs droits sur le bucket de cette machine. |
-| Erreur rclone `501 Not Implemented` après un transfert | Utiliser `manage_photos.py`, qui évite la requête HEAD versionnée incompatible et vérifie les contenus par téléchargement ; installer la version locale avec `install_rclone.py`. |
+| Erreur rclone `501 Not Implemented` après un transfert | Utiliser `manage_photos.py`, qui évite la requête HEAD versionnée incompatible et vérifie séparément les images ; installer la version locale avec `install_rclone.py`. |
+| Vérification par téléchargement malgré une relance | Consulter le bilan MD5/téléchargement : les objets sans MD5 exploitable sont relus à chaque fois. `verify-remote --download` et `cleanup` relisent volontairement tous les contenus. |
 
 La configuration et les limites du cache sont décrites dans la
 [référence technique](developpement.md#identité-des-photos-et-publication).

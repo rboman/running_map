@@ -3,9 +3,11 @@
 
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path, PurePosixPath
+import re
 import subprocess
 import sys
 import tempfile
@@ -68,9 +70,66 @@ def verify_public(root, site_url):
     print("Published site matches local data, application and configuration.", flush=True)
 
 
-def verify_remote(root, remote, file_list):
-    rclone("check", root / "photos/generated", remote_path(remote),
-           "--files-from-raw", file_list, "--download", "--one-way")
+def verify_remote(root, remote, file_list, download=False):
+    local_root = root / "photos/generated"
+    if download:
+        rclone("check", local_root, remote_path(remote),
+               "--files-from-raw", file_list, "--download", "--one-way")
+        return
+
+    names = sorted(set(Path(file_list).read_text(encoding="utf-8").splitlines()))
+    for name in names:
+        safe_remote_name(name)
+    listing = json.loads(rclone(
+        "lsjson", remote_path(remote), "--recursive", "--files-only",
+        "--files-from-raw", file_list, "--hash-type", "MD5",
+        "--no-modtime", "--no-mimetype", capture=True,
+    ))
+    if not isinstance(listing, list):
+        raise RuntimeError("Invalid remote photo inventory")
+    objects = {}
+    for item in listing:
+        if not isinstance(item, dict) or not isinstance(item.get("Path"), str):
+            raise RuntimeError("Invalid remote photo inventory entry")
+        name = safe_remote_name(item["Path"])
+        if name in objects:
+            raise RuntimeError("Duplicate remote photo: {}".format(name))
+        objects[name] = item
+
+    fallback = []
+    for name in names:
+        item = objects.get(name)
+        if item is None:
+            raise RuntimeError("Missing remote photo: {}".format(name))
+        local = local_root / name
+        size = item.get("Size")
+        if type(size) is not int or size < 0 or item.get("IsDir"):
+            raise RuntimeError("Invalid remote photo size/type: {}".format(name))
+        if local.stat().st_size != size:
+            raise RuntimeError("Remote photo size mismatch: {}".format(name))
+        hashes = item.get("Hashes")
+        # Recent rclone versions emit "md5"; older versions/docs use "MD5".
+        checksum = hashes.get("md5", hashes.get("MD5")) if isinstance(hashes, dict) else None
+        if not isinstance(checksum, str) or not re.fullmatch(r"[0-9a-fA-F]{32}", checksum):
+            # Multipart ETags are not whole-file MD5s. Never accept size alone.
+            fallback.append(name)
+            continue
+        digest = hashlib.md5(usedforsecurity=False)
+        with local.open("rb") as source:
+            for chunk in iter(lambda: source.read(1024 * 1024), b""):
+                digest.update(chunk)
+        if digest.hexdigest() != checksum.lower():
+            raise RuntimeError("Remote photo checksum mismatch: {}".format(name))
+
+    if fallback:
+        print("No usable MD5 for {} images; verifying only these by download.".format(len(fallback)), flush=True)
+        fallback_list = Path(file_list).with_name("download.txt")
+        write_list(fallback_list, fallback)
+        rclone("check", local_root, remote_path(remote),
+               "--files-from-raw", fallback_list, "--download", "--one-way")
+    print("Remote images verified: {} by MD5; {} by download.".format(
+        len(names) - len(fallback), len(fallback),
+    ), flush=True)
 
 
 def safe_remote_name(name):
@@ -95,7 +154,7 @@ def obsolete_photos(remote, current):
 def cleanup(root, remote, site_url, manifest, current_list, workdir, dry_run):
     # Old references must no longer be the ones served by the published site.
     verify_public(root, site_url)
-    verify_remote(root, remote, current_list)
+    verify_remote(root, remote, current_list, download=True)
     obsolete = obsolete_photos(remote, set(relative_photos(manifest)))
     print("Obsolete objects in photos/generated/: {}".format(len(obsolete)), flush=True)
     for name in obsolete:
@@ -126,7 +185,7 @@ def cleanup(root, remote, site_url, manifest, current_list, workdir, dry_run):
     remaining = set(obsolete_photos(remote, set(relative_photos(manifest)))) & set(obsolete)
     if remaining:
         raise RuntimeError("Some obsolete objects remain; backup kept at {}".format(backup))
-    verify_remote(root, remote, current_list)
+    verify_remote(root, remote, current_list, download=True)
     print("Cleanup complete. Recovery copy: {}".format(backup), flush=True)
 
 
@@ -137,7 +196,11 @@ def main():
     parser.add_argument("--remote", default="r2-runningmap:runningmap-photos")
     parser.add_argument("--site-url", default="https://runningmap.rboman.dev")
     parser.add_argument("--dry-run", action="store_true", help="Simulate copy/cleanup without persistent changes.")
+    parser.add_argument("--download", action="store_true",
+                        help="For verify-remote only: audit every referenced image by downloading it.")
     args = parser.parse_args()
+    if args.download and args.action != "verify-remote":
+        parser.error("--download is only available with verify-remote")
     root = args.root.resolve()
     manifest = validate_manifest(root)
     print("Validated {} referenced images and both generated data files.".format(len(manifest["files"])), flush=True)
@@ -152,13 +215,13 @@ def main():
         if args.action == "copy":
             options = ["--dry-run"] if args.dry_run else []
             # Older rclone versions HEAD the version ID returned by R2's PUT,
-            # which R2 rejects with 501. Verify actual bytes below instead.
+            # which R2 rejects with 501. Verify independently after copying.
             rclone("copy", root / "photos/generated", remote_path(args.remote),
                    "--files-from-raw", file_list, "--checksum", "--s3-no-head", *options)
             if not args.dry_run:
                 verify_remote(root, args.remote, file_list)
         elif args.action == "verify-remote":
-            verify_remote(root, args.remote, file_list)
+            verify_remote(root, args.remote, file_list, download=args.download)
         elif args.action == "cleanup":
             cleanup(root, args.remote, args.site_url, manifest, file_list, workdir, args.dry_run)
 

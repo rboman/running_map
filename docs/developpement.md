@@ -120,9 +120,26 @@ le navigateur ou transférés sur R2.
 
 La copie utilise `--s3-acl private`, `--s3-no-check-bucket` et `--s3-no-head`.
 La dernière option évite une requête HEAD avec `versionId` refusée par R2 dans
-certaines combinaisons de versions ; une **comparaison complète par téléchargement**
-est obligatoire après la copie. Ne pas supprimer ce contrôle. L'inventaire du
-nettoyage ne lit ni dates ni types MIME, pour éviter une requête par objet.
+certaines combinaisons de versions ; une vérification indépendante de chaque
+image référencée reste obligatoire après la copie.
+
+La vérification normale utilise `rclone lsjson --hash-type MD5`, limité aux
+références du manifeste, sans dates ni types MIME. La lecture de `Hashes` accepte
+la clé `md5` des versions récentes et la clé `MD5` des anciennes sorties.
+Rclone fournit notamment le MD5
+via l'ETag des objets envoyés en une seule partie, ou les métadonnées MD5
+disponibles pour les autres objets. Le script compare explicitement les tailles
+et les MD5 aux fichiers locaux. Un objet absent ou différent fait échouer la
+procédure. Les objets sans MD5 de 32 caractères hexadécimaux sont regroupés dans
+une liste temporaire et vérifiés avec `rclone check --download --one-way`.
+Ils ne sont jamais validés sur leur seule taille. Le SHA-256 du manifeste conserve
+son rôle de contrôle local ; le MD5 sert à comparer les objets distants sans
+télécharger leur contenu. Aucun cache de vérification n'est ajouté.
+
+`verify-remote --download` permet un audit intégral explicite. Le nettoyage
+conserve les vérifications intégrales par téléchargement des images actuelles
+et de la sauvegarde avant suppression. Son inventaire ne lit ni dates ni types
+MIME, pour éviter une requête par objet.
 
 ## Ajouter un GPX manuellement
 

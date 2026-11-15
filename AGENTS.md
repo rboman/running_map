@@ -42,7 +42,11 @@ hackable, dependency-light and runnable by opening `index.html` directly via
   the project-local rclone installed by `scripts/install_rclone.py`.
 - Copy and verify images before publishing the generated JavaScript that
   references them. Copy must not delete remote objects.
-- Do not bypass manifest validation or the full downloaded-content verification.
+- Do not bypass manifest validation or remote integrity verification for every
+  referenced image. Prefer comparing local MD5s with remote checksums; download
+  only objects without a usable checksum. Never accept size alone or ignore a
+  missing object or checksum mismatch. Keep full-download audits available and
+  require them for cleanup and backup verification before deletion.
   Publication requires a complete import with photos, not `--year` output.
 - Cleanup is separate: verify the published site, inventory only obsolete
   objects under `photos/generated/`, back them up, verify the backup, then

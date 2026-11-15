@@ -240,9 +240,10 @@ class PhotoTests(unittest.TestCase):
 
     def test_cleanup_dry_run_never_copies_or_deletes(self):
         manifest = {'files': {'photos/generated/run/current.jpg': 'hash'}}
-        with patch.object(manage_photos, 'verify_public'), patch.object(manage_photos, 'verify_remote'):
+        with patch.object(manage_photos, 'verify_public'), patch.object(manage_photos, 'verify_remote') as verify:
             with patch.object(manage_photos, 'rclone', return_value='[{"Path":"run/old.jpg"}]') as remote:
                 manage_photos.cleanup(self.output, 'r2:bucket', 'https://example.com', manifest, 'list', self.root, True)
+                verify.assert_called_once_with(self.output, 'r2:bucket', 'list', download=True)
                 self.assertEqual([call.args[0] for call in remote.call_args_list], ['lsjson'])
                 self.assertFalse((self.output / 'backups').exists())
 
@@ -284,20 +285,22 @@ class PhotoTests(unittest.TestCase):
         with patch.object(manage_photos, 'public_bytes', return_value=b'line one\nline two\n'):
             manage_photos.verify_public(self.output, 'https://example.com')
 
-    def test_copy_requires_download_verification_unless_dry_run(self):
+    def test_copy_requires_verification_unless_dry_run(self):
         manifest = {'files': {'photos/generated/run/photo.jpg': 'hash'}}
         for dry_run in (False, True):
             argv = ['manage', 'copy', '--root', str(self.output)]
             if dry_run:
                 argv.append('--dry-run')
             with patch.object(sys, 'argv', argv), patch.object(manage_photos, 'validate_manifest', return_value=manifest):
-                with patch.object(manage_photos, 'rclone') as remote:
+                with patch.object(manage_photos, 'rclone') as remote, patch.object(manage_photos, 'verify_remote') as verify:
                     manage_photos.main()
                     calls = remote.call_args_list
-                    self.assertEqual([call.args[0] for call in calls], ['copy'] if dry_run else ['copy', 'check'])
+                    self.assertEqual([call.args[0] for call in calls], ['copy'])
                     self.assertIn('--s3-no-head', calls[0].args)
-                    if not dry_run:
-                        self.assertIn('--download', calls[1].args)
+                    if dry_run:
+                        verify.assert_not_called()
+                    else:
+                        verify.assert_called_once()
 
     def test_remote_paths_cannot_escape_generated_folder(self):
         for name in ('../other.jpg', '/other.jpg', 'run/../../other', 'run/a\nb', 'run\\a', 'run/./a'):

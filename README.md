@@ -98,8 +98,10 @@ python scripts/manage_photos.py copy --dry-run
 python scripts/manage_photos.py copy
 ```
 
-`copy` transfère les images référencées, **ne supprime rien**, puis compare tous
-les contenus distants aux copies locales. Attendre sa réussite avant de publier :
+`copy` transfère les images nouvelles ou différentes, **ne supprime rien**, puis
+vérifie toutes les images référencées par checksum. Seules celles sans empreinte
+distante exploitable sont téléchargées pour vérification. Attendre sa réussite
+avant de publier :
 
 ```bash
 git status
